@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7904d07d1e1765a0a199aa11d6301a3",
+    "content-hash": "41162d5434988dc9ba9422dd80529182",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -687,6 +687,70 @@
                 "storage"
             ],
             "time": "2018-05-07T08:44:23+00:00"
+        },
+        {
+            "name": "lukepolo/laracart",
+            "version": "1.5.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lukepolo/laracart.git",
+                "reference": "d3b6c78c071700bee3d8746c75e821ca8f86de79"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lukepolo/laracart/zipball/d3b6c78c071700bee3d8746c75e821ca8f86de79",
+                "reference": "d3b6c78c071700bee3d8746c75e821ca8f86de79",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/events": "^5.4.0",
+                "illuminate/session": "^5.4.0",
+                "illuminate/support": "^5.4.0",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "mockery/mockery": "^0.9.7",
+                "orchestra/database": "~3.1",
+                "orchestra/testbench": "~3.3",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LukePOLO\\LaraCart\\LaraCartServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaraCart": "LukePOLO\\LaraCart\\Facades\\LaraCart"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LukePOLO\\LaraCart\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luke Policinski",
+                    "email": "Luke@LukePOLO.com",
+                    "homepage": "http://LukePOLO.com"
+                }
+            ],
+            "description": "A simple cart for Laravel",
+            "homepage": "https://github.com/lukepolo/laracart",
+            "keywords": [
+                "cart",
+                "laravel",
+                "shopping",
+                "shopping cart"
+            ],
+            "time": "2018-05-29T18:53:57+00:00"
         },
         {
             "name": "monolog/monolog",
