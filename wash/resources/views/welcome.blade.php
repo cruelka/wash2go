@@ -369,7 +369,7 @@
   <div class="row mt-5">
       <div class="col-lg-3 col-md-3">
           <div class="product-card product-card_square">
-                <div class="product-card__img" style="background: url('{{asset('images/example/1.jpg')}});">
+                <div class="product-card__img" style="">
                   <div class="product-card__add-to-card-b">
                     <div class="button button_red">
                       <span class="button__icon">
@@ -458,9 +458,9 @@
 
       <div class="sector">
         <div class="button">
-            <div class="button__body">
+            <a href="/blog" class="button__body">
                 More News
-            </div>
+            </a>
         </div>
       </div>
 
