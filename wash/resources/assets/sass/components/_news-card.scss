@@ -1,0 +1,41 @@
+.news-card__lable {
+    color: $bluecolor;
+}
+
+.news-card__title {
+    font-size: 2em;
+}
+
+.news-card__additional {
+    color: $lablecolor;
+}
+
+.news-card__img {
+    width: 100%;
+    padding-top: 33.33333%;
+    background-size: cover;
+    margin: 20px 0;
+}
+
+.news-card__b {
+    margin-top: 15px;
+    color: $greencolor;
+}
+
+.news-card__description {
+    color: $lablecolor;
+}
+
+.news-card {
+    @media screen and (max-width:$lg) { 
+      
+    }
+
+    @media screen and (max-width:$md) { 
+        margin-bottom: 40px;
+    }
+
+    @media screen and (max-width:$sm) { 
+
+    }
+}

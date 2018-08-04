@@ -1,0 +1,58 @@
+.review {
+    background: $bluecolor;
+    padding: 30px 30px 10px;
+    border-radius: $border-radius;
+}
+
+.review__quotes {
+    background: white;
+    width: 100%;
+    padding: 0 50px;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.review__heading {
+    font-size: 2em;
+    color: $headingcolor;
+    margin-left: -20%;
+
+    @media screen and (max-width:$lg) { 
+      
+    }
+
+    @media screen and (max-width:$md) { 
+        margin-left: 0px;
+    }
+
+    @media screen and (max-width:$sm) { 
+
+    }
+}
+
+.review__item {
+    background: $white;
+    padding: 20px;
+    border-radius: $border-radius;
+    margin-bottom: 20px;
+}
+
+.review__inner {
+    margin: 30px 0 0px 0;
+}
+
+.review__item-quotes {
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+.review__item-body {
+    color: $headingcolor;
+}
+
+.review__autor {
+    color: $lablecolor;
+    margin-top: 20px;
+}

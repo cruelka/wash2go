@@ -1,0 +1,21 @@
+.vertical-navigation {
+
+}
+
+.vertical-navigation__item {
+    list-style: none;
+    line-height: 2em;
+    cursor: pointer;
+}
+
+.vertical-navigation__item:hover {
+    opacity: .8;
+}
+
+.vertical-navigation__item_active {
+    color: $greencolor;
+}
+
+.vertical-navigation__item_toplevel {
+    font-weight: Bold;
+}

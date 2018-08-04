@@ -1,0 +1,82 @@
+// Add additional styles here. For example, overwrite certain styles or add new components.
+// Tip: You can use bootstrap's powerful mixins here!
+
+
+//.alert-myalert {
+//  @include alert-variant(#60667d, #1d1d1d, #f4fdff);
+//}
+
+//@each $color, $value in $theme-colors {
+//  .alert-#{$color} {
+//    box-shadow: 3px 3px theme-color-level($color, -3);
+//  }
+//}
+
+
+body {
+    font-family: Arial;
+    font-size: .8em;
+}
+
+.navbar {
+    border-bottom: 1px solid $lighter;
+}
+
+.navbar-nav {
+    font-size: 1.2em;
+}
+
+a {
+    color: $dark;
+}
+
+a:hover {
+    color: $danger;
+}
+
+.sector {
+    margin: 40px 0;
+}
+
+
+.welcome-fullscreen__data {
+    text-align: left !important;
+}
+
+.footer {
+    background-image: none !important;
+}
+
+.product__image-img {
+    max-width: 300px !important;
+}
+
+.header__logo {
+    margin-right: 40px !important;
+}
+
+.so-content_windows-open {
+    margin-left: 0 !important;
+}
+
+.so-modal__close {
+    display: block;
+    margin: 0 auto;
+}
+
+.navigation-modal {
+    margin: 0 auto;
+}
+
+.welcome-fullscreen {
+    padding-top: 82px;
+}
+
+#so-modal__shadow {
+    opacity: 1 !important;
+}
+
+
+.owl-dots {
+    display: none;
+}

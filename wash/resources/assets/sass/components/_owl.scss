@@ -1,0 +1,33 @@
+.owl-item {
+    float: left;
+}
+
+.owl-stage-outer {
+    overflow: hidden;
+}
+
+.owl-dot {
+    opacity: .95;
+    border: 0px solid #ffffffd6;
+    height: 5px;
+    width: 20px;
+    margin: 3px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+.owl-nav {
+    display: none;
+}
+
+.owl-dot.active {
+    background: #929292;
+}

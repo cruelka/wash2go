@@ -5,5 +5,39 @@
 // Variables
 @import "variables";
 
+@import 'custom-variables';
+
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+@import 'components/news-block';
+@import 'components/product-card';
+@import 'components/button';
+@import 'components/welcome-desc.scss';
+@import 'components/welcome-fullscreen.scss';
+@import 'components/footer.scss';
+@import 'components/header.scss';
+@import 'components/subscribe.scss';
+@import 'components/category-heading.scss';
+@import 'components/product.scss';
+@import 'components/shopping-card.scss';
+@import 'components/adventages.scss';
+@import 'components/news.scss';
+@import 'components/navigation.scss';
+@import 'components/news-card.scss';
+@import 'components/card-preview.scss';
+@import 'components/content.scss';
+@import 'components/vertical-navigation.scss';
+@import 'components/navigation-modal.scss';
+@import 'components/so-modal.scss';
+@import 'components/booking-form.scss';
+@import 'components/review.scss';
+@import 'components/owl.scss';
+@import 'components/form.scss';
+@import 'components/animate.scss';
+@import 'components/font.scss';
+
+@import 'custom-styles';
+
+

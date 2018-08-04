@@ -1,0 +1,40 @@
+.button {
+    background: $light;
+    width: auto;
+    display: inline-block;
+    cursor: pointer;
+    color: $dark;
+    border: 1px solid $lighter;
+}
+
+.button__body {
+    padding: 10px 20px;
+    display: inline-block;
+    border-left: 1px solid $lighter;
+    
+}
+
+.button__body:first-child {
+    border-left: 0;
+}
+
+.button__icon{
+    padding-left: 13px;
+    padding-right: 10px;
+}
+
+.button__icon-img {
+    display: inline-block;
+}
+
+.button_red {
+    background: $danger;
+    font-weight: bold;
+    border: 0;
+    .button__body {
+        color: $light;
+        border-left: 1px solid $light;
+        
+    }
+}
+

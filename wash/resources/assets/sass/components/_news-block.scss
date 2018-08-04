@@ -1,0 +1,20 @@
+.news-block {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.news-block:last-child {
+    margin-bottom: 0;
+}
+
+
+.news-block__heading {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.news-block:hover {
+    .news-block__heading {
+        color: $danger;
+    }
+}

@@ -1,0 +1,31 @@
+.adventages__item {
+
+}
+
+.adventages__item-heading {
+    color: $headingcolor;
+    margin-bottom: 20px;
+}
+
+.adventages__item-body {
+    color: $lablecolor;
+}
+
+.adventages__item-icon-img {
+    height: 30px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.adventages_center {
+   
+
+    .adventages__item-heading {
+        text-align: center;
+    }
+
+    .adventages__item-icon-img {
+        margin: 0 auto 20px;
+    }
+}
+

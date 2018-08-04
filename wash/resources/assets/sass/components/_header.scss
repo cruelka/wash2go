@@ -1,0 +1,145 @@
+.header__button {
+    height: 40px;
+    padding-top: 9px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header__button-icon {
+    height: 27px;
+    box-sizing: border-box;
+    margin: 6px 20px 0;
+    cursor: pointer;
+}
+
+.header__button-icon:last-child {
+    margin-right: 0;
+}
+
+.header {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    color: $white;
+    position: fixed;
+    width: 100%;
+    background: #262626bd;
+    top: 0;
+    
+}
+
+
+.header__block {
+    display: flex;
+}
+
+.header__nav {
+    margin-right: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.header__nav:hover {
+    color: $danger;
+}
+
+.header__nav_wrapped {
+    border: 1px solid white;
+    
+}
+
+.header__nav_wrapped:hover {
+    border: 1px solid $danger !important;
+}
+
+.header__nav:last-child {
+    margin-right: 0;
+}
+
+.so-header_scrolled {
+    background: $white;
+    color: $dark;
+    border-bottom: 1px solid #f0f0f0;
+    .header__nav_wrapped {
+        border-color: $dark;
+    }
+}
+
+.header__logo{
+    height: 42px;
+    cursor: pointer;
+}
+
+.header__logo:hover {
+    opacity: .5;
+}
+
+.header__button-icon:hover {
+    opacity: .5;
+}
+
+.header {
+
+    .header__mobile-only {
+        display: none;
+    }
+
+    @media screen and (max-width:$lg) { 
+      
+    }
+
+    @media screen and (max-width:$md) { 
+        .header__fullscreen-only {
+            display: none;
+        }
+        .header__mobile-only {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width:$sm) { 
+
+    }
+}
+
+.header__burger {
+
+}
+
+.header__burger {
+    margin-top: 9px;
+    margin: 9px 20px 0;
+    cursor: pointer;
+
+    span {
+        height: 2px;
+        margin-bottom: 9px;
+        width: 32px;
+        display: block;
+        background: $white;
+        transition: width .2s;
+    }
+} 
+
+.header__burger:hover {
+    opacity: .5;
+    span:nth-child(2){
+        width: 16px;
+    }
+}
+
+.header__burger_open {
+    span:nth-child(2) {
+        width: 0;
+    }
+}
+
+.so-header__burger_scrolled {
+    span {
+        background: #212529 ;
+    }
+}

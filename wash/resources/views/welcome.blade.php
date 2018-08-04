@@ -16,7 +16,7 @@
   <div id="so-content">
   <div class="header so-header">
     <div class="header__block">
-      <img src="resourse/images/logo_white.svg" alt="Logo" class="header__logo so-header__logo">
+      <img src="{{ asset('images/logo_white.svg') }}" alt="Logo" class="header__logo so-header__logo">
     </div>
     <div class="header__block header__fullscreen-only" style="flex-grow: 2;">
         <div class="header__nav header__nav_wrapped" onclick="soModal.open('.navigation-modal')">
@@ -39,7 +39,7 @@
           <div class="header__mobile-only header__burger so-header__burger"  onclick="soModal.open('.navigation-modal')">
             <span></span><span></span><span></span>
           </div>
-          <img class="header__button-icon so-header__bag" src="resourse/images/icons/bag.svg">
+          <img class="header__button-icon so-header__bag" src="{{ asset('images/icons/bag.svg')}}">
     </div>
 
     
@@ -158,7 +158,7 @@
       <div class="col-lg-3">
         <div class="adventages__item">
           <div class="adventages__item-icon">
-            <img class="adventages__item-icon-img" alt="Icon" src="resourse/images/icons/adventages/1.svg">
+            <img class="adventages__item-icon-img" alt="Icon" src="{{ asset('images/icons/adventages/1.svg') }}">
           </div>
           <div class="adventages__item-heading">
               ECO-FRIENDLY
@@ -171,7 +171,7 @@
       <div class="col-lg-3">
         <div class="adventages__item">
             <div class="adventages__item-icon">
-                <img class="adventages__item-icon-img" alt="Icon" src="resourse/images/icons/adventages/3.svg">
+                <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/adventages/3.svg')}}">
             </div>
             <div class="adventages__item-heading">
               INNOVATIVE
@@ -184,7 +184,7 @@
         <div class="col-lg-3">
           <div class="adventages__item">
               <div class="adventages__item-icon">
-                  <img class="adventages__item-icon-img" alt="Icon" src="resourse/images/icons/adventages/2.svg">
+                  <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/adventages/2.svg')}}">
               </div>
               <div class="adventages__item-heading">
                   TOP-PERFORMANCE
@@ -198,7 +198,7 @@
           <div class="col-lg-3">
             <div class="adventages__item">
                 <div class="adventages__item-icon">
-                    <img class="adventages__item-icon-img" alt="Icon" src="resourse/images/icons/adventages/4.svg">
+                    <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/adventages/4.svg')}}">
                 </div>
                 <div class="adventages__item-heading">
                     SAFE FOR THE USER
@@ -213,7 +213,7 @@
 
   <div class="row mt-5">
     <div class="col-lg-6 col-md-6">
-      <img  class="card-preview__info-image" src="resourse/images/jpg/1.jpg" alt="Car">
+      <img  class="card-preview__info-image" src="{{asset('images/jpg/1.jpg')}}" alt="Car">
     </div>
     <div class="col-lg-6 col-md-6">
       <div class="card-preview__info">
@@ -228,7 +228,7 @@
                 About washing
               </div>
               <div class="card-preview__info-link">
-                More Information <img class="card-preview__info-link-i" src="resourse/images/icons/arrow-right_green.svg" alt="Arrow">
+                More Information <img class="card-preview__info-link-i" src="{{asset('images/icons/arrow-right_green.svg')}}" alt="Arrow">
               </div>
         </div>
         
@@ -296,7 +296,7 @@
                   Benefits
                 </div>
                 <div class="card-preview__info-link">
-                  More Information <img class="card-preview__info-link-i" src="resourse/images/icons/arrow-right_green.svg" alt="Arrow">
+                  More Information <img class="card-preview__info-link-i" src="{{asset('images/icons/arrow-right_green.svg')}}" alt="Arrow">
                 </div>
           </div>
           
@@ -304,7 +304,7 @@
       </div>
 
       <div class="col-lg-6 col-md-6">
-          <img  class="card-preview__info-image" src="resourse/images/jpg/2.jpg" alt="Car">
+          <img  class="card-preview__info-image" src="{{asset('images/jpg/2.jpg')}}" alt="Car">
         </div>
     </div>
 
@@ -321,7 +321,7 @@
       <div class="col-lg-3 col-md-3">
         <div class="adventages__item">
           <div class="adventages__item-icon">
-            <img class="adventages__item-icon-img" alt="Icon" src="resourse/images/icons/categories/1.svg">
+            <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/1.svg')}}">
           </div>
           <div class="adventages__item-heading">
             Interior
@@ -331,7 +331,7 @@
       <div class="col-lg-3 col-md-3">
           <div class="adventages__item">
             <div class="adventages__item-icon">
-              <img class="adventages__item-icon-img" alt="Icon" src="resourse/images/icons/categories/2.svg">
+              <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/2.svg')}}">
             </div>
             <div class="adventages__item-heading">
               Exterior
@@ -341,7 +341,7 @@
       <div class="col-lg-3 col-md-3">
           <div class="adventages__item">
             <div class="adventages__item-icon">
-              <img class="adventages__item-icon-img" alt="Icon" src="resourse/images/icons/categories/3.svg">
+              <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/3.svg')}}">
             </div>
             <div class="adventages__item-heading">
               Accessories
@@ -351,7 +351,7 @@
       <div class="col-lg-3 col-md-3">
           <div class="adventages__item">
             <div class="adventages__item-icon">
-              <img class="adventages__item-icon-img" alt="Icon" src="resourse/images/icons/categories/4.svg">
+              <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/4.svg')}}">
             </div>
             <div class="adventages__item-heading">
               Combo Pack
@@ -371,11 +371,11 @@
   <div class="row mt-5">
       <div class="col-lg-3 col-md-3">
           <div class="product-card product-card_square">
-                <div class="product-card__img" style="background: url('resourse/images/example/1.jpg');">
+                <div class="product-card__img" style="background: url('{{asset('images/example/1.jpg')}});">
                   <div class="product-card__add-to-card-b">
                     <div class="button button_red">
                       <span class="button__icon">
-                        <img class="button__icon-img" src="resourse/images/icons/plus_white.svg">
+                        <img class="button__icon-img" src="{{asset('images/icons/plus_white.svg')}}">
                       </span>
                       <span class="button__body">
                         Add to cart
@@ -399,98 +399,6 @@
                 
           </div>
       </div>
-    
-    <div class="col-lg-3 col-md-3">
-        <div class="product-card product-card_square">
-              <div class="product-card__img" style="background: url('resourse/images/example/1.jpg');">
-                <div class="product-card__add-to-card-b">
-                  <div class="button button_red">
-                    <span class="button__icon">
-                      <img class="button__icon-img" src="resourse/images/icons/plus_white.svg">
-                    </span>
-                    <span class="button__body">
-                      Add to cart
-                    </span>
-                  </div>
-                </div>
-                <div class="product-card__marked">
-                  <div class="product-card__new">
-                      New
-                  </div>
-                </div>
-              </div>
-              <div class="product-card__body">
-                <div class="product-card__title">
-                  WINDOW CLEAR
-                </div>
-                <div class="product-card__price">
-                  18 AED
-                </div>
-              </div>
-              
-        </div>
-    </div>
-
-    <div class="col-lg-3 col-md-3">
-        <div class="product-card product-card_square">
-              <div class="product-card__img" style="background: url('resourse/images/example/1.jpg');">
-                <div class="product-card__add-to-card-b">
-                  <div class="button button_red">
-                    <span class="button__icon">
-                      <img class="button__icon-img" src="resourse/images/icons/plus_white.svg">
-                    </span>
-                    <span class="button__body">
-                      Add to cart
-                    </span>
-                  </div>
-                </div>
-                <div class="product-card__marked">
-                  <div class="product-card__new">
-                      New
-                  </div>
-                </div>
-              </div>
-              <div class="product-card__body">
-                <div class="product-card__title">
-                  WINDOW CLEAR
-                </div>
-                <div class="product-card__price">
-                  18 AED
-                </div>
-              </div>
-              
-        </div>
-    </div>
-    <div class="col-lg-3 col-md-3">
-        <div class="product-card product-card_square">
-              <div class="product-card__img" style="background: url('resourse/images/example/1.jpg');">
-                <div class="product-card__add-to-card-b">
-                  <div class="button button_red">
-                    <span class="button__icon">
-                      <img class="button__icon-img" src="resourse/images/icons/plus_white.svg">
-                    </span>
-                    <span class="button__body">
-                      Add to cart
-                    </span>
-                  </div>
-                </div>
-                <div class="product-card__marked">
-                  <div class="product-card__new">
-                      New
-                  </div>
-                </div>
-              </div>
-              <div class="product-card__body">
-                <div class="product-card__title">
-                  WINDOW CLEAR
-                </div>
-                <div class="product-card__price">
-                  18 AED
-                </div>
-              </div>
-              
-        </div>
-    </div>
 
 
   </div>
@@ -560,7 +468,7 @@
         <div class="">
           <div class="row mt-5">
             <div class="col-lg-3 col-md-3">
-              <img src="resourse/images/icons/quotes.svg" class="review__quotes" alt="Quotes">
+              <img src="{{ asset('images/icons/quotes.svg') }}" class="review__quotes" alt="Quotes">
             </div>
             <div class="col-lg-9 col-md-9">
                 <div class="review">
@@ -569,7 +477,7 @@
                     <div class="row">
                       <div class="col-lg-6 col-md-6">
                           <div class="review__item">
-                              <img src="resourse/images/icons/quotes_green.svg" class="review__item-quotes" alt="Quotes">
+                              <img src="{{ asset('images/icons/quotes_green.svg') }}" class="review__item-quotes" alt="Quotes">
                               <div class="review__item-body">
                                   "I wanted something where I could meet new people and get out of the house. Uber has helped with both of those things, plus I’m seeing new parts of the city I’ve never seen before!"
                               </div>
@@ -579,7 +487,7 @@
 
                       <div class="col-lg-6 col-md-6">
                           <div class="review__item">
-                              <img src="resourse/images/icons/quotes_green.svg" class="review__item-quotes" alt="Quotes">
+                              <img src="{{ asset('images/icons/quotes_green.svg') }}" class="review__item-quotes" alt="Quotes">
                               <div class="review__item-body">
                                   "I started driving with Uber because I liked the idea that my own car could make me money. After just about a couple weeks, I saw that this was something I wanted to do permanently."
                               </div>

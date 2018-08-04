@@ -1,0 +1,67 @@
+.booking-form {
+    background: $white;
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    margin-top: 20px;
+
+    @media screen and (max-width:$lg) { 
+      
+    }
+
+    @media screen and (max-width:$md) { 
+        flex-direction: column;
+    }
+
+    @media screen and (max-width:$sm) { 
+
+    }
+}
+
+.booking-form__item {
+    //width: 20%;
+    //float: left;
+    padding: 15px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.booking-form__item-lable {
+    font-size: .8em;
+    color: $lablecolor;
+    margin-bottom: 10px;
+}
+
+.booking-form__b {
+    padding: 20px;
+    display: flex;
+    cursor: pointer;
+}
+
+.booking-form__b-inner {
+    background-color: $danger;
+    border-radius: $border-radius;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white !important;
+    transition: background-color .2;
+}
+
+.booking-form__b-inner:hover {
+    background-color: #419538;
+}
+
+
+
+.booking-form__item select {
+    font-size: 1em;
+}
+
+.booking-form__item-total {
+    color: $danger;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-top: 6px;
+}
