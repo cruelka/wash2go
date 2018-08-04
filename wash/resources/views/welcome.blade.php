@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Custom built theme - This already includes Bootstrap 4 -->
-  <link rel="stylesheet" href="css/mytheme.min.css">
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
 </head>
@@ -30,12 +30,10 @@
     
   
     <div class="header__block">
-        <div class="header__nav header__fullscreen-only">
+        <a href="/login" class="header__nav header__fullscreen-only">
             Sign In
-          </div>
-          <div class="header__nav header__fullscreen-only">
-            Sign Up
-          </div>
+        </a>
+
           <div class="header__mobile-only header__burger so-header__burger"  onclick="soModal.open('.navigation-modal')">
             <span></span><span></span><span></span>
           </div>
@@ -48,15 +46,15 @@
 
 <div style="position: relative;">
   <div class="welcome-fullscreen-owl so-header__offset">
-    <div class="welcome-fullscreen" style="background-image: url(resourse/images/bg/desc.jpg)">
+    <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/desc.jpg')}})">
       <div class="container welcome-fullscreen__inner">
       </div>
     </div>
-    <div class="welcome-fullscreen" style="background-image: url(resourse/images/jpg/1.jpg)">
+    <div class="welcome-fullscreen" style="background-image: url({{asset('images/jpg/1.jpg')}}">
       <div class="container welcome-fullscreen__inner">
       </div>
     </div>
-    <div class="welcome-fullscreen" style="background-image: url(resourse/images/jpg/2.jpg)">
+    <div class="welcome-fullscreen" style="background-image: url({{asset('images/jpg/2.jpg')}})">
       <div class="container welcome-fullscreen__inner">
       </div>
     </div>
@@ -422,7 +420,7 @@
               <div class="news-card__additional">
                 On June 12, 2018 / By Turtle Save
               </div>
-              <div class="news-card__img" style="background: url(resourse/images/example/5.jpg)">
+              <div class="news-card__img" style="background: url({{asset('images/example/5.jpg')}})">
 
               </div>
               <div class="news-card__description">
@@ -445,7 +443,7 @@
                 <div class="news-card__additional">
                   On June 12, 2018 / By Turtle Save
                 </div>
-                <div class="news-card__img" style="background: url(resourse/images/example/5.jpg)">
+                <div class="news-card__img" style="background: url({{asset('images/example/5.jpg')}})">
   
                 </div>
                 <div class="news-card__description">
@@ -459,8 +457,10 @@
       </div>
 
       <div class="sector">
-        <div class="btn btn-success mb-2 btn-xs center-block">
-          More News
+        <div class="button">
+            <div class="button__body">
+                More News
+            </div>
         </div>
       </div>
 
@@ -516,7 +516,7 @@
 
   
     <div class="row mt-2">
-      <div class="col-lg-12">
+      <div class="col-lg-12" style="display: block;margin: 0 auto;">
         <div class="subscribe__inner">
             <div class="subscribe__heading text-center">
                 Sign up for monthly news <br>
@@ -622,7 +622,7 @@
     <div class="container">
       <div class="so-modal__inner">
         <div class="so-modal__close__wrapper">
-          <img onclick="soModal.close()" class="so-modal__close" src="resourse/images/icons/cross_black.svg" alt="cross">
+          <img onclick="soModal.close()" class="so-modal__close" src="{{asset('images/icons/cross_black.svg')}}" alt="cross">
         </div>
         <div class="so-modal__item so-modal__booking-form form">
           <div class="so-modal__inner">
@@ -692,17 +692,10 @@
  
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="resourse/js/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="{{asset('js/app.js')}}" ></script>
 
 
-<script src="resourse/js/so-modal.js"></script>
-<script src="resourse/js/so-header.js"></script>
-<script src="resourse/js/so-modal.js"></script>
-<script src="resourse/js/so-modal-booking.js"></script>
 
 <script>
     $(document).ready(function(){

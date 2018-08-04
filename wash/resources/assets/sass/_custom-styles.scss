@@ -13,10 +13,6 @@
 //}
 
 
-body {
-    font-family: Arial;
-    font-size: .8em;
-}
 
 .navbar {
     border-bottom: 1px solid $lighter;
@@ -79,4 +75,20 @@ a:hover {
 
 .owl-dots {
     display: none;
+}
+
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.mt-5 {
+    margin-top: 40px;
 }

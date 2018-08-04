@@ -41,6 +41,7 @@
     line-height: 40px;
     cursor: pointer;
     padding: 0 20px;
+    color: white;
 }
 
 .header__nav:hover {
@@ -66,6 +67,10 @@
     border-bottom: 1px solid #f0f0f0;
     .header__nav_wrapped {
         border-color: $dark;
+    }
+
+    .header__nav {
+        color: black;
     }
 }
 
@@ -142,4 +147,6 @@
     span {
         background: #212529 ;
     }
+
+    
 }
