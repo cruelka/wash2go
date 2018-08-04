@@ -27,3 +27,7 @@ Route::get('post/{slug}', function($slug){
     $post = App\Post::where('slug', '=', $slug)->firstOrFail();
     return view('post', compact('post'));
 });
+Route::get('blog', function () {
+    $posts = App\Post::all();
+    return view('posts', compact('posts'));
+});
