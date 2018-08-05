@@ -34403,7 +34403,7 @@ if(!$('body .so-modal')){
 
         var day = date.getDate();
 
-        var month = date.getMonth();
+        var month = Number(date.getMonth()) + 1;
 
         var array = [];
 

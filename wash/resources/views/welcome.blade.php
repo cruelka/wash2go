@@ -46,6 +46,11 @@
 
 <div style="position: relative;">
   <div class="welcome-fullscreen-owl so-header__offset">
+    <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/1.jpg')}})">
+      <div class="container welcome-fullscreen__inner">
+      </div>
+    </div>
+    <!--
     <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/desc.jpg')}})">
       <div class="container welcome-fullscreen__inner">
       </div>
@@ -58,6 +63,7 @@
       <div class="container welcome-fullscreen__inner">
       </div>
     </div>
+    -->
   </div>
 
   <div class="welcome-fullscreen welcome-fullscreen__static">
@@ -712,7 +718,7 @@
             items:1
         },
         768: {
-          items: 3
+          items: 1
         }
         
     }

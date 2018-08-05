@@ -92,3 +92,17 @@ a:hover {
 .mt-5 {
     margin-top: 40px;
 }
+
+body {
+    font-family: Futura Md BT;
+}
+
+.welcome-fullscreen-owl {
+    filter: grayscale(100%);
+}
+
+
+.welcome-fullscreen__static {
+    max-width: initial;
+    //background: #3fbec9c4 !important;
+}

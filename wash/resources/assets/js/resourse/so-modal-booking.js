@@ -15,7 +15,7 @@
 
     let day = date.getDate();
 
-    let month = date.getMonth();
+    let month = Number(date.getMonth())+1;
 
     var array = [];
 

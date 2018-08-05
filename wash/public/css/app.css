@@ -8508,7 +8508,7 @@ button.close {
   width: 100%;
   color: white;
   background-image: url("");
-  background-size: cover;
+  background-size: cover !important;
 }
 
 @media screen and (max-width: 992px) {
@@ -8572,11 +8572,6 @@ button.close {
 
 .welcome-fullscreen-owl {
   position: relative;
-}
-
-.welcome-fullscreen__static {
-  max-width: initial;
-  background: #3fbec9c4 !important;
 }
 
 .welcome-fullscreen__static {
@@ -12894,12 +12889,13 @@ button.close {
   }
 }
 
-/*
 @font-face {
-	font-family: "Futura";
-	src: url("../resourse/fonts/FuturaMediumBT.ttf") format("ttf"),
+  font-family: 'Futura Md BT';
+  src: url(/fonts/FuturaBT-Medium.eot?7cda1d5dc21edcdab324f33f6f9518cb);
+  src: url(/fonts/FuturaBT-Medium.eot?7cda1d5dc21edcdab324f33f6f9518cb?#iefix) format("embedded-opentype"), url(/fonts/FuturaBT-Medium.woff2?b1895fce041e345712fe4d92a468e4ac) format("woff2"), url(/fonts/FuturaBT-Medium.woff?cf65effb3f2c556f76c6d0bc914558ed) format("woff"), url(/fonts/FuturaBT-Medium.ttf?cb8abe2f6b4747086f2e280aa535cd51) format("truetype"), url(/fonts/FuturaBT-Medium.svg?f99a4534772883bb4abfa3ca9d8dadab#FuturaBT-Medium) format("svg");
+  font-weight: 500;
+  font-style: normal;
 }
-*/
 
 .navbar {
   border-bottom: 1px solid #E8E8E8;
@@ -12974,5 +12970,18 @@ a:hover {
 
 .mt-5 {
   margin-top: 40px;
+}
+
+body {
+  font-family: Futura Md BT;
+}
+
+.welcome-fullscreen-owl {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.welcome-fullscreen__static {
+  max-width: initial;
 }
 

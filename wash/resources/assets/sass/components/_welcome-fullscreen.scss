@@ -7,7 +7,7 @@
     
     color: $light;
     background-image: url('');
-    background-size: cover;
+    background-size: cover !important;
 
     @media screen and (max-width:$lg) { 
     
@@ -77,10 +77,6 @@
     position: relative;
 }
 
-.welcome-fullscreen__static {
-    max-width: initial;
-    background: #3fbec9c4 !important;
-}
 
 .welcome-fullscreen__static {
     background: none; position: absolute;top: 0;
