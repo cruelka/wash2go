@@ -8583,6 +8583,7 @@ button.close {
 @media screen and (max-width: 992px) {
   .welcome-fullscreen__static {
     position: relative;
+    color: #000000;
     padding-top: 0;
   }
 
@@ -8592,6 +8593,7 @@ button.close {
 
   .welcome-fullscreen__static .welcome-fullscreen__data {
     padding-bottom: 0;
+    padding-top: 0;
   }
 }
 
@@ -8884,6 +8886,12 @@ button.close {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 992px) {
+  .adventages__item {
+    margin-bottom: 20px;
+  }
+}
+
 .adventages__item-heading {
   color: #3E4C5B;
   margin-bottom: 20px;
@@ -8905,6 +8913,15 @@ button.close {
 
 .adventages_center .adventages__item-icon-img {
   margin: 0 auto 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .adventages__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .news__item-inner {
@@ -9061,6 +9078,12 @@ button.close {
 
 .text-special_wrapped {
   border: 3px solid #52B947;
+}
+
+@media screen and (max-width: 768px) {
+  .text-special_wrapped {
+    margin: 0 auto;
+  }
 }
 
 .text-special__heading {
@@ -12954,10 +12977,6 @@ a:hover {
   opacity: 1 !important;
 }
 
-.owl-dots {
-  display: none;
-}
-
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12983,5 +13002,17 @@ body {
 
 .welcome-fullscreen__static {
   max-width: initial;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#52b947+0,52b947+68&1+0,0+67 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#52b947), color-stop(67%, rgba(82, 185, 71, 0)), color-stop(68%, rgba(82, 185, 71, 0)));
+  background: linear-gradient(to bottom, #52b947 0%, rgba(82, 185, 71, 0) 67%, rgba(82, 185, 71, 0) 68%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b947', endColorstr='#0052b947',GradientType=0 );
+  /* IE6-9 */
+}
+
+.footer {
+  background: #52B947;
 }
 

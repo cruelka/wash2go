@@ -25,6 +25,12 @@
           <div class="header__nav">
               News
           </div>
+          <div class="header__nav">
+              About
+          </div>
+          <div class="header__nav">
+              Contacts
+          </div>
     </div>
     
     
@@ -50,12 +56,8 @@
       <div class="container welcome-fullscreen__inner">
       </div>
     </div>
-    <!--
+    
     <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/desc.jpg')}})">
-      <div class="container welcome-fullscreen__inner">
-      </div>
-    </div>
-    <div class="welcome-fullscreen" style="background-image: url({{asset('images/jpg/1.jpg')}}">
       <div class="container welcome-fullscreen__inner">
       </div>
     </div>
@@ -63,7 +65,7 @@
       <div class="container welcome-fullscreen__inner">
       </div>
     </div>
-    -->
+    
   </div>
 
   <div class="welcome-fullscreen welcome-fullscreen__static">
@@ -159,7 +161,7 @@
 
   
     <div class="row mt-2">
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-md-3">
         <div class="adventages__item">
           <div class="adventages__item-icon">
             <img class="adventages__item-icon-img" alt="Icon" src="{{ asset('images/icons/adventages/1.svg') }}">
@@ -172,7 +174,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-md-3">
         <div class="adventages__item">
             <div class="adventages__item-icon">
                 <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/adventages/3.svg')}}">
@@ -185,7 +187,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-3">
           <div class="adventages__item">
               <div class="adventages__item-icon">
                   <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/adventages/2.svg')}}">
@@ -199,7 +201,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-3">
             <div class="adventages__item">
                 <div class="adventages__item-icon">
                     <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/adventages/4.svg')}}">
@@ -251,7 +253,7 @@
       <div class="text">
           Not only do our products help save water, they also reduce the toxic runoff from conventional car washes that find its way into our rivers and oceans.
       </div>
-      <div class="row mt-5">
+      <div class="row mt-5 adventages__list">
           <div class="col-lg-4 col-md-4 text-special">
             <div class="text-special__inner">
               <div class="text-special__heading">100%</div>
@@ -322,7 +324,7 @@
 
     <div class="row mt-5">
       
-      <div class="col-lg-3 col-md-3">
+      <div class="col-lg-3 col-md-3 col-sm-3">
         <div class="adventages__item">
           <div class="adventages__item-icon">
             <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/1.svg')}}">
@@ -332,7 +334,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-3">
+      <div class="col-lg-3 col-md-3 col-sm-3">
           <div class="adventages__item">
             <div class="adventages__item-icon">
               <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/2.svg')}}">
@@ -342,7 +344,7 @@
             </div>
           </div>
       </div>
-      <div class="col-lg-3 col-md-3">
+      <div class="col-lg-3 col-md-3 col-sm-3">
           <div class="adventages__item">
             <div class="adventages__item-icon">
               <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/3.svg')}}">
@@ -352,7 +354,7 @@
             </div>
           </div>
       </div>
-      <div class="col-lg-3 col-md-3">
+      <div class="col-lg-3 col-md-3 col-sm-3">
           <div class="adventages__item">
             <div class="adventages__item-icon">
               <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/4.svg')}}">
@@ -709,8 +711,9 @@
       loop:true,
       margin:0,
       nav:false,
-      autoplay:true,
-    autoplayTimeout:2000,
+      autoplay:false,
+    autoplayTimeout:5000,
+      animateIn: 'fadeIn',
       animateOut: 'fadeOut',
       smartSpeed:450,
     responsive:{
