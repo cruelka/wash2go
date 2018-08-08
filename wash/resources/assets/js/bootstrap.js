@@ -21,6 +21,7 @@ require('owl.carousel');
 require('./resourse/so-header');
 require('./resourse/so-modal');
 require('./resourse/so-modal-booking');
+require('./resourse/locationpicker.jquery');
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

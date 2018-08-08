@@ -11174,6 +11174,7 @@ __webpack_require__(15);
 __webpack_require__(16);
 __webpack_require__(17);
 __webpack_require__(18);
+__webpack_require__(50);
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -34226,69 +34227,73 @@ if (typeof jQuery === 'undefined') {
 
 /***/ }),
 /* 16 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(jQuery) {(function ($) {
-    var header = $('.so-header');
-    var offset = $('.so-header__offset');
+/*
+(function( $ ){
+    let header = $('.so-header');
+    let offset = $('.so-header__offset');
+    
+    let scrolledClass = 'so-header_scrolled';
 
-    var scrolledClass = 'so-header_scrolled';
+    let logo = $('.so-header__logo');
+    let bag = $('.so-header__bag');
+    let burger = $('.so-header__burger');
 
-    var logo = $('.so-header__logo');
-    var bag = $('.so-header__bag');
-    var burger = $('.so-header__burger');
 
-    function checkPagePosition() {
-        var scrollPosition = $(window).scrollTop();
-        var offsetHeight = offset.outerHeight();
-        var headerHeight = header.outerHeight();
-        var trueOffset = offsetHeight - headerHeight;
-
-        if (scrollPosition > trueOffset) {
+    function checkPagePosition(){
+        let scrollPosition = $(window).scrollTop();
+        let offsetHeight = offset.outerHeight();
+        let headerHeight = header.outerHeight();
+        let trueOffset = offsetHeight-headerHeight;
+  
+        if(scrollPosition>trueOffset){
             mutateHeader(true);
         } else {
             mutateHeader(false);
         }
     }
 
-    function mutateHeader(i) {
-        if (i === true) {
+    function mutateHeader(i){
+        if(i===true){
             header.addClass(scrolledClass);
-            logo.attr('src', 'images/logo.svg');
-            bag.attr('src', 'images/icons/bag.svg');
+            logo.attr('src','images/logo.svg');
+            bag.attr('src','images/icons/bag.svg');
             burger.addClass('so-header__burger_scrolled');
         } else {
             header.removeClass(scrolledClass);
-            logo.attr('src', 'images/logo_white.svg');
-            bag.attr('src', 'images/icons/bag_white.svg');
+            logo.attr('src','images/logo_white.svg');
+            bag.attr('src','images/icons/bag_white.svg');
             burger.removeClass('so-header__burger_scrolled');
         }
     }
 
-    $(window).scroll(function () {
+    $(window).scroll(function(){
         checkPagePosition();
     });
 
-    $(window).resize(function () {
+    $(window).resize(function(){
         checkPagePosition();
     });
 
-    $(document).ready(function () {
-        setTimeout(function () {
-            checkPagePosition();
-        }, 0.1);
+    $(document).ready(function(){
+        setTimeout(function(){checkPagePosition()},0.1);
     });
+
 
     //Header Burger
 
     /*
-      let burger = $('.header__burger');
-      burger.click(function(){
+
+    let burger = $('.header__burger');
+
+    burger.click(function(){
         $(this).toggleClass('header__burger_open');
     });
-      */
-})(jQuery);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+    */
+
+//})( jQuery );
 
 /***/ }),
 /* 17 */
@@ -34477,12 +34482,81 @@ if(!$('body .so-modal')){
         });
     }
 
-    $(document).ready(function () {
+    /*
+    $(document).ready(function(){
         createDatePicker();
         createTimePicker();
     });
+    */
+
+    $('.booking-steps__card-item_body-type').click(function () {
+        if ($(this).hasClass('booking-steps__card-item_selected')) {
+            soBookingForm.changePage(5, 'bodytype');
+        } else {
+            $('.booking-steps__card-item_body-type').removeClass('booking-steps__card-item_selected');
+            $(this).addClass('booking-steps__card-item_selected');
+        }
+    });
+
+    function changePage(page, required) {
+
+        if (required && required == 'bodytype') {
+            var checkSelection = 0;
+
+            $('.booking-steps__card-item_body-type').each(function () {
+                if ($(this).hasClass('booking-steps__card-item_selected')) {
+                    checkSelection += 1;
+                }
+            });
+
+            console.log(checkSelection);
+
+            if (checkSelection == 0) {
+                return false;
+            }
+        }
+
+        $('.booking-steps__item').hide();
+        $('#booking-steps__item-' + page).show();
+    };
+
+    $('.booking-steps__list-item').click(function () {
+        var priceInner = $('.booking-steps__list-lable-total-data');
+
+        if ($(this).attr('oneandonly')) {
+            var attr = $(this).attr('oneandonly');
+            $('.' + attr).removeClass('booking-steps__list-item_selected');
+            $('.' + attr).find('.booking-steps__list-item-checkbox').removeClass('booking-steps__list-item-checkbox_selected');
+
+            $(this).addClass('booking-steps__list-item_selected');
+            $(this).find('.booking-steps__list-item-checkbox').addClass('booking-steps__list-item-checkbox_selected');
+        } else {
+            $(this).addClass('booking-steps__list-item_selected');
+            $(this).find('.booking-steps__list-item-checkbox').addClass('booking-steps__list-item-checkbox_selected');
+        }
+
+        var steamcount = 0;
+        var price = 0;
+
+        $('.booking-steps__list-item_steam').each(function () {
+            if ($(this).hasClass('booking-steps__list-item_selected')) {
+                steamcount += 1;
+            }
+        });
+
+        if (steamcount < 2) {
+            $('.booking-steps__list-item_selected').each(function () {
+                price += Number($(this).attr('value'));
+            });
+
+            priceInner.empty().append(price);
+        } else {
+            priceInner.empty().append('70 AED - Discount 15');
+        }
+    });
 
     window.soBookingForm = {};
+    window.soBookingForm.changePage = changePage;
     window.soBookingForm.priceChange = priceChange;
 })(jQuery);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -35572,6 +35646,22 @@ module.exports = function spread(callback) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */
+/***/ (function(module, exports) {
+
+
 
 /***/ })
 /******/ ]);

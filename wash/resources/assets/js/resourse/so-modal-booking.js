@@ -105,13 +105,99 @@
 
     }
     
-
+    /*
     $(document).ready(function(){
         createDatePicker();
         createTimePicker();
     });
+    */
+
+    $('.booking-steps__card-item_body-type').click(function(){
+        if($(this).hasClass('booking-steps__card-item_selected')){
+            soBookingForm.changePage(5,'bodytype');
+        } else {
+            $('.booking-steps__card-item_body-type').removeClass('booking-steps__card-item_selected');
+            $(this).addClass('booking-steps__card-item_selected');
+        }
+
+        
+
+    });
+
+    function changePage(page,required){
+        
+        if(required && required=='bodytype'){
+            let checkSelection = 0;
+
+            $('.booking-steps__card-item_body-type').each(function(){
+                if($(this).hasClass('booking-steps__card-item_selected')){
+                    checkSelection += 1;
+                }
+            });
+
+            console.log(checkSelection);
+
+            if(checkSelection==0){
+             return false;
+            }
+    
+        }
+
+        
+
+        $('.booking-steps__item').hide();
+        $('#booking-steps__item-'+page).show();
+    };
+
+    $('.booking-steps__list-item').click(function(){
+        let priceInner = $('.booking-steps__list-lable-total-data');
+
+        if($(this).attr('oneandonly')){
+            let attr = $(this).attr('oneandonly');
+            $('.'+attr).removeClass('booking-steps__list-item_selected');
+            $('.'+attr).find('.booking-steps__list-item-checkbox').removeClass('booking-steps__list-item-checkbox_selected');
+        
+            $(this).addClass('booking-steps__list-item_selected');
+            $(this).find('.booking-steps__list-item-checkbox').addClass('booking-steps__list-item-checkbox_selected');
+        } else {
+            $(this).addClass('booking-steps__list-item_selected');
+            $(this).find('.booking-steps__list-item-checkbox').addClass('booking-steps__list-item-checkbox_selected');
+        }
+
+        let steamcount = 0;
+        let price = 0;
+
+        $('.booking-steps__list-item_steam').each(function(){
+            if($(this).hasClass('booking-steps__list-item_selected')){
+                steamcount += 1;
+            }
+            
+        });
+
+        if(steamcount<2){
+            $('.booking-steps__list-item_selected').each(function(){
+                price += Number($(this).attr('value'));
+            });
+
+            priceInner.empty().append(price);
+        } else {
+            priceInner.empty().append('70 AED - Discount 15');
+        }
+
+        
+
+        
+
+        
+    });
+
+
+
+
+
 
     window.soBookingForm = {};
+    window.soBookingForm.changePage = changePage;
     window.soBookingForm.priceChange = priceChange;
 
 

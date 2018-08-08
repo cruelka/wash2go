@@ -14,9 +14,9 @@
 <body>
 
   <div id="so-content">
-  <div class="header so-header">
+  <div class="header so-header so-header_scrolled">
     <div class="header__block">
-      <img src="{{ asset('images/logo_white.svg') }}" alt="Logo" class="header__logo so-header__logo">
+      <img src="{{ asset('images/logo.svg') }}" alt="Logo" class="header__logo so-header__logo">
     </div>
     <div class="header__block header__fullscreen-only" style="flex-grow: 2;">
         <div class="header__nav header__nav_wrapped" onclick="soModal.open('.navigation-modal')">
@@ -39,8 +39,11 @@
         <a href="/login" class="header__nav header__fullscreen-only">
             Sign In
         </a>
+        <div onclick="soModal.open('.so-modal__booking-form');soBookingForm.changePage(1)"  class="header__nav header__fullscreen-only  header__nav_wrapped">
+            Book now
+        </div>
 
-          <div class="header__mobile-only header__burger so-header__burger"  onclick="soModal.open('.navigation-modal')">
+          <div class="header__mobile-only header__burger so-header__burger so-header__burger_scrolled"  onclick="soModal.open('.navigation-modal')">
             <span></span><span></span><span></span>
           </div>
           <img class="header__button-icon so-header__bag" src="{{ asset('images/icons/bag.svg')}}">
@@ -52,109 +55,145 @@
 
 <div style="position: relative;">
   <div class="welcome-fullscreen-owl so-header__offset">
+
     <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/1.jpg')}})">
       <div class="container welcome-fullscreen__inner">
+        <div class="welcome-fullscreen__data">
+          <div class="welcome-fullscreen__body">
+                Brilliant results without a drop of water
+              </div>
+              <div class="welcome-fullscreen__heading-special">
+              Waterless Car Care
+              </div>
+          </div>
       </div>
     </div>
     
-    <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/desc.jpg')}})">
+    <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/1.jpg')}})">
       <div class="container welcome-fullscreen__inner">
+        <div class="welcome-fullscreen__data" style="margin: auto;">
+          <div class="welcome-fullscreen__body">
+                Brilliant results without a drop of water
+              </div>
+              <div class="welcome-fullscreen__heading-special">
+              Waterless Car Care
+              </div>
+          </div>
       </div>
     </div>
-    <div class="welcome-fullscreen" style="background-image: url({{asset('images/jpg/2.jpg')}})">
+
+    <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/1.jpg')}})">
       <div class="container welcome-fullscreen__inner">
+        <div class="welcome-fullscreen__data">
+          <div class="welcome-fullscreen__body">
+                Brilliant results without a drop of water
+              </div>
+              <div class="welcome-fullscreen__heading-special">
+              Waterless Car Care
+              </div>
+          </div>
       </div>
     </div>
     
   </div>
-
-  <div class="welcome-fullscreen welcome-fullscreen__static">
-      <div class="container welcome-fullscreen__inner">
-          <div class="welcome-fullscreen__data">
-              <div class="welcome-fullscreen__body">
-                Brilliant results without a drop of water
-              </div>
-              <div class="welcome-fullscreen__heading">Waterless</div>
-              <div class="welcome-fullscreen__heading-big">Car Care</div>
+<!--
+  <div class="booking-form__wrapper">
     
-              <div class="booking-form">
+  <div class="booking-form" >
                   
-                <div class="booking-form__item">
-                  <div class="booking-form__item-lable">
-                    Location
-                  </div>
-                  <select class="form-control" class="booking-form__select">
-                    <option value="Jumeirah">Jumeirah</option>
-                    <option value="JLT">JLT</option>
-                    <option value="Muheisnah">Muheisnah</option>
-                    <option value="...">...</option>
-                  </select>
-                </div>
-                <div class="booking-form__item">
-                  <div class="booking-form__item-lable">
-                    Car type
-                  </div>
-                  <select class="form-control" class="booking-form__select">
-                    <option value="Jumeirah">Sedan</option>
-                    <option value="JLT">SUV</option>
-                    <option value="Muheisnah">Convertible</option>
-                  </select>
-                </div>
-                <div class="booking-form__item">
+                  <div class="booking-form__item">
                     <div class="booking-form__item-lable">
-                      Washing type
+                      Location
                     </div>
-                    <select onchange="soBookingForm.priceChange(this)" id="booking-form__washing-type" class="form-control" class="booking-form__select">
-                      <option value="0">Select Washing</option>
-                      <option value="25">Extertal Wash / 25 AED</option>
-                      <option value="25">Internal Wash / 25 AED</option>
-                      <option value="50">Full Wash / 50 AED</option>
-                      <option value="50">Steam Internal Wash / 50 AED</option>
-                      <option value="35">Steam External Wash / 35 AED</option>
-                      <option value="70">Steam Full Wash / 70 AED</option>
-                      
+                    <select class="form-control" class="booking-form__select">
+                      <option value="Jumeirah">Jumeirah</option>
+                      <option value="JLT">JLT</option>
+                      <option value="Muheisnah">Muheisnah</option>
+                      <option value="...">...</option>
                     </select>
                   </div>
-                <div class="booking-form__item">
-                  <div class="booking-form__item-lable">
-                    Day
-                  </div>
-                  <select id="booking-form__day" class="form-control" class="booking-form__select">
-                    <option value="00:00">Select day</option>
-                  </select>
-                </div>
-                <div class="booking-form__item">
-                  <div class="booking-form__item-lable">
-                    Time
-                  </div>
-                  <select id="booking-form__time" class="form-control" class="booking-form__select">
-                      <option value="00:00">Select time</option>
-                  </select>
-                </div>
-                <div class="booking-form__item">
+                  <div class="booking-form__item">
                     <div class="booking-form__item-lable">
-                      Price
+                      Car type
                     </div>
-                    <div id="booking-form__item-total" class="booking-form__item-total">0</div>
+                    <select class="form-control" class="booking-form__select">
+                      <option value="Jumeirah">Sedan</option>
+                      <option value="JLT">SUV</option>
+                      <option value="Muheisnah">Convertible</option>
+                    </select>
                   </div>
-                <div class="booking-form__b">
-                    <div class="booking-form__b-inner" onclick="soModal.open('.so-modal__booking-form')">
-                      Book
+                  <div class="booking-form__item">
+                      <div class="booking-form__item-lable">
+                        Washing type
+                      </div>
+                  
+                      <select onchange="soBookingForm.priceChange(this)" id="booking-form__washing-type" class="form-control booking-form__select">
+                        <option value="0">Select Washing</option>
+                        <option value="25">Extertal Wash / 25 AED</option>
+                        <option value="25">Internal Wash / 25 AED</option>
+                        <option value="50">Full Wash / 50 AED</option>
+                        <option value="50">Steam Internal Wash / 50 AED</option>
+                        <option value="35">Steam External Wash / 35 AED</option>
+                        <option value="70">Steam Full Wash / 70 AED</option>
+                      </select>
+                 
+                      <div class="booking-form__select form-control">Select washing</div>
                     </div>
+                    <div class="booking-form__item">
+                      <div class="booking-form__item-lable">
+                        Choose date
+                      </div>
+                 
+                      <select onchange="soBookingForm.priceChange(this)" id="booking-form__washing-type" class="form-control booking-form__select">
+                        <option value="0">Select Washing</option>
+                        <option value="25">Extertal Wash / 25 AED</option>
+                        <option value="25">Internal Wash / 25 AED</option>
+                        <option value="50">Full Wash / 50 AED</option>
+                        <option value="50">Steam Internal Wash / 50 AED</option>
+                        <option value="35">Steam External Wash / 35 AED</option>
+                        <option value="70">Steam Full Wash / 70 AED</option>
+                      </select>
+                     
+                      <div class="booking-form__select form-control">Select washing</div>
+                    </div>
+               
+                  <div class="booking-form__item">
+                    <div class="booking-form__item-lable">
+                      Day
+                    </div>
+                    <select id="booking-form__day" class="form-control" class="booking-form__select">
+                      <option value="00:00">Select day</option>
+                    </select>
+                  </div>
+                  <div class="booking-form__item">
+                    <div class="booking-form__item-lable">
+                      Time
+                    </div>
+                    <select id="booking-form__time" class="form-control" class="booking-form__select">
+                        <option value="00:00">Select time</option>
+                    </select>
+                  </div>
+               
+                  <div class="booking-form__item">
+                      <div class="booking-form__item-lable">
+                        Price
+                      </div>
+                      <div id="booking-form__item-total" class="booking-form__item-total">0</div>
+                    </div>
+                  <div class="booking-form__b">
+                      <div class="booking-form__b-inner" onclick="soModal.open('.so-modal__booking-form')">
+                        Book
+                      </div>
+                  </div>
                 </div>
+                
               </div>
-              
-            </div>
-        
-        
-      </div>
-    </div>
-    
 
+           
 
-</div>
-
-
+     
+  </div>
+   -->
 <div class="container">
 
   <div class="adventages sector">
@@ -624,6 +663,8 @@
   <div id="so-modal__shadow" onclick="soModal.close()"></div>
 </div>
 
+</div>
+
 
 
 <div id="so-modal">
@@ -633,8 +674,297 @@
           <img onclick="soModal.close()" class="so-modal__close" src="{{asset('images/icons/cross_black.svg')}}" alt="cross">
         </div>
         <div class="so-modal__item so-modal__booking-form form">
-          <div class="so-modal__inner">
-              <form>
+          <div class="so-modal__booking-form__heading">
+           <img src="{{asset('images/logo.svg')}}"  class="so-modal__booking-form__logo" alt="Logo">
+           <div class="so-modal__booking-form__lable">Booking Form</div>
+          </div>
+          
+          <div class="booking-steps">
+              <div class="booking-steps__status"></div>
+              
+              <div class="booking-steps__item booking-steps__item_active" id="booking-steps__item-1">
+                <div class="booking-steps__heading">Choose Location</div>
+                <div class="booking-steps__body">
+                  <div class="row">
+                    
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                      <div  onclick="soBookingForm.changePage(3)" class="booking-steps__card-item">
+                        <img src="{{asset('images/icons/home.svg')}}" alt="Home" class="booking-steps__card-item-img">
+                        At home
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                      <div onclick="soBookingForm.changePage(2)" class="booking-steps__card-item">
+                        <img src="{{asset('images/icons/location.svg')}}" alt="Home"  class="booking-steps__card-item-img">
+                        Visit us
+                      </div>
+                    </div>
+                  </div>
+                  
+                 
+                </div>
+              </div>
+
+              <div class="booking-steps__item" id="booking-steps__item-2">
+                <div class="booking-steps__navigation">
+                  <div class="button" onclick="soBookingForm.changePage(1)">
+                    <div class="button__body">
+                      Back
+                    </div>
+                  </div>
+                  <div class="button button_right" onclick="soBookingForm.changePage(4)">
+                    <div class="button__body">
+                      Continue
+                    </div>
+                  </div>
+                </div>
+
+                <div class="booking-steps__heading">We are here</div>
+                <div class="booking-steps__body">
+                  
+                  <div id="map" style="height: 400px"></div>
+                 
+                </div>
+              </div>
+              
+
+              <div class="booking-steps__item" id="booking-steps__item-3">
+                <div class="booking-steps__navigation">
+                  <div class="button" onclick="soBookingForm.changePage(1)">
+                    <div class="button__body">
+                      Back
+                    </div>
+                  </div>
+                  <div class="button button_right" onclick="soBookingForm.changePage(4)">
+                    <div class="button__body">
+                      Continue
+                    </div>
+                  </div>
+                </div>
+
+                <div class="booking-steps__heading">We are here</div>
+                <div class="booking-steps__body">
+                  
+                  <div id="map2" style="height: 400px"></div>
+                 
+                </div>
+              </div>
+
+              <div class="booking-steps__item" id="booking-steps__item-4">
+              <div class="booking-steps__navigation">
+                  <div class="button" onclick="soBookingForm.changePage(2)">
+                    <div class="button__body">
+                      Back
+                    </div>
+                  </div>
+                  <div class="button button_right" onclick="soBookingForm.changePage(5,'bodytype')">
+                    <div class="button__body">
+                      Continue
+                    </div>
+                  </div>
+                </div>
+
+                <div class="booking-steps__heading">Select Car type</div>
+
+                
+
+                <div class="row">
+                    
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                      <div class="booking-steps__card-item booking-steps__card-item_body-type">
+                        <img src="{{asset('images/icons/bodytype/micro.svg')}}" alt="Micro" class="booking-steps__card-item-img">
+                        Micro
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                      <div class="booking-steps__card-item booking-steps__card-item_body-type">
+                        <img src="{{asset('images/icons/bodytype/sedan.svg')}}" alt="Sedan" class="booking-steps__card-item-img">
+                        Sedan
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                      <div class="booking-steps__card-item booking-steps__card-item_body-type">
+                        <img src="{{asset('images/icons/bodytype/cuv.svg')}}" alt="CUV" class="booking-steps__card-item-img">
+                        CUV
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                      <div class="booking-steps__card-item booking-steps__card-item_body-type">
+                        <img src="{{asset('images/icons/bodytype/suv.svg')}}" alt="Suv" class="booking-steps__card-item-img">
+                        SUV
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                      <div class="booking-steps__card-item booking-steps__card-item_body-type">
+                        <img src="{{asset('images/icons/bodytype/hatchback.svg')}}" alt="Hatchback" class="booking-steps__card-item-img">
+                        Hatchback
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                      <div class="booking-steps__card-item booking-steps__card-item_body-type">
+                        <img src="{{asset('images/icons/bodytype/roadster.svg')}}" alt="Roadster" class="booking-steps__card-item-img">
+                        Roadster
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                      <div class="booking-steps__card-item booking-steps__card-item_body-type">
+                        <img src="{{asset('images/icons/bodytype/pickup.svg')}}" alt="Pickup" class="booking-steps__card-item-img">
+                        Pickup
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                      <div class="booking-steps__card-item booking-steps__card-item_body-type">
+                        <img src="{{asset('images/icons/bodytype/van.svg')}}" alt="Van" class="booking-steps__card-item-img">
+                        Van
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                      <div class="booking-steps__card-item booking-steps__card-item_body-type">
+                        <img src="{{asset('images/icons/bodytype/coupe.svg')}}" alt="Coupe" class="booking-steps__card-item-img">
+                        Coupe
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                      <div class="booking-steps__card-item booking-steps__card-item_body-type">
+                        <img src="{{asset('images/icons/bodytype/supercar.svg')}}" alt="Supercar" class="booking-steps__card-item-img">
+                        Supercar
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                      <div class="booking-steps__card-item booking-steps__card-item_body-type">
+                        <img src="{{asset('images/icons/bodytype/cabriolet.svg')}}" alt="Cabriolet" class="booking-steps__card-item-img">
+                        Cabriolet
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+                      <div class="booking-steps__card-item booking-steps__card-item_body-type">
+                        <img src="{{asset('images/icons/bodytype/minivan.svg')}}" alt="Minivan" class="booking-steps__card-item-img">
+                        Minivan
+                      </div>
+                    </div>
+
+                  </div>
+
+              </div>
+
+              <div class="booking-steps__item" id="booking-steps__item-5">
+                <div class="booking-steps__navigation">
+                  <div class="button" onclick="soBookingForm.changePage(4)">
+                    <div class="button__body">
+                      Back
+                    </div>
+                  </div>
+                  <div class="button button_right" onclick="soBookingForm.changePage(6)">
+                    <div class="button__body">
+                      Continue
+                    </div>
+                  </div>
+                </div>
+
+                <div class="booking-steps__heading">Select washing type</div>
+                <div class="booking-steps__body">
+                  <div class="booking-steps__list">
+                    <div class="booking-steps__list-lable">
+                      Internal
+                    </div>
+                    <div class="booking-steps__list-item booking-steps__list-item_internal" value="25" oneandonly="booking-steps__list-item_internal">
+                      <span class="booking-steps__list-item-checkbox">
+                        <span class="booking-steps__list-item-checkbox-i"></span>
+                      </span>
+                      <span class="booking-steps__list-item-name">
+                        Internal Washing
+                      </span>
+                      <span class="booking-steps__list-item-price">
+                        25 AED
+                      </span>
+                    </div>
+                    <div class="booking-steps__list-item booking-steps__list-item_internal booking-steps__list-item_steam" value="50" oneandonly="booking-steps__list-item_internal">
+                      <span class="booking-steps__list-item-checkbox">
+                        <span class="booking-steps__list-item-checkbox-i"></span>
+                      </span>
+                      <span class="booking-steps__list-item-name">
+                        Internal Steam Washing
+                      </span>
+                      <span class="booking-steps__list-item-price">
+                        50 AED
+                      </span>
+                    </div>
+
+                    <div class="booking-steps__list-lable">
+                      External
+                    </div>
+                    <div class="booking-steps__list-item booking-steps__list-item_external" value="25" oneandonly="booking-steps__list-item_external">
+                      <span class="booking-steps__list-item-checkbox">
+                        <span class="booking-steps__list-item-checkbox-i"></span>
+                      </span>
+                      <span class="booking-steps__list-item-name">
+                        External Washing
+                      </span>
+                      <span class="booking-steps__list-item-price">
+                        25 AED
+                      </span>
+                    </div>
+                    <div class="booking-steps__list-item booking-steps__list-item_external  booking-steps__list-item_steam" value="35" oneandonly="booking-steps__list-item_external">
+                      <span class="booking-steps__list-item-checkbox">
+                        <span class="booking-steps__list-item-checkbox-i"></span>
+                      </span>
+                      <span class="booking-steps__list-item-name">
+                        External Steam Washing
+                      </span>
+                      <span class="booking-steps__list-item-price">
+                        35 AED
+                      </span>
+                    </div>
+                    <div class="booking-steps__list-lable">
+                      Total:
+                    </div>
+                    <div class="booking-steps__list-lable-total">
+                      <span class="booking-steps__list-lable-total-data">0</span> AED
+                    </div>
+                  </div>
+           
+                 
+                </div>
+              </div>
+
+              
+              <div class="booking-steps__item" id="booking-steps__item-6">
+                <div class="booking-steps__navigation">
+                  <div class="button" onclick="soBookingForm.changePage(5)">
+                    <div class="button__body">
+                      Back
+                    </div>
+                  </div>
+                  <div class="button button_right" onclick="soBookingForm.changePage(7)">
+                    <div class="button__body">
+                      Continue
+                    </div>
+                  </div>
+                </div>
+
+                <div class="booking-steps__heading">Select Time</div>
+                <div class="booking-steps__body">
+
+                </div>
+
+                </div>
+              </div>
+
+              <div class="booking-steps__item" id="booking-steps__item-4">
+
+                 <form>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -646,7 +976,12 @@
                   </div>
               </form>
               <div class="btn btn-success">Send Enquiry</div>
+
+              </div>
+
+
           </div>
+          
         </div>
           <div class="so-modal__item navigation-modal">
             <div class="navigation-modal__item navigation-modal__item_top navigation-modal__mobile-only">
@@ -712,11 +1047,9 @@
       margin:0,
       nav:false,
       autoplay:false,
-    autoplayTimeout:5000,
-      animateIn: 'fadeIn',
-      animateOut: 'fadeOut',
+      autoplayTimeout:5000,
       smartSpeed:450,
-    responsive:{
+      responsive:{
         0:{
             items:1
         },
@@ -729,5 +1062,32 @@
     });
     
   </script>
+     <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
+    
+
+<script type="text/javascript">
+   ymaps.ready(init);
+   ymaps.ready(inittwo);
+    var myMap;
+
+    function init(){     
+        myMap = new ymaps.Map("map", {
+            center: [25.195504, 55.275576],
+            zoom: 7
+        });
+    }
+
+    function inittwo(){     
+        myMap = new ymaps.Map("map2", {
+            center: [25.195504, 55.275576],
+            zoom: 7
+        });
+    }
+
+
+    
+</script>
+
+
 </body>
 </html>

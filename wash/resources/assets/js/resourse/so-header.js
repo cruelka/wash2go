@@ -1,3 +1,4 @@
+/*
 (function( $ ){
     let header = $('.so-header');
     let offset = $('.so-header__offset');
@@ -61,4 +62,4 @@
 
     */
 
-})( jQuery );
+//})( jQuery );

@@ -5,6 +5,7 @@
     flex-direction: row;
     margin-bottom: 40px;
     margin-top: 20px;
+    box-shadow: 0px 1px 1px #e8e8e8;
 
     @media screen and (max-width:$lg) { 
       
@@ -12,6 +13,7 @@
 
     @media screen and (max-width:$md) { 
         flex-direction: column;
+        box-shadow: none;
     }
 
     @media screen and (max-width:$sm) { 
@@ -65,3 +67,147 @@
     font-weight: bold;
     padding-top: 6px;
 }
+
+.booking-form__wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: -73px;
+    position: relative;
+    border: 1px;
+
+    @media screen and (max-width:$lg) { 
+      
+    }
+
+    @media screen and (max-width:$md) { 
+        margin-top: 0;
+    }
+
+    @media screen and (max-width:$sm) { 
+
+    }
+}
+
+.booking-form__select {
+    white-space: nowrap;
+}
+
+.booking-steps__heading {
+    font-size: 2em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.booking-steps__card-item {
+    text-align: center;
+    border: 1px solid #ccd0d2;
+    padding: 40px 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.booking-steps__card-item:hover {
+    box-shadow: 0 1px 3px #c4c4c4;
+}
+
+.booking-steps__card-item_selected {
+    border: 1px solid #51b846;
+}
+
+.booking-steps__item {
+    display: none;
+}
+
+.booking-steps__item_active {
+    display: block;
+}
+
+.booking-steps__card-item-img {
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+    max-width: 60px;
+}
+
+.booking-steps__list-item {
+    margin: 10px 0;
+    border: 1px solid #aaaaaa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.booking-steps__list-item-checkbox {
+    display: inline-block;
+    border: 2px solid #aaaaaa;
+    width: 20px;
+    height: 20px;
+    margin-bottom: -5px;
+    border-radius: 5px;
+    margin-right: 10px;
+
+    .booking-steps__list-item-checkbox-i {
+        width: 8px;
+        height: 8px;
+        margin-top: 4px;
+        border-radius: 100%;
+        margin-left: 4px;
+        background: #52b947;
+        display: none;
+    }
+}
+
+.booking-steps__list-item-checkbox:hover {
+    border-color: #52B947;
+}
+
+.booking-steps__list-item-checkbox_selected {
+    border-color: #52B947;
+
+    .booking-steps__list-item-checkbox-i {
+        display: block;
+    }
+}
+
+.so-modal__booking-form  {
+    border: 1px solid #ccd0d2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.so-modal__booking-form__logo {
+    height: 30px;
+    margin-right: 20px;
+}
+
+.so-modal__booking-form__lable {
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.so-modal__booking-form__heading {
+    margin: -20px -20px 20px;
+    padding: 20px;
+    border-bottom: 1px solid #ccd0d2;
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width:$lg) { 
+      
+    }
+
+    @media screen and (max-width:$md) { 
+        flex-direction: column;
+        .so-modal__booking-form__logo {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (max-width:$sm) { 
+
+    }
+}
+

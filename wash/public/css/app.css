@@ -8430,6 +8430,10 @@ button.close {
   border: 1px solid #E8E8E8;
 }
 
+.button_right {
+  float: right;
+}
+
 .button__body {
   padding: 10px 20px;
   display: inline-block;
@@ -8506,20 +8510,22 @@ button.close {
   background: #0f1319;
   position: relative;
   width: 100%;
+  padding-top: 0 !important;
   color: white;
   background-image: url("");
   background-size: cover !important;
+  background-position: center !important;
 }
 
 @media screen and (max-width: 992px) {
   .welcome-fullscreen .welcome-fullscreen__inner {
-    height: 300px;
+    height: 400px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .welcome-fullscreen .welcome-fullscreen__inner {
-    height: 200px;
+    height: 400px;
   }
 }
 
@@ -8536,15 +8542,21 @@ button.close {
 }
 
 .welcome-fullscreen__body {
-  max-width: 400px;
   border-bottom: 1px solid #ffffff;
   margin-bottom: 20px;
+  background: white;
+  font-size: 1.4em;
+  width: 100%;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  margin: 0;
 }
 
 .welcome-fullscreen__data {
   display: block;
   text-align: center;
-  margin: auto;
+  margin: auto 0;
   padding: 80px 0;
 }
 
@@ -8574,9 +8586,15 @@ button.close {
   position: relative;
 }
 
+.welcome-fullscreen__heading-special {
+  font-size: 3em;
+  background: #23cf5f;
+  padding: 5px 20px;
+}
+
 .welcome-fullscreen__static {
   background: none;
-  position: absolute;
+  position: relative;
   top: 0;
 }
 
@@ -9186,6 +9204,7 @@ button.close {
   z-index: 1002;
   cursor: pointer;
   display: none;
+  background: white;
 }
 
 .so-modal__close {
@@ -9201,6 +9220,7 @@ button.close {
   -webkit-transition: margin-left 0.1s;
   transition: margin-left 0.1s;
   margin-left: 0;
+  padding-top: 83px;
 }
 
 .so-content_windows-open {
@@ -9252,6 +9272,8 @@ button.close {
           flex-direction: row;
   margin-bottom: 40px;
   margin-top: 20px;
+  -webkit-box-shadow: 0px 1px 1px #e8e8e8;
+          box-shadow: 0px 1px 1px #e8e8e8;
 }
 
 @media screen and (max-width: 992px) {
@@ -9260,6 +9282,8 @@ button.close {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -9313,6 +9337,146 @@ button.close {
   font-size: 1.4em;
   font-weight: bold;
   padding-top: 6px;
+}
+
+.booking-form__wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: -73px;
+  position: relative;
+  border: 1px;
+}
+
+@media screen and (max-width: 992px) {
+  .booking-form__wrapper {
+    margin-top: 0;
+  }
+}
+
+.booking-form__select {
+  white-space: nowrap;
+}
+
+.booking-steps__heading {
+  font-size: 2em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.booking-steps__card-item {
+  text-align: center;
+  border: 1px solid #ccd0d2;
+  padding: 40px 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.booking-steps__card-item:hover {
+  -webkit-box-shadow: 0 1px 3px #c4c4c4;
+          box-shadow: 0 1px 3px #c4c4c4;
+}
+
+.booking-steps__card-item_selected {
+  border: 1px solid #51b846;
+}
+
+.booking-steps__item {
+  display: none;
+}
+
+.booking-steps__item_active {
+  display: block;
+}
+
+.booking-steps__card-item-img {
+  height: 30px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+  max-width: 60px;
+}
+
+.booking-steps__list-item {
+  margin: 10px 0;
+  border: 1px solid #aaaaaa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.booking-steps__list-item-checkbox {
+  display: inline-block;
+  border: 2px solid #aaaaaa;
+  width: 20px;
+  height: 20px;
+  margin-bottom: -5px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.booking-steps__list-item-checkbox .booking-steps__list-item-checkbox-i {
+  width: 8px;
+  height: 8px;
+  margin-top: 4px;
+  border-radius: 100%;
+  margin-left: 4px;
+  background: #52b947;
+  display: none;
+}
+
+.booking-steps__list-item-checkbox:hover {
+  border-color: #52B947;
+}
+
+.booking-steps__list-item-checkbox_selected {
+  border-color: #52B947;
+}
+
+.booking-steps__list-item-checkbox_selected .booking-steps__list-item-checkbox-i {
+  display: block;
+}
+
+.so-modal__booking-form {
+  border: 1px solid #ccd0d2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.so-modal__booking-form__logo {
+  height: 30px;
+  margin-right: 20px;
+}
+
+.so-modal__booking-form__lable {
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.so-modal__booking-form__heading {
+  margin: -20px -20px 20px;
+  padding: 20px;
+  border-bottom: 1px solid #ccd0d2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 992px) {
+  .so-modal__booking-form__heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .so-modal__booking-form__heading .so-modal__booking-form__logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .review {
@@ -9388,7 +9552,7 @@ button.close {
 
 .owl-dots {
   position: absolute;
-  bottom: 7px;
+  bottom: 70px;
   width: 100%;
   text-align: center;
   z-index: 1000;
@@ -12993,11 +13157,6 @@ a:hover {
 
 body {
   font-family: Futura Md BT;
-}
-
-.welcome-fullscreen-owl {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
 }
 
 .welcome-fullscreen__static {
