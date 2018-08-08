@@ -152,16 +152,34 @@
     $('.booking-steps__list-item').click(function(){
         let priceInner = $('.booking-steps__list-lable-total-data');
 
+        
+
         if($(this).attr('oneandonly')){
+
+            let status = 0;
+
+         
+            if($(this).hasClass('booking-steps__list-item_selected')){
+                status = 1;
+                
+            }
+
             let attr = $(this).attr('oneandonly');
             $('.'+attr).removeClass('booking-steps__list-item_selected');
             $('.'+attr).find('.booking-steps__list-item-checkbox').removeClass('booking-steps__list-item-checkbox_selected');
-        
-            $(this).addClass('booking-steps__list-item_selected');
-            $(this).find('.booking-steps__list-item-checkbox').addClass('booking-steps__list-item-checkbox_selected');
+            
+            console.log(status);
+            if(status==0){
+                $(this).addClass('booking-steps__list-item_selected');
+                $(this).find('.booking-steps__list-item-checkbox').addClass('booking-steps__list-item-checkbox_selected');
+            } else {
+                $(this).removeClass('booking-steps__list-item_selected');
+                $(this).find('.booking-steps__list-item-checkbox').removeClass('booking-steps__list-item-checkbox_selected');
+            }
+            
         } else {
-            $(this).addClass('booking-steps__list-item_selected');
-            $(this).find('.booking-steps__list-item-checkbox').addClass('booking-steps__list-item-checkbox_selected');
+            //$(this).addClass('booking-steps__list-item_selected');
+            //$(this).find('.booking-steps__list-item-checkbox').addClass('booking-steps__list-item-checkbox_selected');
         }
 
         let steamcount = 0;

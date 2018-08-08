@@ -969,8 +969,16 @@
                 </div>
               </div>
 
-              <div class="booking-steps__item" id="booking-steps__item-4">
+              <div class="booking-steps__item" id="booking-steps__item-7">
+                <div class="booking-steps__navigation">
+                    <div class="button" onclick="soBookingForm.changePage(6)">
+                      <div class="button__body">
+                        Back
+                      </div>
+                    </div>
+                  </div>
 
+                <div class="booking-steps__heading">Your Contact information</div>
                  <form>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
