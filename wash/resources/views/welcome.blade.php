@@ -1107,7 +1107,7 @@
   $(document).ready(function(){
     $(function () {
                 $('#datetimepicker2').datetimepicker({
-                    locale: 'ru'
+                    locale: 'en'
                 });
             });
   });
