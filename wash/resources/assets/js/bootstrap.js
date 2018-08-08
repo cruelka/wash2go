@@ -17,6 +17,9 @@ try {
 } catch (e) {}
 
 require('owl.carousel');
+require('bootstrap/dist/js/bootstrap.bundle.min.js');
+require('eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js');
+
 
 require('./resourse/so-header');
 require('./resourse/so-modal');

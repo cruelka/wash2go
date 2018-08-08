@@ -956,7 +956,14 @@
 
                 <div class="booking-steps__heading">Select Time</div>
                 <div class="booking-steps__body">
-
+                  <div class="form-group">
+                    <div class='input-group date' id='datetimepicker2'>
+                        <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                  </div>
                 </div>
 
                 </div>
@@ -1087,6 +1094,17 @@
 
     
 </script>
+
+ <script type="text/javascript">
+  $(document).ready(function(){
+    $(function () {
+                $('#datetimepicker2').datetimepicker({
+                    locale: 'ru'
+                });
+            });
+  });
+            
+        </script>
 
 
 </body>
