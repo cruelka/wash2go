@@ -31,3 +31,16 @@ Route::get('blog', function () {
     $posts = App\Post::all();
     return view('posts', compact('posts'));
 });
+
+Route::get('page', function () {
+    return view('page');
+});
+
+
+Route::get('product', function () {
+    return view('product');
+});
+
+Route::get('categories', function () {
+    return view('categories');
+});

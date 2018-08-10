@@ -25,9 +25,9 @@
           <div class="header__nav">
               News
           </div>
-          <div class="header__nav">
+          <a href="/page" class="header__nav">
               About
-          </div>
+          </a>
           <div class="header__nav">
               Contacts
           </div>
@@ -416,7 +416,7 @@
   <div class="row mt-5">
       <div class="col-lg-3 col-md-3">
           <div class="product-card product-card_square">
-                <div class="product-card__img" style="">
+                <a href="/product" class="product-card__img" style="">
                   <div class="product-card__add-to-card-b">
                     <div class="button button_red">
                       <span class="button__icon">
@@ -432,11 +432,11 @@
                         New
                     </div>
                   </div>
-                </div>
+                </a>
                 <div class="product-card__body">
-                  <div class="product-card__title">
+                  <a href="/product" class="product-card__title">
                     WINDOW CLEAR
-                  </div>
+                  </a>
                   <div class="product-card__price">
                     18 AED
                   </div>
@@ -659,7 +659,7 @@
       
     </div>
   </div>
-
+  <div style="display: none;">Book Now</div>
   <div id="so-modal__shadow" onclick="soModal.close()"></div>
 </div>
 
@@ -999,34 +999,28 @@
           
         </div>
           <div class="so-modal__item navigation-modal">
-            <div class="navigation-modal__item navigation-modal__item_top navigation-modal__mobile-only">
+            <a href="/login" class="navigation-modal__item navigation-modal__item_top navigation-modal__mobile-only">
               Log In
-            </div>
-            <div class="navigation-modal__item navigation-modal__item_top navigation-modal__mobile-only">
-              Sign Up
-            </div>
-            <div class="navigation-modal__item navigation-modal__item_top">
-              Home
-            </div>
-            <div class="navigation-modal__item navigation-modal__item_top">
+            </a>
+            <a href="/categories" class="navigation-modal__item navigation-modal__item_top">
               Products
-            </div>
+            </a>
   
             <div class="navigation-modal__sub">
                 <div class="navigation-modal__item">
-                  Interior
+                <img src="{{asset('images/icons/categories/1.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Interior
                 </div>
 
                 <div class="navigation-modal__item">
-                  Exterior
+                <img src="{{asset('images/icons/categories/2.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Exterior
                 </div>
 
                 <div class="navigation-modal__item">
-                  Accessories
+                  <img src="{{asset('images/icons/categories/3.svg')}}" alt="Accessories" class="navigation-modal__item-i">  Accessories
                 </div>
 
                 <div class="navigation-modal__item">
-                  Combo Pack
+                <img src="{{asset('images/icons/categories/4.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Combo Pack
                 </div>
                 
               </div>

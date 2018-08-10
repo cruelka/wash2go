@@ -324,8 +324,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.eot?f4769f9bdb7466be65088239c12046d1);
-  src: url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.eot?f4769f9bdb7466be65088239c12046d1?#iefix) format("embedded-opentype"), url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.woff2?448c34a56d699c29117adc64c43affeb) format("woff2"), url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.woff?fa2772327f55d8198301fdb8bcfc8158) format("woff"), url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.ttf?e18bbf611f2a2e43afc071aa2f4e1512) format("truetype"), url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.svg?89889688147bd7575d6327160d64e760#glyphicons_halflingsregular) format("svg");
+  src: url(../fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.eot?f4769f9bdb7466be65088239c12046d1);
+  src: url(../fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.eot?f4769f9bdb7466be65088239c12046d1?#iefix) format("embedded-opentype"), url(../fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.woff2?448c34a56d699c29117adc64c43affeb) format("woff2"), url(../fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.woff?fa2772327f55d8198301fdb8bcfc8158) format("woff"), url(../fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.ttf?e18bbf611f2a2e43afc071aa2f4e1512) format("truetype"), url(../fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.svg?89889688147bd7575d6327160d64e760#glyphicons_halflingsregular) format("svg");
 }
 
 .glyphicon {
@@ -8380,6 +8380,7 @@ button.close {
   width: 100%;
   padding-top: 66.66666%;
   margin-bottom: 10px;
+  display: block;
   background-size: cover !important;
   position: relative;
   background-color: #f4f4f4;
@@ -8851,6 +8852,7 @@ button.close {
 
 .product__list-item_arrow::before {
   content: '';
+  background-image: url(../fonts/arrow-right_red.svg?65e9553967605890f61eb1e6a3534917);
   width: 10px;
   height: 10px;
   display: inline-block;
@@ -8861,6 +8863,7 @@ button.close {
 
 .product__list-item_star::before {
   content: '';
+  background-image: url(../fonts/star_black.svg?30556b4324adbe3a4b29f3c4b8474366);
   width: 10px;
   height: 10px;
   margin-right: 7px;
@@ -9197,6 +9200,11 @@ button.close {
   .navigation-modal .navigation-modal__mobile-only {
     display: block;
   }
+}
+
+.navigation-modal__item-i {
+  width: 26px;
+  margin-right: 10px;
 }
 
 .body {
@@ -13082,8 +13090,8 @@ button.close {
 
 @font-face {
   font-family: 'Futura Md BT';
-  src: url(/fonts/FuturaBT-Medium.eot?7cda1d5dc21edcdab324f33f6f9518cb);
-  src: url(/fonts/FuturaBT-Medium.eot?7cda1d5dc21edcdab324f33f6f9518cb?#iefix) format("embedded-opentype"), url(/fonts/FuturaBT-Medium.woff2?b1895fce041e345712fe4d92a468e4ac) format("woff2"), url(/fonts/FuturaBT-Medium.woff?cf65effb3f2c556f76c6d0bc914558ed) format("woff"), url(/fonts/FuturaBT-Medium.ttf?cb8abe2f6b4747086f2e280aa535cd51) format("truetype"), url(/fonts/FuturaBT-Medium.svg?f99a4534772883bb4abfa3ca9d8dadab#FuturaBT-Medium) format("svg");
+  src: url(../fonts/FuturaBT-Medium.eot?7cda1d5dc21edcdab324f33f6f9518cb);
+  src: url(../fonts/FuturaBT-Medium.eot?7cda1d5dc21edcdab324f33f6f9518cb?#iefix) format("embedded-opentype"), url(../fonts/FuturaBT-Medium.woff2?b1895fce041e345712fe4d92a468e4ac) format("woff2"), url(../fonts/FuturaBT-Medium.woff?cf65effb3f2c556f76c6d0bc914558ed) format("woff"), url(../fonts/FuturaBT-Medium.ttf?cb8abe2f6b4747086f2e280aa535cd51) format("truetype"), url(../fonts/FuturaBT-Medium.svg?f99a4534772883bb4abfa3ca9d8dadab#FuturaBT-Medium) format("svg");
   font-weight: 500;
   font-style: normal;
 }
@@ -13179,6 +13187,8 @@ body {
   background: #52B947;
 }
 
-background: #52B947;
+.content__inner {
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
