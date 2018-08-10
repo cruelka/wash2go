@@ -720,11 +720,11 @@
                   </div>
                 </div>
 
-                <div class="booking-steps__heading">We are here</div>
+                <div class="booking-steps__heading">Select your location</div>
                 <div class="booking-steps__body">
                   
-                  <div id="map" style="height: 400px"></div>
-                 
+                  <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+                  <div id="map"></div>
                 </div>
               </div>
               
@@ -866,7 +866,7 @@
                       Back
                     </div>
                   </div>
-                  <div class="button button_right" onclick="soBookingForm.changePage(6)">
+                  <div class="button button_right" onclick="soBookingForm.changePage(6,'washingtype')">
                     <div class="button__body">
                       Continue
                     </div>
@@ -874,6 +874,7 @@
                 </div>
 
                 <div class="booking-steps__heading">Select washing type</div>
+                <div class="booking-steps__errors"></div>
                 <div class="booking-steps__body">
                   <div class="booking-steps__list">
                     <div class="booking-steps__list-lable">
@@ -1071,31 +1072,8 @@
     });
     
   </script>
-     <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
-    
-
-<script type="text/javascript">
-   ymaps.ready(init);
-   ymaps.ready(inittwo);
-    var myMap;
-
-    function init(){     
-        myMap = new ymaps.Map("map", {
-            center: [25.195504, 55.275576],
-            zoom: 7
-        });
-    }
-
-    function inittwo(){     
-        myMap = new ymaps.Map("map2", {
-            center: [25.195504, 55.275576],
-            zoom: 7
-        });
-    }
 
 
-    
-</script>
 
  <script type="text/javascript">
   $(document).ready(function(){
@@ -1107,6 +1085,213 @@
   });
             
         </script>
+
+      
+
+
+     
+    <script>
+      // This example adds a search box to a map, using the Google Place Autocomplete
+      // feature. People can enter geographical searches. The search box will return a
+      // pick list containing a mix of places and predicted search terms.
+
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+      function initAutocomplete() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -33.8688, lng: 151.2195},
+          zoom: 13,
+          mapTypeId: 'roadmap'
+        });
+
+        // Create the search box and link it to the UI element.
+        var input = document.getElementById('pac-input');
+        var searchBox = new google.maps.places.SearchBox(input);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener('bounds_changed', function() {
+          searchBox.setBounds(map.getBounds());
+        });
+
+        var markers = [];
+        // Listen for the event fired when the user selects a prediction and retrieve
+        // more details for that place.
+        searchBox.addListener('places_changed', function() {
+          var places = searchBox.getPlaces();
+
+          if (places.length == 0) {
+            return;
+          }
+
+          
+
+          // Clear out the old markers.
+          markers.forEach(function(marker) {
+            marker.setMap(null);
+          });
+          markers = [];
+
+          // For each place, get the icon, name and location.
+          var bounds = new google.maps.LatLngBounds();
+          places.forEach(function(place) {
+            if (!place.geometry) {
+              console.log("Returned place contains no geometry");
+              return;
+            }
+            var icon = {
+              url: place.icon,
+              size: new google.maps.Size(71, 71),
+              origin: new google.maps.Point(0, 0),
+              anchor: new google.maps.Point(17, 34),
+              scaledSize: new google.maps.Size(25, 25)
+            };
+
+            // Create a marker for each place.
+            markers.push(new google.maps.Marker({
+              map: map,
+              icon: icon,
+              title: place.name,
+              position: place.geometry.location
+            }));
+
+            if (place.geometry.viewport) {
+              // Only geocodes have viewport.
+              bounds.union(place.geometry.viewport);
+            } else {
+              bounds.extend(place.geometry.location);
+            }
+          });
+          map.fitBounds(bounds);
+
+
+          
+        });
+      }
+
+      
+    </script>
+
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+      .pac-container {
+        z-index: 9999;
+      }
+      #map {
+        height: 400px;
+     
+      }
+
+      #pac-input {
+        top: 10px !important;
+        display: block;
+    width: 100%;
+    height: 36px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccd0d2;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #description {
+        /*
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        */
+      }
+
+      #infowindow-content .title {
+        font-weight: bold;
+      }
+
+      #infowindow-content {
+        display: none;
+      }
+
+      #map #infowindow-content {
+        display: inline;
+      }
+
+      .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        /*font-family: Roboto;*/
+      }
+
+      #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+      }
+
+      .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+      }
+
+      .pac-controls label {
+       /*font-family: Roboto;*/
+        font-size: 13px;
+        font-weight: 300;
+      }
+
+      #pac-input {
+        background-color: #fff;
+        /*font-family: Roboto;*/
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 400px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      #title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+      }
+      #target {
+        width: 345px;
+      }
+    </style>
+
+    
+
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnQdVeXsvN-31LxFeKaKf255C5vGB73VQ&libraries=places&callback=initAutocomplete"
+         async defer></script>
 
 
 </body>
