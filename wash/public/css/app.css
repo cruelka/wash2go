@@ -9380,6 +9380,7 @@ button.close {
   border: 1px solid #ccd0d2;
   padding: 40px 10px;
   border-radius: 10px;
+  background: white;
   margin-bottom: 30px;
 }
 
@@ -9488,6 +9489,24 @@ button.close {
   .so-modal__booking-form__heading .so-modal__booking-form__logo {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+}
+
+.booking-form__mobile {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  padding: 80px;
+  top: 0;
+  /* background: white; */
+}
+
+@media screen and (max-width: 992px) {
+  .booking-form__mobile {
+    position: static;
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 

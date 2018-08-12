@@ -71,7 +71,7 @@
     
     <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/3.jpg')}})">
       <div class="container welcome-fullscreen__inner">
-        <div class="welcome-fullscreen__data" style="margin: auto;">
+        <div class="welcome-fullscreen__data" >
           <div class="welcome-fullscreen__body">
                 Eco-Friendly Cleaners
               </div>
@@ -97,7 +97,7 @@
     
   </div>
 
-  <div class="booking-form-__mobile">
+  <div class="booking-form__mobile">
                   <div class="row">
                     
                     <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
