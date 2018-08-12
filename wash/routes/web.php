@@ -31,3 +31,7 @@ Route::get('blog', function () {
     $posts = App\Post::all();
     return view('posts', compact('posts'));
 });
+
+Route::get('content/why-its-good', function() {
+    return view('why-its-good', compact('name'));
+});
