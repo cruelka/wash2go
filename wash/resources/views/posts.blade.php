@@ -14,7 +14,9 @@
                         </div>
                         <div class="col-lg-10">
                             <div class="news__item-inner">
-                                <img class="news__item-img" src="/storage/{{$post->image}}" alt="Image">
+                                <a  href="/post/{{ $post->slug }}">
+                                    <img class="news__item-img" src="/storage/{{$post->image}}" alt="Image">
+                                </a>
 
                                 <div class="news-card__lable">
                                     {{ $post->meta_keywords }}
