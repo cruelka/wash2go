@@ -11,10 +11,10 @@
                 </div>
                 <div class="col-lg-10">
                     <div class="news__item-inner">
-                        <img class="news__item-img" src="{{$data->image}}" alt="Image">
+                        <img class="news__item-img" src="/{{$data->image}}" alt="Image">
 
                         <div class="news-card__title">
-                         {$data->title}}
+                            {{$data->title}}
                         </div>
 
                         <div class="news-item__body">
