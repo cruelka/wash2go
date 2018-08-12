@@ -7,7 +7,7 @@
         <div class="news__item">
             <div class="row">
                 <div class="col-lg-2">
-                    {{$data->created_at}}
+                    {{ \Carbon\Carbon::parse($post->created_at)->format('d/M/y')}}
                 </div>
                 <div class="col-lg-10">
                     <div class="news__item-inner">
