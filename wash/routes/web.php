@@ -35,5 +35,5 @@ Route::get('blog', function () {
 
 Route::get('page/{slug}', function($slug){
     $data = App\Page::where('slug', '=', $slug)->firstOrFail();
-    return view('page', compact('data'));
+    return view('content', compact('data'));
 });
