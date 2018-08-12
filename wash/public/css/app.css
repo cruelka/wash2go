@@ -8618,6 +8618,10 @@ button.close {
     padding-bottom: 0;
     padding-top: 0;
   }
+
+  .welcome-fullscreen__static .welcome-fullscreen__heading-special {
+    font-size: 2em;
+  }
 }
 
 .footer {

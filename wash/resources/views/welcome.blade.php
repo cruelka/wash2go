@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Bootstrap 4 Theme Kit</title>
+  <title>Wash2Go</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -69,28 +69,27 @@
       </div>
     </div>
     
-    <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/1.jpg')}})">
+    <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/3.jpg')}})">
       <div class="container welcome-fullscreen__inner">
         <div class="welcome-fullscreen__data" style="margin: auto;">
           <div class="welcome-fullscreen__body">
-                Brilliant results without a drop of water
+                Eco-Friendly Cleaners
               </div>
               <div class="welcome-fullscreen__heading-special">
-              Waterless Car Care
+              Save for anyone in the family
               </div>
           </div>
       </div>
     </div>
 
-    <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/1.jpg')}})">
+    <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/4.jpg')}})">
       <div class="container welcome-fullscreen__inner">
         <div class="welcome-fullscreen__data">
           <div class="welcome-fullscreen__body">
-                Brilliant results without a drop of water
+                Hign Perfomance
               </div>
               <div class="welcome-fullscreen__heading-special">
-              Waterless Car Care
-              </div>
+              For professionals in the car wash business
           </div>
       </div>
     </div>
