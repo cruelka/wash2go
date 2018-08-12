@@ -1,22 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{{ $post->title }}</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-</head>
-<body>
+@extends('layouts.app')
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+@section('content')
+ <div class=" container">
+    <div class="news container">
+        <div class="news__item">
+            <div class="row">
+                <div class="col-lg-2">
+                    {{$post->created_at}}
+                </div>
+                <div class="col-lg-10">
+                    <div class="news__item-inner">
+                        <img class="news__item-img" src="/storage/{{$post->image}}" alt="Image">
 
-            <h1>{{ $post->title }}</h1>
-            <img src="{{ Voyager::image( $post->image ) }}" style="width:100%">
-            <p>{!! $post->body !!}</p>
+                        <div class="news-card__title">
+                            {{$post->title}}
+                        </div>
 
+                        <div class="news-item__body">
+                            {!! $post->body !!}
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-
-</body>
-</html>
+ </div>
+@endsection
