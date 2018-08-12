@@ -8578,7 +8578,7 @@ button.close {
 }
 
 .welcome-fullscreen__heading-big {
-  font-size: 3em;
+  font-size: 1.4em;
   font-weight: bold;
 }
 
@@ -8617,10 +8617,6 @@ button.close {
   .welcome-fullscreen__static .welcome-fullscreen__data {
     padding-bottom: 0;
     padding-top: 0;
-  }
-
-  .welcome-fullscreen__static .welcome-fullscreen__heading-special {
-    font-size: 2em;
   }
 }
 
