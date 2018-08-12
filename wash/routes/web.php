@@ -29,7 +29,7 @@ Route::get('post/{slug}', function($slug){
     return view('post', compact('post'));
 });
 Route::get('blog', function () {
-    $posts = App\Post::all();
+    $posts = App\Post::all()->simplePaginate(3);
     return view('posts', compact('posts'));
 });
 
