@@ -103,7 +103,7 @@
                     <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
                       <div onclick="soBookingForm.changePage(3);soModal.open('.so-modal__booking-form');" class="booking-steps__card-item">
                         <img src="https://wash2go.ae/images/icons/home.svg" alt="Home" class="booking-steps__card-item-img">
-                        At home
+                        Wash At home
                       </div>
                     </div>
 

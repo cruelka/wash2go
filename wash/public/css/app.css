@@ -9496,7 +9496,8 @@ button.close {
   position: absolute;
   width: 50%;
   right: 0;
-  padding: 80px;
+  padding: 0 40px;
+  margin-top: 175px;
   top: 0;
   /* background: white; */
 }
@@ -9507,6 +9508,8 @@ button.close {
     max-width: 500px;
     margin: 0 auto;
     width: 100%;
+    padding: 0;
+    margin-top: 20px;
   }
 }
 
