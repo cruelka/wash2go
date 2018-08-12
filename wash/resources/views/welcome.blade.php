@@ -456,10 +456,11 @@
       </div>
 
       <div class="row mt-5">
+          @foreach($posts as $post)
           <div class="col-lg-6 col-md-6">
 
 
-          @foreach($posts as $post)
+
                   <div class="news-card">
                       <div class="news-card__lable">
                             {{$post->meta_keywords}}
@@ -480,10 +481,11 @@
                           Continue reading
                       </a>
                   </div>
-          @endforeach
 
 
           </div>
+          @endforeach
+
       </div>
 
       <div class="sector">
