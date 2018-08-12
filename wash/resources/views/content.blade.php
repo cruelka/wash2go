@@ -18,7 +18,7 @@
                         </div>
 
                         <div class="news-item__body">
-                            {{$data->body}}
+                            {{!! $data->body !!}}
                         </div>
                     </div>
                 </div>
