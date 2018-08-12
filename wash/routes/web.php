@@ -23,6 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
 Route::get('post/{slug}', function($slug){
     $post = App\Post::where('slug', '=', $slug)->firstOrFail();
     return view('post', compact('post'));
@@ -32,6 +33,7 @@ Route::get('blog', function () {
     return view('posts', compact('posts'));
 });
 
-Route::get('content/why-its-good', function() {
-    return view('why-its-good', compact('name'));
+Route::get('page/{slug}', function($slug){
+    $data = App\Page::where('slug', '=', $slug)->firstOrFail();
+    return view('page', compact('data'));
 });
