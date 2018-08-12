@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    $posts =  $posts = App\Post::take(2);
+     $posts = App\Post::take(2);
     return view('welcome', compact('posts'));
 });
 
