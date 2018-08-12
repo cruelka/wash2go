@@ -457,50 +457,33 @@
 
       <div class="row mt-5">
           <div class="col-lg-6 col-md-6">
-            <div class="news-card">
-              <div class="news-card__lable">
-                Tips on car care
-              </div>
-              <div class="news-card__title">
-                How often should I wax my car?
-              </div>
-              <div class="news-card__additional">
-                On June 12, 2018 / By Turtle Save
-              </div>
-              <div class="news-card__img" style="background: url({{asset('images/example/5.jpg')}})">
 
-              </div>
-              <div class="news-card__description">
-                One of the most frequent questions we get asked is: how often should I wax my car? And our answer is – it depends. You see, there are sever..
-              </div>
-              <div class="news-card__b">
-                Continue reading
-              </div>
-            </div>
+
+          @foreach($posts as $post)
+                  <div class="news-card">
+                      <div class="news-card__lable">
+                            {{$post->meta_keywords}}
+                      </div>
+                      <div class="news-card__title">
+                          {{$post->title}}
+                      </div>
+                      <div class="news-card__additional">
+                          {{ \Carbon\Carbon::parse($post->created_at)->format('d/M/y')}}
+                      </div>
+                      <div class="news-card__img" style="background: url('/storage/{{$post->image}}')">
+
+                      </div>
+                      <div class="news-card__description">
+                          {!!  str_limit($post->body, $limit = 150, $end = '...') !!}
+                      </div>
+                      <a href = '/{{$post->slug}}' class="news-card__b">
+                          Continue reading
+                      </a>
+                  </div>
+          @endforeach
+
+
           </div>
-
-          <div class="col-lg-6 col-md-6">
-              <div class="news-card">
-                <div class="news-card__lable">
-                  Tips on car care
-                </div>
-                <div class="news-card__title">
-                  How often should I wax my car?
-                </div>
-                <div class="news-card__additional">
-                  On June 12, 2018 / By Turtle Save
-                </div>
-                <div class="news-card__img" style="background: url({{asset('images/example/5.jpg')}})">
-  
-                </div>
-                <div class="news-card__description">
-                  One of the most frequent questions we get asked is: how often should I wax my car? And our answer is – it depends. You see, there are sever..
-                </div>
-                <div class="news-card__b">
-                  Continue reading
-                </div>
-              </div>
-            </div>
       </div>
 
       <div class="sector">

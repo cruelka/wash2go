@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $posts =  $posts = App\Post::take(2);
+    return view('welcome', compact('posts'));
 });
 
 Auth::routes();
