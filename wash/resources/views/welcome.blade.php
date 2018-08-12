@@ -90,6 +90,7 @@
               </div>
               <div class="welcome-fullscreen__heading-special">
               For professionals in the car wash business
+              </div>
           </div>
       </div>
     </div>
