@@ -465,9 +465,9 @@
                       <div class="news-card__lable">
                             {{$post->meta_keywords}}
                       </div>
-                      <div class="news-card__title">
+                      <a href = '/post/{{$post->slug}}'  class="news-card__title">
                           {{$post->title}}
-                      </div>
+                      </a>
                       <div class="news-card__additional">
                           {{ \Carbon\Carbon::parse($post->created_at)->format('d/M/y')}}
                       </div>
@@ -477,7 +477,7 @@
                       <div class="news-card__description">
                           {!!  str_limit($post->body, $limit = 150, $end = '...') !!}
                       </div>
-                      <a href = '/{{$post->slug}}' class="news-card__b">
+                      <a href = '/post/{{$post->slug}}' class="news-card__b">
                           Continue reading
                       </a>
                   </div>
