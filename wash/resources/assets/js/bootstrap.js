@@ -17,10 +17,14 @@ try {
 } catch (e) {}
 
 require('owl.carousel');
+require('bootstrap/dist/js/bootstrap.bundle.min.js');
+require('eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js');
+
 
 require('./resourse/so-header');
 require('./resourse/so-modal');
 require('./resourse/so-modal-booking');
+require('./resourse/locationpicker.jquery');
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

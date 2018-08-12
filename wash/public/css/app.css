@@ -1,4 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/*!
+ * Datetimepicker for Bootstrap 3
+ * version : 4.17.47
+ * https://github.com/Eonasdan/bootstrap-datetimepicker/
+ */.bootstrap-datetimepicker-widget{list-style:none}.bootstrap-datetimepicker-widget.dropdown-menu{display:block;margin:2px 0;padding:4px;width:19em}@media (min-width:768px){.bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs{width:38em}}@media (min-width:992px){.bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs{width:38em}}@media (min-width:1200px){.bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs{width:38em}}.bootstrap-datetimepicker-widget.dropdown-menu:before,.bootstrap-datetimepicker-widget.dropdown-menu:after{content:'';display:inline-block;position:absolute}.bootstrap-datetimepicker-widget.dropdown-menu.bottom:before{border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:7px solid #ccc;border-bottom-color:rgba(0,0,0,0.2);top:-7px;left:7px}.bootstrap-datetimepicker-widget.dropdown-menu.bottom:after{border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:6px solid white;top:-6px;left:8px}.bootstrap-datetimepicker-widget.dropdown-menu.top:before{border-left:7px solid transparent;border-right:7px solid transparent;border-top:7px solid #ccc;border-top-color:rgba(0,0,0,0.2);bottom:-7px;left:6px}.bootstrap-datetimepicker-widget.dropdown-menu.top:after{border-left:6px solid transparent;border-right:6px solid transparent;border-top:6px solid white;bottom:-6px;left:7px}.bootstrap-datetimepicker-widget.dropdown-menu.pull-right:before{left:auto;right:6px}.bootstrap-datetimepicker-widget.dropdown-menu.pull-right:after{left:auto;right:7px}.bootstrap-datetimepicker-widget .list-unstyled{margin:0}.bootstrap-datetimepicker-widget a[data-action]{padding:6px 0}.bootstrap-datetimepicker-widget a[data-action]:active{-webkit-box-shadow:none;box-shadow:none}.bootstrap-datetimepicker-widget .timepicker-hour,.bootstrap-datetimepicker-widget .timepicker-minute,.bootstrap-datetimepicker-widget .timepicker-second{width:54px;font-weight:bold;font-size:1.2em;margin:0}.bootstrap-datetimepicker-widget button[data-action]{padding:6px}.bootstrap-datetimepicker-widget .btn[data-action="incrementHours"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Increment Hours"}.bootstrap-datetimepicker-widget .btn[data-action="incrementMinutes"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Increment Minutes"}.bootstrap-datetimepicker-widget .btn[data-action="decrementHours"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Decrement Hours"}.bootstrap-datetimepicker-widget .btn[data-action="decrementMinutes"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Decrement Minutes"}.bootstrap-datetimepicker-widget .btn[data-action="showHours"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Show Hours"}.bootstrap-datetimepicker-widget .btn[data-action="showMinutes"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Show Minutes"}.bootstrap-datetimepicker-widget .btn[data-action="togglePeriod"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Toggle AM/PM"}.bootstrap-datetimepicker-widget .btn[data-action="clear"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Clear the picker"}.bootstrap-datetimepicker-widget .btn[data-action="today"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Set the date to today"}.bootstrap-datetimepicker-widget .picker-switch{text-align:center}.bootstrap-datetimepicker-widget .picker-switch::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Toggle Date and Time Screens"}.bootstrap-datetimepicker-widget .picker-switch td{padding:0;margin:0;height:auto;width:auto;line-height:inherit}.bootstrap-datetimepicker-widget .picker-switch td span{line-height:2.5;height:2.5em;width:100%}.bootstrap-datetimepicker-widget table{width:100%;margin:0}.bootstrap-datetimepicker-widget table td,.bootstrap-datetimepicker-widget table th{text-align:center;border-radius:4px}.bootstrap-datetimepicker-widget table th{height:20px;line-height:20px;width:20px}.bootstrap-datetimepicker-widget table th.picker-switch{width:145px}.bootstrap-datetimepicker-widget table th.disabled,.bootstrap-datetimepicker-widget table th.disabled:hover{background:none;color:#777;cursor:not-allowed}.bootstrap-datetimepicker-widget table th.prev::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Previous Month"}.bootstrap-datetimepicker-widget table th.next::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Next Month"}.bootstrap-datetimepicker-widget table thead tr:first-child th{cursor:pointer}.bootstrap-datetimepicker-widget table thead tr:first-child th:hover{background:#eee}.bootstrap-datetimepicker-widget table td{height:54px;line-height:54px;width:54px}.bootstrap-datetimepicker-widget table td.cw{font-size:.8em;height:20px;line-height:20px;color:#777}.bootstrap-datetimepicker-widget table td.day{height:20px;line-height:20px;width:20px}.bootstrap-datetimepicker-widget table td.day:hover,.bootstrap-datetimepicker-widget table td.hour:hover,.bootstrap-datetimepicker-widget table td.minute:hover,.bootstrap-datetimepicker-widget table td.second:hover{background:#eee;cursor:pointer}.bootstrap-datetimepicker-widget table td.old,.bootstrap-datetimepicker-widget table td.new{color:#777}.bootstrap-datetimepicker-widget table td.today{position:relative}.bootstrap-datetimepicker-widget table td.today:before{content:'';display:inline-block;border:solid transparent;border-width:0 0 7px 7px;border-bottom-color:#337ab7;border-top-color:rgba(0,0,0,0.2);position:absolute;bottom:4px;right:4px}.bootstrap-datetimepicker-widget table td.active,.bootstrap-datetimepicker-widget table td.active:hover{background-color:#337ab7;color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}.bootstrap-datetimepicker-widget table td.active.today:before{border-bottom-color:#fff}.bootstrap-datetimepicker-widget table td.disabled,.bootstrap-datetimepicker-widget table td.disabled:hover{background:none;color:#777;cursor:not-allowed}.bootstrap-datetimepicker-widget table td span{display:inline-block;width:54px;height:54px;line-height:54px;margin:2px 1.5px;cursor:pointer;border-radius:4px}.bootstrap-datetimepicker-widget table td span:hover{background:#eee}.bootstrap-datetimepicker-widget table td span.active{background-color:#337ab7;color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}.bootstrap-datetimepicker-widget table td span.old{color:#777}.bootstrap-datetimepicker-widget table td span.disabled,.bootstrap-datetimepicker-widget table td span.disabled:hover{background:none;color:#777;cursor:not-allowed}.bootstrap-datetimepicker-widget.usetwentyfour td.hour{height:27px;line-height:27px}.bootstrap-datetimepicker-widget.wider{width:21em}.bootstrap-datetimepicker-widget .datepicker-decades .decade{line-height:1.8em !important}.input-group.date .input-group-addon{cursor:pointer}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}@charset "UTF-8";
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -320,8 +324,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.eot?f4769f9bdb7466be65088239c12046d1);
-  src: url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.eot?f4769f9bdb7466be65088239c12046d1?#iefix) format("embedded-opentype"), url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.woff2?448c34a56d699c29117adc64c43affeb) format("woff2"), url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.woff?fa2772327f55d8198301fdb8bcfc8158) format("woff"), url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.ttf?e18bbf611f2a2e43afc071aa2f4e1512) format("truetype"), url(/fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.svg?89889688147bd7575d6327160d64e760#glyphicons_halflingsregular) format("svg");
+  src: url(../fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.eot?f4769f9bdb7466be65088239c12046d1);
+  src: url(../fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.eot?f4769f9bdb7466be65088239c12046d1?#iefix) format("embedded-opentype"), url(../fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.woff2?448c34a56d699c29117adc64c43affeb) format("woff2"), url(../fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.woff?fa2772327f55d8198301fdb8bcfc8158) format("woff"), url(../fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.ttf?e18bbf611f2a2e43afc071aa2f4e1512) format("truetype"), url(../fonts/vendor/bootstrap-sass/bootstrap/glyphicons-halflings-regular.svg?89889688147bd7575d6327160d64e760#glyphicons_halflingsregular) format("svg");
 }
 
 .glyphicon {
@@ -8376,8 +8380,11 @@ button.close {
   width: 100%;
   padding-top: 66.66666%;
   margin-bottom: 10px;
+  display: block;
   background-size: cover !important;
   position: relative;
+  background-color: #f4f4f4;
+  background-image: url("http://127.0.0.1:8000/images/example/1.jpg");
 }
 
 .product-card__title {
@@ -8426,6 +8433,10 @@ button.close {
   cursor: pointer;
   color: #0f1319;
   border: 1px solid #E8E8E8;
+}
+
+.button_right {
+  float: right;
 }
 
 .button__body {
@@ -8504,20 +8515,22 @@ button.close {
   background: #0f1319;
   position: relative;
   width: 100%;
+  padding-top: 0 !important;
   color: white;
   background-image: url("");
-  background-size: cover;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 @media screen and (max-width: 992px) {
   .welcome-fullscreen .welcome-fullscreen__inner {
-    height: 300px;
+    height: 400px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .welcome-fullscreen .welcome-fullscreen__inner {
-    height: 200px;
+    height: 400px;
   }
 }
 
@@ -8534,15 +8547,21 @@ button.close {
 }
 
 .welcome-fullscreen__body {
-  max-width: 400px;
   border-bottom: 1px solid #ffffff;
   margin-bottom: 20px;
+  background: white;
+  font-size: 1.4em;
+  width: 100%;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  margin: 0;
 }
 
 .welcome-fullscreen__data {
   display: block;
   text-align: center;
-  margin: auto;
+  margin: auto 0;
   padding: 80px 0;
 }
 
@@ -8572,20 +8591,22 @@ button.close {
   position: relative;
 }
 
-.welcome-fullscreen__static {
-  max-width: initial;
-  background: #3fbec9c4 !important;
+.welcome-fullscreen__heading-special {
+  font-size: 3em;
+  background: #23cf5f;
+  padding: 5px 20px;
 }
 
 .welcome-fullscreen__static {
   background: none;
-  position: absolute;
+  position: relative;
   top: 0;
 }
 
 @media screen and (max-width: 992px) {
   .welcome-fullscreen__static {
     position: relative;
+    color: #000000;
     padding-top: 0;
   }
 
@@ -8595,6 +8616,7 @@ button.close {
 
   .welcome-fullscreen__static .welcome-fullscreen__data {
     padding-bottom: 0;
+    padding-top: 0;
   }
 }
 
@@ -8830,6 +8852,7 @@ button.close {
 
 .product__list-item_arrow::before {
   content: '';
+  background-image: url(../fonts/arrow-right_red.svg?65e9553967605890f61eb1e6a3534917);
   width: 10px;
   height: 10px;
   display: inline-block;
@@ -8840,6 +8863,7 @@ button.close {
 
 .product__list-item_star::before {
   content: '';
+  background-image: url(../fonts/star_black.svg?30556b4324adbe3a4b29f3c4b8474366);
   width: 10px;
   height: 10px;
   margin-right: 7px;
@@ -8887,6 +8911,12 @@ button.close {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 992px) {
+  .adventages__item {
+    margin-bottom: 20px;
+  }
+}
+
 .adventages__item-heading {
   color: #3E4C5B;
   margin-bottom: 20px;
@@ -8908,6 +8938,15 @@ button.close {
 
 .adventages_center .adventages__item-icon-img {
   margin: 0 auto 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .adventages__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .news__item-inner {
@@ -9066,6 +9105,12 @@ button.close {
   border: 3px solid #52B947;
 }
 
+@media screen and (max-width: 768px) {
+  .text-special_wrapped {
+    margin: 0 auto;
+  }
+}
+
 .text-special__heading {
   font-size: 2em;
   color: #52B947;
@@ -9157,6 +9202,11 @@ button.close {
   }
 }
 
+.navigation-modal__item-i {
+  width: 26px;
+  margin-right: 10px;
+}
+
 .body {
   overflow-y: scroll;
 }
@@ -9166,6 +9216,7 @@ button.close {
   z-index: 1002;
   cursor: pointer;
   display: none;
+  background: white;
 }
 
 .so-modal__close {
@@ -9181,6 +9232,7 @@ button.close {
   -webkit-transition: margin-left 0.1s;
   transition: margin-left 0.1s;
   margin-left: 0;
+  padding-top: 83px;
 }
 
 .so-content_windows-open {
@@ -9232,6 +9284,8 @@ button.close {
           flex-direction: row;
   margin-bottom: 40px;
   margin-top: 20px;
+  -webkit-box-shadow: 0px 1px 1px #e8e8e8;
+          box-shadow: 0px 1px 1px #e8e8e8;
 }
 
 @media screen and (max-width: 992px) {
@@ -9240,6 +9294,8 @@ button.close {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -9293,6 +9349,146 @@ button.close {
   font-size: 1.4em;
   font-weight: bold;
   padding-top: 6px;
+}
+
+.booking-form__wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: -73px;
+  position: relative;
+  border: 1px;
+}
+
+@media screen and (max-width: 992px) {
+  .booking-form__wrapper {
+    margin-top: 0;
+  }
+}
+
+.booking-form__select {
+  white-space: nowrap;
+}
+
+.booking-steps__heading {
+  font-size: 2em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.booking-steps__card-item {
+  text-align: center;
+  border: 1px solid #ccd0d2;
+  padding: 40px 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.booking-steps__card-item:hover {
+  -webkit-box-shadow: 0 1px 3px #c4c4c4;
+          box-shadow: 0 1px 3px #c4c4c4;
+}
+
+.booking-steps__card-item_selected {
+  border: 1px solid #51b846;
+}
+
+.booking-steps__item {
+  display: none;
+}
+
+.booking-steps__item_active {
+  display: block;
+}
+
+.booking-steps__card-item-img {
+  height: 30px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+  max-width: 60px;
+}
+
+.booking-steps__list-item {
+  margin: 10px 0;
+  border: 1px solid #aaaaaa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.booking-steps__list-item-checkbox {
+  display: inline-block;
+  border: 2px solid #aaaaaa;
+  width: 20px;
+  height: 20px;
+  margin-bottom: -5px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.booking-steps__list-item-checkbox .booking-steps__list-item-checkbox-i {
+  width: 8px;
+  height: 8px;
+  margin-top: 4px;
+  border-radius: 100%;
+  margin-left: 4px;
+  background: #52b947;
+  display: none;
+}
+
+.booking-steps__list-item-checkbox:hover {
+  border-color: #52B947;
+}
+
+.booking-steps__list-item-checkbox_selected {
+  border-color: #52B947;
+}
+
+.booking-steps__list-item-checkbox_selected .booking-steps__list-item-checkbox-i {
+  display: block;
+}
+
+.so-modal__booking-form {
+  border: 1px solid #ccd0d2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.so-modal__booking-form__logo {
+  height: 30px;
+  margin-right: 20px;
+}
+
+.so-modal__booking-form__lable {
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.so-modal__booking-form__heading {
+  margin: -20px -20px 20px;
+  padding: 20px;
+  border-bottom: 1px solid #ccd0d2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 992px) {
+  .so-modal__booking-form__heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .so-modal__booking-form__heading .so-modal__booking-form__logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .review {
@@ -9368,7 +9564,7 @@ button.close {
 
 .owl-dots {
   position: absolute;
-  bottom: 7px;
+  bottom: 70px;
   width: 100%;
   text-align: center;
   z-index: 1000;
@@ -12892,12 +13088,13 @@ button.close {
   }
 }
 
-/*
 @font-face {
-	font-family: "Futura";
-	src: url("../resourse/fonts/FuturaMediumBT.ttf") format("ttf"),
+  font-family: 'Futura Md BT';
+  src: url(../fonts/FuturaBT-Medium.eot?7cda1d5dc21edcdab324f33f6f9518cb);
+  src: url(../fonts/FuturaBT-Medium.eot?7cda1d5dc21edcdab324f33f6f9518cb?#iefix) format("embedded-opentype"), url(../fonts/FuturaBT-Medium.woff2?b1895fce041e345712fe4d92a468e4ac) format("woff2"), url(../fonts/FuturaBT-Medium.woff?cf65effb3f2c556f76c6d0bc914558ed) format("woff"), url(../fonts/FuturaBT-Medium.ttf?cb8abe2f6b4747086f2e280aa535cd51) format("truetype"), url(../fonts/FuturaBT-Medium.svg?f99a4534772883bb4abfa3ca9d8dadab#FuturaBT-Medium) format("svg");
+  font-weight: 500;
+  font-style: normal;
 }
-*/
 
 .navbar {
   border-bottom: 1px solid #E8E8E8;
@@ -12956,10 +13153,6 @@ a:hover {
   opacity: 1 !important;
 }
 
-.owl-dots {
-  display: none;
-}
-
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12972,5 +13165,30 @@ a:hover {
 
 .mt-5 {
   margin-top: 40px;
+}
+
+body {
+  font-family: Futura Md BT;
+}
+
+.welcome-fullscreen__static {
+  max-width: initial;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#52b947+0,52b947+68&1+0,0+67 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#52b947), color-stop(67%, rgba(82, 185, 71, 0)), color-stop(68%, rgba(82, 185, 71, 0)));
+  background: linear-gradient(to bottom, #52b947 0%, rgba(82, 185, 71, 0) 67%, rgba(82, 185, 71, 0) 68%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b947', endColorstr='#0052b947',GradientType=0 );
+  /* IE6-9 */
+}
+
+.footer {
+  background: #52B947;
+}
+
+.content__inner {
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 

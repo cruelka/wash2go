@@ -48,7 +48,7 @@
 
 .product__list-item_arrow::before {
     content: '';
-    //background-image: url(../resourse/images/icons/arrow-right_red.svg);
+    background-image: url('../images/icons/arrow-right_red.svg');
     width: 10px;
     height: 10px;
     display: inline-block;
@@ -60,7 +60,7 @@
 
 .product__list-item_star::before {
     content: '';
-    //background-image: url(../resourse/images/icons/star_black.svg);
+    background-image: url('../images/icons/star_black.svg');
     width: 10px;
     height: 10px;
     margin-right: 7px;

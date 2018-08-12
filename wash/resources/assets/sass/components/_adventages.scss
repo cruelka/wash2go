@@ -1,5 +1,17 @@
 .adventages__item {
 
+    @media screen and (max-width:$lg) { 
+    
+    }
+
+    @media screen and (max-width:$md) { 
+        margin-bottom: 20px;
+   
+    }
+
+    @media screen and (max-width:$sm) { 
+        
+    }
 }
 
 .adventages__item-heading {
@@ -29,3 +41,16 @@
     }
 }
 
+.adventages__list {
+    @media screen and (max-width:$lg) { 
+    
+    }
+
+    @media screen and (max-width:$md) { 
+        
+    }
+
+    @media screen and (max-width:$sm) { 
+        flex-direction: column;
+    }
+}

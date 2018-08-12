@@ -6,8 +6,11 @@
     width: 100%;
     padding-top: 66.66666%;
     margin-bottom: 10px;
+    display: block;
     background-size: cover !important;
     position: relative;
+    background-color: #f4f4f4;
+    background-image: url('http://127.0.0.1:8000/images/example/1.jpg');
 }
 
 .product-card__title {
