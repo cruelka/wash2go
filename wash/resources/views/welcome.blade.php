@@ -96,6 +96,26 @@
     </div>
     
   </div>
+
+  <div class="booking-form-__mobile">
+                  <div class="row">
+                    
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                      <div onclick="soBookingForm.changePage(3)" class="booking-steps__card-item">
+                        <img src="https://wash2go.ae/images/icons/home.svg" alt="Home" class="booking-steps__card-item-img">
+                        At home
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                      <div onclick="soBookingForm.changePage(2)" class="booking-steps__card-item">
+                        <img src="https://wash2go.ae/images/icons/location.svg" alt="Home" class="booking-steps__card-item-img">
+                        Visit us
+                      </div>
+                    </div>
+                  </div>
+  </div>
+
 <!--
   <div class="booking-form__wrapper">
     
