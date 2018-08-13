@@ -184,6 +184,7 @@
 
         let steamcount = 0;
         let price = 0;
+        let nosteamcount = 0;
 
         $('.booking-steps__list-item_steam').each(function(){
             if($(this).hasClass('booking-steps__list-item_selected')){
@@ -192,18 +193,25 @@
             
         });
 
+        $('.booking-steps__list-item_internal').each(function(){
+            if($(this).hasClass('booking-steps__list-item_selected')){
+                nosteamcount += 1;
+            }
+            
+        });
+
         console.log(steamcount);
 
-        if(steamcount<2){
+        if(nosteamcount==2){
+            priceInner.empty().append('40 AED - Discount 10');
+        } else if(steamcount==2){
+            priceInner.empty().append('70 AED - Discount 15');
+        } else  {
             $('.booking-steps__list-item_selected').each(function(){
                 price += Number($(this).attr('value'));
             });
 
             priceInner.empty().append(price);
-        } else if(steamcount==0){
-            priceInner.empty().append('40 AED - Discount 10');
-        } else {
-            priceInner.empty().append('70 AED - Discount 15');
         }
 
         
