@@ -19,7 +19,7 @@
       <img src="{{ asset('images/logo.svg') }}" alt="Logo" class="header__logo so-header__logo">
     </a>
     <div class="header__block header__fullscreen-only" style="flex-grow: 2;">
-        <div class="header__nav header__nav_wrapped" onclick="soModal.open('.navigation-modal')">
+        <div class="header__nav" onclick="soModal.open('.navigation-modal')">
             Our products
           </div>
           <div class="header__nav">
