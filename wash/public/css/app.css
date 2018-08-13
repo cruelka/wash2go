@@ -8626,6 +8626,12 @@ button.close {
   height: 500px;
 }
 
+@media screen and (max-width: 992px) {
+  .welcome-fullscreen-owl {
+    height: 400px;
+  }
+}
+
 .footer {
   background: #0f1319;
   width: 100%;
