@@ -54,6 +54,8 @@
 
 
 <div style="position: relative;">
+
+  <div style="position: relative;">
   <div class="welcome-fullscreen-owl so-header__offset">
 
     <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/5.jpg')}})">
@@ -114,6 +116,8 @@
                       </div>
                     </div>
                   </div>
+  </div>
+
   </div>
 
 <!--
