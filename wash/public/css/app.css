@@ -8620,6 +8620,12 @@ button.close {
   }
 }
 
+.welcome-fullscreen-owl {
+  width: 100%;
+  overflow: hidden;
+  height: 500px;
+}
+
 .footer {
   background: #0f1319;
   width: 100%;

@@ -123,3 +123,17 @@
     }
 
 }
+
+.welcome-fullscreen-owl {
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+
+    @media screen and (max-width:$md) { 
+
+            height: 400px;
+
+    }
+
+
+}
