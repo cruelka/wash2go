@@ -38,3 +38,7 @@ Route::get('page/{slug}', function($slug){
     $data = App\Page::where('slug', '=', $slug)->firstOrFail()->middleware('html');
     return view('content', compact('data'));
 });
+
+Route::get('/booking', function () {
+   return view('booking');
+});
