@@ -893,7 +893,7 @@
                     <div class="booking-steps__list-lable">
                       Internal
                     </div>
-                    <div class="booking-steps__list-item booking-steps__list-item_internal" value="25" oneandonly="booking-steps__list-item_internal">
+                    <div class="booking-steps__list-item booking-steps__list-item_internal booking-steps__list-item_no-steam" value="25" oneandonly="booking-steps__list-item_internal">
                       <span class="booking-steps__list-item-checkbox">
                         <span class="booking-steps__list-item-checkbox-i"></span>
                       </span>
@@ -919,7 +919,7 @@
                     <div class="booking-steps__list-lable">
                       External
                     </div>
-                    <div class="booking-steps__list-item booking-steps__list-item_external" value="25" oneandonly="booking-steps__list-item_external">
+                    <div class="booking-steps__list-item booking-steps__list-item_external booking-steps__list-item_no-steam" value="25" oneandonly="booking-steps__list-item_external">
                       <span class="booking-steps__list-item-checkbox">
                         <span class="booking-steps__list-item-checkbox-i"></span>
                       </span>

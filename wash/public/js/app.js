@@ -51209,7 +51209,7 @@ if(!$('body .so-modal')){
             }
         });
 
-        $('.booking-steps__list-item_internal').each(function () {
+        $('.booking-steps__list-item_no-steam').each(function () {
             if ($(this).hasClass('booking-steps__list-item_selected')) {
                 nosteamcount += 1;
             }
