@@ -664,7 +664,7 @@
                     6th Floor <br>
                     Office #601
                     </li>
-                  <li class="footer__item" >There is also</li>
+                  <li class="footer__item" >Deira Dubai</li>
                   <li class="footer__item" >055 464 4954</li>
                   <li class="footer__item" >© Copyright Wash 2 Go</li>
                 </ul>
