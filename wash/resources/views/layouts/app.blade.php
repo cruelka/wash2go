@@ -107,9 +107,12 @@
        
                 <ul class="footer__list">
                   
-                  <li class="footer__item" >There is will be address</li>
-                  <li class="footer__item" >There is also</li>
-                  <li class="footer__item" >+00 00 000 0000</li>
+                  <li class="footer__item" >Business village <br>
+                    6th Floor <br>
+                    Office #601
+                    </li>
+                  <li class="footer__item" >Deira Dubai</li>
+                  <li class="footer__item" >055 464 4954</li>
                   <li class="footer__item" >© Copyright Wash 2 Go</li>
                 </ul>
            
