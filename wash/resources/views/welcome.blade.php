@@ -670,7 +670,7 @@
         <div class="so-modal__item so-modal__booking-form form">
           <div class="so-modal__booking-form__heading">
            <img src="{{asset('images/logo.svg')}}"  class="so-modal__booking-form__logo" alt="Logo">
-           <div class="so-modal__booking-form__lable">Booking Form</div>
+           <a href="booking" class="so-modal__booking-form__lable">Booking Form</a>
           </div>
           
           <div class="booking-steps">
