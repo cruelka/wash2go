@@ -215,12 +215,14 @@
 
 .booking-form__mobile {
     position: absolute;
-    width: 50%;
-    right: 0;
+    right: 40px;
     padding: 0 40px;
     margin-top: 175px;
-    top: 0;
-    /* background: white; */
+    bottom: 0;
+ 
+    background: white;
+    padding-top: 40px;
+    width: 288px;
 
     @media screen and (max-width:$lg) { 
       
