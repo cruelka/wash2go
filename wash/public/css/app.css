@@ -9545,6 +9545,10 @@ button.close {
   padding: 20px;
 }
 
+.booking-steps__wrapper .so-modal__booking-form__heading {
+  display: none;
+}
+
 .review {
   background: #1BB7CD;
   padding: 30px 30px 10px;
