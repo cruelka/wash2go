@@ -51214,8 +51214,7 @@ if(!$('body .so-modal')){
             });
 
             priceInner.empty().append(price);
-        }
-        if (steamcount == 0) {
+        } else if (steamcount == 0) {
             priceInner.empty().append('40 AED - Discount 10');
         } else {
             priceInner.empty().append('70 AED - Discount 15');

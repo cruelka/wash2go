@@ -198,8 +198,7 @@
             });
 
             priceInner.empty().append(price);
-        } 
-        if(steamcount==0){
+        } else if(steamcount==0){
             priceInner.empty().append('40 AED - Discount 10');
         }
         
