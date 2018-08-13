@@ -51233,6 +51233,14 @@ if(!$('body .so-modal')){
     window.soBookingForm = {};
     window.soBookingForm.changePage = changePage;
     window.soBookingForm.priceChange = priceChange;
+
+    $(document).ready(function () {
+        $(function () {
+            $('#datetimepicker2').datetimepicker({
+                locale: 'en'
+            });
+        });
+    });
 })(jQuery);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
