@@ -1114,7 +1114,7 @@
 
       function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -33.8688, lng: 151.2195},
+          center: {lat: 25.257562, lng: 55.326623},
           zoom: 13,
           mapTypeId: 'roadmap'
         });
@@ -1186,7 +1186,7 @@
 
         var myLatlng = new google.maps.LatLng(25.257562, 55.326623);
         var mapOptions = {
-          zoom: 4,
+          zoom: 13,
           center: myLatlng
         }
         var map = new google.maps.Map(document.getElementById("map2"), mapOptions);
