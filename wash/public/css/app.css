@@ -9499,6 +9499,12 @@ button.close {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 992px) {
+  .booking-form__mobile-heading {
+    margin-top: 20px;
+  }
+}
+
 .booking-form__mobile {
   position: absolute;
   right: 40px;

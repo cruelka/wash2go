@@ -55,7 +55,7 @@
 
 <div style="position: relative;">
 
-  <div style="position: relative;">
+  <div style="position: relative;max-width: 1680px;margin: 0 auto;">
   <div class="welcome-fullscreen-owl so-header__offset">
 
     <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/5.jpg')}})">
