@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="so-modal__item so-modal__booking-form form">
+<div class="booking-steps__wrapper">
           <div class="so-modal__booking-form__heading">
            <img src="{{asset('images/logo.svg')}}"  class="so-modal__booking-form__logo" alt="Logo">
            <div class="so-modal__booking-form__lable">Booking Form</div>
