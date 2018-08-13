@@ -9492,6 +9492,13 @@ button.close {
   }
 }
 
+.booking-form__mobile-heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
 .booking-form__mobile {
   position: absolute;
   right: 40px;

@@ -106,14 +106,14 @@
 
                   <div class="row">
                     
-                    <div class="col-md-6 col-lg-12 col-sm-6 col-xs-6">
+                    <div class="col-md-12 col-lg-12 col-sm-6 col-xs-6">
                       <div onclick="soBookingForm.changePage(3);soModal.open('.so-modal__booking-form');" class="booking-steps__card-item">
                         <img src="https://wash2go.ae/images/icons/home.svg" alt="Home" class="booking-steps__card-item-img">
                         Wash At home
                       </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-12 col-sm-6 col-xs-6">
+                    <div class="col-md-12 col-lg-12 col-sm-6 col-xs-6">
                       <div onclick="soBookingForm.changePage(2);soModal.open('.so-modal__booking-form');" class="booking-steps__card-item">
                         <img src="https://wash2go.ae/images/icons/location.svg" alt="Home" class="booking-steps__card-item-img">
                         Visit us
