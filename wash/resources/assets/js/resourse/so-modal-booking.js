@@ -192,6 +192,8 @@
             
         });
 
+        console.log(steamcount);
+
         if(steamcount<2){
             $('.booking-steps__list-item_selected').each(function(){
                 price += Number($(this).attr('value'));
@@ -200,9 +202,7 @@
             priceInner.empty().append(price);
         } else if(steamcount==0){
             priceInner.empty().append('40 AED - Discount 10');
-        }
-        
-        else {
+        } else {
             priceInner.empty().append('70 AED - Discount 15');
         }
 

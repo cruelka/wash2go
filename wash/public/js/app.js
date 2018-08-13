@@ -51208,6 +51208,8 @@ if(!$('body .so-modal')){
             }
         });
 
+        console.log(steamcount);
+
         if (steamcount < 2) {
             $('.booking-steps__list-item_selected').each(function () {
                 price += Number($(this).attr('value'));
