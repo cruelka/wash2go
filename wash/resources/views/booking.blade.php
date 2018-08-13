@@ -331,17 +331,6 @@
 
         
 
- <script type="text/javascript">
-  $(document).ready(function(){
-    $(function () {
-                $('#datetimepicker2').datetimepicker({
-                    locale: 'en'
-                });
-            });
-  });
-            
-        </script>
-
       
 
 
