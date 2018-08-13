@@ -9539,6 +9539,12 @@ button.close {
   }
 }
 
+.booking-steps__wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .review {
   background: #1BB7CD;
   padding: 30px 30px 10px;
