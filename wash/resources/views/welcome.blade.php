@@ -1184,7 +1184,7 @@
         });
 
 
-        var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+        var myLatlng = new google.maps.LatLng(25.257562, 55.326623);
         var mapOptions = {
           zoom: 4,
           center: myLatlng
@@ -1193,7 +1193,7 @@
 
         var marker = new google.maps.Marker({
             position: myLatlng,
-            title:"Hello World!"
+            title:"Business village, 6th Floor, Office #601"
         });
 
         // To add the marker to the map, call setMap();
