@@ -217,6 +217,10 @@
     font-weight: bold;
     font-size: 1.2em;
     margin-bottom: 40px;
+
+    @media screen and (max-width:$md) { 
+        margin-top: 20px;
+    }
 }
 
 
