@@ -233,7 +233,7 @@
     $(document).ready(function(){
         $(function () {
                     $('#datetimepicker2').datetimepicker({
-                        format: 'LT'
+                        viewmode: 'date'
                     });
                 });
 
