@@ -39,9 +39,9 @@
         <a href="/login" class="header__nav header__fullscreen-only">
             Sign In
         </a>
-        <div onclick="soModal.open('.so-modal__booking-form');soBookingForm.changePage(1)"  class="header__nav header__fullscreen-only  header__nav_wrapped">
+        <a  href="/booking"  class="header__nav header__fullscreen-only  header__nav_wrapped">
             Book now
-        </div>
+        </a>
 
           <div class="header__mobile-only header__burger so-header__burger so-header__burger_scrolled"  onclick="soModal.open('.navigation-modal')">
             <span></span><span></span><span></span>
