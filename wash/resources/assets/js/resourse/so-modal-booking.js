@@ -232,7 +232,7 @@
 
     $(document).ready(function(){
         $(function () {
-                    $('#datetimepicker2').datetimepicker({ pickTime: false });
+                    $('#datetimepicker2').datetimepicker();
                 });
 
                 $(function () {
