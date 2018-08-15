@@ -288,10 +288,10 @@
                 <div class="booking-steps__body">
                   <div class="form-group">
                     <div class='input-group date' id='datetimepicker2'>
-                      <input type='text' class="form-control" />
-                      <span class="input-group-addon">
-                          <span class="glyphicon glyphicon-time"></span>
-                      </span>
+                      <input data-format="yyyy-MM-dd" type="text"></input> 
+                      <span class="add-on"> 
+                          <i data-time-icon="icon-time" data-date-icon="icon-calendar"> </i> 
+                      </span> 
                     </div>
                     <div class='input-group date' id='datetimepicker3'>
                         <input type='text' class="form-control" />
