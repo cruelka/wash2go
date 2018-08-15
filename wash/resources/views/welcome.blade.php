@@ -22,9 +22,9 @@
         <div class="header__nav" onclick="soModal.open('.navigation-modal')">
             Our products
           </div>
-          <div  href="/blog" class="header__nav">
+          <a  href="/blog" class="header__nav">
               News
-          </div>
+          </a>
           <a class="header__nav">
               About
           </a>
