@@ -51240,6 +51240,12 @@ if(!$('body .so-modal')){
                 locale: 'en'
             });
         });
+
+        $(function () {
+            $('#datetimepicker3').datetimepicker({
+                format: 'LT'
+            });
+        });
     });
 })(jQuery);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))

@@ -236,7 +236,15 @@
                         locale: 'en'
                     });
                 });
+
+                $(function () {
+                    $('#datetimepicker3').datetimepicker({
+                        format: 'LT'
+                    });
+                });
       });
+
+      
 
 
 })( jQuery );
