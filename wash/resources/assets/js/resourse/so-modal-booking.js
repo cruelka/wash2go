@@ -232,9 +232,7 @@
 
     $(document).ready(function(){
         $(function () {
-                    $('#datetimepicker2').datetimepicker({
-                        viewmode: 'date'
-                    });
+                    $('#datetimepicker2').datetimepicker();
                 });
 
                 $(function () {
