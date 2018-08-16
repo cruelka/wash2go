@@ -381,6 +381,26 @@
         
         $('#pac-input').val(data.place);
 
+        $('.booking-steps__card-item_body-type').each(function(){
+            if($(this).text().trim()==data.bodyType){
+                $(this).addClass('booking-steps__card-item_selected');
+            } else {
+                $(this).removeClass('booking-steps__card-item_selected');
+            }
+        });
+
+
+        data.services.map(item => {
+            let name = item.name;
+
+            $('.booking-steps__list-item_service').each(function(){
+                if($(this).text().trim()==name){
+                    $(this).click();
+                } else {
+                    //
+                }
+            });
+        });
 
         soBookingForm.changePage(7);
         soBookingForm.drawConfirm();
