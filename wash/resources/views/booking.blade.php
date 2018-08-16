@@ -286,6 +286,9 @@
 
                 <div class="booking-steps__heading">Select Time</div>
                 <div class="booking-steps__body">
+                  <div class="booking-steps__list-lable">
+                      Select date
+                  </div>
                   <div class="form-group">
                     <div class='input-group date' id='datetimepicker2'>
                       <input type='text' class="form-control" />
@@ -293,6 +296,11 @@
                             <span class="glyphicon glyphicon-time"></span>
                         </span>
                     </div>
+
+                    <div class="booking-steps__list-lable">
+                      Select time
+                    </div>
+
                     <div class='input-group date' id='datetimepicker3'>
                         <input type='text' class="form-control" />
                         <span class="input-group-addon">
