@@ -51279,7 +51279,7 @@ if(!$('body .so-modal')){
 
         obj.date = $('#datetimepicker2').find('input').val();
         obj.time = $('#datetimepicker3').find('input').val();
-        obj.totalPrice = $('.booking-steps__list-lable-total').text().trim();
+        obj.totalPrice = $('.booking-steps__list-lable-total-data').text().trim();
 
         return obj;
     }
