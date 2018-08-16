@@ -235,7 +235,8 @@
                     $('#datetimepicker2').datetimepicker({ 
                         format: 'DD.MM.YYYY',
                         startDate: new Date('2018-1-5'),
-                        endDate: new Date('2018-1-12')
+                        endDate: new Date('2018-1-12'),
+                        minDate: new Date('2018-1-5'),
                     });
                 });
 
