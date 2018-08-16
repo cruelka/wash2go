@@ -336,7 +336,7 @@
             </div>
 
      
-            <div class="booking-steps__confirm-price">${data.totalPrice}</div>
+            <div class="booking-steps__confirm-price">${data.totalPrice} AED</div>
 
           </div>
           `;
@@ -401,6 +401,11 @@
                 }
             });
         });
+
+        
+        $('#datetimepicker3 input').val(data.time);
+        $('#datetimepicker2 input').val(data.date);
+
 
         soBookingForm.changePage(7);
         soBookingForm.drawConfirm();

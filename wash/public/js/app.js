@@ -51328,7 +51328,7 @@ if(!$('body .so-modal')){
             var htmlService = '<span>' + item.name + '</span>';
 
             return htmlService;
-        }) + '\n                </div>\n            </div>\n\n     \n            <div class="booking-steps__confirm-price">' + data.totalPrice + '</div>\n\n          </div>\n          ';
+        }) + '\n                </div>\n            </div>\n\n     \n            <div class="booking-steps__confirm-price">' + data.totalPrice + ' AED</div>\n\n          </div>\n          ';
 
         $('#booking-steps__confirm-data').empty().append(html);
     }
@@ -51380,6 +51380,9 @@ if(!$('body .so-modal')){
                 }
             });
         });
+
+        $('#datetimepicker3 input').val(data.time);
+        $('#datetimepicker2 input').val(data.date);
 
         soBookingForm.changePage(7);
         soBookingForm.drawConfirm();
