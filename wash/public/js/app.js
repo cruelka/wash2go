@@ -51322,7 +51322,7 @@ if(!$('body .so-modal')){
 
     function drawBookingConfirm() {
         var data = getBookingData();
-        setCookie('bookingform', data, 7);
+        setCookie('bookingform', JSON.stringify(data), 7);
 
         var html = '\n          <div class="booking-steps__confirm">\n            <div class="booking-steps__confirm-heading">Booking Eco Car Wash</div>\n            <div>Service information</div>\n            <div class="booking-steps__confirm-item">\n                <span class="booking-steps__confirm-lable">Where: </span>\n                <span>' + data.where + ' ' + data.place + '</span>\n            </div>\n            <div class="booking-steps__confirm-item">\n                <span class="booking-steps__confirm-lable">When: </span>\n                <span>' + data.date + ' ' + data.time + '</span>\n            </div>\n            <div class="booking-steps__confirm-item">\n                <span class="booking-steps__confirm-lable">Body Type: </span>\n                <span>' + data.bodyType + '</span>\n            </div>\n            <div class="booking-steps__confirm-item">\n                <span class="booking-steps__confirm-lable">Service: </span>\n                <div>\n                    ' + data.services.map(function (item) {
             var htmlService = '<span>' + item.name + '</span>';
@@ -51341,14 +51341,15 @@ if(!$('body .so-modal')){
     //restore from cockie
 
     $(document).ready(function () {
+
         if (getCookie('bookingform') != null) {
             $('.booking-steps__restore').append('\n            <div>\n                Restore previous booking\n            </div>\n            ');
         }
     });
 
     $('.booking-steps__restore').click(function () {
-        var data = getCookie('bookingform');
-        console.log(data.where);
+        var data = JSON.parse(getCookie('bookingform'));
+        console.log(data);
 
         $('.booking-steps__card-item_where').each(function () {
             if ($(this).attr('value') == data.where) {

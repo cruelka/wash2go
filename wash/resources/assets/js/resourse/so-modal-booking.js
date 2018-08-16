@@ -305,7 +305,7 @@
 
       function drawBookingConfirm(){
           let data = getBookingData();
-          setCookie('bookingform',data,7);
+          setCookie('bookingform',JSON.stringify(data),7);
 
 
           let html = `
@@ -355,6 +355,8 @@
       //restore from cockie
 
       $(document).ready(function(){
+        
+
         if(getCookie('bookingform')!=null){
             $('.booking-steps__restore').append(`
             <div>
@@ -366,8 +368,8 @@
       });
 
       $('.booking-steps__restore').click(function(){
-        let data = getCookie('bookingform');
-        console.log(data.where);
+        let data = JSON.parse(getCookie('bookingform'));
+        console.log(data);
 
         $('.booking-steps__card-item_where').each(function(){
             if($(this).attr('value')==data.where){
