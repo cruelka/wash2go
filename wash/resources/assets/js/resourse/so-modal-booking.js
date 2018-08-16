@@ -382,7 +382,7 @@
 
 
 
-        soBookingForm.drawBookingConfirm();
+        soBookingForm.drawConfirm();
         soBookingForm.changePage(7);
       });
       

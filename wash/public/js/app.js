@@ -51368,7 +51368,7 @@ if(!$('body .so-modal')){
 
         $('#pac-input').val(data.place);
 
-        soBookingForm.drawBookingConfirm();
+        soBookingForm.drawConfirm();
         soBookingForm.changePage(7);
     });
 
