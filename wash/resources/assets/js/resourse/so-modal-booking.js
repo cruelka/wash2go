@@ -234,6 +234,7 @@
         $(function () {
                     $('#datetimepicker2').datetimepicker({ 
                         format: 'DD.MM.YYYY',
+                        minDate: moment(),
                     });
                 });
 
