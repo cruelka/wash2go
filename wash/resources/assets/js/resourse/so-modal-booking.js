@@ -252,6 +252,14 @@
                 });
       });
 
+      $('#datetimepicker2').click(function(){
+        $(this).$('.input-group-addon').click();
+      });
+
+      $('#datetimepicker3').click(function(){
+        $(this).$('.input-group-addon').click();
+      });
+
       
 
 
