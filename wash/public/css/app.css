@@ -9567,6 +9567,13 @@ button.close {
   margin: 10px 0;
 }
 
+.booking-steps__confirm-lable {
+  color: #b5b5b5;
+  /* font-weight: bold; */
+  min-width: 100px;
+  display: inline-block;
+}
+
 .review {
   background: #1BB7CD;
   padding: 30px 30px 10px;
