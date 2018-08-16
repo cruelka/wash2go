@@ -306,7 +306,7 @@
                 <span class="booking-steps__confirm-lable">Service: </span>
                 <span>
                     ${data.services.map(item => {
-                        let htmlService = '<div><span>'+item.name+'</span></div>';
+                        let htmlService = '<span>'+item.name+'</span>';
 
                         return htmlService;
                     })}
@@ -321,7 +321,7 @@
           </div>
           `;
 
-          html = html.replace(/","/g, '')
+
 
           $('#booking-steps__confirm-data').empty().append(html);
       }
