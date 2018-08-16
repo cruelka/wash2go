@@ -290,19 +290,19 @@
           <div class="booking-steps__confirm">
             <div>Heading</div>
             <div>Service information</div>
-            <div>
+            <div class="booking-steps__confirm-item">
                 <span class="booking-steps__confirm-lable">Where: </span>
                 <span>${data.where} ${data.place}</span>
             </div>
-            <div>
+            <div class="booking-steps__confirm-item">
                 <span class="booking-steps__confirm-lable">When: </span>
                 <span>${data.date} ${data.time}</span>
             </div>
-            <div>
+            <div class="booking-steps__confirm-item">
                 <span class="booking-steps__confirm-lable">Body Type: </span>
                 <span>${data.bodyType}</span>
             </div>
-            <div>
+            <div class="booking-steps__confirm-item">
                 <span class="booking-steps__confirm-lable">Service: </span>
                 <div>
                     ${data.services.map(item => {
