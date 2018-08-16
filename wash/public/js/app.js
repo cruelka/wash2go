@@ -27603,6 +27603,9 @@ function getCookie(name) {
     return null;
 }
 
+window.setCookie = setCookie;
+window.getCookie = getCookie;
+
 __webpack_require__(139);
 __webpack_require__(140);
 window.moment = __webpack_require__(0);
@@ -51320,6 +51323,7 @@ if(!$('body .so-modal')){
         obj.totalPrice = $('.booking-steps__list-lable-total-data').first().text().trim();
 
         setCookie('bookingform', obj, 7);
+        getCookie('bookingform');
         return obj;
     }
 

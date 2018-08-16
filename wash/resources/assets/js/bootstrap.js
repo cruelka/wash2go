@@ -37,6 +37,9 @@ function getCookie(name) {
     return null;
 }
 
+window.setCookie = setCookie;
+window.getCookie = getCookie;
+
 require('owl.carousel');
 require('bootstrap/dist/js/bootstrap.bundle.min.js');
 window.moment = require('moment');

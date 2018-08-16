@@ -300,6 +300,7 @@
         
 
         setCookie('bookingform',obj,7);
+        getCookie('bookingform');
         return obj;
       }
 
