@@ -51282,7 +51282,7 @@ if(!$('body .so-modal')){
         $(function () {
             $('#datetimepicker3').datetimepicker({
                 format: 'LT',
-                stepping: 30,
+                stepping: 15,
                 enabledHours: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
             });
         });
