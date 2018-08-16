@@ -197,7 +197,7 @@
                       Back
                     </div>
                   </div>
-                  <div class="button button_right" onclick="soBookingForm.changePage(6,'washingtype')">
+                  <div class="button button_right" onclick="soBookingForm.changePage(6,'services')">
                     <div class="button__body">
                       Continue
                     </div>
