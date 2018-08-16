@@ -234,7 +234,7 @@
         $(function () {
                     $('#datetimepicker2').datetimepicker({ 
                         format: 'DD.MM.YYYY',
-                        minDate: moment(),
+                        minDate: moment().add('-1','days'),
                         maxDate: moment().add('7','days'),
                     });
                 });
