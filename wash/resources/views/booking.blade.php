@@ -343,7 +343,7 @@
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Phone">
                   </div>
                 </form>
-              <div class="btn btn-success" onclick="">Confirm</div>
+              <div class="btn btn-success" onclick="window.soBookingForm.getData()">Confirm</div>
 
               </div>
 
