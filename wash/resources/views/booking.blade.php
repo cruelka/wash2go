@@ -322,7 +322,11 @@
                     </div>
                   </div>
 
-                <div class="booking-steps__heading">Your Contact information</div>
+                <div class="booking-steps__heading">Confirm</div>
+
+                <div id="booking-steps__confirm-data">
+
+                </div>
                   
                 <a href="/login" class="btn btn-success">Login</a>
 

@@ -275,9 +275,40 @@
 
         obj.date = $('#datetimepicker2').find('input').val();
         obj.time = $('#datetimepicker3').find('input').val();
+        obj.totalPrice = $('.booking-steps__list-lable-total').text().trim();
         
         console.log(obj);
         return obj;
+      }
+
+      function drawBookingConfirm(){
+          let data = getBookingData();
+
+          let html = `
+          <div>
+            <div>Heading</div>
+            <div>Service information</div>
+            <div>
+                <span>Where: </span><span<${data.where} ${obj.place}</span>
+            </div>
+            <div>
+                <span>When: </span><span<${data.date} ${data.time}</span>
+            </div>
+            <div>
+                <span>Body Type: </span><span<${data.bodyType}</span>
+            </div>
+            <div>
+                <span>Service: </span><span<${data.services.map(item => {
+                    return item.name;
+                })}</span>
+            </div>
+            <div>${obj.totalPrice}</div>
+            <div>Contact information</div>
+            
+          </div>
+          `;
+
+          $('#booking-steps__confirm-data').append(html);
       }
 
       $('.booking-steps__card-item_where').click(function(){

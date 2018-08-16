@@ -51279,9 +51279,20 @@ if(!$('body .so-modal')){
 
         obj.date = $('#datetimepicker2').find('input').val();
         obj.time = $('#datetimepicker3').find('input').val();
+        obj.totalPrice = $('.booking-steps__list-lable-total').text().trim();
 
         console.log(obj);
         return obj;
+    }
+
+    function drawBookingConfirm() {
+        var data = getBookingData();
+
+        var html = '\n          <div>\n            <div>Heading</div>\n            <div>Service information</div>\n            <div>\n                <span>Where: </span><span<' + data.where + ' ' + obj.place + '</span>\n            </div>\n            <div>\n                <span>When: </span><span<' + data.date + ' ' + data.time + '</span>\n            </div>\n            <div>\n                <span>Body Type: </span><span<' + data.bodyType + '</span>\n            </div>\n            <div>\n                <span>Service: </span><span<' + data.services.map(function (item) {
+            return item.name;
+        }) + '</span>\n            </div>\n            <div>' + obj.totalPrice + '</div>\n            <div>Contact information</div>\n            \n          </div>\n          ';
+
+        $('#booking-steps__confirm-data').append(html);
     }
 
     $('.booking-steps__card-item_where').click(function () {
