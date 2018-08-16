@@ -51271,7 +51271,7 @@ if(!$('body .so-modal')){
         $('.booking-steps__list-item_service.booking-steps__list-item_selected').each(function () {
             var obj = {};
             obj.name = $(this).text().trim();
-            obj.price = $(this).val();
+            obj.price = $(this).attr('value');
             obj.services.push(obj);
         });
 
