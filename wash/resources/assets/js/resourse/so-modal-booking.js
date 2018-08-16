@@ -235,6 +235,7 @@
                     $('#datetimepicker2').datetimepicker({ 
                         format: 'DD.MM.YYYY',
                         minDate: moment(),
+                        maxDate: moment().add('7','days'),
                     });
                 });
 

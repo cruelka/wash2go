@@ -51240,7 +51240,8 @@ if(!$('body .so-modal')){
         $(function () {
             $('#datetimepicker2').datetimepicker({
                 format: 'DD.MM.YYYY',
-                minDate: moment()
+                minDate: moment(),
+                maxDate: moment().add('7', 'days')
             });
         });
 
