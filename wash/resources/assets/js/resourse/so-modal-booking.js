@@ -281,7 +281,7 @@
         let obj = {};
         obj.where = $('.booking-steps__card-item_where.booking-steps__card-item_active').attr('value');
         obj.place = $('#pac-input').val();
-        obj.bodyType = $('.booking-steps__card-item_body-type.booking-steps__card-item_selected').text().trim();
+        obj.bodyType = $('.booking-steps__card-item_body-type.booking-steps__card-item_selected img').attr('alt').trim();
 
         let services = [];
           
