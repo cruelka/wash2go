@@ -51169,6 +51169,12 @@ if(!$('body .so-modal')){
             }
         }
 
+        if (required && required == 'map') {
+            if ($('#pac-input').val() == '') {
+                return false;
+            }
+        }
+
         $('.booking-steps__item').hide();
         $('#booking-steps__item-' + page).show();
     };

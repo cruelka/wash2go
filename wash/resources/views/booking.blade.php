@@ -17,7 +17,7 @@
                   <div class="row">
                     
                     <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
-                      <div value="At Home" onclick="soBookingForm.changePage(2)" class="booking-steps__card-item booking-steps__card-item_where">
+                      <div value="At Home" onclick="soBookingForm.changePage(2,'map')" class="booking-steps__card-item booking-steps__card-item_where">
                         <img src="{{asset('images/icons/home.svg')}}" alt="Home" class="booking-steps__card-item-img">
                         At home
                       </div>

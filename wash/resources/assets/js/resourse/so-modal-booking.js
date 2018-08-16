@@ -143,6 +143,12 @@
     
         }
 
+        if(required && required=='map'){
+            if($('#pac-input').val()==''){
+                return false;
+            }
+        }
+
         
 
         $('.booking-steps__item').hide();
