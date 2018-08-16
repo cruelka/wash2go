@@ -51358,6 +51358,17 @@ if(!$('body .so-modal')){
     $('.booking-steps__restore').click(function () {
         var data = getCookie('bookingform');
 
+        $('.booking-steps__card-item_where').each(function () {
+            if ($(this).attr('value') == data.where) {
+                $(this).addClass('booking-steps__card-item_active');
+            } else {
+                $(this).removeClass('booking-steps__card-item_active');
+            }
+        });
+
+        $('#pac-input').val(data.place);
+
+        soBookingForm.drawBookingConfirm();
         soBookingForm.changePage(7);
     });
 
