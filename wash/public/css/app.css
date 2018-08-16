@@ -9574,6 +9574,16 @@ button.close {
   display: inline-block;
 }
 
+.booking-steps__heading {
+  text-align: center;
+  border-bottom: 2px solid #e8e8e8;
+  margin-bottom: 10px;
+  color: #b5b5b5;
+  font-size: 1.4em;
+  display: inline-block;
+  margin: 0 auto 10px;
+}
+
 .review {
   background: #1BB7CD;
   padding: 30px 30px 10px;

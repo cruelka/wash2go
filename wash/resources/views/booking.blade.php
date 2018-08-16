@@ -330,10 +330,10 @@
 
                 
                 <div>Contact information</div>
-            
-                  
+                <br>
+                <br>
                 <a href="/login" class="btn btn-success">Login</a>
-
+                <br>
                 <br>
 
                 <div class="booking-steps__list-lable">
