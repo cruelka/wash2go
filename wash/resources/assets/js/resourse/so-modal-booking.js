@@ -135,7 +135,7 @@
                 }
             });
 
-            console.log(checkSelection);
+
 
             if(checkSelection==0){
                 $('.booking-steps__validation.booking-steps__validation_bodytype').empty().append('No body types').show();   
@@ -189,7 +189,7 @@
             $('.'+attr).removeClass('booking-steps__list-item_selected');
             $('.'+attr).find('.booking-steps__list-item-checkbox').removeClass('booking-steps__list-item-checkbox_selected');
             
-            console.log(status);
+       
             if(status==0){
                 $(this).addClass('booking-steps__list-item_selected');
                 $(this).find('.booking-steps__list-item-checkbox').addClass('booking-steps__list-item-checkbox_selected');
@@ -221,7 +221,7 @@
             
         });
 
-        console.log(steamcount);
+        
 
         if(nosteamcount==2){
             priceInner.empty().append('40 AED - Discount 10');
@@ -307,8 +307,6 @@
           let data = getBookingData();
           setCookie('bookingform',data,7);
 
-          console.log('----------------');
-          console.log(data);
 
           let html = `
           <div class="booking-steps__confirm">
@@ -369,6 +367,7 @@
 
       $('.booking-steps__restore').click(function(){
         let data = getCookie('bookingform');
+        console.log(data);
 
         $('.booking-steps__card-item_where').each(function(){
             if($(this).attr('value')==data.where){

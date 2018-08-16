@@ -51186,8 +51186,6 @@ if(!$('body .so-modal')){
                 }
             });
 
-            console.log(checkSelection);
-
             if (checkSelection == 0) {
                 $('.booking-steps__validation.booking-steps__validation_bodytype').empty().append('No body types').show();
                 return false;
@@ -51229,7 +51227,6 @@ if(!$('body .so-modal')){
             $('.' + attr).removeClass('booking-steps__list-item_selected');
             $('.' + attr).find('.booking-steps__list-item-checkbox').removeClass('booking-steps__list-item-checkbox_selected');
 
-            console.log(status);
             if (status == 0) {
                 $(this).addClass('booking-steps__list-item_selected');
                 $(this).find('.booking-steps__list-item-checkbox').addClass('booking-steps__list-item-checkbox_selected');
@@ -51257,8 +51254,6 @@ if(!$('body .so-modal')){
                 nosteamcount += 1;
             }
         });
-
-        console.log(steamcount);
 
         if (nosteamcount == 2) {
             priceInner.empty().append('40 AED - Discount 10');
@@ -51329,9 +51324,6 @@ if(!$('body .so-modal')){
         var data = getBookingData();
         setCookie('bookingform', data, 7);
 
-        console.log('----------------');
-        console.log(data);
-
         var html = '\n          <div class="booking-steps__confirm">\n            <div class="booking-steps__confirm-heading">Booking Eco Car Wash</div>\n            <div>Service information</div>\n            <div class="booking-steps__confirm-item">\n                <span class="booking-steps__confirm-lable">Where: </span>\n                <span>' + data.where + ' ' + data.place + '</span>\n            </div>\n            <div class="booking-steps__confirm-item">\n                <span class="booking-steps__confirm-lable">When: </span>\n                <span>' + data.date + ' ' + data.time + '</span>\n            </div>\n            <div class="booking-steps__confirm-item">\n                <span class="booking-steps__confirm-lable">Body Type: </span>\n                <span>' + data.bodyType + '</span>\n            </div>\n            <div class="booking-steps__confirm-item">\n                <span class="booking-steps__confirm-lable">Service: </span>\n                <div>\n                    ' + data.services.map(function (item) {
             var htmlService = '<span>' + item.name + '</span>';
 
@@ -51356,6 +51348,7 @@ if(!$('body .so-modal')){
 
     $('.booking-steps__restore').click(function () {
         var data = getCookie('bookingform');
+        console.log(data);
 
         $('.booking-steps__card-item_where').each(function () {
             if ($(this).attr('value') == data.where) {
