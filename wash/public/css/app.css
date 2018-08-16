@@ -9563,6 +9563,10 @@ button.close {
   padding: 20px;
 }
 
+.booking-steps__confirm-item {
+  margin: 10px 0;
+}
+
 .review {
   background: #1BB7CD;
   padding: 30px 30px 10px;
