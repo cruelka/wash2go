@@ -267,7 +267,7 @@
           $('.booking-steps__list-item_service.booking-steps__list-item_selected').each(function(){
             let obj = {};
             obj.name = $(this).text().trim();
-            obj.price = $(this).value();
+            obj.price = $(this).val();
             obj.services.push(obj);
           });
 
