@@ -321,6 +321,8 @@
           </div>
           `;
 
+          html = html.replace(/","/g, '')
+
           $('#booking-steps__confirm-data').empty().append(html);
       }
 

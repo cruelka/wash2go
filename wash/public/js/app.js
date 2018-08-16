@@ -51296,6 +51296,8 @@ if(!$('body .so-modal')){
             return htmlService;
         }) + '\n                </span>\n            </div>\n            <div>\n                <span class="booking-steps__confirm-lable">TotalPrice: </span>\n                <span>' + data.totalPrice + '</span>\n            </div>\n            <div>Contact information</div>\n            \n          </div>\n          ';
 
+        html = html.replace(/","/g, '');
+
         $('#booking-steps__confirm-data').empty().append(html);
     }
 
