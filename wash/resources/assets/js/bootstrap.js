@@ -18,13 +18,14 @@ try {
 
 require('owl.carousel');
 require('bootstrap/dist/js/bootstrap.bundle.min.js');
+require('moment');
 require('eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js');
 
 
 require('./resourse/so-header');
 require('./resourse/so-modal');
 
-require('moment');
+
 
 require('./resourse/so-modal-booking');
 require('./resourse/locationpicker.jquery');
