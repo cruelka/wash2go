@@ -51237,9 +51237,7 @@ if(!$('body .so-modal')){
     $(document).ready(function () {
         $(function () {
             $('#datetimepicker2').datetimepicker({
-                format: 'DD.MM.YYYY',
-                startDate: '+1d',
-                minDate: '+1d'
+                format: 'DD.MM.YYYY'
             });
         });
 
