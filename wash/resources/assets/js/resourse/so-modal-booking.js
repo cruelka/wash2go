@@ -381,11 +381,12 @@
         
         $('#pac-input').val(data.place);
 
+        $('.booking-steps__card-item_body-type').removeClass('booking-steps__card-item_selected');
         $('.booking-steps__card-item_body-type').each(function(){
-            $(this).removeClass('booking-steps__card-item_selected');
+            
             if($(this).text().trim()==data.bodyType){
-                $(this).click();
-            }
+                $(this).addClass('booking-steps__card-item_selected');
+            } 
         });
 
 
