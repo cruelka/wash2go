@@ -303,17 +303,21 @@
                 <span>${data.bodyType}</span>
             </div>
             <div>
-                <span class="booking-steps__confirm-lable">Service: </span><span>${data.services.map(item => {
-                    let htmlService = `
-                    <div>
-                        <span>${item.name} </span>
-                    </div>
-                    `
-                    return htmlService;
-                })}</span>
+                <span class="booking-steps__confirm-lable">Service: </span>
+                <span>
+                    ${data.services.map(item => {
+                        let htmlService = `
+                        <div>
+                            <span>${item.name} </span>
+                        </div>
+                        `;
+
+                        return htmlService;
+                    })}
+                </span>
             </div>
             <div>
-                <span class="booking-steps__confirm-lable">When: </span>
+                <span class="booking-steps__confirm-lable">TotalPrice: </span>
                 <span>${data.totalPrice}</span>
             </div>
             <div>Contact information</div>
