@@ -9593,6 +9593,14 @@ button.close {
   display: none;
 }
 
+.booking-steps__restore-inner {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccd0d2;
+  text-align: center;
+  cursor: pointer;
+}
+
 .review {
   background: #1BB7CD;
   padding: 30px 30px 10px;

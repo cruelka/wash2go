@@ -359,7 +359,7 @@
 
         if(getCookie('bookingform')!=null){
             $('.booking-steps__restore').append(`
-            <div>
+            <div class="booking-steps__restore-inner">
                 Restore previous booking
             </div>
             `);

@@ -51343,7 +51343,7 @@ if(!$('body .so-modal')){
     $(document).ready(function () {
 
         if (getCookie('bookingform') != null) {
-            $('.booking-steps__restore').append('\n            <div>\n                Restore previous booking\n            </div>\n            ');
+            $('.booking-steps__restore').append('\n            <div class="booking-steps__restore-inner">\n                Restore previous booking\n            </div>\n            ');
         }
     });
 
