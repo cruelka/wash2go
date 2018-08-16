@@ -299,13 +299,13 @@
         obj.totalPrice = $('.booking-steps__list-lable-total-data').first().text().trim();
         
 
-        setCookie('bookingform',obj,7);
-        getCookie('bookingform');
+        
         return obj;
       }
 
       function drawBookingConfirm(){
           let data = getBookingData();
+          setCookie('bookingform',data,7);
 
           console.log('----------------');
           console.log(data);
@@ -381,9 +381,9 @@
         $('#pac-input').val(data.place);
 
 
-
-        soBookingForm.drawConfirm();
         soBookingForm.changePage(7);
+        soBookingForm.drawConfirm();
+        
       });
       
 

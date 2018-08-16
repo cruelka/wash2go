@@ -51322,13 +51322,12 @@ if(!$('body .so-modal')){
         obj.time = $('#datetimepicker3').find('input').val();
         obj.totalPrice = $('.booking-steps__list-lable-total-data').first().text().trim();
 
-        setCookie('bookingform', obj, 7);
-        getCookie('bookingform');
         return obj;
     }
 
     function drawBookingConfirm() {
         var data = getBookingData();
+        setCookie('bookingform', data, 7);
 
         console.log('----------------');
         console.log(data);
@@ -51368,8 +51367,8 @@ if(!$('body .so-modal')){
 
         $('#pac-input').val(data.place);
 
-        soBookingForm.drawConfirm();
         soBookingForm.changePage(7);
+        soBookingForm.drawConfirm();
     });
 
     window.soBookingForm = {};
