@@ -51281,12 +51281,14 @@ if(!$('body .so-modal')){
         obj.time = $('#datetimepicker3').find('input').val();
         obj.totalPrice = $('.booking-steps__list-lable-total').text().trim();
 
-        console.log(obj);
         return obj;
     }
 
     function drawBookingConfirm() {
         var data = getBookingData();
+
+        console.log('----------------');
+        console.log(data);
 
         var html = '\n          <div>\n            <div>Heading</div>\n            <div>Service information</div>\n            <div>\n                <span>Where: </span><span<' + data.where + ' ' + data.place + '</span>\n            </div>\n            <div>\n                <span>When: </span><span<' + data.date + ' ' + data.time + '</span>\n            </div>\n            <div>\n                <span>Body Type: </span><span<' + data.bodyType + '</span>\n            </div>\n            <div>\n                <span>Service: </span><span<' + data.services.map(function (item) {
             return item.name;

@@ -276,13 +276,15 @@
         obj.date = $('#datetimepicker2').find('input').val();
         obj.time = $('#datetimepicker3').find('input').val();
         obj.totalPrice = $('.booking-steps__list-lable-total').text().trim();
-        
-        console.log(obj);
+
         return obj;
       }
 
       function drawBookingConfirm(){
           let data = getBookingData();
+
+          console.log('----------------');
+          console.log(data);
 
           let html = `
           <div>
