@@ -273,7 +273,8 @@
 
         obj.date = $('#datetimepicker2').find('input').val();
         obj.time = $('#datetimepicker3').find('input').val();
-
+        
+        console.log(obj);
         return obj;
       }
 
