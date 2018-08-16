@@ -331,7 +331,6 @@
                 
                 <div>Contact information</div>
                 <br>
-                <br>
                 <a href="/login" class="btn btn-success">Login</a>
                 <br>
                 <br>
