@@ -138,7 +138,8 @@
             console.log(checkSelection);
 
             if(checkSelection==0){
-             return false;
+                $('.booking-steps__validation.booking-steps__bodytype').empty().append('No location');   
+                return false;
             }
     
         }

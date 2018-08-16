@@ -51165,6 +51165,7 @@ if(!$('body .so-modal')){
             console.log(checkSelection);
 
             if (checkSelection == 0) {
+                $('.booking-steps__validation.booking-steps__bodytype').empty().append('No location');
                 return false;
             }
         }

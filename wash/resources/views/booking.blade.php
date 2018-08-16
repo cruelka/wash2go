@@ -94,6 +94,8 @@
                   </div>
                 </div>
 
+                <div class="booking-steps__validation booking-steps__bodytype"></div>
+
                 <div class="booking-steps__heading">Select Car type</div>
 
                 
