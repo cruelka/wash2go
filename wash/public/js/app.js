@@ -27577,10 +27577,31 @@ window._ = __webpack_require__(137);
  */
 
 try {
-  window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__(2);
+    window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__(2);
 
-  __webpack_require__(138);
+    __webpack_require__(138);
 } catch (e) {}
+
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1, c.length);
+        }if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
 
 __webpack_require__(139);
 __webpack_require__(140);
@@ -27612,9 +27633,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 var token = document.head.querySelector('meta[name="csrf-token"]');
 
 if (token) {
-  window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
 } else {
-  console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+    console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
 
 /**
@@ -51298,6 +51319,7 @@ if(!$('body .so-modal')){
         obj.time = $('#datetimepicker3').find('input').val();
         obj.totalPrice = $('.booking-steps__list-lable-total-data').first().text().trim();
 
+        setCookie('bookingform', obj, 7);
         return obj;
     }
 

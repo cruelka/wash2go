@@ -351,7 +351,12 @@
                   Or you can book like a guest
                 </div>
 
-                 <form>
+                 
+              
+
+              @endif
+
+              <form>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -361,10 +366,8 @@
                     <label for="exampleInputPassword1">Phone</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Phone">
                   </div>
+                  <div class="btn btn-success" onclick="">Confirm</div>
                 </form>
-              <div class="btn btn-success" onclick="">Confirm</div>
-
-              @endif
 
               </div>
 

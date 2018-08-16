@@ -297,7 +297,9 @@
         obj.date = $('#datetimepicker2').find('input').val();
         obj.time = $('#datetimepicker3').find('input').val();
         obj.totalPrice = $('.booking-steps__list-lable-total-data').first().text().trim();
+        
 
+        setCookie('bookingform',obj,7);
         return obj;
       }
 
