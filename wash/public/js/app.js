@@ -51257,11 +51257,11 @@ if(!$('body .so-modal')){
     });
 
     $('#datetimepicker2').click(function () {
-        $(this).$('.input-group-addon').click();
+        $(this).find('.input-group-addon').click();
     });
 
     $('#datetimepicker3').click(function () {
-        $(this).$('.input-group-addon').click();
+        $(this).find('.input-group-addon').click();
     });
 })(jQuery);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
