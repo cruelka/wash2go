@@ -293,7 +293,7 @@
                     <div class='input-group date' id='datetimepicker2'>
                       <input type='text' class="form-control" />
                         <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-time"></span>
+                            <span class="glyphicon glyphicon-calendar"></span>
                         </span>
                     </div>
 
@@ -323,6 +323,13 @@
                   </div>
 
                 <div class="booking-steps__heading">Your Contact information</div>
+                  
+                <div class="btn btn-success">Login</div>
+
+                <div class="booking-steps__list-lable">
+                  Or you can book like a guest
+                </div>
+
                  <form>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
@@ -333,8 +340,8 @@
                     <label for="exampleInputPassword1">Phone</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Phone">
                   </div>
-              </form>
-              <div class="btn btn-success">Send Enquiry</div>
+                </form>
+              <div class="btn btn-success">Confirm</div>
 
               </div>
 
