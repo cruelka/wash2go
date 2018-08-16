@@ -277,7 +277,7 @@
                       Back
                     </div>
                   </div>
-                  <div class="button button_right" onclick="soBookingForm.changePage(7)">
+                  <div class="button button_right" onclick="soBookingForm.changePage(7);soBookingForm.drawConfirm()">
                     <div class="button__body">
                       Continue
                     </div>
@@ -347,7 +347,7 @@
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Phone">
                   </div>
                 </form>
-              <div class="btn btn-success" onclick="window.soBookingForm.drawConfirm()">Confirm</div>
+              <div class="btn btn-success" onclick="">Confirm</div>
 
               </div>
 

@@ -303,11 +303,10 @@
                 <span>${data.bodyType}</span>
             </div>
             <div>
-                <span>Service: </span><span>${data.services.map(item => {
+                <span class="booking-steps__confirm-lable">Service: </span><span>${data.services.map(item => {
                     let htmlService = `
                     <div>
                         <span>${item.name} </span>
-                        <span>${item.price}</span>
                     </div>
                     `
                     return htmlService;
@@ -322,7 +321,7 @@
           </div>
           `;
 
-          $('#booking-steps__confirm-data').append(html);
+          $('#booking-steps__confirm-data').empty().append(html);
       }
 
       $('.booking-steps__card-item_where').click(function(){
