@@ -153,11 +153,13 @@
         }
 
         if(required && required=='services'){
-            if($('#pac-input').val()==''){
+            if($('.booking-steps__list-item_service.booking-steps__list-item_selected').length==0){
                 $('.booking-steps__validation.booking-steps__validation_services').empty().append('No order').show();
                 return false;
                
             }
+
+            
         }
 
         $('.booking-steps__validation').empty().hide();
