@@ -51171,9 +51171,12 @@ if(!$('body .so-modal')){
 
         if (required && required == 'map') {
             if ($('#pac-input').val() == '') {
+                $('.booking-steps__validation.booking-steps__map').append('No location');
                 return false;
             }
         }
+
+        $('.booking-steps__validation').empty();
 
         $('.booking-steps__item').hide();
         $('#booking-steps__item-' + page).show();

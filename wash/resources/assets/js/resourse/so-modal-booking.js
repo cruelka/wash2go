@@ -145,9 +145,13 @@
 
         if(required && required=='map'){
             if($('#pac-input').val()==''){
+                $('.booking-steps__validation.booking-steps__map').append('No location');
                 return false;
+               
             }
         }
+
+        $('.booking-steps__validation').empty();
 
         
 
