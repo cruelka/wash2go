@@ -30,6 +30,10 @@
                       </div>
                     </div>
                   </div>
+
+                  <div class="booking-steps__restore">
+                    
+                  </div>
                   
                  
                 </div>

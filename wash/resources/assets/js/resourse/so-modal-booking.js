@@ -353,6 +353,26 @@
           $(this).addClass('booking-steps__card-item_active');
       });
 
+
+      //restore from cockie
+
+      $(document).ready(function(){
+        if(getCookie('bookingform')!=null){
+            $('.booking-steps__restore').append(`
+            <div>
+                Restore previous booking
+            </div>
+            `);
+
+        }
+      });
+
+      $('.booking-steps__restore').click(function(){
+        let data = getCookie('bookingform');
+
+        
+        soBookingForm.changePage(7);
+      });
       
 
       

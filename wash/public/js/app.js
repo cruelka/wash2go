@@ -51347,6 +51347,20 @@ if(!$('body .so-modal')){
         $(this).addClass('booking-steps__card-item_active');
     });
 
+    //restore from cockie
+
+    $(document).ready(function () {
+        if (getCookie('bookingform') != null) {
+            $('.booking-steps__restore').append('\n            <div>\n                Restore previous booking\n            </div>\n            ');
+        }
+    });
+
+    $('.booking-steps__restore').click(function () {
+        var data = getCookie('bookingform');
+
+        soBookingForm.changePage(7);
+    });
+
     window.soBookingForm = {};
     window.soBookingForm.changePage = changePage;
     window.soBookingForm.priceChange = priceChange;
