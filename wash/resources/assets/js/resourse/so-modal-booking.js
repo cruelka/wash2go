@@ -232,22 +232,6 @@
 
     $(document).ready(function(){
 
-        function zerofy(value){
-            if(value && String(value).length==1){
-                value = String('0') + String(value);
-            }
-
-            return value;
-        }
-
-        var now = new Date();
-        var day = now.getDate();
-        var month = now.getDay() + 1;
-        var year = now.getYear();
-
-        var dateString = zerofy(day) + '.' + zerofy(month) + '.' + zerofy(year);
-
-        $('#datetimepicker2').val(dateString);
 
 
         $(function () {
@@ -255,6 +239,7 @@
                         format: 'DD.MM.YYYY',
                         minDate: moment().add('0','days'),
                         maxDate: moment().add('7','days'),
+                        defaultDate: moment().toDate(),
                     });
                 });
 
