@@ -327,6 +327,10 @@
                 <div id="booking-steps__confirm-data">
 
                 </div>
+
+                
+                <div>Contact information</div>
+            
                   
                 <a href="/login" class="btn btn-success">Login</a>
 

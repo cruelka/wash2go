@@ -9549,6 +9549,20 @@ button.close {
   display: none;
 }
 
+.booking-steps__confirm {
+  border: 1px solid #e8e8e8;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.booking-steps__confirm-price {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: 1px solid #e8e8e8;
+  padding: 20px;
+}
+
 .review {
   background: #1BB7CD;
   padding: 30px 30px 10px;

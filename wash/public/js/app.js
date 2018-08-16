@@ -51294,7 +51294,7 @@ if(!$('body .so-modal')){
             var htmlService = '<span>' + item.name + '</span>';
 
             return htmlService;
-        }) + '\n                </div>\n            </div>\n            <div>\n                <span class="booking-steps__confirm-lable">TotalPrice: </span>\n                <span>' + data.totalPrice + '</span>\n            </div>\n            <div>Contact information</div>\n            \n          </div>\n          ';
+        }) + '\n                </div>\n            </div>\n\n     \n            <div class="booking-steps__confirm-price">' + data.totalPrice + '</div>\n\n          </div>\n          ';
 
         $('#booking-steps__confirm-data').empty().append(html);
     }

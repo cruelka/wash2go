@@ -312,12 +312,10 @@
                     })}
                 </div>
             </div>
-            <div>
-                <span class="booking-steps__confirm-lable">TotalPrice: </span>
-                <span>${data.totalPrice}</span>
-            </div>
-            <div>Contact information</div>
-            
+
+     
+            <div class="booking-steps__confirm-price">${data.totalPrice}</div>
+
           </div>
           `;
 
