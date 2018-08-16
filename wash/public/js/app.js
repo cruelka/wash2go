@@ -51236,7 +51236,7 @@ if(!$('body .so-modal')){
 
     $(document).ready(function () {
         $(function () {
-            $('#datetimepicker2').datetimepicker();
+            $('#datetimepicker2').datetimepicker({ format: 'DD.MM.YYYY' });
         });
 
         $(function () {
