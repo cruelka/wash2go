@@ -17,14 +17,14 @@
                   <div class="row">
                     
                     <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
-                      <div  onclick="soBookingForm.changePage(2)" class="booking-steps__card-item">
+                      <div value="At Home" onclick="soBookingForm.changePage(2)" class="booking-steps__card-item booking-steps__card-item_where">
                         <img src="{{asset('images/icons/home.svg')}}" alt="Home" class="booking-steps__card-item-img">
                         At home
                       </div>
                     </div>
 
                     <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
-                      <div onclick="soBookingForm.changePage(3)" class="booking-steps__card-item">
+                      <div value="Visit Us" onclick="soBookingForm.changePage(3)" class="booking-steps__card-item booking-steps__card-item_where">
                         <img src="{{asset('images/icons/location.svg')}}" alt="Home"  class="booking-steps__card-item-img">
                         Visit us
                       </div>
@@ -209,7 +209,7 @@
                     <div class="booking-steps__list-lable">
                       Internal
                     </div>
-                    <div class="booking-steps__list-item booking-steps__list-item_internal booking-steps__list-item_no-steam" value="25" oneandonly="booking-steps__list-item_internal">
+                    <div class="booking-steps__list-item booking-steps__list-item_service booking-steps__list-item_internal booking-steps__list-item_no-steam" value="25" oneandonly="booking-steps__list-item_internal">
                       <span class="booking-steps__list-item-checkbox">
                         <span class="booking-steps__list-item-checkbox-i"></span>
                       </span>
@@ -220,7 +220,7 @@
                         25 AED
                       </span>
                     </div>
-                    <div class="booking-steps__list-item booking-steps__list-item_internal booking-steps__list-item_steam" value="50" oneandonly="booking-steps__list-item_internal">
+                    <div class="booking-steps__list-item booking-steps__list-item_service booking-steps__list-item_internal booking-steps__list-item_steam" value="50" oneandonly="booking-steps__list-item_internal">
                       <span class="booking-steps__list-item-checkbox">
                         <span class="booking-steps__list-item-checkbox-i"></span>
                       </span>
@@ -235,7 +235,7 @@
                     <div class="booking-steps__list-lable">
                       External
                     </div>
-                    <div class="booking-steps__list-item booking-steps__list-item_external booking-steps__list-item_no-steam" value="25" oneandonly="booking-steps__list-item_external">
+                    <div class="booking-steps__list-item booking-steps__list-item_service booking-steps__list-item_external booking-steps__list-item_no-steam" value="25" oneandonly="booking-steps__list-item_external">
                       <span class="booking-steps__list-item-checkbox">
                         <span class="booking-steps__list-item-checkbox-i"></span>
                       </span>
@@ -246,7 +246,7 @@
                         25 AED
                       </span>
                     </div>
-                    <div class="booking-steps__list-item booking-steps__list-item_external  booking-steps__list-item_steam" value="35" oneandonly="booking-steps__list-item_external">
+                    <div class="booking-steps__list-item booking-steps__list-item_service booking-steps__list-item_external  booking-steps__list-item_steam" value="35" oneandonly="booking-steps__list-item_external">
                       <span class="booking-steps__list-item-checkbox">
                         <span class="booking-steps__list-item-checkbox-i"></span>
                       </span>
@@ -296,7 +296,7 @@
                             <span class="glyphicon glyphicon-calendar"></span>
                         </span>
                     </div>
-
+                    <br>
                     <div class="booking-steps__list-lable">
                       Select time
                     </div>
@@ -324,7 +324,9 @@
 
                 <div class="booking-steps__heading">Your Contact information</div>
                   
-                <div class="btn btn-success">Login</div>
+                <a href="/login" class="btn btn-success">Login</a>
+
+                <br>
 
                 <div class="booking-steps__list-lable">
                   Or you can book like a guest
@@ -341,7 +343,7 @@
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Phone">
                   </div>
                 </form>
-              <div class="btn btn-success">Confirm</div>
+              <div class="btn btn-success" onclick="">Confirm</div>
 
               </div>
 

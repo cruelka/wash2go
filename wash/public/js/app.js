@@ -51232,10 +51232,6 @@ if(!$('body .so-modal')){
         }
     });
 
-    window.soBookingForm = {};
-    window.soBookingForm.changePage = changePage;
-    window.soBookingForm.priceChange = priceChange;
-
     $(document).ready(function () {
 
         $(function () {
@@ -51263,6 +51259,38 @@ if(!$('body .so-modal')){
     $('#datetimepicker3').find('.form-control').click(function () {
         $(this).parent().find('.input-group-addon').click();
     });
+
+    function getBookingData() {
+        var obj = {};
+        obj.where = $('.booking-steps__card-item_where.booking-steps__card-item_active').attr('value');
+        obj.place = $('#pac-input').val();
+        obj.bodyType = $('.booking-steps__card-item_body-type.booking-steps__card-item_selected').text().trim();
+
+        obj.services = [];
+
+        $('.booking-steps__list-item_service.booking-steps__list-item_selected').each(function () {
+            var obj = {};
+            obj.name = $(this).text().trim();
+            obj.price = $(this).value();
+            obj.services.push(obj);
+        });
+
+        obj.date = $('#datetimepicker2').find('input').val();
+        obj.time = $('#datetimepicker3').find('input').val();
+
+        return obj;
+    }
+
+    $('.booking-steps__card-item_where').click(function () {
+        $('.booking-steps__card-item_where').removeClass('booking-steps__card-item_active');
+        $(this).addClass('booking-steps__card-item_active');
+    });
+
+    window.soBookingForm = {};
+    window.soBookingForm.changePage = changePage;
+    window.soBookingForm.priceChange = priceChange;
+
+    window.soBookingForm.getData = getBookingData;
 })(jQuery);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
