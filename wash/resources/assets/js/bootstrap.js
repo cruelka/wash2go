@@ -23,6 +23,9 @@ require('eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min
 
 require('./resourse/so-header');
 require('./resourse/so-modal');
+
+require('moment');
+
 require('./resourse/so-modal-booking');
 require('./resourse/locationpicker.jquery');
 

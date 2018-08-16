@@ -21,6 +21,7 @@
     "dependencies": {
         "bootstrap": "^4.1.3",
         "eonasdan-bootstrap-datetimepicker": "^4.17.47",
+        "moment": "^2.22.2",
         "owl.carousel": "^2.3.4"
     }
 }
