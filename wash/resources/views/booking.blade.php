@@ -332,10 +332,20 @@
 
                 
                 <div>Contact information</div>
+
+                @if(Auth::check())
+
+                
+                @else
+                
+
+
                 <br>
                 <a href="/login" class="btn btn-success">Login</a>
                 <br>
                 <br>
+
+                
 
                 <div class="booking-steps__list-lable">
                   Or you can book like a guest
@@ -353,6 +363,8 @@
                   </div>
                 </form>
               <div class="btn btn-success" onclick="">Confirm</div>
+
+              @endif
 
               </div>
 
