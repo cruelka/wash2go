@@ -304,13 +304,13 @@
             </div>
             <div>
                 <span class="booking-steps__confirm-lable">Service: </span>
-                <span>
+                <div>
                     ${data.services.map(item => {
                         let htmlService = '<span>'+item.name+'</span>';
 
                         return htmlService;
                     })}
-                </span>
+                </div>
             </div>
             <div>
                 <span class="booking-steps__confirm-lable">TotalPrice: </span>
