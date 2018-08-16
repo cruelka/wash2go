@@ -51290,9 +51290,10 @@ if(!$('body .so-modal')){
         console.log('----------------');
         console.log(data);
 
-        var html = '\n          <div>\n            <div>Heading</div>\n            <div>Service information</div>\n            <div>\n                <span>Where: </span><span<' + data.where + ' ' + data.place + '</span>\n            </div>\n            <div>\n                <span>When: </span><span<' + data.date + ' ' + data.time + '</span>\n            </div>\n            <div>\n                <span>Body Type: </span><span<' + data.bodyType + '</span>\n            </div>\n            <div>\n                <span>Service: </span><span<' + data.services.map(function (item) {
-            return item.name;
-        }) + '</span>\n            </div>\n            <div>' + data.totalPrice + '</div>\n            <div>Contact information</div>\n            \n          </div>\n          ';
+        var html = '\n          <div class="booking-steps__confirm">\n            <div>Heading</div>\n            <div>Service information</div>\n            <div>\n                <span class="booking-steps__confirm-lable">Where: </span>\n                <span>' + data.where + ' ' + data.place + '</span>\n            </div>\n            <div>\n                <span class="booking-steps__confirm-lable">When: </span>\n                <span>' + data.date + ' ' + data.time + '</span>\n            </div>\n            <div>\n                <span class="booking-steps__confirm-lable">Body Type: </span>\n                <span>' + data.bodyType + '</span>\n            </div>\n            <div>\n                <span>Service: </span><span>' + data.services.map(function (item) {
+            var htmlService = '\n                    <div>\n                        <span>' + item.name + ' </span>\n                        <span>' + item.price + '</span>\n                    </div>\n                    ';
+            return htmlService;
+        }) + '</span>\n            </div>\n            <div>\n                <span class="booking-steps__confirm-lable">When: </span>\n                <span>' + data.totalPrice + '</span>\n            </div>\n            <div>Contact information</div>\n            \n          </div>\n          ';
 
         $('#booking-steps__confirm-data').append(html);
     }

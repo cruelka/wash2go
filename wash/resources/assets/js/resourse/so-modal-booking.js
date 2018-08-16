@@ -287,24 +287,36 @@
           console.log(data);
 
           let html = `
-          <div>
+          <div class="booking-steps__confirm">
             <div>Heading</div>
             <div>Service information</div>
             <div>
-                <span>Where: </span><span<${data.where} ${data.place}</span>
+                <span class="booking-steps__confirm-lable">Where: </span>
+                <span>${data.where} ${data.place}</span>
             </div>
             <div>
-                <span>When: </span><span<${data.date} ${data.time}</span>
+                <span class="booking-steps__confirm-lable">When: </span>
+                <span>${data.date} ${data.time}</span>
             </div>
             <div>
-                <span>Body Type: </span><span<${data.bodyType}</span>
+                <span class="booking-steps__confirm-lable">Body Type: </span>
+                <span>${data.bodyType}</span>
             </div>
             <div>
-                <span>Service: </span><span<${data.services.map(item => {
-                    return item.name;
+                <span>Service: </span><span>${data.services.map(item => {
+                    let htmlService = `
+                    <div>
+                        <span>${item.name} </span>
+                        <span>${item.price}</span>
+                    </div>
+                    `
+                    return htmlService;
                 })}</span>
             </div>
-            <div>${data.totalPrice}</div>
+            <div>
+                <span class="booking-steps__confirm-lable">When: </span>
+                <span>${data.totalPrice}</span>
+            </div>
             <div>Contact information</div>
             
           </div>
