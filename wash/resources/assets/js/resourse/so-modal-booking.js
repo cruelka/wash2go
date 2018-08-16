@@ -145,7 +145,7 @@
 
         if(required && required=='map'){
             if($('#pac-input').val()==''){
-                $('.booking-steps__validation.booking-steps__map').append('No location');
+                $('.booking-steps__validation.booking-steps__map').empty().append('No location');
                 return false;
                
             }
