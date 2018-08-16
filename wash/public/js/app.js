@@ -51384,6 +51384,8 @@ if(!$('body .so-modal')){
         $('#datetimepicker3 input').val(data.time);
         $('#datetimepicker2 input').val(data.date);
 
+        $('.booking-steps__list-lable-total-data').empty().append(data.totalPrice);
+
         soBookingForm.changePage(7);
         soBookingForm.drawConfirm();
     });

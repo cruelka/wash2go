@@ -277,6 +277,8 @@
         $(this).parent().find('.input-group-addon').click();
       });
 
+      
+
       function getBookingData(){
         let obj = {};
         obj.where = $('.booking-steps__card-item_where.booking-steps__card-item_active').attr('value');
@@ -405,6 +407,8 @@
         
         $('#datetimepicker3 input').val(data.time);
         $('#datetimepicker2 input').val(data.date);
+
+        $('.booking-steps__list-lable-total-data').empty().append(data.totalPrice);
 
 
         soBookingForm.changePage(7);
