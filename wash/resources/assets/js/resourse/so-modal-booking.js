@@ -289,7 +289,7 @@
             <div>Heading</div>
             <div>Service information</div>
             <div>
-                <span>Where: </span><span<${data.where} ${obj.place}</span>
+                <span>Where: </span><span<${data.where} ${data.place}</span>
             </div>
             <div>
                 <span>When: </span><span<${data.date} ${data.time}</span>
@@ -302,7 +302,7 @@
                     return item.name;
                 })}</span>
             </div>
-            <div>${obj.totalPrice}</div>
+            <div>${data.totalPrice}</div>
             <div>Contact information</div>
             
           </div>
