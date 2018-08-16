@@ -262,14 +262,16 @@
         obj.place = $('#pac-input').val();
         obj.bodyType = $('.booking-steps__card-item_body-type.booking-steps__card-item_selected').text().trim();
 
-        obj.services = [];
+        let services = [];
           
           $('.booking-steps__list-item_service.booking-steps__list-item_selected').each(function(){
             let obj = {};
             obj.name = $(this).text().trim();
             obj.price = $(this).attr('value');
-            obj.services.push(obj);
+            services.push(obj);
           });
+
+        obj.services = services;
 
         obj.date = $('#datetimepicker2').find('input').val();
         obj.time = $('#datetimepicker3').find('input').val();
