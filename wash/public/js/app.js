@@ -51348,7 +51348,7 @@ if(!$('body .so-modal')){
 
     $('.booking-steps__restore').click(function () {
         var data = getCookie('bookingform');
-        console.log(data);
+        console.log(data.where);
 
         $('.booking-steps__card-item_where').each(function () {
             if ($(this).attr('value') == data.where) {
