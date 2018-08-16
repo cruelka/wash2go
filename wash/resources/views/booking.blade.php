@@ -51,7 +51,7 @@
 
                 <div class="booking-steps__heading">Select your location</div>
                 <div class="booking-steps__body">
-                  <div class="booking-steps__validation booking-steps__map"></div>
+                  <div class="booking-steps__validation booking-steps__validation_map"></div>
                   <input id="pac-input" class="controls" type="text" placeholder="Search Box">
                   <div id="map"></div>
                 </div>
@@ -94,11 +94,11 @@
                   </div>
                 </div>
 
-                <div class="booking-steps__validation booking-steps__bodytype"></div>
+                
 
                 <div class="booking-steps__heading">Select Car type</div>
 
-                
+                <div class="booking-steps__validation booking-steps__validation_bodytype"></div>
 
                 <div class="row">
                     
@@ -205,7 +205,7 @@
                 </div>
 
                 <div class="booking-steps__heading">Select washing type</div>
-                <div class="booking-steps__errors"></div>
+                <div class="booking-steps__validation booking-steps__validation_services"></div>
                 <div class="booking-steps__body">
                   <div class="booking-steps__list">
                     <div class="booking-steps__list-lable">

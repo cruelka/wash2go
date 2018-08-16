@@ -51165,14 +51165,21 @@ if(!$('body .so-modal')){
             console.log(checkSelection);
 
             if (checkSelection == 0) {
-                $('.booking-steps__validation.booking-steps__bodytype').empty().append('No body types').show();
+                $('.booking-steps__validation.booking-steps__validation_bodytype').empty().append('No body types').show();
                 return false;
             }
         }
 
         if (required && required == 'map') {
             if ($('#pac-input').val() == '') {
-                $('.booking-steps__validation.booking-steps__map').empty().append('No location').show();
+                $('.booking-steps__validation.booking-steps__validation_map').empty().append('No location').show();
+                return false;
+            }
+        }
+
+        if (required && required == 'services') {
+            if ($('#pac-input').val() == '') {
+                $('.booking-steps__validation.booking-steps__validation_services').empty().append('No order').show();
                 return false;
             }
         }
