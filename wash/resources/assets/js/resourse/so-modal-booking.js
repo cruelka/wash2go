@@ -306,11 +306,7 @@
                 <span class="booking-steps__confirm-lable">Service: </span>
                 <span>
                     ${data.services.map(item => {
-                        let htmlService = `
-                        <div>
-                            <span>${item.name} </span>
-                        </div>
-                        `;
+                        let htmlService = '<div><span>'+item.name+'</span></div>';
 
                         return htmlService;
                     })}
