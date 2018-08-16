@@ -27584,7 +27584,7 @@ try {
 
 __webpack_require__(139);
 __webpack_require__(140);
-__webpack_require__(0);
+window.moment = __webpack_require__(0);
 __webpack_require__(141);
 
 __webpack_require__(143);

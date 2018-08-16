@@ -18,7 +18,7 @@ try {
 
 require('owl.carousel');
 require('bootstrap/dist/js/bootstrap.bundle.min.js');
-require('moment');
+window.moment = require('moment');
 require('eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js');
 
 
