@@ -51236,7 +51236,7 @@ if(!$('body .so-modal')){
 
     $(document).ready(function () {
         $(function () {
-            $('#datetimepicker2').datetimepicker({ format: 'DD.MM.YYYY', minDate: moment() });
+            $('#datetimepicker2').datetimepicker({ format: 'DD.MM.YYYY', 'setStartDate': today });
         });
 
         $(function () {
