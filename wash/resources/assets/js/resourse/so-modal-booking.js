@@ -288,7 +288,7 @@
 
           let html = `
           <div class="booking-steps__confirm">
-            <div class="booking-steps__heading">Booking Eco Car Wash</div>
+            <div class="booking-steps__confirm-heading">Booking Eco Car Wash</div>
             <div>Service information</div>
             <div class="booking-steps__confirm-item">
                 <span class="booking-steps__confirm-lable">Where: </span>
