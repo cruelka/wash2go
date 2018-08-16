@@ -51305,6 +51305,7 @@ if(!$('body .so-modal')){
     window.soBookingForm.priceChange = priceChange;
 
     window.soBookingForm.getData = getBookingData;
+    window.soBookingForm.drawConfirm = drawBookingConfirm;
 })(jQuery);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 

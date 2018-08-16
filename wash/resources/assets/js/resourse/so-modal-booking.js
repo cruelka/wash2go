@@ -325,6 +325,7 @@
     window.soBookingForm.priceChange = priceChange;
 
     window.soBookingForm.getData = getBookingData;
+    window.soBookingForm.drawConfirm = drawBookingConfirm;
 
 
 })( jQuery );
