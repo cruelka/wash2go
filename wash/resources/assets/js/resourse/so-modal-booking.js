@@ -232,7 +232,7 @@
 
     $(document).ready(function(){
         $(function () {
-                    $('#datetimepicker2').datetimepicker({ format: 'DD.MM.YYYY' });
+                    $('#datetimepicker2').datetimepicker({ format: 'DD.MM.YYYY',minDate: moment() });
                 });
 
                 $(function () {
