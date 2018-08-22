@@ -77,7 +77,7 @@
   <div style="position: relative;max-width: 1680px;margin: 0 auto;">
   <div class="welcome-fullscreen-owl so-header__offset">
 
-    <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/5.jpg')}})">
+    <div class="welcome-fullscreen" style="background-image: url({{asset('images/slider/1.jpg')}})">
       <div class="container welcome-fullscreen__inner">
         <div class="welcome-fullscreen__data">
           <div class="welcome-fullscreen__body">
@@ -90,7 +90,7 @@
       </div>
     </div>
     
-    <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/3.jpg')}})">
+    <div class="welcome-fullscreen" style="background-image: url({{asset('images/slider/2.jpg')}})">
       <div class="container welcome-fullscreen__inner">
         <div class="welcome-fullscreen__data" >
           <div class="welcome-fullscreen__body">
@@ -103,7 +103,7 @@
       </div>
     </div>
 
-    <div class="welcome-fullscreen" style="background-image: url({{asset('images/bg/4.jpg')}})">
+    <div class="welcome-fullscreen" style="background-image: url({{asset('images/slider/3.jpg')}})">
       <div class="container welcome-fullscreen__inner">
         <div class="welcome-fullscreen__data">
           <div class="welcome-fullscreen__body">
