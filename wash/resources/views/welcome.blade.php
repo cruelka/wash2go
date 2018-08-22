@@ -346,9 +346,9 @@
                 <div class="card-preview__info-lable">
                   Benefits
                 </div>
-                <div class="card-preview__info-link">
+                <a href="https://wash2go.ae/page/why-eco-wash" class="card-preview__info-link">
                   More Information <img class="card-preview__info-link-i" src="{{asset('images/icons/arrow-right_green.svg')}}" alt="Arrow">
-                </div>
+                </a>
           </div>
           
         </div>
