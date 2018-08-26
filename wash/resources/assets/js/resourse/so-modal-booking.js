@@ -425,9 +425,11 @@
         obj.phone = $('#bookingphone').val().trim();
 
 
-        console.log(obj);
+        let form = new FormData;
 
-        $.post('/booking',obj,function(data){
+        form.append(obj.name);
+
+        $.post('/booking',form,function(data){
             alert(data);
         })
     };
