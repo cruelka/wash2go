@@ -13242,10 +13242,6 @@ button.close {
   margin-bottom: 20px;
 }
 
-.lable_black {
-  color: black;
-}
-
 .navbar {
   border-bottom: 1px solid #E8E8E8;
 }
@@ -13371,6 +13367,10 @@ body {
 }
 
 .lable_black {
+  color: black;
+}
+
+.black {
   color: black;
 }
 

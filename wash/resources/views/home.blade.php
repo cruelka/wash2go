@@ -56,7 +56,7 @@
   <div>
                 <div>
                     <div class="lable">Service</div>
-                    <div class="text">Internal Washing 25 AED,External Washing 25 AED</div>
+                    <div class="text black">Internal Washing 25 AED,External Washing 25 AED</div>
                     <div class="row tabled__row">
                         <div class="col-sm-3 col-xs-12">
                             <div class="lable">Where</div>
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                     <div class="lable">Total</div>
-                    <div class="text">40 AED - Discount 10 AED - Total</div>
+                    <div class="text black">40 AED - Discount 10 AED - Total</div>
                 </div>
             </div>
   
