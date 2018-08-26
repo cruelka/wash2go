@@ -8786,6 +8786,13 @@ button.close {
   background: #212529;
 }
 
+.so-header__user-i {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 21px;
+  margin-right: 5px;
+}
+
 .subscribe {
   padding: 40px 0;
   background: #52B947;
