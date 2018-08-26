@@ -364,7 +364,7 @@
                     {{$eco->title}}
               </div>
                 <div class="card-preview__info-body">
-                {{ $eco->body }}
+                {{ $eco->excerpt }}
                 </div>
                 <div class="card-preview__info-lable">
                   Benefits
