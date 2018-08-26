@@ -51398,10 +51398,27 @@ if(!$('body .so-modal')){
         obj.email = $('#bookingmail').val().trim();
         obj.phone = $('#bookingphone').val().trim();
 
-        console.log(obj);
+        var formData = new FormData();
 
-        $.post('/booking', obj, function (data) {
-            alert(data);
+        if (obj.place.trim() != '') {
+            obj.where = obj.place;
+        }
+
+        for (var key in obj) {
+            formData.append(key, obj[key]);
+        }
+
+        var token = $('#booking-form').attr('data');
+
+        $.ajax({
+            type: "POST",
+            url: '/booking',
+            headers: {
+                'X-CSRF-TOKEN': token
+            },
+            data: formData,
+            processData: false,
+            contentType: false
         });
     };
 

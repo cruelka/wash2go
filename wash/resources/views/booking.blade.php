@@ -360,7 +360,7 @@
 
               @endif
 
-              <form>
+              <form id="booking-form" data="{{ csrf_token() }}" >
                   <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
                     <input type="email" class="form-control" id="bookingname" placeholder="Enter name">
