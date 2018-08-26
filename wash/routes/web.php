@@ -13,7 +13,11 @@
 
 Route::get('/', function () {
      $posts = App\Post::take(2)->get();
-    return view('welcome', compact('posts'));
+    $why = App\Page::where('slug', '=', 'why-its-good-for-your-car')->firstOrFail();
+
+
+
+    return view('welcome', compact('posts','why'));
 });
 
 Auth::routes();

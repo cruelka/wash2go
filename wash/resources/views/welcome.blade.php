@@ -289,16 +289,16 @@
       <div class="card-preview__info">
         <div class="card-preview__info-inner">
             <div class="card-preview__info-heading">
-                Why It's Good for Your Car
+               {{$why->title}}
               </div>
               <div class="card-preview__info-body">
-                Our service cleans, shines, & protects the vehicle's paint, windows & wheels, and also gives the tires a nice shine.
+                  {!!  str_limit($why->body, $limit = 150, $end = '...') !!}
               </div>
               <div class="card-preview__info-lable">
                 About washing
               </div>
               <div class="card-preview__info-link">
-                More Information <img class="card-preview__info-link-i" src="{{asset('images/icons/arrow-right_green.svg')}}" alt="Arrow">
+                More Information <img class="card-preview__info-link-i" src="/storage/{{$why->image}}" alt="Arrow">
               </div>
         </div>
         
