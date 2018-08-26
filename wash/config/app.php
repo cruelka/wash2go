@@ -15,7 +15,6 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
-    'timezone'  => 'Asia/Dubai',
     /*
     |--------------------------------------------------------------------------
     | Application Environment
@@ -66,7 +65,8 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone'  => 'Asia/Dubai',
+
 
     /*
     |--------------------------------------------------------------------------
