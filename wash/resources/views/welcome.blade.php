@@ -1125,7 +1125,7 @@
               Home
             </a>
             @else
-            <a href="/login" class="header__nav header__fullscreen-only">
+            <a href="/login" class="navigation-modal__item navigation-modal__item_top">
                 Sign In
             </a>
             @endif
