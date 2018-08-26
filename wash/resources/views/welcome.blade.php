@@ -440,7 +440,7 @@
 
   <div class="row mt-5">
 
-      <div class="col-lg-3 col-md-3">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
           <div class="product-card product-card_square">
                 <a href="/product" class="product-card__img" style="background: url('{{asset('images/example/1.jpg')}}')">
                   <div class="product-card__add-to-card-b">
@@ -471,7 +471,7 @@
           </div>
       </div>
 
-      <div class="col-lg-3 col-md-3">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
           <div class="product-card product-card_square">
                 <a href="/product" class="product-card__img" style="background: url('{{asset('images/example/1.jpg')}}')">
                   <div class="product-card__add-to-card-b">
@@ -502,7 +502,7 @@
           </div>
       </div>
 
-      <div class="col-lg-3 col-md-3">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
           <div class="product-card product-card_square">
                 <a href="/product" class="product-card__img" style="background: url('{{asset('images/example/1.jpg')}}')">
                   <div class="product-card__add-to-card-b">
@@ -533,7 +533,7 @@
           </div>
       </div>
 
-      <div class="col-lg-3 col-md-3">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
           <div class="product-card product-card_square">
                 <a href="/product" class="product-card__img" style="background: url('{{asset('images/example/1.jpg')}}')">
                   <div class="product-card__add-to-card-b">

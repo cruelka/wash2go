@@ -8374,6 +8374,9 @@ button.close {
 
 .product-card {
   margin-bottom: 20px;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .product-card__img {
