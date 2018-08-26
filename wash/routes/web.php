@@ -48,5 +48,6 @@ Route::get('page/{slug}', function($slug){
 Route::get('/booking', function () {
    return view('booking');
 });
+Route::post('/booking', 'HomeController@store');
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
