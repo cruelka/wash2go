@@ -60,6 +60,9 @@
           <a href="/home" class="header__nav header__fullscreen-only">
               My profile
           </a>
+          <a href="/home" class="header__nav header__fullscreen-only">
+              Log Out
+          </a>
         @else
           <a href="/login" class="header__nav header__fullscreen-only">
               Sign In
