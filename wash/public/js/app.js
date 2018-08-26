@@ -51405,7 +51405,7 @@ if(!$('body .so-modal')){
         }
 
         for (var key in obj) {
-            formData.append(key, obj.key);
+            formData.append(key, obj[key]);
         }
 
         var token = $('#booking-form').attr('data');

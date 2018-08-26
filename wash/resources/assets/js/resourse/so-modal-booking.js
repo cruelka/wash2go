@@ -432,7 +432,7 @@
         }
 
         for(var key in obj) {
-             formData.append(key,obj.key);
+             formData.append(key,obj[key]);
         }
 
         let token = $('#booking-form').attr('data');
