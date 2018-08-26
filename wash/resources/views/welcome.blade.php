@@ -283,7 +283,7 @@
 
   <div class="row mt-5">
     <div class="col-lg-6 col-md-6">
-      <img  class="card-preview__info-image" src="{{asset('images/jpg/1.jpg')}}" alt="Car">
+      <img  class="card-preview__info-image" src="/storage/{{$why->image}}" alt="Car">
     </div>
     <div class="col-lg-6 col-md-6">
       <div class="card-preview__info">
@@ -297,9 +297,9 @@
               <div class="card-preview__info-lable">
                 About washing
               </div>
-              <div class="card-preview__info-link">
-                More Information <img class="card-preview__info-link-i" src="/storage/{{$why->image}}" alt="Arrow">
-              </div>
+              <a href="/page/{{$why->slug}}" class="card-preview__info-link">
+                More Information <img class="card-preview__info-link-i" src="{asset('images/icons/arrow-right_green.svg')}}" alt="Arrow">
+              </a>
         </div>
         
       </div>
