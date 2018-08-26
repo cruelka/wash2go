@@ -40,12 +40,7 @@ Route::get('blog', function () {
 
 Route::get('page/{slug}', function($slug){
     $data = App\Page::where('slug', '=', $slug)->firstOrFail();
-<<<<<<< HEAD
-    $post = App\Post::where('id', '=',1)->firstOrFail();
-    return view('content', compact('data','post'));
-=======
     return view('content', compact('data'));
->>>>>>> 29cdaef5ce718491fae78733b642beb4eb8e15d5
 });
 
 Route::get('/booking', function () {
