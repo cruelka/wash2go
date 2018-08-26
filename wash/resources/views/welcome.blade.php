@@ -439,9 +439,103 @@
 
 
   <div class="row mt-5">
+
       <div class="col-lg-3 col-md-3">
           <div class="product-card product-card_square">
-                <a href="/product" class="product-card__img" style="">
+                <a href="/product" class="product-card__img" style="bacckground: url('{{asset('images/example/1.jpg')}}')">
+                  <div class="product-card__add-to-card-b">
+                    <div class="button button_red">
+                      <span class="button__icon">
+                        <img class="button__icon-img" src="{{asset('images/icons/plus_white.svg')}}">
+                      </span>
+                      <span class="button__body">
+                        Add to cart
+                      </span>
+                    </div>
+                  </div>
+                  <div class="product-card__marked">
+                    <div class="product-card__new">
+                        New
+                    </div>
+                  </div>
+                </a>
+                <div class="product-card__body">
+                  <a href="/product" class="product-card__title">
+                    WINDOW CLEAR
+                  </a>
+                  <div class="product-card__price">
+                    18 AED
+                  </div>
+                </div>
+                
+          </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3">
+          <div class="product-card product-card_square">
+                <a href="/product" class="product-card__img" style="bacckground: url('{{asset('images/example/1.jpg')}}')">
+                  <div class="product-card__add-to-card-b">
+                    <div class="button button_red">
+                      <span class="button__icon">
+                        <img class="button__icon-img" src="{{asset('images/icons/plus_white.svg')}}">
+                      </span>
+                      <span class="button__body">
+                        Add to cart
+                      </span>
+                    </div>
+                  </div>
+                  <div class="product-card__marked">
+                    <div class="product-card__new">
+                        New
+                    </div>
+                  </div>
+                </a>
+                <div class="product-card__body">
+                  <a href="/product" class="product-card__title">
+                    WINDOW CLEAR
+                  </a>
+                  <div class="product-card__price">
+                    18 AED
+                  </div>
+                </div>
+                
+          </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3">
+          <div class="product-card product-card_square">
+                <a href="/product" class="product-card__img" style="bacckground: url('{{asset('images/example/1.jpg')}}')">
+                  <div class="product-card__add-to-card-b">
+                    <div class="button button_red">
+                      <span class="button__icon">
+                        <img class="button__icon-img" src="{{asset('images/icons/plus_white.svg')}}">
+                      </span>
+                      <span class="button__body">
+                        Add to cart
+                      </span>
+                    </div>
+                  </div>
+                  <div class="product-card__marked">
+                    <div class="product-card__new">
+                        New
+                    </div>
+                  </div>
+                </a>
+                <div class="product-card__body">
+                  <a href="/product" class="product-card__title">
+                    WINDOW CLEAR
+                  </a>
+                  <div class="product-card__price">
+                    18 AED
+                  </div>
+                </div>
+                
+          </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3">
+          <div class="product-card product-card_square">
+                <a href="/product" class="product-card__img" style="bacckground: url('{{asset('images/example/1.jpg')}}')">
                   <div class="product-card__add-to-card-b">
                     <div class="button button_red">
                       <span class="button__icon">
