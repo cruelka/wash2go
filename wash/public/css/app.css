@@ -13302,3 +13302,15 @@ body {
   padding-bottom: 20px;
 }
 
+.booking-mobile {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 90px;
+  cursor: pointer;
+}
+
+.booking-mobile__img {
+  width: 100%;
+}
+
