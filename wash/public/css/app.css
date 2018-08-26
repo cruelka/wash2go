@@ -9058,12 +9058,25 @@ button.close {
   left: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .card-preview__info-lable {
+    position: relative;
+    margin-top: 10px;
+  }
+}
+
 .card-preview__info-link {
   color: #52B947;
   position: absolute;
   bottom: 0;
   left: 0;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .card-preview__info-link {
+    position: relative;
+  }
 }
 
 .card-preview__info-link:hover {

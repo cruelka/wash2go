@@ -30,6 +30,20 @@
     position: absolute;
     top: 0;
     left: 0;
+
+    @media screen and (max-width:$lg) { 
+    
+    }
+
+    @media screen and (max-width:$md) { 
+
+
+    }
+
+    @media screen and (max-width:$sm) { 
+        position: relative;
+        margin-top: 10px;
+    }
 }
 
 .card-preview__info-link {
@@ -38,6 +52,20 @@
     bottom: 0;
     left: 0;
     cursor: pointer;
+
+    @media screen and (max-width:$lg) { 
+    
+    }
+
+    @media screen and (max-width:$md) { 
+
+
+    }
+
+    @media screen and (max-width:$sm) { 
+        position: relative;
+        margin-top: 10px;
+    }
 }
 
 .card-preview__info-link:hover {
