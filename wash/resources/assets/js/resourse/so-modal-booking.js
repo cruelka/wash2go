@@ -416,7 +416,21 @@
         
       });
       
+    function postBooking(){
 
+        let obj = JSON.parse(getCookie('bookingform'));
+
+        obj.name = $('#bookingname').val().trim();
+        obj.email = $('#bookingmail').val().trim();
+        obj.phone = $('#bookingphone').val().trim();
+
+
+        console.log(obj);
+
+        $.post('/booking',obj,function(data){
+            alert(data);
+        })
+    };
       
 
     window.soBookingForm = {};
@@ -425,6 +439,10 @@
 
     window.soBookingForm.getData = getBookingData;
     window.soBookingForm.drawConfirm = drawBookingConfirm;
+
+    window.soBookingForm.post = postBooking;
+
+
 
 
 })( jQuery );

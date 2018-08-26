@@ -363,17 +363,17 @@
               <form>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter name">
+                    <input type="email" class="form-control" id="bookingname" placeholder="Enter name">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    <input type="email" class="form-control" id="bookingmail" placeholder="Enter email">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Phone</label>
-                    <input type="phone" class="form-control" id="exampleInputPassword1" placeholder="Enter Phone">
+                    <input type="phone" class="form-control" id="bookingphone" placeholder="Enter Phone">
                   </div>
-                  <div class="btn btn-success" onclick="">Confirm</div>
+                  <div class="btn btn-success" onclick="soBookingForm.post()">Confirm</div>
                 </form>
 
               </div>
