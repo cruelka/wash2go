@@ -26,7 +26,7 @@
               Settings
             </li>
             <li class="vertical-navigation__item vertical-navigation__item_toplevel ">
-              Log Out
+              <a href="/logout">Log Out</a>
             </li>
           </ul>
     </div>

@@ -1119,40 +1119,49 @@
           
         </div>
           <div class="so-modal__item navigation-modal">
-            <a href="/login" class="navigation-modal__item navigation-modal__item_top navigation-modal__mobile-only">
-              Log In
+          @if (Auth::check())
+
+            <a href="/home" class="navigation-modal__item navigation-modal__item_top">
+              Home
             </a>
-            <a href="/categories" class="navigation-modal__item navigation-modal__item_top">
-              Products
+            @else
+            <a href="/login" class="header__nav header__fullscreen-only">
+                Sign In
             </a>
-  
+            @endif
+
+
+            <div class="navigation-modal__item navigation-modal__item_top">
+            Products
+            </div>
+
             <div class="navigation-modal__sub">
-                <div class="navigation-modal__item">
-                <img src="{{asset('images/icons/categories/1.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Interior
-                </div>
-
-                <div class="navigation-modal__item">
-                <img src="{{asset('images/icons/categories/2.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Exterior
-                </div>
-
-                <div class="navigation-modal__item">
-                  <img src="{{asset('images/icons/categories/3.svg')}}" alt="Accessories" class="navigation-modal__item-i">  Accessories
-                </div>
-
-                <div class="navigation-modal__item">
-                <img src="{{asset('images/icons/categories/4.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Combo Pack
-                </div>
-                
+              <div class="navigation-modal__item">
+              <img src="{{asset('images/icons/categories/1.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Interior
               </div>
-            
-            <div class="navigation-modal__item navigation-modal__item_top">
-              News
+
+              <div class="navigation-modal__item">
+              <img src="{{asset('images/icons/categories/2.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Exterior
+              </div>
+
+              <div class="navigation-modal__item">
+                <img src="{{asset('images/icons/categories/3.svg')}}" alt="Accessories" class="navigation-modal__item-i">  Accessories
+              </div>
+
+              <div class="navigation-modal__item">
+              <img src="{{asset('images/icons/categories/4.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Combo Pack
+              </div>
+              
+            </div>
+
+            <div href="/blog" class="navigation-modal__item navigation-modal__item_top">
+            News
             </div>
             <div class="navigation-modal__item navigation-modal__item_top">
-              About
+            About
             </div>
             <div class="navigation-modal__item navigation-modal__item_top">
-              Contacts
+            Contacts
             </div>
           </div>
         </div>

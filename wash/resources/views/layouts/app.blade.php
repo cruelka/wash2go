@@ -490,15 +490,18 @@
           
         </div>
           <div class="so-modal__item navigation-modal">
-            <div class="navigation-modal__item navigation-modal__item_top navigation-modal__mobile-only">
-              Log In
-            </div>
-            <div class="navigation-modal__item navigation-modal__item_top navigation-modal__mobile-only">
-              Sign Up
-            </div>
-            <div class="navigation-modal__item navigation-modal__item_top">
-              Home
-            </div>
+            @if (Auth::check())
+
+              <a href="/home" class="navigation-modal__item navigation-modal__item_top">
+                Home
+              </a>
+            @else
+              <a href="/login" class="header__nav header__fullscreen-only">
+                  Sign In
+              </a>
+            @endif
+
+            
             <div class="navigation-modal__item navigation-modal__item_top">
               Products
             </div>
@@ -522,7 +525,7 @@
                 
               </div>
             
-            <div class="navigation-modal__item navigation-modal__item_top">
+            <div href="/blog" class="navigation-modal__item navigation-modal__item_top">
               News
             </div>
             <div class="navigation-modal__item navigation-modal__item_top">
