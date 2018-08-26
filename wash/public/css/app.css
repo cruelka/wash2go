@@ -9076,6 +9076,7 @@ button.close {
 @media screen and (max-width: 768px) {
   .card-preview__info-link {
     position: relative;
+    margin-top: 10px;
   }
 }
 
