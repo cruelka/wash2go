@@ -39,7 +39,7 @@ Route::get('blog', function () {
 });
 
 Route::get('page/{slug}', function($slug){
-    $data = App\Page::where('slug', '=', $slug)->firstOrFail()->middleware('html');
+    $data = App\Page::where('slug', '=', $slug)->firstOrFail();
     return view('content', compact('data'));
 });
 
