@@ -44,6 +44,34 @@
             <p class="category-heading__body">
             The entire line of Wash2Go® products rely on eco-friendly cleaning, polishing and protecting agents that equal or surpass their chemical-based competitors. Being values-driven people, we are committed to bringing car owners and car wash service providers a superior line of car care products that do not harm the planet or the user.
             </p>
+
+            <div>
+                <div>
+                    <div class="lable">Service</div>
+                    <div class="text">Internal Washing 25 AED,External Washing 25 AED</div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="lable">Where</div>
+                            <div class="lable lable_black">Visit Us</div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="lable">Date</div>
+                            <div class="lable lable_black">17/01/18</div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="lable">Time</div>
+                            <div class="lable lable_black">17:15</div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="lable">Body</div>
+                            <div class="lable lable_black">CUV</div>
+                        </div>
+                    </div>
+                    <div class="lable">Service</div>
+                    <div class="text">Internal Washing 25 AED,External Washing 25 AED</div>
+                </div>
+            </div>
+
       </div>
     </div>
     
