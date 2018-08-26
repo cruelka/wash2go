@@ -55,9 +55,17 @@
     
   
     <div class="header__block">
-        <a href="/login" class="header__nav header__fullscreen-only">
-            Sign In
-        </a>
+        @if (Auth::check())
+          <a href="/home" class="header__nav header__fullscreen-only">
+            <img class="so-header__user-i" src="{{ asset('images/icons/user.svg')}}">
+              My profile
+          </a>
+        @else
+          <a href="/login" class="header__nav header__fullscreen-only">
+              Sign In
+          </a>
+        @endif
+        
         <a  href="/booking"  class="header__nav header__fullscreen-only  header__nav_wrapped">
             Book now
         </a>
