@@ -57,7 +57,7 @@
                 <div>
                     <div class="lable">Service</div>
                     <div class="text">Internal Washing 25 AED,External Washing 25 AED</div>
-                    <div class="row">
+                    <div class="row tabled__row">
                         <div class="col-sm-3 col-xs-12">
                             <div class="lable">Where</div>
                             <div class="lable lable_black">Visit Us</div>
