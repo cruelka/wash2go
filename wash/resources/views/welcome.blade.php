@@ -442,7 +442,7 @@
 
       <div class="col-lg-3 col-md-3">
           <div class="product-card product-card_square">
-                <a href="/product" class="product-card__img" style="bacckground: url('{{asset('images/example/1.jpg')}}')">
+                <a href="/product" class="product-card__img" style="background: url('{{asset('images/example/1.jpg')}}')">
                   <div class="product-card__add-to-card-b">
                     <div class="button button_red">
                       <span class="button__icon">
@@ -473,7 +473,7 @@
 
       <div class="col-lg-3 col-md-3">
           <div class="product-card product-card_square">
-                <a href="/product" class="product-card__img" style="bacckground: url('{{asset('images/example/1.jpg')}}')">
+                <a href="/product" class="product-card__img" style="background: url('{{asset('images/example/1.jpg')}}')">
                   <div class="product-card__add-to-card-b">
                     <div class="button button_red">
                       <span class="button__icon">
@@ -504,7 +504,7 @@
 
       <div class="col-lg-3 col-md-3">
           <div class="product-card product-card_square">
-                <a href="/product" class="product-card__img" style="bacckground: url('{{asset('images/example/1.jpg')}}')">
+                <a href="/product" class="product-card__img" style="background: url('{{asset('images/example/1.jpg')}}')">
                   <div class="product-card__add-to-card-b">
                     <div class="button button_red">
                       <span class="button__icon">
@@ -535,7 +535,7 @@
 
       <div class="col-lg-3 col-md-3">
           <div class="product-card product-card_square">
-                <a href="/product" class="product-card__img" style="bacckground: url('{{asset('images/example/1.jpg')}}')">
+                <a href="/product" class="product-card__img" style="background: url('{{asset('images/example/1.jpg')}}')">
                   <div class="product-card__add-to-card-b">
                     <div class="button button_red">
                       <span class="button__icon">
