@@ -768,6 +768,10 @@
   </div>
   <div style="display: none;">Book Now</div>
   <div id="so-modal__shadow" onclick="soModal.close()"></div>
+
+  <div class="booking-mobile">
+    <img class="booking-mobile__img" src="{{asset('images/booking.svg')}}" alt="Book Now">
+  </div>
 </div>
 
 </div>
