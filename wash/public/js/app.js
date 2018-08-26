@@ -51398,12 +51398,12 @@ if(!$('body .so-modal')){
         obj.email = $('#bookingmail').val().trim();
         obj.phone = $('#bookingphone').val().trim();
 
-        var form = new FormData();
-        form.append('', '');
-        $.post('/booking', form, function (data) {
+        console.log(obj);
+
+        $.post('/booking', obj, function (data) {
             alert(data);
         });
-    }
+    };
 
     window.soBookingForm = {};
     window.soBookingForm.changePage = changePage;

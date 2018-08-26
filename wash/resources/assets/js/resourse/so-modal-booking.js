@@ -425,12 +425,12 @@
         obj.phone = $('#bookingphone').val().trim();
 
 
-        let form = new FormData;
-        form.append('','');
-        $.post('/booking',form,function(data){
+        console.log(obj);
+
+        $.post('/booking',obj,function(data){
             alert(data);
         })
-    }
+    };
       
 
     window.soBookingForm = {};
