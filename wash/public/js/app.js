@@ -51395,7 +51395,7 @@ if(!$('body .so-modal')){
         var obj = JSON.parse(getCookie('bookingform'));
 
         obj.name = $('#bookingname').val().trim();
-        obj.email = $('#bookingemail').val().trim();
+        obj.email = $('#bookingmail').val().trim();
         obj.phone = $('#bookingphone').val().trim();
 
         var form = new FormData();
