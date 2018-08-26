@@ -14,10 +14,12 @@
 Route::get('/', function () {
      $posts = App\Post::take(2)->get();
     $why = App\Page::where('slug', '=', 'why-its-good-for-your-car')->firstOrFail();
+    $eco = App\Page::where('slug', '=', 'why-eco-wash')->firstOrFail();
 
 
 
-    return view('welcome', compact('posts','why'));
+
+    return view('welcome', compact('posts','why','eco'));
 });
 
 Auth::routes();

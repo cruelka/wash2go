@@ -361,14 +361,10 @@
         <div class="card-preview__info">
           <div class="card-preview__info-inner">
               <div class="card-preview__info-heading">
-                  Eco washing
-                </div>
+                    {{$eco->title}}
+              </div>
                 <div class="card-preview__info-body">
-                    No scratching of the vehicle's exterior. <br>
-                    High gloss finish.  <br>
-                    Eco-friendly process.  <br>
-                    One cup of water per vehicle.  <br>
-                    Secure.
+                {{ $eco->body }}
                 </div>
                 <div class="card-preview__info-lable">
                   Benefits
@@ -382,7 +378,7 @@
       </div>
 
       <div class="col-lg-6 col-md-6">
-          <img  class="card-preview__info-image" src="{{asset('images/jpg/2.jpg')}}" alt="Car">
+          <img  class="card-preview__info-image" src="/storage/{{$eco->image}}" alt="Car">
         </div>
     </div>
 
