@@ -54,7 +54,7 @@
 
 
   <div>
-                <div>
+                <div class="tabled__item">
                     <div class="lable">Service</div>
                     <div class="text black">Internal Washing 25 AED,External Washing 25 AED</div>
                     <div class="row tabled__row">
