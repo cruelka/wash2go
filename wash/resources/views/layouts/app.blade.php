@@ -58,11 +58,8 @@
 
         @if (Auth::check())
           <a href="/home" class="header__nav header__fullscreen-only">
-            <img class="header__button-icon so-header__bag" src="{{ asset('images/icons/user.svg')}}">
+            <img class="so-header__user-i" src="{{ asset('images/icons/user.svg')}}">
               My profile
-          </a>
-          <a href="/home" class="header__nav header__fullscreen-only">
-              Log Out
           </a>
         @else
           <a href="/login" class="header__nav header__fullscreen-only">
