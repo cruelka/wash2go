@@ -388,7 +388,7 @@
 
     <div class="row mt-5">
       
-      <div class="col-lg-3 col-md-3 col-sm-3">
+      <div class="col-lg-3 col-md-3 col-sm-3  col-xs-3">
         <div class="adventages__item">
           <div class="adventages__item-icon">
             <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/1.svg')}}">
@@ -398,7 +398,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3">
+      <div class="col-lg-3 col-md-3 col-sm-3  col-xs-3">
           <div class="adventages__item">
             <div class="adventages__item-icon">
               <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/2.svg')}}">
@@ -408,7 +408,7 @@
             </div>
           </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3">
+      <div class="col-lg-3 col-md-3 col-sm-3  col-xs-3">
           <div class="adventages__item">
             <div class="adventages__item-icon">
               <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/3.svg')}}">
@@ -418,7 +418,7 @@
             </div>
           </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3">
+      <div class="col-lg-3 col-md-3 col-sm-3  col-xs-3">
           <div class="adventages__item">
             <div class="adventages__item-icon">
               <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/4.svg')}}">
