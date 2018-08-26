@@ -34,8 +34,8 @@ class HomeController extends Controller
   
             $booking = [
                 'user_id' => Auth::id(),
-                'service' => request('services '),
-                'price' => request('totalPrice '),
+                'service' => request('services'),
+                'price' => request('totalPrice'),
                 'location' => request('where'),
                 'date' => request('date'),
                 'time' => request('time'),
