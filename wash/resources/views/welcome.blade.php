@@ -292,7 +292,7 @@
                {{$why->title}}
               </div>
               <div class="card-preview__info-body">
-                  {!!  str_limit($why->body, $limit = 150, $end = '...') !!}
+                  {!!  str_limit($why->body, $limit = 250, $end = '...') !!}
               </div>
               <div class="card-preview__info-lable">
                 About washing
