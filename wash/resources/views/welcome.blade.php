@@ -512,7 +512,7 @@
           @endforeach
 
       </div>
-
+</div>
       <div class="sector">
         <div class="button">
             <a href="/blog" class="button__body">
