@@ -292,7 +292,7 @@
                {{$why->title}}
               </div>
               <div class="card-preview__info-body">
-                  {!!  str_limit($why->body, $limit = 250, $end = '...') !!}
+                  {!!  str_limit($why->body, $limit = 150, $end = '...') !!}
               </div>
               <div class="card-preview__info-lable">
                 About washing
@@ -500,7 +500,7 @@
 
                       </div>
                       <div class="news-card__description">
-                          {!!   str_limit($post->body, $limit = 150, $end = '...') !!}
+                          {{ $post->excerpt }}
                       </div>
                       <a href = '/post/{{$post->slug}}' class="news-card__b">
                           Continue reading
