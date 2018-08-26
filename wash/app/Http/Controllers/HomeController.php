@@ -28,4 +28,25 @@ class HomeController extends Controller
 
         return view('home',compact( 'booking'));
     }
+    public function store(Request $request){
+
+        if( Auth::check()) {
+  
+            $booking = [
+                'user_id' => Auth::id(),
+                'service' => request('services '),
+                'price' => request('totalPrice '),
+                'location' => request('where'),
+                'date' => request('date'),
+                'time' => request('time'),
+                'status' => '0',
+                'marks' => '0',
+                'email' => Auth::user()->email,
+                'phone' => Auth::user()->phone,
+                
+            ];
+            $newbooking = Booking::create($booking);
+        }
+        
+    }
 }
