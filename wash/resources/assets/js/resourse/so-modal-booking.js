@@ -427,7 +427,13 @@
 
         let formData = new FormData();
 
-        formData.append('name',obj.name);
+        if (obj.place.trim()!=''){
+            obj.where = obj.place;
+        }
+
+        for(var key in obj) {
+             formData.append(key,obj.key);
+        }
 
         let token = $('#booking-form').attr('data');
 
