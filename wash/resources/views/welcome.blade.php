@@ -500,7 +500,7 @@
 
                       </div>
                       <div class="news-card__description">
-                          {!    str_limit($post->body, $limit = 150, $end = '...') !}
+                          {!!   str_limit($post->body, $limit = 150, $end = '...') !!}
                       </div>
                       <a href = '/post/{{$post->slug}}' class="news-card__b">
                           Continue reading
