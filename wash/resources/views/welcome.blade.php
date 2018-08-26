@@ -461,7 +461,7 @@
                 </a>
                 <div class="product-card__body">
                   <a href="/product" class="product-card__title">
-                    WINDOW CLEAR
+                    BODY CLEAR
                   </a>
                   <div class="product-card__price">
                     18 AED
@@ -523,7 +523,7 @@
                 </a>
                 <div class="product-card__body">
                   <a href="/product" class="product-card__title">
-                    WINDOW CLEAR
+                    INTERIOR CLEAR
                   </a>
                   <div class="product-card__price">
                     18 AED
@@ -554,7 +554,7 @@
                 </a>
                 <div class="product-card__body">
                   <a href="/product" class="product-card__title">
-                    WINDOW CLEAR
+                    LEATHER CLEAR
                   </a>
                   <div class="product-card__price">
                     18 AED
