@@ -425,13 +425,23 @@
         obj.phone = $('#bookingphone').val().trim();
 
 
-        let form = new FormData;
+        let formData = new FormData();
 
-        form.append(obj.name);
+        formData.append('name',obj.name);
 
-        $.post('/booking',form,function(data){
-            alert(data);
-        })
+        let token = $('#booking-form').attr('data');
+
+        $.ajax({
+            type: "POST",
+            url: '/booking',
+            headers: {
+                'X-CSRF-TOKEN': token,
+            },
+            data: formData,
+            processData: false,
+            contentType: false,
+        });
+        
     };
       
 
