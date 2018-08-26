@@ -298,7 +298,7 @@
                 About washing
               </div>
               <a href="/page/{{$why->slug}}" class="card-preview__info-link">
-                More Information <img class="card-preview__info-link-i" src="{asset('images/icons/arrow-right_green.svg')}}" alt="Arrow">
+                More Information <img class="card-preview__info-link-i" src="{{asset('images/icons/arrow-right_green.svg')}}" alt="Arrow">
               </a>
         </div>
         
