@@ -45,7 +45,15 @@
             The entire line of Wash2Go® products rely on eco-friendly cleaning, polishing and protecting agents that equal or surpass their chemical-based competitors. Being values-driven people, we are committed to bringing car owners and car wash service providers a superior line of car care products that do not harm the planet or the user.
             </p>
 
-            <div>
+            
+
+      </div>
+    </div>
+    
+  </div>
+
+
+  <div>
                 <div>
                     <div class="lable">Service</div>
                     <div class="text">Internal Washing 25 AED,External Washing 25 AED</div>
@@ -71,11 +79,6 @@
                     <div class="text">40 AED - Discount 10 AED - Total</div>
                 </div>
             </div>
-
-      </div>
-    </div>
-    
-  </div>
   
 </div>
 
