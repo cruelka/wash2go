@@ -8,35 +8,25 @@
 <div class="row">
   <div class="col-lg-3">
     <div class="sector">
-        <div class="text">Categories</div>
+        <div class="text">Orders History</div>
 
         <ul class="vertical-navigation__list">
           <li class="vertical-navigation__item vertical-navigation__item_toplevel ">
-            Interior
-          </li>
-
-          <li class="vertical-navigation__item vertical-navigation__item_toplevel ">
-            Exterior
+            My Bookings
           </li>
           <li class="vertical-navigation__item vertical-navigation__item_toplevel ">
-            Accessories
-          </li>
-          <li class="vertical-navigation__item vertical-navigation__item_toplevel ">
-            Combo Pack
+            My Orders
           </li>
         </ul>
 
-        <div class="text">Filter</div>
+        <div class="text">Personal</div>
 
         <ul class="vertical-navigation__list">
             <li class="vertical-navigation__item vertical-navigation__item_toplevel ">
-              Filter 1
+              Settings
             </li>
             <li class="vertical-navigation__item vertical-navigation__item_toplevel ">
-              Filter 2
-            </li>
-            <li class="vertical-navigation__item vertical-navigation__item_toplevel ">
-              Filter 3
+              Log Out
             </li>
           </ul>
     </div>
