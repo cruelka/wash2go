@@ -9420,6 +9420,7 @@ button.close {
   padding: 40px 10px;
   border-radius: 10px;
   background: white;
+  cursor: pointer;
   margin-bottom: 30px;
 }
 

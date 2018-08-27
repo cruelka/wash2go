@@ -44,7 +44,7 @@
           <a  href="/blog" class="header__nav">
               News
           </a>
-          <a href="page/about" class="header__nav">
+          <a href="page/about-us" class="header__nav">
               About
           </a>
           <div class="header__nav">
@@ -1167,7 +1167,7 @@
             <div href="/blog" class="navigation-modal__item navigation-modal__item_top">
             News
             </div>
-            <a href="/page/about" class="navigation-modal__item navigation-modal__item_top">
+            <a href="/page/about-us" class="navigation-modal__item navigation-modal__item_top">
               About
             </a>
             <div class="navigation-modal__item navigation-modal__item_top">
