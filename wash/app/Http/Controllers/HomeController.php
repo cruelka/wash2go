@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $booking = Booking::where('user_id', Auth::id())->get();
+        $booking = Booking::where('user_id', Auth::id())->paginate(5);
 
         return view('home',compact( 'booking'));
     }
