@@ -427,6 +427,9 @@
 
       // Adds a marker to the map and push to the array.
       function addMarker(location) {
+        clearMarkers();
+        deleteMarkers();
+
         var marker = new google.maps.Marker({
           position: location,
           map: map
