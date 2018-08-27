@@ -308,7 +308,7 @@
                       Select time
                     </div>
 
-                    <div class='input-group date' id='datetimepicker3'>
+                    <div class='input-group date datepicker-input' id='datetimepicker3'>
                         <input type='text' class="form-control" />
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-time"></span>
