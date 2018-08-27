@@ -70,7 +70,7 @@ class HomeController extends Controller
             ('Laravel Basic Testing Mail');
             $message->from('xyz@gmail.com','Virat Gandhi');
         });
-        echo "Basic Email Sent. Check your inbox.";
+        return "Basic Email Sent. Check your inbox.";
     }
 
 }
