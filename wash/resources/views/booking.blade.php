@@ -409,7 +409,7 @@
       var markers = [];
 
       function initMap() {
-        var haightAshbury = {lat: 37.769, lng: -122.446};
+        var haightAshbury = {25.257562, 55.326623};
 
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
@@ -424,6 +424,24 @@
 
         // Adds a marker at the center of the map.
         addMarker(haightAshbury);
+
+
+        var myLatlng = new google.maps.LatLng(25.257562, 55.326623);
+
+
+        var mapOptions = {
+          zoom: 13,
+          center: myLatlng
+        }
+        var map2 = new google.maps.Map(document.getElementById("map2"), mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            title:"Business village, 6th Floor, Office #601"
+        });
+
+        marker.setMap(map2);
+
       }
 
       // Adds a marker to the map and push to the array.
@@ -464,21 +482,7 @@
       /////////
 
       /*
-        var myLatlng = new google.maps.LatLng(25.257562, 55.326623);
-
-
-        var mapOptions = {
-          zoom: 13,
-          center: myLatlng
-        }
-        var map2 = new google.maps.Map(document.getElementById("map2"), mapOptions);
-
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            title:"Business village, 6th Floor, Office #601"
-        });
-
-        marker.setMap(map2);
+        
       
       */
       
