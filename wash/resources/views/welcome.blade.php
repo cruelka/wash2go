@@ -47,9 +47,9 @@
           <a class="header__nav">
               About
           </a>
-          <div class="header__nav">
+          <a href="/page/contact" class="header__nav">
               Contacts
-          </div>
+          </a>
     </div>
     
     
@@ -1170,9 +1170,9 @@
             <div class="navigation-modal__item navigation-modal__item_top">
             About
             </div>
-            <div class="navigation-modal__item navigation-modal__item_top">
+            <a href="/post/contact" class="navigation-modal__item navigation-modal__item_top">
             Contacts
-            </div>
+            </a>
           </div>
         </div>
 
