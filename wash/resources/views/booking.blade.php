@@ -400,6 +400,11 @@
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
 
+      // In the following example, markers appear when the user clicks on the map.
+      // Each marker is labeled with a single alphabetical character.
+      var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      var labelIndex = 0;
+
       function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 25.257562, lng: 55.326623},
