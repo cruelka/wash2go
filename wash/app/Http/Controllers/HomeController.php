@@ -32,12 +32,12 @@ class HomeController extends Controller
     public function store(Request $request){
 
         if( Auth::check()) {
-            $user = Auth::user();
             $booking = [
                 'user_id' => Auth::id(),
                 'service' => request('services'),
                 'price' => request('totalPrice'),
                 'location' => request('where'),
+                 'name'   => Auth::user()->name,
                 'date' => request('date'),
                 'time' => request('time'),
                 'status' => 'active',
