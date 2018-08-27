@@ -74,6 +74,8 @@
                     <div class="text black">{{$booking->price}}</div>
                 </div>
       @endforeach
+          {{ $bookings->links() }}
+
   </div>
 
   </div>
