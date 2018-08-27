@@ -51285,7 +51285,7 @@ if(!$('body .so-modal')){
                 maxDate: moment().add('7', 'days'),
                 defaultDate: moment().toDate()
             }).on("dp.change", function (e) {
-                alert('hey');
+                checkTime();
             });
         });
 
@@ -51295,7 +51295,7 @@ if(!$('body .so-modal')){
                 stepping: 15,
                 enabledHours: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
             }).on("dp.change", function (e) {
-                alert('hey');
+                checkTime();
             });
         });
     });
