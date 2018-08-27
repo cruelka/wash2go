@@ -58,18 +58,17 @@
     </div>
     <div class="mail__content">
         <div class="mail__heading">
-            Hi {{$user->name}}. Thank you for your order!
+            Hi {{$booking->name}}. Thank you for your order!
         </div>
         <div class="mail__subheading">
             Your order has been placed. You will be notified !
         </div>
         <div class="mail__shoplist">
-            <!--https://tellcoom.com/uploads/avatars/{{$user->avatar->name}}.jpg-->
             <table class="mail__shop-item">
                 <tr>
                     <td>
-                        <div class="mail__shop-item-title">{{$store->title}}</div>
-                        <div class="mail__shop-item-price">{{$store->price}} AED</div>
+                        <div class="mail__shop-item-title">{{$booking->service}}</div>
+                        <div class="mail__shop-item-price">{{$booking->price}} AED</div>
                     </td>
 
 
