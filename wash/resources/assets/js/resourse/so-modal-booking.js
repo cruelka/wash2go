@@ -455,7 +455,7 @@
                     str = str.trim() + item.name.trim() + ',';
                 });
 
-                str = str.substring(0,a.length-1);
+                str = str.substring(0,str.length-1);
 
                 formData.append(key,str);
 
