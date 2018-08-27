@@ -73,10 +73,10 @@
                     <div class="lable">Total</div>
                     <div class="text black">{{$item->price}}</div>
                 </div>
-            </div>
       @endforeach
-  
-</div>
+  </div>
+
+  </div>
 
 
 
