@@ -639,9 +639,12 @@
                           <div class="review__item">
                               <img src="{{ asset('images/icons/quotes_green.svg') }}" class="review__item-quotes" alt="Quotes">
                               <div class="review__item-body">
-                                  "I wanted something where I could meet new people and get out of the house. Uber has helped with both of those things, plus I’m seeing new parts of the city I’ve never seen before!"
+                                  Wash 2 Go service is top quality. Got worth of my money. Will definitely go for waterless car wash always because the kind of care is in this service worth visiting again.
+
                               </div>
-                              <div class="review__autor">Sean Walker</div>
+                              <div class="review__autor">
+                                  Al Saeedi
+                              </div>
                             </div>
                       </div>
 
@@ -649,9 +652,12 @@
                           <div class="review__item">
                               <img src="{{ asset('images/icons/quotes_green.svg') }}" class="review__item-quotes" alt="Quotes">
                               <div class="review__item-body">
-                                  "I started driving with Uber because I liked the idea that my own car could make me money. After just about a couple weeks, I saw that this was something I wanted to do permanently."
-                              </div>
-                              <div class="review__autor">Sean Walker</div>
+                                  I never thought a car can be washed without a drop of water. Leave about outcome.
+
+                                  But after having my car washed from wash2go I was surprised the care and cleanliness it brought
+
+                                  To my lovely car.                              </div>
+                              <div class="review__autor">Hussain</div>
                             </div>
                       </div>
                   </div>
