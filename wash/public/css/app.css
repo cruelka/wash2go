@@ -9209,6 +9209,7 @@ button.close {
 
 .navigation-modal__item {
   line-height: 2.5em;
+  display: block;
   font-size: 1.2em;
 }
 
@@ -13239,6 +13240,7 @@ button.close {
   padding: 20px;
   border-radius: 10px;
   padding-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .tabled__row {

@@ -128,7 +128,7 @@
     });
 
     function changePage(page,required){
-        
+
         if(required && required=='bodytype'){
             let checkSelection = 0;
 
@@ -163,6 +163,11 @@
             }
 
             
+        }
+
+        if(page==6){
+            timeApprove==false;
+            $('.booking-steps__time-errors').empty();
         }
 
         if(required && required=='checkTime'){
@@ -383,7 +388,6 @@
                 Restore previous booking
             </div>
             `);
-
         }
       });
 
@@ -527,10 +531,12 @@
         }).done(function(data) {
             if(data==1){
                 timeApprove = true;
-                $('#booking-steps__time-errors').empty().append('');
+   
+                $('.booking-steps__time-errors').empty().append('It is available time');
             } else {
                 timeApprove = false;
-                $('#booking-steps__time-errors').empty().append('This time busy, please take another one');
+      
+                $('.booking-steps__time-errors').empty().append('This time busy, please take another one');
             }
             
         });

@@ -64,6 +64,11 @@
           <a href="/login" class="header__nav header__fullscreen-only">
               Sign In
           </a>
+
+          <a href="/register" class="header__nav header__fullscreen-only">
+              Sign Up
+          </a>
+
         @endif
         
         <a  href="/booking"  class="header__nav header__fullscreen-only  header__nav_wrapped">
@@ -1123,6 +1128,9 @@
             @else
             <a href="/login" class="navigation-modal__item navigation-modal__item_top">
                 Sign In
+            </a>
+            <a href="/register" class="navigation-modal__item navigation-modal__item_top">
+                  Sign Up
             </a>
             @endif
 

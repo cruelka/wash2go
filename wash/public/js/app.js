@@ -51208,6 +51208,11 @@ if(!$('body .so-modal')){
             }
         }
 
+        if (page == 6) {
+            timeApprove == false;
+            $('.booking-steps__time-errors').empty();
+        }
+
         if (required && required == 'checkTime') {
             checkTime();
 
@@ -51492,10 +51497,12 @@ if(!$('body .so-modal')){
         }).done(function (data) {
             if (data == 1) {
                 timeApprove = true;
-                $('#booking-steps__time-errors').empty().append('');
+
+                $('.booking-steps__time-errors').empty().append('It is available time');
             } else {
                 timeApprove = false;
-                $('#booking-steps__time-errors').empty().append('This time busy, please take another one');
+
+                $('.booking-steps__time-errors').empty().append('This time busy, please take another one');
             }
         });
     }
