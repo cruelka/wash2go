@@ -51207,6 +51207,8 @@ if(!$('body .so-modal')){
                 $('.booking-steps__validation.booking-steps__validation_services').empty().append('No order').show();
                 return false;
             }
+
+            checkTime();
         }
 
         if (required && required == 'checkTime') {
