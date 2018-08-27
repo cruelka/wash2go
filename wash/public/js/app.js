@@ -51208,6 +51208,11 @@ if(!$('body .so-modal')){
             }
         }
 
+        if (page == 6) {
+            timeApprove == false;
+            $('.booking-steps__time-errors').empty();
+        }
+
         if (required && required == 'checkTime') {
             checkTime();
 
@@ -51493,7 +51498,7 @@ if(!$('body .so-modal')){
             if (data == 1) {
                 timeApprove = true;
 
-                $('.booking-steps__time-errors').empty().append('');
+                $('.booking-steps__time-errors').empty().append('It is available time');
             } else {
                 timeApprove = false;
 
