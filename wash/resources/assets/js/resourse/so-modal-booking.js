@@ -166,8 +166,9 @@
         }
 
         if(page==6){
-            timeApprove==false;
-            $('.booking-steps__time-errors').empty();
+           // timeApprove==false;
+           // $('.booking-steps__time-errors').empty();
+           checkTime();
         }
 
         if(required && required=='checkTime'){
