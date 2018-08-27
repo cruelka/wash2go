@@ -162,8 +162,6 @@
                
             }
 
-            checkTime();
-
             
         }
 
@@ -385,8 +383,6 @@
                 Restore previous booking
             </div>
             `);
-            checkTime();
-
         }
       });
 

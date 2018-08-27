@@ -51206,8 +51206,6 @@ if(!$('body .so-modal')){
                 $('.booking-steps__validation.booking-steps__validation_services').empty().append('No order').show();
                 return false;
             }
-
-            checkTime();
         }
 
         if (required && required == 'checkTime') {
@@ -51360,7 +51358,6 @@ if(!$('body .so-modal')){
 
         if (getCookie('bookingform') != null) {
             $('.booking-steps__restore').append('\n            <div class="booking-steps__restore-inner">\n                Restore previous booking\n            </div>\n            ');
-            checkTime();
         }
     });
 
