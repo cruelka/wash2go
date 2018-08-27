@@ -283,7 +283,7 @@
                       Back
                     </div>
                   </div>
-                  <div class="button button_right" onclick="soBookingForm.changePage(7);soBookingForm.drawConfirm()">
+                  <div class="button button_right" onclick="soBookingForm.changePage(7,'checkTime');soBookingForm.drawConfirm()">
                     <div class="button__body">
                       Continue
                     </div>
@@ -291,6 +291,7 @@
                 </div>
 
                 <div class="booking-steps__heading">Select Time</div>
+                <div id="booking-steps__time-errors"></div>
                 <div class="booking-steps__body">
                   <div class="booking-steps__list-lable">
                       Select date

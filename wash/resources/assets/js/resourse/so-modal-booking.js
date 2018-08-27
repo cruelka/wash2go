@@ -1,5 +1,8 @@
 (function( $ ){
 
+    
+    let timeApprove = false;
+
     function openBookingForm(){
         soModal.open('.so-modal__booking-form');
     };
@@ -162,6 +165,12 @@
             
         }
 
+        if(required && required=='checkTime'){
+            if(timeApprove!=true){
+                return false;
+            } 
+        }
+
         $('.booking-steps__validation').empty().hide();
 
         
@@ -257,7 +266,8 @@
                         minDate: moment().add('0','days'),
                         maxDate: moment().add('7','days'),
                         defaultDate: moment().toDate(),
-                    });
+                    }).change(dateChanged)
+                    .on('changeDate', dateChanged);
                 });
 
                 $(function () {
@@ -265,9 +275,14 @@
                         format: 'LT',
                         stepping: 15,
                         enabledHours: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
-                    });
+                    }).change(dateChanged)
+                    .on('changeDate', dateChanged);
                 });
       });
+
+      function dateChanged(ev) {
+        checkTime();
+      }
 
       $('#datetimepicker2').find('.form-control').click(function(){
         $(this).parent().find('.input-group-addon').click();
@@ -494,6 +509,8 @@
 
         let token = $('#booking-form').attr('data');
 
+        
+
         $.ajax({
             type: "POST",
             url: '/check',
@@ -505,10 +522,17 @@
             contentType: false,
             
         }).done(function(data) {
-            alert( data );
+            if(data==1){
+                timeApprove = true;
+                $('#booking-steps__time-errors').empty().append('');
+            } else {
+                timeApprove = false;
+                $('#booking-steps__time-errors').empty().append('This time busy, please take another one');
+            }
+            
         });
     }
-      
+
 
     window.soBookingForm = {};
     window.soBookingForm.changePage = changePage;
@@ -518,6 +542,15 @@
     window.soBookingForm.drawConfirm = drawBookingConfirm;
 
     window.soBookingForm.post = postBooking;
+
+    window.soBookingForm.checkTime = checkTime;
+
+    window.soBookingForm.timeApprove = timeApprove;
+
+
+    timeApprove
+
+    
 
 
 
