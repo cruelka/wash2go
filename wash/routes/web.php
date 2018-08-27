@@ -44,7 +44,7 @@ Route::get('page/{slug}', function($slug){
     $data = App\Page::where('slug', '=', $slug)->firstOrFail();
     return view('content', compact('data'));
 });
-
+Route::get('/mail', 'HomeController@basic_email');
 Route::get('/booking', function () {
    return view('booking');
 });

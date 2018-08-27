@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 use App\Booking;
+use App\Mail\OrderShipped;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
+use Illuminate\Support\Facades\Mail;
 class HomeController extends Controller
 {
     /**
@@ -29,23 +30,25 @@ class HomeController extends Controller
         return view('home',compact( 'bookings'));
     }
     public function store(Request $request){
-
+       dd($request);
         if( Auth::check()) {
-  
             $booking = [
                 'user_id' => Auth::id(),
                 'service' => request('services'),
                 'price' => request('totalPrice'),
                 'location' => request('where'),
+                'name'   =>request('bname'),
                 'date' => request('date'),
                 'time' => request('time'),
                 'status' => 'active',
                 'marks' => '0',
-                'email' => Auth::user()->email,
-                'phone' => Auth::user()->phone,
+                'email' => request('email'),
+                'phone' => request('phone'),
                 
             ];
             $newbooking = Booking::create($booking);
+            Mail::to(Auth::user()->email)->send(new OrderShipped($newbooking));
+
         }
         
     }
@@ -62,4 +65,13 @@ class HomeController extends Controller
         }
 
     }
+    public function basic_email(){
+        $data = array('name'=>"Virat Gandhi");
+        Mail::send('mail',$data,function($message){
+            $message->to('kes1993@yandex.ru')->subject("Email Testing with Laravel");
+            $message->from('reply@wash2go.ae','Creative Losser Hopeless Genius');
+        });
+   
+    }
+
 }
