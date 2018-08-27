@@ -51283,7 +51283,7 @@ if(!$('body .so-modal')){
         $(function () {
             $('#datetimepicker2').datetimepicker({
                 format: 'DD.MM.YYYY',
-                minDate: moment().add('0', 'days'),
+                minDate: 1,
                 maxDate: moment().add('7', 'days'),
                 defaultDate: moment().toDate()
             }).on("dp.change", function (e) {
