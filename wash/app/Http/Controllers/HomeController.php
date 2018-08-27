@@ -37,7 +37,7 @@ class HomeController extends Controller
                 'service' => request('services'),
                 'price' => request('totalPrice'),
                 'location' => request('where'),
-                'name'   =>request('name'),
+                'name'   =>request('bookingname'),
                 'date' => request('date'),
                 'time' => request('time'),
                 'status' => 'active',
