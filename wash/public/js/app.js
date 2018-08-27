@@ -51493,11 +51493,11 @@ if(!$('body .so-modal')){
         }).done(function (data) {
             if (data == 1) {
                 timeApprove = true;
-                alert(1);
+
                 $('.booking-steps__time-errors').empty().append('');
             } else {
                 timeApprove = false;
-                alert(0);
+
                 $('.booking-steps__time-errors').empty().append('This time busy, please take another one');
             }
         });
