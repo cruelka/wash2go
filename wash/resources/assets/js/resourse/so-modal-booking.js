@@ -266,7 +266,7 @@
         $(function () {
                     $('#datetimepicker2').datetimepicker({ 
                         format: 'DD.MM.YYYY',
-                        minDate: moment().add('0','days'),
+                        minDate: moment().subtract(0, 'days').millisecond(0).second(0).minute(0).hour(0),
                         maxDate: moment().add('7','days'),
                         defaultDate: moment().toDate(),
                     }).on("dp.change", function(e) {
