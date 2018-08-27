@@ -65,7 +65,8 @@
     </div>
 -->
 <p>Click on the map to move marker</p>
-<div class="btn" onclick="window.getLocation()">Get current location</div>
+<div class="btn btn-success" onclick="window.getLocation()">Get current location</div>
+<br><br>
     <div id="map"></div>
 
                 </div>
