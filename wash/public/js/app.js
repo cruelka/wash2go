@@ -51492,10 +51492,12 @@ if(!$('body .so-modal')){
         }).done(function (data) {
             if (data == 1) {
                 timeApprove = true;
-                $('#booking-steps__time-errors').empty().append('');
+                alert(1);
+                $('.booking-steps__time-errors').empty().append('');
             } else {
                 timeApprove = false;
-                $('#booking-steps__time-errors').empty().append('This time busy, please take another one');
+                alert(0);
+                $('.booking-steps__time-errors').empty().append('This time busy, please take another one');
             }
         });
     }
