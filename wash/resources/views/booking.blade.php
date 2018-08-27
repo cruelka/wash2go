@@ -64,8 +64,9 @@
       <input onclick="deleteMarkers();" type=button value="Delete Markers">
     </div>
 -->
+<p>Click on the map to move marker</p>
+
     <div id="map"></div>
-    <p>Click on the map to add markers.</p>
 
                 </div>
               </div>
