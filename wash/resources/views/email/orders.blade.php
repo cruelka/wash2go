@@ -54,7 +54,7 @@
 <body>
 <div class="mail">
     <div class="mail__header">
-        <img class="mail__header-logo" src="https://tellcoom.com/images/logo.png" alt="Tellcoom">
+        <img class="mail__header-logo" src="https://wash2go.ae/images/logo.svg" alt="logo">
     </div>
     <div class="mail__content">
         <div class="mail__heading">
