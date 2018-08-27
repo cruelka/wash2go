@@ -5,7 +5,7 @@ use App\Booking;
 use App\Mail\OrderShipped;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Mail;
+use Illuminate\Support\Facades\Mail;
 class HomeController extends Controller
 {
     /**
@@ -32,7 +32,7 @@ class HomeController extends Controller
     public function store(Request $request){
 
         if( Auth::check()) {
-  
+            $user = Auth::user();
             $booking = [
                 'user_id' => Auth::id(),
                 'service' => request('services'),
