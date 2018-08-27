@@ -404,6 +404,7 @@
       // Each marker is labeled with a single alphabetical character.
       var labels = 'A';
       var labelIndex = 0;
+      var markers = [];
 
       function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -421,19 +422,28 @@
       function addMarker(location, map) {
         // Add the marker at the clicked location, and add the next-available label
         // from the array of alphabetical characters.
+        
         function setMapOnAll(map) {
-          for (var i = 0; i < markers.length; i++) {
+        for (var i = 0; i < markers.length; i++) {
             markers[i].setMap(map);
           }
         }
 
-         setMapOnAll(null);
+        // Removes the markers from the map, but keeps them in the array.
+        function clearMarkers() {
+          setMapOnAll(null);
+        }
+
 
         var marker = new google.maps.Marker({
           position: location,
           label: labels[labelIndex++ % labels.length],
           map: map
         });
+
+        markers.push(marker);
+
+
       }
 
 
