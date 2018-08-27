@@ -57,15 +57,18 @@
                 <div class="booking-steps__body">
                   <div class="booking-steps__validation booking-steps__validation_map"></div>
                   
-                  
+                  <!--
                   <div id="floating-panel">
       <input onclick="clearMarkers();" type=button value="Hide Markers">
       <input onclick="showMarkers();" type=button value="Show All Markers">
       <input onclick="deleteMarkers();" type=button value="Delete Markers">
     </div>
+-->
+<p>Click on the map to move marker</p>
+<div class="btn btn-success" onclick="window.getLocation()">Get current location</div>
+<br><br>
     <div id="map"></div>
-    <p>Click on the map to add markers.</p>
-    
+
                 </div>
               </div>
               
@@ -372,15 +375,15 @@
               <form id="booking-form" data="{{ csrf_token() }}" >
                   <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
-                    <input type="email" class="form-control" id="bookingname" placeholder="Enter name">
+                    <input type="email" class="form-control" id="bookingname" placeholder="Enter name" @if (Auth::check()) value="{{ Auth::user()->name }}" @endif>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="bookingmail" placeholder="Enter email">
+                    <input type="email" class="form-control" id="bookingmail" placeholder="Enter email" @if (Auth::check()) value="{{ Auth::user()->email }}" @endif>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Phone</label>
-                    <input type="phone" class="form-control" id="bookingphone" placeholder="Enter Phone">
+                    <input type="phone" class="form-control" id="bookingphone" placeholder="Enter Phone" @if (Auth::check()) value="{{ Auth::user()->phone }}" @endif>
                   </div>
 
                   <div id="booking-form__errors"></div>
@@ -408,7 +411,51 @@
       var markers = [];
 
       function initMap() {
-        var haightAshbury = {lat: 37.769, lng: -122.446};
+
+        infoWindow = new google.maps.InfoWindow;
+
+        function getLocation(){
+          // Try HTML5 geolocation.
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+              var pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+              };
+
+              infoWindow.setPosition(pos);
+              infoWindow.setContent('Location found.');
+              infoWindow.open(map);
+              map.setCenter(pos);
+              addMarker(pos);
+            }, function() {
+              handleLocationError(true, infoWindow, map.getCenter());
+            });
+
+            
+          } else {
+            // Browser doesn't support Geolocation
+            handleLocationError(false, infoWindow, map.getCenter());
+          }
+
+        }
+
+        window.getLocation = getLocation;
+
+
+
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+infoWindow.setPosition(pos);
+infoWindow.setContent(browserHasGeolocation ?
+                      'Error: The Geolocation service failed.' :
+                      'Error: Your browser doesn\'t support geolocation.');
+  infoWindow.open(map);
+  
+}
+
+
+
+        var haightAshbury = {lat:25.257562,lng: 55.326623};
 
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
@@ -423,10 +470,31 @@
 
         // Adds a marker at the center of the map.
         addMarker(haightAshbury);
+
+
+        var myLatlng = new google.maps.LatLng(25.257562, 55.326623);
+
+
+        var mapOptions = {
+          zoom: 13,
+          center: myLatlng
+        }
+        var map2 = new google.maps.Map(document.getElementById("map2"), mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            title:"Business village, 6th Floor, Office #601"
+        });
+
+        marker.setMap(map2);
+
       }
 
       // Adds a marker to the map and push to the array.
       function addMarker(location) {
+        clearMarkers();
+        deleteMarkers();
+
         var marker = new google.maps.Marker({
           position: location,
           map: map
@@ -457,26 +525,14 @@
         markers = [];
       }
 
+      
+
       /////////
 
-        var myLatlng = new google.maps.LatLng(25.257562, 55.326623);
-
-
-        var mapOptions = {
-          zoom: 13,
-          center: myLatlng
-        }
-        var map2 = new google.maps.Map(document.getElementById("map2"), mapOptions);
-
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            title:"Business village, 6th Floor, Office #601"
-        });
-
-        // To add the marker to the map, call setMap();
-        marker.setMap(map2);
-      }
-
+      /*
+        
+      
+      */
       
     </script>
 
@@ -596,6 +652,6 @@
 
     
 
-     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnQdVeXsvN-31LxFeKaKf255C5vGB73VQ&libraries=places&callback=initAutocomplete&language=en"
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnQdVeXsvN-31LxFeKaKf255C5vGB73VQ&libraries=places&callback=initMap&language=en"
          async defer></script>
 @endsection

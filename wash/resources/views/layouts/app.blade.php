@@ -43,9 +43,9 @@
           <a href="/blog" class="header__nav">
               News
           </a>
-          <div class="header__nav">
+          <a href="page/about-us" class="header__nav">
               About
-          </div>
+          </a>
           <div class="header__nav">
               Contacts
           </div>
@@ -124,7 +124,7 @@
    
                 <ul class="footer__list">
                   
-                  <li class="footer__item" >Terms and Conditions</li>
+                  <li class="footer__item" ><a href="/page/terms-and-conditions">Terms and Conditions</a></li>
                   <li class="footer__item" >Privacy Policy</li>
                   <li class="footer__item" >Return & Cancellation Policy</li>
                   <li class="footer__item" >Shipping & Delivery Policy</li>
@@ -535,9 +535,9 @@
             <div href="/blog" class="navigation-modal__item navigation-modal__item_top">
               News
             </div>
-            <div class="navigation-modal__item navigation-modal__item_top">
+            <a href="/page/about-us" class="navigation-modal__item navigation-modal__item_top">
               About
-            </div>
+            </a>
             <div class="navigation-modal__item navigation-modal__item_top">
               Contacts
             </div>

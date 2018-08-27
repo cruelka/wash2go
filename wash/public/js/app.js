@@ -51209,8 +51209,9 @@ if(!$('body .so-modal')){
         }
 
         if (page == 6) {
-            timeApprove == false;
-            $('.booking-steps__time-errors').empty();
+            // timeApprove==false;
+            // $('.booking-steps__time-errors').empty();
+            checkTime();
         }
 
         if (required && required == 'checkTime') {
@@ -51343,7 +51344,7 @@ if(!$('body .so-modal')){
         var data = getBookingData();
         setCookie('bookingform', JSON.stringify(data), 7);
 
-        var html = '\n          <div class="booking-steps__confirm">\n            <div class="booking-steps__confirm-heading">Booking Eco Car Wash</div>\n            <div>Service information</div>\n            <div class="booking-steps__confirm-item">\n                <span class="booking-steps__confirm-lable">Where: </span>\n                <span>' + data.where + ' ' + data.place + '</span>\n            </div>\n            <div class="booking-steps__confirm-item">\n                <span class="booking-steps__confirm-lable">When: </span>\n                <span>' + data.date + ' ' + data.time + '</span>\n            </div>\n            <div class="booking-steps__confirm-item">\n                <span class="booking-steps__confirm-lable">Body Type: </span>\n                <span>' + data.bodyType + '</span>\n            </div>\n            <div class="booking-steps__confirm-item">\n                <span class="booking-steps__confirm-lable">Service: </span>\n                <div>\n                    ' + data.services.map(function (item) {
+        var html = '\n          <div class="booking-steps__confirm">\n            <div class="booking-steps__confirm-heading">Booking Eco Car Wash</div>\n            <div>Service information</div>\n            <div class="booking-steps__confirm-item">\n                <span class="booking-steps__confirm-lable">Where: </span>\n                <span>' + data.where + '</span>\n            </div>\n            <div class="booking-steps__confirm-item">\n                <span class="booking-steps__confirm-lable">When: </span>\n                <span>' + data.date + ' ' + data.time + '</span>\n            </div>\n            <div class="booking-steps__confirm-item">\n                <span class="booking-steps__confirm-lable">Body Type: </span>\n                <span>' + data.bodyType + '</span>\n            </div>\n            <div class="booking-steps__confirm-item">\n                <span class="booking-steps__confirm-lable">Service: </span>\n                <div>\n                    ' + data.services.map(function (item) {
             var htmlService = '<span>' + item.name + '</span>';
 
             return htmlService;
@@ -51439,8 +51440,10 @@ if(!$('body .so-modal')){
 
         var formData = new FormData();
 
-        if (obj.place.trim() != '') {
-            obj.where = obj.place;
+        if (obj.where.trim() == 'At Home') {
+            obj.where = markers[0].position.lat();
+            obj.where = obj.where + ',';
+            obj.where = obj.where + markers[0].position.lng();
         }
 
         for (var key in obj) {
