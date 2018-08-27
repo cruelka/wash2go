@@ -37,13 +37,13 @@ class HomeController extends Controller
                 'service' => request('services'),
                 'price' => request('totalPrice'),
                 'location' => request('where'),
-                 'name'   => Auth::user()->name,
+                'name'   =>request('name'),
                 'date' => request('date'),
                 'time' => request('time'),
                 'status' => 'active',
                 'marks' => '0',
-                'email' => Auth::user()->email,
-                'phone' => Auth::user()->phone,
+                'email' => request('email'),
+                'phone' => request('phone'),
                 
             ];
             $newbooking = Booking::create($booking);
