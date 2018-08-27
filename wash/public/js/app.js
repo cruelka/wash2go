@@ -51361,6 +51361,7 @@ if(!$('body .so-modal')){
 
         if (getCookie('bookingform') != null) {
             $('.booking-steps__restore').append('\n            <div class="booking-steps__restore-inner">\n                Restore previous booking\n            </div>\n            ');
+            checkTime();
         }
     });
 

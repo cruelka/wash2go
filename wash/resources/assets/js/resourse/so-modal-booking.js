@@ -386,6 +386,7 @@
                 Restore previous booking
             </div>
             `);
+            checkTime();
 
         }
       });
