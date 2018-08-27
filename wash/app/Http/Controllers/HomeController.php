@@ -30,7 +30,7 @@ class HomeController extends Controller
         return view('home',compact( 'bookings'));
     }
     public function store(Request $request){
-
+       dd($request);
         if( Auth::check()) {
             $booking = [
                 'user_id' => Auth::id(),
