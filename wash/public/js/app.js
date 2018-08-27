@@ -51178,6 +51178,7 @@ if(!$('body .so-modal')){
     });
 
     function changePage(page, required) {
+        timeApprove = false;
 
         if (required && required == 'bodytype') {
             var checkSelection = 0;

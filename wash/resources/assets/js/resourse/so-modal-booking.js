@@ -128,6 +128,7 @@
     });
 
     function changePage(page,required){
+        timeApprove = false;
         
         if(required && required=='bodytype'){
             let checkSelection = 0;
