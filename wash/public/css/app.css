@@ -9219,6 +9219,8 @@ button.close {
 
 .navigation-modal__sub {
   font-weight: normal;
+  padding: 20px;
+  border-left: 3px solid #39d46f;
 }
 
 .navigation-modal__item:hover {
@@ -9627,6 +9629,10 @@ button.close {
 }
 
 .booking-steps__time-errors {
+  margin-bottom: 20px;
+}
+
+.booking-form__errors {
   margin-bottom: 20px;
 }
 

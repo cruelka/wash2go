@@ -51415,11 +51415,11 @@ if(!$('body .so-modal')){
 
         var obj = JSON.parse(getCookie('bookingform'));
 
-        obj.name = $('#bookingname').val().trim();
+        obj.bename = $('#bookingname').val().trim();
         obj.email = $('#bookingmail').val().trim();
         obj.phone = $('#bookingphone').val().trim();
 
-        if (obj.name == '') {
+        if (obj.bename == '') {
             $('#booking-form__errors').append('Sorry, we need your contact details for a booking');
 
             return false;
