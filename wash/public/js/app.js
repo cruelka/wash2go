@@ -51456,6 +51456,28 @@ if(!$('body .so-modal')){
         });
     };
 
+    function checkTime() {
+        var formData = new FormData();
+
+        formData.append('date', $('#datetimepicker2 input').val());
+
+        formData.append('time', $('#datetimepicker3 input').val());
+
+        $.ajax({
+            type: "POST",
+            url: '/check',
+            headers: {
+                'X-CSRF-TOKEN': token
+            },
+            data: formData,
+            processData: false,
+            contentType: false
+
+        }).done(function (data) {
+            alert(data);
+        });
+    }
+
     window.soBookingForm = {};
     window.soBookingForm.changePage = changePage;
     window.soBookingForm.priceChange = priceChange;
