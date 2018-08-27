@@ -51401,18 +51401,22 @@ if(!$('body .so-modal')){
         obj.phone = $('#bookingphone').val().trim();
 
         if (obj.name == '') {
+            $('#booking-form__errors').append('Sorry, we need your contact details for a booking');
+
             return false;
         }
 
         if (obj.email == '') {
+            $('#booking-form__errors').append('Sorry, we need your contact details for a booking');
+
             return false;
         }
 
         if (obj.phone == '') {
+            $('#booking-form__errors').append('Sorry, we need your contact details for a booking');
+
             return false;
         }
-
-        $('#booking-form__errors').append('Sorry, we need your contact details for a booking');
 
         var formData = new FormData();
 
