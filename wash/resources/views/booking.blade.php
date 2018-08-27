@@ -56,7 +56,6 @@
                 <div class="booking-steps__heading">Select your location</div>
                 <div class="booking-steps__body">
                   <div class="booking-steps__validation booking-steps__validation_map"></div>
-                  <input id="pac-input" class="controls" type="text" placeholder="Search Box">
                   <div id="map"></div>
                 </div>
               </div>
