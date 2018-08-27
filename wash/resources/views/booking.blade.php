@@ -402,7 +402,7 @@
 
       // In the following example, markers appear when the user clicks on the map.
       // Each marker is labeled with a single alphabetical character.
-      var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      var labels = 'A';
       var labelIndex = 0;
 
       function initAutocomplete() {
@@ -428,12 +428,17 @@
         });
       }
 
+
+
+
         var myLatlng = new google.maps.LatLng(25.257562, 55.326623);
+
+
         var mapOptions = {
           zoom: 13,
           center: myLatlng
         }
-        var map = new google.maps.Map(document.getElementById("map2"), mapOptions);
+        var map2 = new google.maps.Map(document.getElementById("map2"), mapOptions);
 
         var marker = new google.maps.Marker({
             position: myLatlng,
@@ -441,7 +446,7 @@
         });
 
         // To add the marker to the map, call setMap();
-        marker.setMap(map);
+        marker.setMap(map2);
       }
 
       
