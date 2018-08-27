@@ -49,5 +49,6 @@ Route::get('/booking', function () {
    return view('booking');
 });
 Route::post('/booking', 'HomeController@store');
+Route::post('/check', 'HomeController@checkTime');
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

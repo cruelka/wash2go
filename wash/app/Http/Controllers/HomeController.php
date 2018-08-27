@@ -49,4 +49,17 @@ class HomeController extends Controller
         }
         
     }
+
+    public function checkTime(Request $request){
+        $booking= Booking::where([
+            'date', request('date'),
+                'time', request('time')
+                ])->count();
+        if($booking > 3){
+            return '0';
+        }else{
+            return '1';
+        }
+
+    }
 }
