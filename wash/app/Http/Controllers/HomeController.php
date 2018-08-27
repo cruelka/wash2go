@@ -39,7 +39,7 @@ class HomeController extends Controller
                 'location' => request('where'),
                 'date' => request('date'),
                 'time' => request('time'),
-                'status' => '0',
+                'status' => 'active',
                 'marks' => '0',
                 'email' => Auth::user()->email,
                 'phone' => Auth::user()->phone,

@@ -66,8 +66,8 @@
                             <div class="lable lable_black">{{$booking->time}}</div>
                         </div>
                         <div class="col-sm-3 col-xs-12">
-                            <div class="lable">Body</div>
-                            <div class="lable lable_black">CUV</div>
+                            <div class="lable">Status</div>
+                            <div class="lable lable_black">{{$booking->status}}</div>
                         </div>
                     </div>
                     <div class="lable">Total</div>
