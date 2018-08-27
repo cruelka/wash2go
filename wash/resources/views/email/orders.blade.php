@@ -58,7 +58,7 @@
     </div>
     <div class="mail__content">
         <div class="mail__heading">
-            Hi {{$booking->name}}. Thank you for your order!
+            Hi {{$booking->user_name}}. Thank you for your order!
         </div>
         <div class="mail__subheading">
             Your order has been placed. You will be notified !
