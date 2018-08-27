@@ -427,6 +427,7 @@
               infoWindow.setContent('Location found.');
               infoWindow.open(map);
               map.setCenter(pos);
+              addMarker(pos);
             }, function() {
               handleLocationError(true, infoWindow, map.getCenter());
             });
@@ -448,7 +449,8 @@ infoWindow.setPosition(pos);
 infoWindow.setContent(browserHasGeolocation ?
                       'Error: The Geolocation service failed.' :
                       'Error: Your browser doesn\'t support geolocation.');
-infoWindow.open(map);
+  infoWindow.open(map);
+  
 }
 
 
