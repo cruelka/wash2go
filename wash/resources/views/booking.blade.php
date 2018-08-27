@@ -375,7 +375,7 @@
               <form id="booking-form" data="{{ csrf_token() }}" >
                   <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
-                    <input type="email" class="form-control" id="bookingname" placeholder="Enter name">
+                    <input type="email" class="form-control" id="bookingname" placeholder="Enter name" @if (Auth::check()) value="{{ Auth::user()->name }}" @endif>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
