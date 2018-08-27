@@ -34,9 +34,9 @@
 
   <div id="so-content">
   <div class="header so-header so-header_scrolled">
-    <div class="header__block">
+    <a href="/" class="header__block">
       <img src="{{ asset('images/logo.svg') }}" alt="Logo" class="header__logo so-header__logo">
-    </div>
+    </a>
     <div class="header__block header__fullscreen-only" style="flex-grow: 2;">
         <div class="header__nav" onclick="soModal.open('.navigation-modal')">
             Our products
