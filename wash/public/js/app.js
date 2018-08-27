@@ -51209,6 +51209,8 @@ if(!$('body .so-modal')){
         }
 
         if (required && required == 'checkTime') {
+            checkTime();
+
             if (timeApprove != true) {
                 return false;
             }
@@ -51398,7 +51400,7 @@ if(!$('body .so-modal')){
 
         $('.booking-steps__list-lable-total-data').empty().append(data.totalPrice);
 
-        soBookingForm.changePage(7);
+        soBookingForm.changePage(6);
         soBookingForm.drawConfirm();
     });
 

@@ -166,9 +166,12 @@
         }
 
         if(required && required=='checkTime'){
+            checkTime();
+
             if(timeApprove!=true){
                 return false;
-            } 
+            }
+            
         }
 
         $('.booking-steps__validation').empty().hide();
@@ -426,7 +429,7 @@
         $('.booking-steps__list-lable-total-data').empty().append(data.totalPrice);
 
 
-        soBookingForm.changePage(7);
+        soBookingForm.changePage(6);
         soBookingForm.drawConfirm();
         
       });
