@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Booking;
+use App\Mail\OrderShipped;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Mail;
@@ -46,6 +47,8 @@ class HomeController extends Controller
                 
             ];
             $newbooking = Booking::create($booking);
+            Mail::to(Auth::user()->email)->send(new OrderShipped($newbooking));
+
         }
         
     }
