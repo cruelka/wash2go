@@ -379,11 +379,11 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="bookingmail" placeholder="Enter email">
+                    <input type="email" class="form-control" id="bookingmail" placeholder="Enter email" @if (Auth::check()) value="{{ Auth::user()->email }}" @endif>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Phone</label>
-                    <input type="phone" class="form-control" id="bookingphone" placeholder="Enter Phone">
+                    <input type="phone" class="form-control" id="bookingphone" placeholder="Enter Phone" @if (Auth::check()) value="{{ Auth::user()->phone }}" @endif>
                   </div>
 
                   <div id="booking-form__errors"></div>
