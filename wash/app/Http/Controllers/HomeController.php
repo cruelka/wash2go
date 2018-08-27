@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use App\Booking;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
+use Mail;
 class HomeController extends Controller
 {
     /**
@@ -62,4 +62,15 @@ class HomeController extends Controller
         }
 
     }
+    public function basic_email(){
+        $data = array('name'=>"Virat Gandhi");
+
+        Mail::send(['text'=>'mail'], $data, function($message) {
+            $message->to('kes1993@yandex.ru', 'Tutorials Point')->subject
+            ('Laravel Basic Testing Mail');
+            $message->from('xyz@gmail.com','Virat Gandhi');
+        });
+        echo "Basic Email Sent. Check your inbox.";
+    }
+
 }
