@@ -48,22 +48,22 @@
 
 
   <div>
-      @foreach($booking as $item)
+      @foreach($bookings as $booking)
                 <div class="tabled__item">
                     <div class="lable">Service</div>
-                    <div class="text black">{{$item->service}}</div>
+                    <div class="text black">{{$booking->service}}</div>
                     <div class="row tabled__row">
                         <div class="col-sm-3 col-xs-12">
                             <div class="lable">Where</div>
-                            <div class="lable lable_black">{{$item->location}}</div>
+                            <div class="lable lable_black">{{$booking->location}}</div>
                         </div>
                         <div class="col-sm-3 col-xs-12">
                             <div class="lable">Date</div>
-                            <div class="lable lable_black">{{$item->date}}</div>
+                            <div class="lable lable_black">{{$booking->date}}</div>
                         </div>
                         <div class="col-sm-3 col-xs-12">
                             <div class="lable">Time</div>
-                            <div class="lable lable_black">{{$item->time}}</div>
+                            <div class="lable lable_black">{{$booking->time}}</div>
                         </div>
                         <div class="col-sm-3 col-xs-12">
                             <div class="lable">Body</div>
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                     <div class="lable">Total</div>
-                    <div class="text black">{{$item->price}}</div>
+                    <div class="text black">{{$booking->price}}</div>
                 </div>
       @endforeach
   </div>
