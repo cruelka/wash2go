@@ -8646,6 +8646,15 @@ button.close {
   font-weight: bold;
 }
 
+.footer__item a {
+  color: white;
+}
+
+.footer__item a:hover {
+  color: white;
+  opacity: .8;
+}
+
 .header__button {
   height: 40px;
   padding-top: 9px;
