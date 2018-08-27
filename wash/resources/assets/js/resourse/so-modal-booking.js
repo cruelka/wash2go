@@ -492,6 +492,7 @@
 
         formData.append('time',$('#datetimepicker3 input').val());
 
+        let token = $('#booking-form').attr('data');
 
         $.ajax({
             type: "POST",

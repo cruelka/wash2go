@@ -51463,6 +51463,8 @@ if(!$('body .so-modal')){
 
         formData.append('time', $('#datetimepicker3 input').val());
 
+        var token = $('#booking-form').attr('data');
+
         $.ajax({
             type: "POST",
             url: '/check',
