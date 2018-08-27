@@ -51284,6 +51284,8 @@ if(!$('body .so-modal')){
                 minDate: moment().add('0', 'days'),
                 maxDate: moment().add('7', 'days'),
                 defaultDate: moment().toDate()
+            }).on("dp.change", function (e) {
+                alert('hey');
             });
         });
 
@@ -51292,8 +51294,8 @@ if(!$('body .so-modal')){
                 format: 'LT',
                 stepping: 15,
                 enabledHours: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
-            }).on('change.dp', function (e) {
-                checkTime();
+            }).on("dp.change", function (e) {
+                alert('hey');
             });
         });
     });
