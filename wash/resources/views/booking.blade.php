@@ -65,7 +65,7 @@
     </div>
     <div id="map"></div>
     <p>Click on the map to add markers.</p>
-    
+
                 </div>
               </div>
               
@@ -475,7 +475,7 @@
 
         // To add the marker to the map, call setMap();
         marker.setMap(map2);
-      }
+      
 
       
     </script>
