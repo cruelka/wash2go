@@ -58,7 +58,7 @@
     </div>
     <div class="mail__content">
         <div class="mail__heading">
-            Hi {{$booking->name}}. Thank you for your order!
+            Hi {{$newbooking->name}}. Thank you for your order!
         </div>
         <div class="mail__subheading">
             Your order has been placed. You will be notified !
@@ -67,8 +67,8 @@
             <table class="mail__shop-item">
                 <tr>
                     <td>
-                        <div class="mail__shop-item-title">{{$booking->service}}</div>
-                        <div class="mail__shop-item-price">{{$booking->price}} AED</div>
+                        <div class="mail__shop-item-title">{{$newbooking->service}}</div>
+                        <div class="mail__shop-item-price">{{$newbooking->price}} AED</div>
                     </td>
 
 
