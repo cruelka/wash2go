@@ -373,6 +373,8 @@
                     <label for="exampleInputPassword1">Phone</label>
                     <input type="phone" class="form-control" id="bookingphone" placeholder="Enter Phone">
                   </div>
+
+                  <div id="booking-form__errors"></div>
                   <div class="btn btn-success" onclick="soBookingForm.post()">Confirm</div>
                 </form>
 

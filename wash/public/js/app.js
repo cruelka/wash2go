@@ -51392,11 +51392,27 @@ if(!$('body .so-modal')){
 
     function postBooking() {
 
+        $('#booking-form__errors').empty();
+
         var obj = JSON.parse(getCookie('bookingform'));
 
         obj.name = $('#bookingname').val().trim();
         obj.email = $('#bookingmail').val().trim();
         obj.phone = $('#bookingphone').val().trim();
+
+        if (obj.name == '') {
+            return false;
+        }
+
+        if (obj.email == '') {
+            return false;
+        }
+
+        if (obj.phone == '') {
+            return false;
+        }
+
+        $('#booking-form__errors').append('Sorry, we need your contact details for a booking');
 
         var formData = new FormData();
 
@@ -51405,7 +51421,21 @@ if(!$('body .so-modal')){
         }
 
         for (var key in obj) {
-            formData.append(key, obj[key]);
+            if (key == 'services') {
+                (function () {
+                    var str = '';
+
+                    obj[key].map(function (item) {
+                        str = str.trim() + item.name.trim() + ',';
+                    });
+
+                    str = str.substring(0, a.length - 1);
+
+                    formData.append(key, str);
+                })();
+            } else {
+                formData.append(key, obj[key]);
+            }
         }
 
         var token = $('#booking-form').attr('data');
