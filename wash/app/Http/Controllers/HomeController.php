@@ -24,9 +24,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $booking = Booking::where('id', Auth::id())->get();
+        $bookings = Booking::where('user_id', Auth::id())->paginate(2);
 
-        return view('home',compact( 'booking'));
+        return view('home',compact( 'bookings'));
     }
     public function store(Request $request){
 
@@ -39,7 +39,7 @@ class HomeController extends Controller
                 'location' => request('where'),
                 'date' => request('date'),
                 'time' => request('time'),
-                'status' => '0',
+                'status' => 'active',
                 'marks' => '0',
                 'email' => Auth::user()->email,
                 'phone' => Auth::user()->phone,
@@ -52,8 +52,8 @@ class HomeController extends Controller
 
     public function checkTime(Request $request){
         $booking= Booking::where([
-            'date','=', request('date'),
-                'time','=', request('time')
+            ['date', request('date')],
+            ['time', request('time')]
                 ])->count();
         if($booking > 3){
             return '0';
