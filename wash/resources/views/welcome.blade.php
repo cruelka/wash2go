@@ -1268,7 +1268,8 @@ $(".slider")
     speed: 800,
     lazyLoad: "progressive",
     arrows: false,
-    dots: true
+    dots: true,
+    pauseOnHover:false,
   })
   .slickAnimation();
     
