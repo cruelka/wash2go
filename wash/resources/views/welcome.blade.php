@@ -1211,7 +1211,7 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
 <script src="{{asset('js/app.js')}}" ></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick/slick/slick.min.js"></script>
+<!--<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick/slick/slick.min.js"></script>-->
 
 
 <script>

@@ -16,5 +16,5 @@ mix.setResourceRoot('../');
 
 mix.js('resources/assets/js/app.js', 'public/js').autoload({
     jquery: ['$', 'window.jQuery', 'jQuery']
-}).sass('resources/assets/sass/app.scss', 'public/css');
+}).sass('resources/assets/sass/app.scss', 'public/css').copy('node_modules/slick-carousel/slick', 'public/assets/slick');
 
