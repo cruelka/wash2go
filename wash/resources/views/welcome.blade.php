@@ -1251,8 +1251,7 @@ $(".slider")
     lazyLoad: "progressive",
     arrows: false,
     dots: true
-  })
-  .slickAnimation();
+  });
     
   </script>
 
