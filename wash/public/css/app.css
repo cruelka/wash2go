@@ -13912,7 +13912,13 @@ body {
 
 @media screen and (max-width: 992px) {
   .text-slider {
-    font-size: .8em;
+    font-size: 2em !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-slider {
+    font-size: 1.5em !important;
   }
 }
 
