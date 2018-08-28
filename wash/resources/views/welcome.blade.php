@@ -47,13 +47,13 @@
           <a href="page/about-us" class="header__nav">
               About
           </a>
-          <div class="header__nav">
+          <a href="/page/contact" class="header__nav">
               Contacts
-          </div>
+          </a>
     </div>
-    
-    
-  
+
+
+
     <div class="header__block">
         @if (Auth::check())
           <a href="/home" class="header__nav header__fullscreen-only">
@@ -70,7 +70,7 @@
           </a>
 
         @endif
-        
+
         <a  href="/booking"  class="header__nav header__fullscreen-only  header__nav_wrapped">
             Book now
         </a>
@@ -81,7 +81,7 @@
           <img class="header__button-icon so-header__bag" src="{{ asset('images/icons/bag.svg')}}">
     </div>
 
-    
+
 </div>
 
 
@@ -128,7 +128,7 @@
           </div>
       </div>
     </div>
-    
+
     <div class="welcome-fullscreen" style="background-image: url({{asset('images/slider/2.jpg')}})">
       <div class="container welcome-fullscreen__inner">
         <div class="welcome-fullscreen__data" >
@@ -154,7 +154,7 @@
           </div>
       </div>
     </div>
-    
+
   </div>
 
 
@@ -162,9 +162,9 @@
 
 <!--
   <div class="booking-form__wrapper">
-    
+
   <div class="booking-form" >
-                  
+
                   <div class="booking-form__item">
                     <div class="booking-form__item-lable">
                       Location
@@ -190,7 +190,7 @@
                       <div class="booking-form__item-lable">
                         Washing type
                       </div>
-                  
+
                       <select onchange="soBookingForm.priceChange(this)" id="booking-form__washing-type" class="form-control booking-form__select">
                         <option value="0">Select Washing</option>
                         <option value="25">Extertal Wash / 25 AED</option>
@@ -200,14 +200,14 @@
                         <option value="35">Steam External Wash / 35 AED</option>
                         <option value="70">Steam Full Wash / 70 AED</option>
                       </select>
-                 
+
                       <div class="booking-form__select form-control">Select washing</div>
                     </div>
                     <div class="booking-form__item">
                       <div class="booking-form__item-lable">
                         Choose date
                       </div>
-                 
+
                       <select onchange="soBookingForm.priceChange(this)" id="booking-form__washing-type" class="form-control booking-form__select">
                         <option value="0">Select Washing</option>
                         <option value="25">Extertal Wash / 25 AED</option>
@@ -217,10 +217,10 @@
                         <option value="35">Steam External Wash / 35 AED</option>
                         <option value="70">Steam Full Wash / 70 AED</option>
                       </select>
-                     
+
                       <div class="booking-form__select form-control">Select washing</div>
                     </div>
-               
+
                   <div class="booking-form__item">
                     <div class="booking-form__item-lable">
                       Day
@@ -237,7 +237,7 @@
                         <option value="00:00">Select time</option>
                     </select>
                   </div>
-               
+
                   <div class="booking-form__item">
                       <div class="booking-form__item-lable">
                         Price
@@ -250,19 +250,19 @@
                       </div>
                   </div>
                 </div>
-                
+
               </div>
 
-           
 
-     
+
+
   </div>
    -->
 <div class="container">
 
   <div class="adventages sector">
 
-  
+
     <div class="row mt-2">
       <div class="col-lg-3 col-md-3">
         <div class="adventages__item">
@@ -340,7 +340,7 @@
                 More Information <img class="card-preview__info-link-i" src="{{asset('images/icons/arrow-right_green.svg')}}" alt="Arrow">
               </a>
         </div>
-        
+
       </div>
     </div>
   </div>
@@ -351,7 +351,7 @@
       <div class="text">
           Wash2Go products are made from 100% plant-derived,
           biodegradable ingredients.
-         
+
       </div>
       <div class="text">
           Not only do our products help save water, they also reduce the toxic runoff from conventional car washes that find its way into our rivers and oceans.
@@ -382,12 +382,12 @@
           <div class="text-special__heading">2M</div>
           <div class="text-special__body">Saved litersof water</div>
       </div>
-        
+
     </div>
   </div>
 
   <div class="row mt-5">
-      
+
       <div class="col-lg-6 col-md-6">
         <div class="card-preview__info">
           <div class="card-preview__info-inner">
@@ -404,7 +404,7 @@
                   More Information <img class="card-preview__info-link-i" src="{{asset('images/icons/arrow-right_green.svg')}}" alt="Arrow">
                 </a>
           </div>
-          
+
         </div>
       </div>
 
@@ -415,14 +415,14 @@
 
   <div class="adventages adventages_center sector">
 
-    
+
 
     <div class="heading">
         Our products
     </div>
 
     <div class="row mt-5">
-      
+
       <div class="col-lg-3 col-md-3 col-sm-3  col-xs-3">
         <div class="adventages__item">
           <div class="adventages__item-icon">
@@ -470,7 +470,7 @@
     <div class="heading">
       Most selling
     </div>
-  
+
 
 
   <div class="row mt-5">
@@ -502,7 +502,7 @@
                     18 AED
                   </div>
                 </div>
-                
+
           </div>
       </div>
 
@@ -533,7 +533,7 @@
                     18 AED
                   </div>
                 </div>
-                
+
           </div>
       </div>
 
@@ -564,7 +564,7 @@
                     18 AED
                   </div>
                 </div>
-                
+
           </div>
       </div>
 
@@ -595,7 +595,7 @@
                     18 AED
                   </div>
                 </div>
-                
+
           </div>
       </div>
 
@@ -692,21 +692,21 @@
           </div>
         </div>
       </div>
-      
-  
+
+
   </div>
 
- 
-    
 
-  
-  
+
+
+
+
 </div>
 
 <div class="subscribe subscribe_white ">
   <div class="container">
 
-  
+
     <div class="row mt-2">
       <div class="col-lg-12" style="display: block;margin: 0 auto;">
         <div class="subscribe__inner">
@@ -715,10 +715,10 @@
                 <span class="text-success">and ways to help save earth!</span>
             </div>
           <form class="form-inline subscribe__form">
-              
+
               <div class="form-group mb-2">
-                
-                
+
+
               </div>
               <div class="form-group mx-sm-3 mb-2">
                 <label for="inputPassword2" class="sr-only">E-Mail</label>
@@ -727,9 +727,9 @@
               <button type="submit" class="btn btn-success mb-2">Confirm</button>
           </form>
         </div>
-          
+
       </div>
-  
+
     </div>
   </div>
 </div>
@@ -746,7 +746,7 @@
     <div class="container">
       <div class="row mt-4">
         <div class="col-lg-4">
-        
+
             <div class="row">
                 <div class="col-lg-12">
                   <ul class="footer__list">
@@ -755,43 +755,43 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                   <ul class="footer__list">
-                    
+
                     <li class="footer__item" >Interior</li>
                     <li class="footer__item" >Exterior</li>
                     <li class="footer__item" >Accessories</li>
                     <li class="footer__item" >Combo Pack</li>
                   </ul>
                 </div>
-          
-       
+
+
               </div>
-  
+
         </div>
-  
+
         <div class="col-lg-4">
-          
-        
+
+
                 <ul class="footer__list">
                   <li class="footer__item footer__item_heading" >Links</li>
                 </ul>
-   
+
                 <ul class="footer__list">
-                  
+
                   <li class="footer__item" ><a href="/page/terms-and-conditions">Terms and Conditions</a> </li>
                   <li class="footer__item" >Privacy Policy</li>
                   <li class="footer__item" >Return & Cancellation Policy</li>
                   <li class="footer__item" >Shipping & Delivery Policy</li>
                 </ul>
-          
+
         </div>
         <div class="col-lg-4">
-        
+
                 <ul class="footer__list">
                   <li class="footer__item footer__item_heading" >Contact us</li>
                 </ul>
-       
+
                 <ul class="footer__list">
-                  
+
                   <li class="footer__item" >Business village <br>
                     6th Floor <br>
                     Office #601
@@ -800,11 +800,11 @@
                   <li class="footer__item" >055 464 4954</li>
                   <li class="footer__item" >© Copyright Wash 2 Go</li>
                 </ul>
-           
+
         </div>
       </div>
-  
-      
+
+
     </div>
   </div>
   <div style="display: none;">Book Now</div>
@@ -830,15 +830,15 @@
            <img src="{{asset('images/logo.svg')}}"  class="so-modal__booking-form__logo" alt="Logo">
            <a href="/booking" class="so-modal__booking-form__lable">Booking Form</a>
           </div>
-          
+
           <div class="booking-steps">
               <div class="booking-steps__status"></div>
-              
+
               <div class="booking-steps__item booking-steps__item_active" id="booking-steps__item-1">
                 <div class="booking-steps__heading">Choose Location</div>
                 <div class="booking-steps__body">
                   <div class="row">
-                    
+
                     <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
                       <div  onclick="soBookingForm.changePage(2)" class="booking-steps__card-item">
                         <img src="{{asset('images/icons/home.svg')}}" alt="Home" class="booking-steps__card-item-img">
@@ -853,8 +853,8 @@
                       </div>
                     </div>
                   </div>
-                  
-                 
+
+
                 </div>
               </div>
 
@@ -874,12 +874,12 @@
 
                 <div class="booking-steps__heading">Select your location</div>
                 <div class="booking-steps__body">
-                  
+
                   <input id="pac-input" class="controls" type="text" placeholder="Search Box">
                   <div id="map"></div>
                 </div>
               </div>
-              
+
 
               <div class="booking-steps__item" id="booking-steps__item-3">
                 <div class="booking-steps__navigation">
@@ -897,9 +897,9 @@
 
                 <div class="booking-steps__heading">We are here</div>
                 <div class="booking-steps__body">
-                  
+
                   <div id="map2" style="height: 400px"></div>
-                 
+
                 </div>
               </div>
 
@@ -919,10 +919,10 @@
 
                 <div class="booking-steps__heading">Select Car type</div>
 
-                
+
 
                 <div class="row">
-                    
+
                     <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
                       <div class="booking-steps__card-item booking-steps__card-item_body-type">
                         <img src="{{asset('images/icons/bodytype/micro.svg')}}" alt="Micro" class="booking-steps__card-item-img">
@@ -1087,12 +1087,12 @@
                       <span class="booking-steps__list-lable-total-data">0</span> AED
                     </div>
                   </div>
-           
-                 
+
+
                 </div>
               </div>
 
-              
+
               <div class="booking-steps__item" id="booking-steps__item-6">
                 <div class="booking-steps__navigation">
                   <div class="button" onclick="soBookingForm.changePage(5)">
@@ -1149,7 +1149,7 @@
 
 
           </div>
-          
+
         </div>
           <div class="so-modal__item navigation-modal">
           @if (Auth::check())
@@ -1187,7 +1187,7 @@
               <div class="navigation-modal__item">
               <img src="{{asset('images/icons/categories/4.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Combo Pack
               </div>
-              
+
             </div>
 
             <div href="/blog" class="navigation-modal__item navigation-modal__item_top">
@@ -1196,9 +1196,9 @@
             <a href="/page/about-us" class="navigation-modal__item navigation-modal__item_top">
               About
             </a>
-            <div class="navigation-modal__item navigation-modal__item_top">
+            <a href="/page/contact"class="navigation-modal__item navigation-modal__item_top">
             Contacts
-            </div>
+            </a>
           </div>
         </div>
 
