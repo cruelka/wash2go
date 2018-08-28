@@ -157,3 +157,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b947', end
 .black {
     color: #636b6f;
 }
+
+.text-slider {
+    @media screen and (max-width:$lg) { 
+      
+    }
+
+    @media screen and (max-width:$md) { 
+        font-size: .8em;
+    }
+
+    @media screen and (max-width:$sm) { 
+
+    }
+}

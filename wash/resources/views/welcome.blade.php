@@ -96,7 +96,7 @@
       </div>
       <div class="slide__content">
         <div class="slide__content--headings">
-           <h2 class="animated" data-animation-in="fadeInUp">Brilliant results without a drop of water</h2>
+           <h2 class="text-slider animated" data-animation-in="fadeInUp">Brilliant results without a drop of water</h2>
            <p class="animated" data-animation-in="fadeInUp" data-delay-in="0.3">Waterless Car Care</p>
         </div>
       </div>
@@ -108,7 +108,7 @@
       </div>
       <div class="slide__content">
         <div class="slide__content--headings">
-           <h2 class="animated" data-animation-in="fadeInRight">Eco-Friendly Cleaners</h2>
+           <h2 class="text-slider animated" data-animation-in="fadeInRight">Eco-Friendly Cleaners</h2>
            <p class="animated" data-animation-in="fadeInRight" data-delay-in="0.2">Save for anyone in the family</p>
         </div>
       </div>
@@ -120,7 +120,7 @@
       </div>
       <div class="slide__content">
         <div class="slide__content--headings">
-           <h2 class="animated" data-animation-in="fadeInRight">Hign Perfomance</h2>
+           <h2 class="text-slider animated" data-animation-in="fadeInRight">Hign Perfomance</h2>
            <p class="animated" data-animation-in="fadeInRight" data-delay-in="0.2">For professionals in the car wash business</p>
         </div>
       </div>
