@@ -164,10 +164,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b947', end
     }
 
     @media screen and (max-width:$md) { 
-        font-size: .8em;
+        font-size: 2em !important;
     }
 
     @media screen and (max-width:$sm) { 
-
+        font-size: 1.5em !important;
     }
 }
