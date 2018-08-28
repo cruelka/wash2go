@@ -12,6 +12,8 @@ try {
 
     require('bootstrap-sass');
 
+    require('./resourse/slide-animation');
+
 
 
 } catch (e) {}
