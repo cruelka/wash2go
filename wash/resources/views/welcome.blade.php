@@ -89,30 +89,7 @@
 
   <div style="position: relative;max-width: 1680px;margin: 0 auto;">
 
-   <div class="slider stick-dots">
-    <div class="slide">
-      <div class="slide__img">
-        <img src="" alt="" data-lazy="http://alexandrebuffet.fr/codepen/images/full/nature_01.jpg" class="full-image animated" data-animation-in="zoomInImage"/>
-      </div>
-      <div class="slide__content">
-        <div class="slide__content--headings">
-           <h2 class="animated" data-animation-in="fadeInUp">Slide me to the moon</h2>
-           <p class="animated" data-animation-in="fadeInUp" data-delay-in="0.3">With awesome animations</p>
-        </div>
-      </div>
-    </div>
-    <div class="slide">
-      <div class="slide__img">
-        <img src="" alt="" data-lazy="http://alexandrebuffet.fr/codepen/images/full/nature_02.jpg" class="full-image animated" data-animation-in="zoomInImage"/>
-      </div>
-      <div class="slide__content">
-        <div class="slide__content--headings">
-           <h2 class="animated" data-animation-in="fadeInRight">Slide me to the moon</h2>
-           <p class="animated" data-animation-in="fadeInRight" data-delay-in="0.2">With awesome animations</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
   <div class="welcome-fullscreen-owl so-header__offset">
 
@@ -1206,7 +1183,30 @@
     
   </div>
 
- 
+ <div class="slider stick-dots">
+    <div class="slide">
+      <div class="slide__img">
+        <img src="" alt="" data-lazy="http://alexandrebuffet.fr/codepen/images/full/nature_01.jpg" class="full-image animated" data-animation-in="zoomInImage"/>
+      </div>
+      <div class="slide__content">
+        <div class="slide__content--headings">
+           <h2 class="animated" data-animation-in="fadeInUp">Slide me to the moon</h2>
+           <p class="animated" data-animation-in="fadeInUp" data-delay-in="0.3">With awesome animations</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide__img">
+        <img src="" alt="" data-lazy="http://alexandrebuffet.fr/codepen/images/full/nature_02.jpg" class="full-image animated" data-animation-in="zoomInImage"/>
+      </div>
+      <div class="slide__content">
+        <div class="slide__content--headings">
+           <h2 class="animated" data-animation-in="fadeInRight">Slide me to the moon</h2>
+           <p class="animated" data-animation-in="fadeInRight" data-delay-in="0.2">With awesome animations</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
