@@ -375,25 +375,25 @@
           Not only do our products help save water, they also reduce the toxic runoff from conventional car washes that find its way into our rivers and oceans.
       </div>
       <div class="row mt-5 adventages__list">
-          <div class="col-lg-4 col-md-4 text-special">
+          <div class="col-xs-6 col-sm-3 text-special">
             <div class="text-special__inner">
               <div class="text-special__heading">100%</div>
               <div class="text-special__body">Satisfaction guarantee</div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 text-special">
+          <div class="col-xs-6 col-sm-3 text-special">
               <div class="text-special__inner">
                 <div class="text-special__heading">5k+</div>
                 <div class="text-special__body">Cleaned cars</div>
               </div>
           </div>
-          <div class="col-lg-4 col-md-4 text-special">
+          <div class="col-xs-6 col-sm-3 text-special">
                 <div class="text-special__inner">
                   <div class="text-special__heading">30+</div>
                   <div class="text-special__body">high quality products</div>
                 </div>
           </div>
-          <div class="col-lg-4 col-md-4 text-special">
+          <div class="col-xs-6 col-sm-3 text-special">
             <div class="text-special__inner">
                 <div class="text-special__heading">2M</div>
                 <div class="text-special__body">Saved litersof water</div>
