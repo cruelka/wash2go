@@ -9092,6 +9092,14 @@ button.close {
   background: #1BB7CD;
 }
 
+.adventages__list_bg .adventages__item-heading {
+  color: white;
+}
+
+.adventages__list_bg .adventages__item-body {
+  color: white;
+}
+
 .news__item-inner {
   max-width: 500px;
   margin: 0 auto;
