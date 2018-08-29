@@ -57,6 +57,7 @@
 
 .adventages__list_bg {
     background: #1BB7CD;
+    position: relative;
 
     .text-special__heading {
         color: white;
@@ -65,4 +66,13 @@
     .text-special__body {
         color: white;
     }
+
+}
+
+.adventages__list_bg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: #1BB7CD;
 }

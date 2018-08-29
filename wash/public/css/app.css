@@ -9090,14 +9090,23 @@ button.close {
 
 .adventages__list_bg {
   background: #1BB7CD;
+  position: relative;
 }
 
 .adventages__list_bg .text-special__heading {
   color: white;
 }
 
-.adventages__list_bg text-special__body {
+.adventages__list_bg .text-special__body {
   color: white;
+}
+
+.adventages__list_bg::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  background: #1BB7CD;
 }
 
 .news__item-inner {
