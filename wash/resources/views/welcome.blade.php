@@ -32,7 +32,7 @@
 </head>
 <body>
 
-  <div id="so-content">
+  <div id="so-content" style="overflow-x:hidden">
   <div class="header so-header so-header_scrolled">
     <a href="/" class="header__block">
       <img src="{{ asset('images/logo.svg') }}" alt="Logo" class="header__logo so-header__logo">
