@@ -13926,3 +13926,7 @@ body {
   display: none;
 }
 
+.slick-dots li button:before {
+  margin: 0 auto;
+}
+
