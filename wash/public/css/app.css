@@ -9132,8 +9132,10 @@ button.close {
 .about-wrapper__inner {
   position: relative;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 80px 80px;
+  background-size: cover;
   background-image: url(https://wash2go.ae/images/bg/aboutbg.jpg);
+  background-position: bottom;
 }
 
 .about-wrapper::before {
