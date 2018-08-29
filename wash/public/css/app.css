@@ -13922,3 +13922,7 @@ body {
   }
 }
 
+.slick-dots li button:before {
+  display: none;
+}
+
