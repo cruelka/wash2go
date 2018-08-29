@@ -87,6 +87,13 @@
     background: #1BB7CD;
     position: relative;
     padding: 40px 0;
+    margin-bottom: -40px;
+}
+
+.about-wrapper__inner {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .about-wrapper::before {
@@ -94,7 +101,7 @@
     display: block;
     position: absolute;
     width: 20000px;
-    background: #1BB7CD;
+    background: #2998A7;
     height: 100%;
     left: -10000px;
     top: 0;
