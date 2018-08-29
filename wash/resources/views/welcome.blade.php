@@ -364,7 +364,7 @@
   </div>
 
   <div class="row mt-5">
-    <div class="col-lg-12 col-md-12">
+    <div class="col-xs-12">
       <div class="heading">About us</div>
       <div class="text">
           Wash2Go products are made from 100% plant-derived,
