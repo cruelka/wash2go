@@ -58,6 +58,9 @@
 .adventages__list_bg {
     background: #1BB7CD;
     position: relative;
+    padding: 40px 0;
+    /* overflow-y: hidden; */
+    /* overflow-x: visible; */
 
     .text-special__heading {
         color: white;
@@ -73,6 +76,9 @@
     content: '';
     display: block;
     position: absolute;
-    width: 100%;
+    width: 20000px;
     background: #1BB7CD;
+    height: 100%;
+    left: -10000px;
+    top: 0;
 }
