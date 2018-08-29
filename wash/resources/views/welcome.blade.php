@@ -365,7 +365,7 @@
 
   <div class="row mt-5">
     <div class="col-xs-12">
-      <div class="about-wrapper" style="background-image:url({{asset('images/bg/aboutbg.jpg')}})">
+      <div class="about-wrapper">
         <div class="about-wrapper__inner">
           <div class="heading">About us</div>
           <div class="text">
