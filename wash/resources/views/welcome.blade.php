@@ -366,6 +366,7 @@
   <div class="row mt-5">
     <div class="col-xs-12">
       <div class="about-wrapper">
+        <img class="wheel" src="{{asset('images/icons/wheel.svg')}}" alt="Wheel">
         <div class="about-wrapper__inner">
           <div class="heading">About us</div>
           <div class="text">
