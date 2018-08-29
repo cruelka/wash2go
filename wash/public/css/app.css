@@ -9115,6 +9115,12 @@ button.close {
   top: 0;
 }
 
+.about-wrapper {
+  background: #1BB7CD;
+  position: relative;
+  padding: 40px 0;
+}
+
 .news__item-inner {
   max-width: 500px;
   margin: 0 auto;

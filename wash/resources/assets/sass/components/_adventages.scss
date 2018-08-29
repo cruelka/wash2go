@@ -82,3 +82,20 @@
     left: -10000px;
     top: 0;
 }
+
+.about-wrapper {
+    background: #1BB7CD;
+    position: relative;
+    padding: 40px 0;
+}
+
+.about-wrapper::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20000px;
+    background: #1BB7CD;
+    height: 100%;
+    left: -10000px;
+    top: 0;
+}
