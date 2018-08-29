@@ -175,3 +175,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b947', end
 .slick-dots li button:before {
     display: none;
 }
+
+.slick-dots li button:before {
+    margin: 0 auto;
+}
