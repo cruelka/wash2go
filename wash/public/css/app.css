@@ -9122,6 +9122,14 @@ button.close {
   margin-bottom: -40px;
 }
 
+.about-wrapper .heading {
+  color: white;
+}
+
+.about-wrapper .text {
+  color: white;
+}
+
 .about-wrapper__inner {
   position: relative;
   max-width: 600px;
