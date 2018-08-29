@@ -9088,13 +9088,8 @@ button.close {
   margin: 0 auto 20px;
 }
 
-@media screen and (max-width: 768px) {
-  .adventages__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+.adventages__list_bg {
+  background: #1BB7CD;
 }
 
 .news__item-inner {

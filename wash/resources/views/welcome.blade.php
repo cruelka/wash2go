@@ -374,7 +374,7 @@
       <div class="text">
           Not only do our products help save water, they also reduce the toxic runoff from conventional car washes that find its way into our rivers and oceans.
       </div>
-      <div class="row mt-5 adventages__list">
+      <div class="row mt-5 adventages__list adventages__list_bg">
           <div class="col-xs-6 col-sm-3 text-special">
             <div class="text-special__inner">
               <div class="text-special__heading">100%</div>
