@@ -380,28 +380,28 @@
         </div>
         
       </div>
-      <div class="row mt-5 adventages__list adventages__list_bg">
+      <div class="row mt-5 adventages__list adventages__list_bg" id="counter">
           <div class="col-xs-6 col-sm-3 text-special">
             <div class="text-special__inner">
-              <div class="text-special__heading">100%</div>
+              <div class="text-special__heading"><span class="counter-value" data-count="0">100</span>%</div>
               <div class="text-special__body">Satisfaction guarantee</div>
             </div>
           </div>
           <div class="col-xs-6 col-sm-3 text-special">
               <div class="text-special__inner">
-                <div class="text-special__heading">5k+</div>
+                <div class="text-special__heading"><span class="counter-value" data-count="1000">5000</span>+</div>
                 <div class="text-special__body">Cleaned cars</div>
               </div>
           </div>
           <div class="col-xs-6 col-sm-3 text-special">
                 <div class="text-special__inner">
-                  <div class="text-special__heading">30+</div>
+                  <div class="text-special__heading"><span class="counter-value" data-count="1">30</span>+</div>
                   <div class="text-special__body">high quality products</div>
                 </div>
           </div>
           <div class="col-xs-6 col-sm-3 text-special">
             <div class="text-special__inner">
-                <div class="text-special__heading">2M</div>
+                <div class="text-special__heading"><span class="counter-value" data-count="1">20</span>M</div>
                 <div class="text-special__body">Saved litersof water</div>
             </div>
 
@@ -1279,6 +1279,40 @@ $(".slider")
     pauseOnHover:false,
   })
   .slickAnimation();
+
+
+  var a = 0;
+$(window).scroll(function() {
+
+  var oTop = $('#counter').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.counter-value').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 2000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    a = 1;
+  }
+
+});
     
   </script>
 
