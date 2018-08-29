@@ -9092,11 +9092,11 @@ button.close {
   background: #1BB7CD;
 }
 
-.adventages__list_bg .adventages__item-heading {
+.adventages__list_bg .text-special__heading {
   color: white;
 }
 
-.adventages__list_bg .adventages__item-body {
+.adventages__list_bg text-special__body {
   color: white;
 }
 
