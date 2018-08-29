@@ -364,7 +364,7 @@
   </div>
 
   <div class="row mt-5">
-    <div class="col-lg-9 col-md-9">
+    <div class="col-lg-12 col-md-12">
       <div class="heading">About us</div>
       <div class="text">
           Wash2Go products are made from 100% plant-derived,
@@ -393,15 +393,16 @@
                   <div class="text-special__body">high quality products</div>
                 </div>
           </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-3 text-special text-special_wrapped">
-      <div class="text-special__inner">
-          <div class="text-special__heading">2M</div>
-          <div class="text-special__body">Saved litersof water</div>
-      </div>
+          <div class="col-lg-4 col-md-4 text-special">
+            <div class="text-special__inner">
+                <div class="text-special__heading">2M</div>
+                <div class="text-special__body">Saved litersof water</div>
+            </div>
 
+          </div>
+      </div>
     </div>
+    
   </div>
 
   <div class="row mt-5">
