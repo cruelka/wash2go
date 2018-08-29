@@ -86,7 +86,7 @@
 .about-wrapper {
     background: #1BB7CD;
     position: relative;
-
+    margin-top: 40px;
     margin-bottom: -40px;
 
     .heading {
@@ -152,8 +152,9 @@
 .wheel {
     float: left;
     margin: 0 auto;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 0;
+    z-index: 2;
     left: 50%;
     width: 120px;
     height: 120px;
