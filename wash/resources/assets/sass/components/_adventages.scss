@@ -86,7 +86,7 @@
 .about-wrapper {
     background: #1BB7CD;
     position: relative;
-    padding: 40px 0;
+
     margin-bottom: -40px;
 
     .heading {
@@ -100,8 +100,10 @@
 
 .about-wrapper__inner {
     position: relative;
-    max-width: 600px;
+
     margin: 0 auto;
+    padding: 40px 0;
+    background-image: url(https://wash2go.ae/images/bg/aboutbg.jpg);
 }
 
 .about-wrapper::before {
@@ -113,5 +115,5 @@
     height: 100%;
     left: -10000px;
     top: 0;
-    background-image: url(https://wash2go.ae/images/bg/aboutbg.jpg);
+   
 }
