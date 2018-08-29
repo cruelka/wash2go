@@ -9136,6 +9136,8 @@ button.close {
   background-size: cover;
   background-image: url(https://wash2go.ae/images/bg/aboutbg.jpg);
   background-position: bottom;
+  -webkit-box-shadow: inset 0 0 50px 30px #2998a7;
+          box-shadow: inset 0 0 50px 30px #2998a7;
 }
 
 .about-wrapper::before {
