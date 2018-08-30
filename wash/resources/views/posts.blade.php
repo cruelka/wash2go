@@ -7,12 +7,14 @@
         @foreach($posts as $post)
 
             <div class="news container">
+                <div class="row">
+                    <div class="col-sx-12 col-md-6">
                 <div class="news__item">
-                    <div class="row">
-                        <div class="col-lg-2">
+                    
+                        <!--<div class="col-lg-2">
                             {{ \Carbon\Carbon::parse($post->created_at)->format('d/M/y')}}
-                        </div>
-                        <div class="col-lg-10">
+                        </div>-->
+                        <div class="">
                             <div class="news__item-inner">
                                 <a  href="/post/{{ $post->slug }}">
                                     <img class="news__item-img" src="/storage/{{$post->image}}" alt="Image">
@@ -27,6 +29,7 @@
 
 
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>
