@@ -43,12 +43,12 @@
           <a href="/blog" class="header__nav">
               News
           </a>
-          <a href="page/about-us" class="header__nav">
+          <a href="/page/about-us" class="header__nav">
               About
           </a>
-          <div class="header__nav">
+          <a href="/page/contact" class="header__nav">
               Contacts
-          </div>
+          </a>
     </div>
     
     

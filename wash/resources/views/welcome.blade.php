@@ -1263,9 +1263,9 @@
 
             </div>
 
-            <div href="/blog" class="navigation-modal__item navigation-modal__item_top">
+            <a href="/blog" class="navigation-modal__item navigation-modal__item_top">
             News
-            </div>
+            </a>
             <a href="/page/about-us" class="navigation-modal__item navigation-modal__item_top">
               About
             </a>
