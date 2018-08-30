@@ -3,11 +3,12 @@
 @section('content')
 
 <div class="container">
-    <div class="row">
+
+    <div class="news container">
+                <div class="row">
         @foreach($posts as $post)
 
-            <div class="news container">
-                <div class="row">
+         
                     <div class="col-sx-12 col-md-6">
                 <div class="news__item">
                     
@@ -32,13 +33,13 @@
                         </div>
                         </div>
                     </div>
-                </div>
-            </div>
+               
 
 
         @endforeach
        {{ $posts->links() }}
-    </div>
+       </div>
+            </div>
 
 </div>
 
