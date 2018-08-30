@@ -1902,7 +1902,7 @@
             try {
                 oldLocale = globalLocale._abbr;
                 var aliasedRequire = require;
-                __webpack_require__(142)("./" + name);
+                __webpack_require__(143)("./" + name);
                 getSetGlobalLocale(oldLocale);
             } catch (e) {}
         }
@@ -4584,7 +4584,7 @@
 
 
 var bind = __webpack_require__(129);
-var isBuffer = __webpack_require__(150);
+var isBuffer = __webpack_require__(151);
 
 /*global toString:true*/
 
@@ -15265,7 +15265,7 @@ return jQuery;
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(1);
-var normalizeHeaderName = __webpack_require__(153);
+var normalizeHeaderName = __webpack_require__(154);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -15355,7 +15355,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 
 module.exports = defaults;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(152)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(153)))
 
 /***/ }),
 /* 4 */
@@ -27283,12 +27283,12 @@ module.exports = function bind(fn, thisArg) {
 
 
 var utils = __webpack_require__(1);
-var settle = __webpack_require__(154);
-var buildURL = __webpack_require__(156);
-var parseHeaders = __webpack_require__(157);
-var isURLSameOrigin = __webpack_require__(158);
+var settle = __webpack_require__(155);
+var buildURL = __webpack_require__(157);
+var parseHeaders = __webpack_require__(158);
+var isURLSameOrigin = __webpack_require__(159);
 var createError = __webpack_require__(131);
-var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(159);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(160);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -27385,7 +27385,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(160);
+      var cookies = __webpack_require__(161);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -27469,7 +27469,7 @@ module.exports = function xhrAdapter(config) {
 "use strict";
 
 
-var enhanceError = __webpack_require__(155);
+var enhanceError = __webpack_require__(156);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -27530,7 +27530,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(135);
-module.exports = __webpack_require__(168);
+module.exports = __webpack_require__(169);
 
 
 /***/ }),
@@ -27581,7 +27581,7 @@ try {
 
     __webpack_require__(138);
 
-    __webpack_require__(187);
+    __webpack_require__(139);
 } catch (e) {}
 
 function setCookie(name, value, days) {
@@ -27608,17 +27608,17 @@ function getCookie(name) {
 window.setCookie = setCookie;
 window.getCookie = getCookie;
 
-__webpack_require__(139);
 __webpack_require__(140);
 __webpack_require__(141);
+__webpack_require__(142);
 window.moment = __webpack_require__(0);
-__webpack_require__(143);
-
 __webpack_require__(144);
-__webpack_require__(145);
 
+__webpack_require__(145);
 __webpack_require__(146);
+
 __webpack_require__(147);
+__webpack_require__(148);
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -27626,7 +27626,7 @@ __webpack_require__(147);
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = __webpack_require__(148);
+window.axios = __webpack_require__(149);
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
@@ -47163,6 +47163,221 @@ if (typeof jQuery === 'undefined') {
 /* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
+/* WEBPACK VAR INJECTION */(function(jQuery) {/*
+ slick-animation.js
+ Version: 0.3.3 Beta
+ Author: Marvin Hübner
+ Docs: https://github.com/marvinhuebner/slick-animation
+ Repo: https://github.com/marvinhuebner/slick-animation
+ */
+
+(function ($) {
+    $.fn.slickAnimation = function () {
+        var currentSlickSlider = $(this);
+
+        var slickItems = currentSlickSlider.find('.slick-list .slick-track > div');
+        var firstSlickItem = currentSlickSlider.find('[data-slick-index="0"]');
+
+        var animatedClass = 'animated';
+        var visible = { opacity: '1' };
+        var hidden = { opacity: '0' };
+
+        /**
+         * function for setting animationIn and animationOut class
+         * @param obj
+         * @param type
+         * @param animationIn
+         * @param animatedClass
+         * @param visibility
+         */
+
+        function slickSetAnimationDefault(obj, type, animationIn, animatedClass, visibility) {
+            visibility = typeof visibility !== 'undefined' ? visibility : false;
+
+            slickRemoveAnimation(obj, 'delay');
+            slickRemoveAnimation(obj, 'duration');
+
+            if (type['opacity'] == 1) {
+                obj.addClass(animationIn);
+                obj.addClass(animatedClass);
+            } else {
+                obj.removeClass(animationIn);
+                obj.removeClass(animatedClass);
+            }
+
+            if (visibility) obj.css(type);
+        }
+
+        /**
+         * get timeout when delay, duration, delay and duration is set
+         * @param delayIn
+         * @param durationIn
+         * @returns {number}
+         */
+
+        function getTimeout(delayIn, durationIn) {
+            if (delayIn) {
+                return delayIn * 1000 + 1000;
+            } else if (durationIn) {
+                return durationIn * 1000;
+            } else if (delayIn || durationIn) {
+                return delayIn * 1000 + durationIn * 1000;
+            }
+            return 1000;
+        }
+
+        /**
+         * add css animations for delay and duration
+         * @param obj
+         * @param animation
+         * @param value
+         */
+        function slickAddAnimation(obj, animation, value) {
+            var delayInAttr = ['animation-' + animation, '-webkit-animation-' + animation, '-moz-animation-' + animation, '-o-animation-' + animation, '-ms-animation-' + animation];
+            var delayInAttributes = {};
+            delayInAttr.forEach(function (entry) {
+
+                delayInAttributes[entry] = value + 's';
+            });
+            obj.css(delayInAttributes);
+        }
+
+        /**
+         * remove css animations for delay and duration
+         * @param obj
+         * @param animation
+         */
+        function slickRemoveAnimation(obj, animation) {
+            var delayInAttr = ['animation-' + animation, '-webkit-animation-' + animation, '-moz-animation-' + animation, '-o-animation-' + animation, '-ms-animation-' + animation];
+            var delayInAttributes = {};
+            delayInAttr.forEach(function (entry) {
+
+                delayInAttributes[entry] = '';
+            });
+            obj.css(delayInAttributes);
+        }
+
+        slickItems.each(function () {
+            var slickItem = $(this);
+
+            slickItem.find('[data-animation-in]').each(function () {
+                var self = $(this);
+
+                self.css(hidden);
+
+                var animationIn = self.attr('data-animation-in');
+                var animationOut = self.attr('data-animation-out');
+                var delayIn = self.attr('data-delay-in');
+                var durationIn = self.attr('data-duration-in');
+                var delayOut = self.attr('data-delay-out');
+                var durationOut = self.attr('data-duration-out');
+
+                if (animationOut) {
+                    if (firstSlickItem.length > 0) {
+                        if (slickItem.hasClass('slick-current')) {
+
+                            slickSetAnimationDefault(self, visible, animationIn, animatedClass, true);
+
+                            if (delayIn) {
+                                slickAddAnimation(self, 'delay', delayIn);
+                            }
+                            if (durationIn) {
+                                slickAddAnimation(self, 'duration', durationIn);
+                            }
+
+                            setTimeout(function () {
+                                slickSetAnimationDefault(self, hidden, animationIn, animatedClass);
+                                slickSetAnimationDefault(self, visible, animationOut, animatedClass);
+                                if (delayOut) {
+                                    slickAddAnimation(self, 'delay', delayOut);
+                                }
+                                if (durationOut) {
+                                    slickAddAnimation(self, 'duration', durationOut);
+                                }
+                                setTimeout(function () {
+                                    slickRemoveAnimation(self, 'delay');
+                                    slickRemoveAnimation(self, 'duration');
+                                }, getTimeout(delayOut, durationOut));
+                            }, getTimeout(delayIn, durationIn));
+                        }
+                    }
+
+                    currentSlickSlider.on('afterChange', function (event, slick, currentSlider) {
+                        if (slickItem.hasClass('slick-current')) {
+
+                            slickSetAnimationDefault(self, visible, animationIn, animatedClass, true);
+
+                            if (delayIn) {
+                                slickAddAnimation(self, 'delay', delayIn);
+                            }
+                            if (durationIn) {
+                                slickAddAnimation(self, 'duration', durationIn);
+                            }
+
+                            setTimeout(function () {
+                                slickSetAnimationDefault(self, hidden, animationIn, animatedClass);
+                                slickSetAnimationDefault(self, visible, animationOut, animatedClass);
+
+                                if (delayOut) {
+                                    slickAddAnimation(self, 'delay', delayOut);
+                                }
+                                if (durationOut) {
+                                    slickAddAnimation(self, 'duration', durationOut);
+                                }
+                                setTimeout(function () {
+                                    slickRemoveAnimation(self, 'delay');
+                                    slickRemoveAnimation(self, 'duration');
+                                }, getTimeout(delayOut, durationOut));
+                            }, getTimeout(delayIn, durationIn));
+                        }
+                    });
+
+                    currentSlickSlider.on('beforeChange', function (event, slick, currentSlider) {
+                        slickSetAnimationDefault(self, hidden, animationOut, animatedClass, true);
+                    });
+                } else {
+
+                    if (firstSlickItem.length > 0) {
+                        if (slickItem.hasClass('slick-current')) {
+                            slickSetAnimationDefault(self, visible, animationIn, animatedClass, true);
+
+                            if (delayIn) {
+                                slickAddAnimation(self, 'delay', delayIn);
+                            }
+                            if (durationIn) {
+                                slickAddAnimation(self, 'duration', durationIn);
+                            }
+                        }
+                    }
+
+                    currentSlickSlider.on('afterChange', function (event, slick, currentSlider) {
+                        if (slickItem.hasClass('slick-current')) {
+                            slickSetAnimationDefault(self, visible, animationIn, animatedClass, true);
+
+                            if (delayIn) {
+                                slickAddAnimation(self, 'delay', delayIn);
+                            }
+                            if (durationIn) {
+                                slickAddAnimation(self, 'duration', durationIn);
+                            }
+                        }
+                    });
+
+                    currentSlickSlider.on('beforeChange', function (event, slick, currentSlider) {
+                        slickSetAnimationDefault(self, hidden, animationIn, animatedClass, true);
+                    });
+                }
+            });
+        });
+        return this;
+    };
+})(jQuery);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+
+/***/ }),
+/* 140 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery, jQuery) {/**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -50615,7 +50830,7 @@ if (typeof jQuery === 'undefined') {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(2)))
 
 /***/ }),
-/* 140 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
@@ -53635,7 +53850,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ }),
-/* 141 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/*!
@@ -53648,7 +53863,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
-/* 142 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -53913,10 +54128,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 142;
+webpackContext.id = 143;
 
 /***/ }),
-/* 143 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(a){"use strict";if(true)!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(2),__webpack_require__(0)], __WEBPACK_AMD_DEFINE_FACTORY__ = (a),
@@ -53926,7 +54141,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 return d.keepInvalid=a,l},l.datepickerInput=function(a){if(0===arguments.length)return d.datepickerInput;if("string"!=typeof a)throw new TypeError("datepickerInput() expects a string parameter");return d.datepickerInput=a,l},l.parseInputDate=function(a){if(0===arguments.length)return d.parseInputDate;if("function"!=typeof a)throw new TypeError("parseInputDate() sholud be as function");return d.parseInputDate=a,l},l.disabledTimeIntervals=function(b){if(0===arguments.length)return d.disabledTimeIntervals?a.extend({},d.disabledTimeIntervals):d.disabledTimeIntervals;if(!b)return d.disabledTimeIntervals=!1,_(),l;if(!(b instanceof Array))throw new TypeError("disabledTimeIntervals() expects an array parameter");return d.disabledTimeIntervals=b,_(),l},l.disabledHours=function(b){if(0===arguments.length)return d.disabledHours?a.extend({},d.disabledHours):d.disabledHours;if(!b)return d.disabledHours=!1,_(),l;if(!(b instanceof Array))throw new TypeError("disabledHours() expects an array parameter");if(d.disabledHours=oa(b),d.enabledHours=!1,d.useCurrent&&!d.keepInvalid){for(var c=0;!R(e,"h");){if(e.add(1,"h"),24===c)throw"Tried 24 times to find a valid date";c++}aa(e)}return _(),l},l.enabledHours=function(b){if(0===arguments.length)return d.enabledHours?a.extend({},d.enabledHours):d.enabledHours;if(!b)return d.enabledHours=!1,_(),l;if(!(b instanceof Array))throw new TypeError("enabledHours() expects an array parameter");if(d.enabledHours=oa(b),d.disabledHours=!1,d.useCurrent&&!d.keepInvalid){for(var c=0;!R(e,"h");){if(e.add(1,"h"),24===c)throw"Tried 24 times to find a valid date";c++}aa(e)}return _(),l},l.viewDate=function(a){if(0===arguments.length)return f.clone();if(!a)return f=e.clone(),l;if(!("string"==typeof a||b.isMoment(a)||a instanceof Date))throw new TypeError("viewDate() parameter must be one of [string, moment or Date]");return f=da(a),K(),l},c.is("input"))g=c;else if(g=c.find(d.datepickerInput),0===g.length)g=c.find("input");else if(!g.is("input"))throw new Error('CSS class "'+d.datepickerInput+'" cannot be applied to non input element');if(c.hasClass("input-group")&&(n=0===c.find(".datepickerbutton").length?c.find(".input-group-addon"):c.find(".datepickerbutton")),!d.inline&&!g.is("input"))throw new Error("Could not initialize DateTimePicker without an input element");return e=y(),f=e.clone(),a.extend(!0,d,H()),l.options(d),pa(),la(),g.prop("disabled")&&l.disable(),g.is("input")&&0!==g.val().trim().length?aa(da(g.val().trim())):d.defaultDate&&void 0===g.attr("placeholder")&&aa(d.defaultDate),d.inline&&ga(),l};return a.fn.datetimepicker=function(b){b=b||{};var d,e=Array.prototype.slice.call(arguments,1),f=!0,g=["destroy","hide","show","toggle"];if("object"==typeof b)return this.each(function(){var d,e=a(this);e.data("DateTimePicker")||(d=a.extend(!0,{},a.fn.datetimepicker.defaults,b),e.data("DateTimePicker",c(e,d)))});if("string"==typeof b)return this.each(function(){var c=a(this),g=c.data("DateTimePicker");if(!g)throw new Error('bootstrap-datetimepicker("'+b+'") method was called on an element that is not using DateTimePicker');d=g[b].apply(g,e),f=d===g}),f||a.inArray(b,g)>-1?this:d;throw new TypeError("Invalid arguments for DateTimePicker: "+b)},a.fn.datetimepicker.defaults={timeZone:"",format:!1,dayViewHeaderFormat:"MMMM YYYY",extraFormats:!1,stepping:1,minDate:!1,maxDate:!1,useCurrent:!0,collapse:!0,locale:b.locale(),defaultDate:!1,disabledDates:!1,enabledDates:!1,icons:{time:"glyphicon glyphicon-time",date:"glyphicon glyphicon-calendar",up:"glyphicon glyphicon-chevron-up",down:"glyphicon glyphicon-chevron-down",previous:"glyphicon glyphicon-chevron-left",next:"glyphicon glyphicon-chevron-right",today:"glyphicon glyphicon-screenshot",clear:"glyphicon glyphicon-trash",close:"glyphicon glyphicon-remove"},tooltips:{today:"Go to today",clear:"Clear selection",close:"Close the picker",selectMonth:"Select Month",prevMonth:"Previous Month",nextMonth:"Next Month",selectYear:"Select Year",prevYear:"Previous Year",nextYear:"Next Year",selectDecade:"Select Decade",prevDecade:"Previous Decade",nextDecade:"Next Decade",prevCentury:"Previous Century",nextCentury:"Next Century",pickHour:"Pick Hour",incrementHour:"Increment Hour",decrementHour:"Decrement Hour",pickMinute:"Pick Minute",incrementMinute:"Increment Minute",decrementMinute:"Decrement Minute",pickSecond:"Pick Second",incrementSecond:"Increment Second",decrementSecond:"Decrement Second",togglePeriod:"Toggle Period",selectTime:"Select Time"},useStrict:!1,sideBySide:!1,daysOfWeekDisabled:!1,calendarWeeks:!1,viewMode:"days",toolbarPlacement:"default",showTodayButton:!1,showClear:!1,showClose:!1,widgetPositioning:{horizontal:"auto",vertical:"auto"},widgetParent:null,ignoreReadonly:!1,keepOpen:!1,focusOnShow:!0,inline:!1,keepInvalid:!1,datepickerInput:".datepickerinput",keyBinds:{up:function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")?this.date(b.clone().subtract(7,"d")):this.date(b.clone().add(this.stepping(),"m"))}},down:function(a){if(!a)return void this.show();var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")?this.date(b.clone().add(7,"d")):this.date(b.clone().subtract(this.stepping(),"m"))},"control up":function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")?this.date(b.clone().subtract(1,"y")):this.date(b.clone().add(1,"h"))}},"control down":function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")?this.date(b.clone().add(1,"y")):this.date(b.clone().subtract(1,"h"))}},left:function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")&&this.date(b.clone().subtract(1,"d"))}},right:function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")&&this.date(b.clone().add(1,"d"))}},pageUp:function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")&&this.date(b.clone().subtract(1,"M"))}},pageDown:function(a){if(a){var b=this.date()||this.getMoment();a.find(".datepicker").is(":visible")&&this.date(b.clone().add(1,"M"))}},enter:function(){this.hide()},escape:function(){this.hide()},"control space":function(a){a&&a.find(".timepicker").is(":visible")&&a.find('.btn[data-action="togglePeriod"]').click()},t:function(){this.date(this.getMoment())},delete:function(){this.clear()}},debug:!1,allowInputToggle:!1,disabledTimeIntervals:!1,disabledHours:!1,enabledHours:!1,viewDate:!1},a.fn.datetimepicker});
 
 /***/ }),
-/* 144 */
+/* 145 */
 /***/ (function(module, exports) {
 
 /*
@@ -53996,7 +54211,7 @@ return d.keepInvalid=a,l},l.datepickerInput=function(a){if(0===arguments.length)
 //})( jQuery );
 
 /***/ }),
-/* 145 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {
@@ -54088,7 +54303,7 @@ if(!$('body .so-modal')){
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 146 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {(function ($) {
@@ -54551,19 +54766,19 @@ if(!$('body .so-modal')){
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 147 */
+/* 148 */
 /***/ (function(module, exports) {
 
 
 
 /***/ }),
-/* 148 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(149);
+module.exports = __webpack_require__(150);
 
 /***/ }),
-/* 149 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54571,7 +54786,7 @@ module.exports = __webpack_require__(149);
 
 var utils = __webpack_require__(1);
 var bind = __webpack_require__(129);
-var Axios = __webpack_require__(151);
+var Axios = __webpack_require__(152);
 var defaults = __webpack_require__(3);
 
 /**
@@ -54606,14 +54821,14 @@ axios.create = function create(instanceConfig) {
 
 // Expose Cancel & CancelToken
 axios.Cancel = __webpack_require__(133);
-axios.CancelToken = __webpack_require__(166);
+axios.CancelToken = __webpack_require__(167);
 axios.isCancel = __webpack_require__(132);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(167);
+axios.spread = __webpack_require__(168);
 
 module.exports = axios;
 
@@ -54622,7 +54837,7 @@ module.exports.default = axios;
 
 
 /***/ }),
-/* 150 */
+/* 151 */
 /***/ (function(module, exports) {
 
 /*!
@@ -54649,7 +54864,7 @@ function isSlowBuffer (obj) {
 
 
 /***/ }),
-/* 151 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54657,8 +54872,8 @@ function isSlowBuffer (obj) {
 
 var defaults = __webpack_require__(3);
 var utils = __webpack_require__(1);
-var InterceptorManager = __webpack_require__(161);
-var dispatchRequest = __webpack_require__(162);
+var InterceptorManager = __webpack_require__(162);
+var dispatchRequest = __webpack_require__(163);
 
 /**
  * Create a new instance of Axios
@@ -54735,7 +54950,7 @@ module.exports = Axios;
 
 
 /***/ }),
-/* 152 */
+/* 153 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -54925,7 +55140,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 153 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54944,7 +55159,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 
 /***/ }),
-/* 154 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54977,7 +55192,7 @@ module.exports = function settle(resolve, reject, response) {
 
 
 /***/ }),
-/* 155 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55005,7 +55220,7 @@ module.exports = function enhanceError(error, config, code, request, response) {
 
 
 /***/ }),
-/* 156 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55080,7 +55295,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 
 /***/ }),
-/* 157 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55140,7 +55355,7 @@ module.exports = function parseHeaders(headers) {
 
 
 /***/ }),
-/* 158 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55215,7 +55430,7 @@ module.exports = (
 
 
 /***/ }),
-/* 159 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55258,7 +55473,7 @@ module.exports = btoa;
 
 
 /***/ }),
-/* 160 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55318,7 +55533,7 @@ module.exports = (
 
 
 /***/ }),
-/* 161 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55377,18 +55592,18 @@ module.exports = InterceptorManager;
 
 
 /***/ }),
-/* 162 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var utils = __webpack_require__(1);
-var transformData = __webpack_require__(163);
+var transformData = __webpack_require__(164);
 var isCancel = __webpack_require__(132);
 var defaults = __webpack_require__(3);
-var isAbsoluteURL = __webpack_require__(164);
-var combineURLs = __webpack_require__(165);
+var isAbsoluteURL = __webpack_require__(165);
+var combineURLs = __webpack_require__(166);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -55470,7 +55685,7 @@ module.exports = function dispatchRequest(config) {
 
 
 /***/ }),
-/* 163 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55497,7 +55712,7 @@ module.exports = function transformData(data, headers, fns) {
 
 
 /***/ }),
-/* 164 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55518,7 +55733,7 @@ module.exports = function isAbsoluteURL(url) {
 
 
 /***/ }),
-/* 165 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55539,7 +55754,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 
 /***/ }),
-/* 166 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55603,7 +55818,7 @@ module.exports = CancelToken;
 
 
 /***/ }),
-/* 167 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55637,243 +55852,10 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 168 */
+/* 169 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 169 */,
-/* 170 */,
-/* 171 */,
-/* 172 */,
-/* 173 */,
-/* 174 */,
-/* 175 */,
-/* 176 */,
-/* 177 */,
-/* 178 */,
-/* 179 */,
-/* 180 */,
-/* 181 */,
-/* 182 */,
-/* 183 */,
-/* 184 */,
-/* 185 */,
-/* 186 */,
-/* 187 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(jQuery) {/*
- slick-animation.js
- Version: 0.3.3 Beta
- Author: Marvin Hübner
- Docs: https://github.com/marvinhuebner/slick-animation
- Repo: https://github.com/marvinhuebner/slick-animation
- */
-
-(function ($) {
-    $.fn.slickAnimation = function () {
-        var currentSlickSlider = $(this);
-
-        var slickItems = currentSlickSlider.find('.slick-list .slick-track > div');
-        var firstSlickItem = currentSlickSlider.find('[data-slick-index="0"]');
-
-        var animatedClass = 'animated';
-        var visible = { opacity: '1' };
-        var hidden = { opacity: '0' };
-
-        /**
-         * function for setting animationIn and animationOut class
-         * @param obj
-         * @param type
-         * @param animationIn
-         * @param animatedClass
-         * @param visibility
-         */
-
-        function slickSetAnimationDefault(obj, type, animationIn, animatedClass, visibility) {
-            visibility = typeof visibility !== 'undefined' ? visibility : false;
-
-            slickRemoveAnimation(obj, 'delay');
-            slickRemoveAnimation(obj, 'duration');
-
-            if (type['opacity'] == 1) {
-                obj.addClass(animationIn);
-                obj.addClass(animatedClass);
-            } else {
-                obj.removeClass(animationIn);
-                obj.removeClass(animatedClass);
-            }
-
-            if (visibility) obj.css(type);
-        }
-
-        /**
-         * get timeout when delay, duration, delay and duration is set
-         * @param delayIn
-         * @param durationIn
-         * @returns {number}
-         */
-
-        function getTimeout(delayIn, durationIn) {
-            if (delayIn) {
-                return delayIn * 1000 + 1000;
-            } else if (durationIn) {
-                return durationIn * 1000;
-            } else if (delayIn || durationIn) {
-                return delayIn * 1000 + durationIn * 1000;
-            }
-            return 1000;
-        }
-
-        /**
-         * add css animations for delay and duration
-         * @param obj
-         * @param animation
-         * @param value
-         */
-        function slickAddAnimation(obj, animation, value) {
-            var delayInAttr = ['animation-' + animation, '-webkit-animation-' + animation, '-moz-animation-' + animation, '-o-animation-' + animation, '-ms-animation-' + animation];
-            var delayInAttributes = {};
-            delayInAttr.forEach(function (entry) {
-
-                delayInAttributes[entry] = value + 's';
-            });
-            obj.css(delayInAttributes);
-        }
-
-        /**
-         * remove css animations for delay and duration
-         * @param obj
-         * @param animation
-         */
-        function slickRemoveAnimation(obj, animation) {
-            var delayInAttr = ['animation-' + animation, '-webkit-animation-' + animation, '-moz-animation-' + animation, '-o-animation-' + animation, '-ms-animation-' + animation];
-            var delayInAttributes = {};
-            delayInAttr.forEach(function (entry) {
-
-                delayInAttributes[entry] = '';
-            });
-            obj.css(delayInAttributes);
-        }
-
-        slickItems.each(function () {
-            var slickItem = $(this);
-
-            slickItem.find('[data-animation-in]').each(function () {
-                var self = $(this);
-
-                self.css(hidden);
-
-                var animationIn = self.attr('data-animation-in');
-                var animationOut = self.attr('data-animation-out');
-                var delayIn = self.attr('data-delay-in');
-                var durationIn = self.attr('data-duration-in');
-                var delayOut = self.attr('data-delay-out');
-                var durationOut = self.attr('data-duration-out');
-
-                if (animationOut) {
-                    if (firstSlickItem.length > 0) {
-                        if (slickItem.hasClass('slick-current')) {
-
-                            slickSetAnimationDefault(self, visible, animationIn, animatedClass, true);
-
-                            if (delayIn) {
-                                slickAddAnimation(self, 'delay', delayIn);
-                            }
-                            if (durationIn) {
-                                slickAddAnimation(self, 'duration', durationIn);
-                            }
-
-                            setTimeout(function () {
-                                slickSetAnimationDefault(self, hidden, animationIn, animatedClass);
-                                slickSetAnimationDefault(self, visible, animationOut, animatedClass);
-                                if (delayOut) {
-                                    slickAddAnimation(self, 'delay', delayOut);
-                                }
-                                if (durationOut) {
-                                    slickAddAnimation(self, 'duration', durationOut);
-                                }
-                                setTimeout(function () {
-                                    slickRemoveAnimation(self, 'delay');
-                                    slickRemoveAnimation(self, 'duration');
-                                }, getTimeout(delayOut, durationOut));
-                            }, getTimeout(delayIn, durationIn));
-                        }
-                    }
-
-                    currentSlickSlider.on('afterChange', function (event, slick, currentSlider) {
-                        if (slickItem.hasClass('slick-current')) {
-
-                            slickSetAnimationDefault(self, visible, animationIn, animatedClass, true);
-
-                            if (delayIn) {
-                                slickAddAnimation(self, 'delay', delayIn);
-                            }
-                            if (durationIn) {
-                                slickAddAnimation(self, 'duration', durationIn);
-                            }
-
-                            setTimeout(function () {
-                                slickSetAnimationDefault(self, hidden, animationIn, animatedClass);
-                                slickSetAnimationDefault(self, visible, animationOut, animatedClass);
-
-                                if (delayOut) {
-                                    slickAddAnimation(self, 'delay', delayOut);
-                                }
-                                if (durationOut) {
-                                    slickAddAnimation(self, 'duration', durationOut);
-                                }
-                                setTimeout(function () {
-                                    slickRemoveAnimation(self, 'delay');
-                                    slickRemoveAnimation(self, 'duration');
-                                }, getTimeout(delayOut, durationOut));
-                            }, getTimeout(delayIn, durationIn));
-                        }
-                    });
-
-                    currentSlickSlider.on('beforeChange', function (event, slick, currentSlider) {
-                        slickSetAnimationDefault(self, hidden, animationOut, animatedClass, true);
-                    });
-                } else {
-
-                    if (firstSlickItem.length > 0) {
-                        if (slickItem.hasClass('slick-current')) {
-                            slickSetAnimationDefault(self, visible, animationIn, animatedClass, true);
-
-                            if (delayIn) {
-                                slickAddAnimation(self, 'delay', delayIn);
-                            }
-                            if (durationIn) {
-                                slickAddAnimation(self, 'duration', durationIn);
-                            }
-                        }
-                    }
-
-                    currentSlickSlider.on('afterChange', function (event, slick, currentSlider) {
-                        if (slickItem.hasClass('slick-current')) {
-                            slickSetAnimationDefault(self, visible, animationIn, animatedClass, true);
-
-                            if (delayIn) {
-                                slickAddAnimation(self, 'delay', delayIn);
-                            }
-                            if (durationIn) {
-                                slickAddAnimation(self, 'duration', durationIn);
-                            }
-                        }
-                    });
-
-                    currentSlickSlider.on('beforeChange', function (event, slick, currentSlider) {
-                        slickSetAnimationDefault(self, hidden, animationIn, animatedClass, true);
-                    });
-                }
-            });
-        });
-        return this;
-    };
-})(jQuery);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ })
 /******/ ]);
