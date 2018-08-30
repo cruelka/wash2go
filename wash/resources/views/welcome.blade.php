@@ -114,29 +114,6 @@
       </div>
     </div>
 
-    <div class="slide">
-      <div class="slide__img">
-        <img src="" alt="" data-lazy="{{asset('images/slider/3.jpg')}}" class="full-image animated" data-animation-in="zoomInImage"/>
-      </div>
-      <div class="slide__content">
-        <div class="slide__content--headings" style="color: black !important">
-           <h2 class="text-slider animated" data-animation-in="fadeInRight">Hign Perfomance</h2>
-           <p class="animated" data-animation-in="fadeInRight" data-delay-in="0.2">For professionals in the car wash business</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="slide">
-      <div class="slide__img">
-        <img src="" alt="" data-lazy="{{asset('images/slider/3.jpg')}}" class="full-image animated" data-animation-in="zoomInImage"/>
-      </div>
-      <div class="slide__content">
-        <div class="slide__content--headings" style="color: black !important">
-           <h2 class="text-slider animated" data-animation-in="fadeInRight">Hign Perfomance</h2>
-           <p class="animated" data-animation-in="fadeInRight" data-delay-in="0.2">For professionals in the car wash business</p>
-        </div>
-      </div>
-    </div>
 
     <div class="slide">
       <div class="slide__img">
@@ -155,7 +132,7 @@
         <img src="" alt="" data-lazy="{{asset('images/slider/4.jpg')}}" class="full-image animated" data-animation-in="zoomInImage"/>
       </div>
       <div class="slide__content">
-        <div class="slide__content--headings" style="color: black !important">
+        <div class="slide__content--headings">
            <h2 class="text-slider animated" data-animation-in="fadeInRight">Hign Perfomance</h2>
            <p class="animated" data-animation-in="fadeInRight" data-delay-in="0.2">For professionals in the car wash business</p>
         </div>
