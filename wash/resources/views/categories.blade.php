@@ -25,10 +25,10 @@
             Combo Pack
           </li>
         </ul>
+        <!--
 
         <div class="text">Filter</div>
 
-        <!--
         <ul class="vertical-navigation__list">
             <li class="vertical-navigation__item vertical-navigation__item_toplevel ">
               Filter 1
@@ -40,9 +40,8 @@
               Filter 3
             </li>
           </ul>
-          -->
     </div>
-    
+       -->
   </div>
 
   <div class="col-lg-9">
