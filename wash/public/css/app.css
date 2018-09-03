@@ -9976,6 +9976,10 @@ button.close {
   display: none !important;
 }
 
+.review .owl-dot {
+  display: none !important;
+}
+
 .owl-item {
   float: left;
 }
