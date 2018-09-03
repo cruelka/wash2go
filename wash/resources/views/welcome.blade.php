@@ -363,10 +363,10 @@
   </div>
 
   <div class="row mt-5">
-    <div class="col-lg-6 col-md-6">
-      <a href="card-preview__info-image-bg" style="background-image:url(/storage/{{$why->image}})"></a>
+    <div class="col-xs-12 col-md-6">
+      <a href="/page/{{$why->slug}}" class="card-preview__info-image-bg" style="background-image:url(/storage/{{$why->image}})"></a>
     </div>
-    <div class="col-lg-6 col-md-6">
+    <div class="col-xs-12 col-md-6">
       <div class="card-preview__info">
         <div class="card-preview__info-inner">
             <div class="card-preview__info-heading">
@@ -437,7 +437,7 @@
 
   <div class="row mt-5">
 
-      <div class="col-lg-6 col-md-6">
+      <div class="col-xs-12 col-md-6">
         <div class="card-preview__info">
           <div class="card-preview__info-inner">
               <div class="card-preview__info-heading">
@@ -457,8 +457,8 @@
         </div>
       </div>
 
-      <div class="col-lg-6 col-md-6">
-          <img  class="card-preview__info-image" src="/storage/{{$eco->image}}" alt="Car">
+      <div class="col-xs-12 col-md-6">
+      <a href="https://wash2go.ae/page/why-eco-wash" class="card-preview__info-image-bg" style="background-image:url(/storage/{{$eco->image}})"></a>
         </div>
     </div>
 
