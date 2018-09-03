@@ -15,11 +15,12 @@ Route::get('/', function () {
      $posts = App\Post::take(2)->get();
     $why = App\Page::where('slug', '=', 'why-its-good-for-your-car')->firstOrFail();
     $eco = App\Page::where('slug', '=', 'why-eco-wash')->firstOrFail();
+    $products = App\Product::take(4)->get();
 
 
 
 
-    return view('welcome', compact('posts','why','eco'));
+    return view('welcome', compact('posts','why','eco','products'));
 });
 
 Auth::routes();
