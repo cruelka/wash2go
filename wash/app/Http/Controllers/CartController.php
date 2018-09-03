@@ -9,7 +9,10 @@ use LukePOLO\LaraCart\Facades\LaraCart;
 class CartController extends Controller
 {
     public function showCart()
-    {  dd(LaraCart::getItems());
+    {
+       $items = LaraCart::getItems();
+
+        return view('cart', compact('items'));
 
     }
     public function addCart(Product $product)
@@ -18,6 +21,7 @@ class CartController extends Controller
             $product->id,
             $name = $product->name,
             $qty = 1,
+            $image = $product->image,
             $price = $product->price,
             $options = [],
             $taxable = true,

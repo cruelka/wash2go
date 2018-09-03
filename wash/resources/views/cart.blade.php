@@ -7,17 +7,18 @@
         Shopping cart
     </p>
     <div class="row">
+        @foreach($items as $item)
       <div class="col-lg-6">
         <div class="shopping-card__list">
           <div class="shopping-card__item">
             <div class="shopping-card__item-prev">
-              <img src="resourse/images/example/i.jpg" alt="Product" class="shopping-card__item-prev-img">
+              <img src="/storage/{{$item->image}}" alt="Product" class="shopping-card__item-prev-img">
             </div>
             <div class="shopping-card__item-title">
-              Product name
+                {{$item->name}}
             </div>
             <div class="shopping-card__item-price">
-              65 AED
+                {{$item->price}} AED
             </div>
             <div class="button">
                 <span class="button__body">
@@ -30,6 +31,7 @@
           </div>
         </div>
       </div>
+        @endforeach
       <div class="col-lg-6">
           <div class="button button_red">
               <span class="button__icon">
