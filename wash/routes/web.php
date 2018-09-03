@@ -59,4 +59,4 @@ Route::get('/product/{id}', 'ProductController@show');
 
 Route::get('/cart','CartController@showCart');
 Route::get('/cart/{product}','CartController@addCart');
-Route::get('/cart/clear','CartController@emptyCart');
+Route::get('/cart/clear','CartController@clearCart');
