@@ -1272,7 +1272,7 @@
       loop:true,
       margin:20,
       nav:false,
-      autoplay:false,
+      autoplay:true,
       autoplayTimeout:5000,
       smartSpeed:450,
       responsive:{
