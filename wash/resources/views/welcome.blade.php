@@ -669,12 +669,15 @@
 
 
     <div class="row mt-2">
-      <div class="col-lg-12" style="display: block;margin: 0 auto;">
+      <div class="col-xs-12" style="display: block;margin: 0 auto;">
+        
         <div class="subscribe__inner">
-            <div class="subscribe__heading text-center">
+            
+          <div class="subscribe__heading text-center">
                 Sign up for monthly news <br>
                 <span class="text-success">and ways to help save earth!</span>
             </div>
+          
           <form class="form-inline subscribe__form">
 
               <div class="form-group mb-2">
@@ -686,8 +689,9 @@
                 <input type="password" class="form-control" id="inputPassword2" placeholder="Email">
               </div>
               <button type="submit" class="btn btn-success mb-2">Confirm</button>
-          </form>
-        </div>
+          
+            </form>
+          </div>
 
       </div>
 
