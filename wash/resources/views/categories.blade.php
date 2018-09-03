@@ -101,7 +101,7 @@
                 {{$product->title}}
               </a>
               <div class="product-card__price">
-                  {{$product->price}}
+                  {{$product->price}} AED
               </div>
               <a href="/product/{{$product->id}}"class="product-card__description">
                   {{$product->name}}
