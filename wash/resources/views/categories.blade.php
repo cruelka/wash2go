@@ -11,19 +11,31 @@
         <div class="text">Categories</div>
 
         <ul class="vertical-navigation__list">
-          <a href="/category/interior" class="vertical-navigation__item vertical-navigation__item_toplevel @if($data->first()->slug == 'interior') vertical-navigation__item_active @endif">
-            Interior
-          </a>
+          <li  class="vertical-navigation__item vertical-navigation__item_toplevel @if($data->first()->slug == 'interior') vertical-navigation__item_active @endif">
+            <a href="/category/interior" class="vertical-navigation__item_link">
+                Interior
+            </a>
+          </li>
 
-          <a href="/category/exterior" class="vertical-navigation__item vertical-navigation__item_toplevel @if($data->first()->slug == 'exterior') vertical-navigation__item_active @endif ">
-            Exterior
-          </a>
-          <a href="/category/accessories" class="vertical-navigation__item vertical-navigation__item_toplevel @if($data->first()->slug == 'accessories') vertical-navigation__item_active @endif ">
-            Accessories
-          </a>
-          <a href="/category/combo-pack" class="vertical-navigation__item vertical-navigation__item_toplevel @if($data->first()->slug == 'combo-pack') vertical-navigation__item_active @endif ">
-            Combo Pack
-          </a>
+          <li class="vertical-navigation__item vertical-navigation__item_toplevel @if($data->first()->slug == 'exterior') vertical-navigation__item_active @endif ">
+              <a href="/category/exterior" class="vertical-navigation__item_link">
+                  Exterior
+              </a>
+
+          </li>
+          <li  class="vertical-navigation__item vertical-navigation__item_toplevel @if($data->first()->slug == 'accessories') vertical-navigation__item_active @endif ">
+
+              <a href="/category/accessories" class="vertical-navigation__item_link">
+                  Accessories
+              </a>
+
+          </li>
+          <li  class="vertical-navigation__item vertical-navigation__item_toplevel @if($data->first()->slug == 'combo-pack') vertical-navigation__item_active @endif ">
+              <a href="/category/combo-pack" class="vertical-navigation__item_link">
+                  Combo Pack
+              </a>
+
+          </li>
         </ul>
         <!--
 
