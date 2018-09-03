@@ -9,10 +9,8 @@ use LukePOLO\LaraCart\Facades\LaraCart;
 class CartController extends Controller
 {
     public function showCart()
-    {
-        foreach($items = LaraCart::getItems() as $item) {
-              dd($item);
-        }
+    {  dd(LaraCart::getItems());
+
     }
     public function addCart(Product $product)
     {
@@ -20,7 +18,7 @@ class CartController extends Controller
             $product->id,
             $name = $product->name,
             $qty = 1,
-            $price = '0.00',
+            $price = $product->price,
             $options = [],
             $taxable = true,
             $lineItem = false
