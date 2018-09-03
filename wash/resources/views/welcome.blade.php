@@ -373,15 +373,15 @@
     <div class="col-xs-12 col-md-6">
       <div class="card-preview__info" data-aos="fade-left">
         <div class="card-preview__info-inner">
-            <div class="card-preview__info-heading">
+            <a href="/page/{{$why->slug}}" class="card-preview__info-heading">
                {{$why->title}}
-              </div>
+              </a>
               <div class="card-preview__info-body">
                 {{ $why ->excerpt }}
               </div>
-              <div class="card-preview__info-lable">
+              <a href="/page/{{$why->slug}}" class="card-preview__info-lable">
                 About washing
-              </div>
+              </a>
               <a href="/page/{{$why->slug}}" class="card-preview__info-link">
                 More Information <img class="card-preview__info-link-i" src="{{asset('images/icons/arrow-right_green.svg')}}" alt="Arrow">
               </a>
@@ -533,7 +533,7 @@
       @foreach($products as $product)
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
           <div class="product-card product-card_square" data-aos="zoom-in">
-                <a href="/product{{$product->id}}" class="product-card__img" style="background: url('/storage/{{$product->image}}')">
+                <a href="/product/{{$product->id}}" class="product-card__img" style="background: url('/storage/{{$product->image}}')">
                   <div class="product-card__add-to-card-b">
                     <div class="button button_red">
                       <span class="button__icon">
