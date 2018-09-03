@@ -11,13 +11,12 @@ class CartController extends Controller
     public function showCart()
     {
        $items = LaraCart::getItems();
-
         return view('cart', compact('items'));
 
     }
     public function addCart(Product $product)
     {
-        LaraCart::add(
+        $item = LaraCart::add(
             $product->id,
             $name = $product->name,
             $qty = 1,
@@ -26,8 +25,13 @@ class CartController extends Controller
             $taxable = true,
             $lineItem = false
 
+
         );
-        LaraCart::setAttribute('image', $product->image);
+        $item->addSubItem([
+            'description' =>  $product->image, // this line is not required!
+            'price' => 0,
+            'qty' => 0
+        ]);
 
         echo 'success';
 
@@ -36,6 +40,9 @@ class CartController extends Controller
     public function clearCart()
     {
         LaraCart::emptyCart();
+        LaraCart::removeAttribute('image');
+
+
         echo 'clear';
 
     }

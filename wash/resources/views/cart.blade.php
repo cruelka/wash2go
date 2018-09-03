@@ -7,12 +7,13 @@
         Shopping cart
     </p>
     <div class="row">
+        <div class="col-lg-6">
         @foreach($items as $item)
-      <div class="col-lg-6">
+
         <div class="shopping-card__list">
           <div class="shopping-card__item">
             <div class="shopping-card__item-prev">
-              <img src="/storage/{{LaraCart::getAttribute('image')}}" alt="Product" class="shopping-card__item-prev-img">
+              <img src="/storage/{{$item->subItems->description}}" alt="Product" class="shopping-card__item-prev-img">
             </div>
             <div class="shopping-card__item-title">
                 {{$item->name}}
@@ -24,14 +25,16 @@
                 <span class="button__body">
                   -
                 </span>
+                <span class="button__body"> {{$item->qty}} </span>
                 <span class="button__body">
                   +
                 </span>
             </div>
           </div>
         </div>
-      </div>
+
         @endforeach
+        </div>
       <div class="col-lg-6">
           <div class="button button_red">
               <span class="button__icon">
