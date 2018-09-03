@@ -1,3 +1,7 @@
+@extends('layouts.app')
+
+@section('content')
+
 <div class="shopping-card">
     <p class="shopping-card__title">
         Shopping cart
@@ -49,3 +53,4 @@
     </div>
     
   </div>
+  @endsection
