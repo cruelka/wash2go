@@ -34,6 +34,9 @@ class CartController extends Controller
     public function clearCart()
     {
         LaraCart::emptyCart();
+        LaraCart::removeAttribute('image');
+
+
         echo 'clear';
 
     }
