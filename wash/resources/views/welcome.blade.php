@@ -518,7 +518,7 @@
           </div>
       </div>
     </div>
-  </div>
+
 
   <div class="adventages sector">
     <div class="heading">
