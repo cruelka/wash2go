@@ -617,10 +617,10 @@
       <div class="sector">
         <div class="">
           <div class="row mt-5">
-            <div class="col-lg-3 col-md-3">
+            <div class="col-lg-3 col-md-3  col-xs-12">
               <img src="{{ asset('images/icons/quotes.svg') }}" class="review__quotes" alt="Quotes">
             </div>
-            <div class="col-lg-9 col-md-9">
+            <div class="col-lg-9 col-md-9  col-xs-12">
                 <div class="review">
                   <div class="review__heading" data-aos="zoom-in">What Customers Say</div>
                   <div class="review__inner">
