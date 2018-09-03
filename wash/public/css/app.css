@@ -9059,6 +9059,12 @@ button.close {
   margin-bottom: 40px;
 }
 
+.adventages__item {
+  padding: 30px 20px 0;
+  border: 1px solid #eaeaea;
+  border-radius: 20px;
+}
+
 @media screen and (max-width: 992px) {
   .adventages__item {
     margin-bottom: 20px;
