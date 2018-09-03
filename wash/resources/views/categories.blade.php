@@ -65,7 +65,7 @@
     @foreach($data->first()->product as $product)
   <div class="col-lg-4 col-md-4">
       <div class="product-card product-card_square">
-            <div class="product-card__img" style="background: url('/storage/product/'{{$product->image}});">
+            <div class="product-card__img" style="background: url('/storage/'{{$product->image}});">
               <div class="product-card__add-to-card-b">
                 <div class="button button_red">
                   <span class="button__icon">
