@@ -9473,7 +9473,7 @@ button.close {
   opacity: .8;
 }
 
-.vertical-navigation__item_active {
+.vertical-navigation__item_active a {
   color: #52B947;
 }
 

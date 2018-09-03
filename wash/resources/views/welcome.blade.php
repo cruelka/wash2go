@@ -478,44 +478,44 @@
     <div class="row mt-5">
 
       <div class="col-lg-3 col-md-3 col-sm-3  col-xs-3">
-        <div class="adventages__item">
+        <a href="/category/interior" class="adventages__item">
           <div class="adventages__item-icon">
             <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/1.svg')}}">
           </div>
           <div class="adventages__item-heading">
             Interior
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3  col-xs-3">
-          <div class="adventages__item">
+          <a href="/category/exterior" class="adventages__item">
             <div class="adventages__item-icon">
               <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/2.svg')}}">
             </div>
             <div class="adventages__item-heading">
               Exterior
             </div>
-          </div>
+          </a>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3  col-xs-3">
-          <div class="adventages__item">
+          <a href="/category/accessories" class="adventages__item">
             <div class="adventages__item-icon">
               <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/3.svg')}}">
             </div>
             <div class="adventages__item-heading">
               Accessories
             </div>
-          </div>
+          </a>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3  col-xs-3">
-          <div class="adventages__item">
+          <a href="/category/combo-pack" class="adventages__item">
             <div class="adventages__item-icon">
               <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/4.svg')}}">
             </div>
             <div class="adventages__item-heading">
               Combo Pack
             </div>
-          </div>
+          </a>
       </div>
     </div>
 
@@ -1131,21 +1131,21 @@
             </div>
 
             <div class="navigation-modal__sub">
-              <div class="navigation-modal__item">
-              <img src="{{asset('images/icons/categories/1.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Interior
-              </div>
+              <a href="/category/interior" class="navigation-modal__item">
+                <img src="{{asset('images/icons/categories/1.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Interior
+              </a>
 
-              <div class="navigation-modal__item">
-              <img src="{{asset('images/icons/categories/2.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Exterior
-              </div>
+              <a href="/category/exterior" class="navigation-modal__item">
+                <img src="{{asset('images/icons/categories/2.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Exterior
+              </a>
 
-              <div class="navigation-modal__item">
+              <a href="/category/accessories" class="navigation-modal__item">
                 <img src="{{asset('images/icons/categories/3.svg')}}" alt="Accessories" class="navigation-modal__item-i">  Accessories
-              </div>
+              </a>
 
-              <div class="navigation-modal__item">
-              <img src="{{asset('images/icons/categories/4.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Combo Pack
-              </div>
+              <a href="/category/combo-pack" class="navigation-modal__item">
+                <img src="{{asset('images/icons/categories/4.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Combo Pack
+              </a>
 
             </div>
 

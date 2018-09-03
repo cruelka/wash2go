@@ -13,8 +13,13 @@
 }
 
 .vertical-navigation__item_active {
-    color: $greencolor;
+    
+
+    a {
+        color: $greencolor;
+    }
 }
+
 
 .vertical-navigation__item_toplevel {
     font-weight: Bold;
