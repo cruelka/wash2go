@@ -364,7 +364,7 @@
 
   <div class="row mt-5">
     <div class="col-lg-6 col-md-6">
-      <img  class="card-preview__info-image" src="/storage/{{$why->image}}" alt="Car">
+      <a href="card-preview__info-image-bg" style="background-image:url(/storage/{{$why->image}})"></a>
     </div>
     <div class="col-lg-6 col-md-6">
       <div class="card-preview__info">
