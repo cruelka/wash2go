@@ -13558,6 +13558,12 @@ button.close {
   margin-bottom: 20px;
 }
 
+.sidebar__item {
+  border: 1px solid #f0f0f0;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
 /* Slider */
 
 .slick-loading .slick-list {

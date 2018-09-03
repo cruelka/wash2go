@@ -22,7 +22,26 @@
                 </div>
 
                 <div class="col-xs-12 col-md-3">
-                    Sidebar
+                    <div class="sidebar">
+                        <div class="sidebar__item">
+                            <div class="sidebar__item-header">
+                                Last news
+                            </div>
+                            <div class="sidebar__item-body">
+                                1
+                            </div>
+                        </div>
+
+                        <div class="sidebar__item">
+                            <div class="sidebar__item-header">
+                                New shop items
+                            </div>
+                            <div class="sidebar__item-body">
+                                2
+                            </div>
+                        </div>
+                    </div>
+                   
                 </div>
             </div>
         </div>
