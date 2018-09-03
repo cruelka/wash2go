@@ -15,7 +15,7 @@
             <div class="shopping-card__item-prev">
               <img src="/storage/{{LaraCart::getAttribute('image')}}" alt="Product" class="shopping-card__item-prev-img">
             </div>
-              {{echo LaraCart::getAttribute('image')}}
+              {{ LaraCart::getAttribute('image')}}
             <div class="shopping-card__item-title">
                 {{$item->name}}
             </div>
@@ -26,7 +26,7 @@
                 <span class="button__body">
                   -
                 </span>
-                <span lass="button__body"> {{$item->qty}} </span>
+                <span class="button__body"> {{$item->qty}} </span>
                 <span class="button__body">
                   +
                 </span>
