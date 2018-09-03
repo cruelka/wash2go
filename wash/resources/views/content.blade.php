@@ -7,7 +7,7 @@
         <div class="news__item">
             <div class="row">
 
-                <div class="col-lg-10">
+                <div class="col-xs-12 col-md-9">
                     <div class="news__item-inner">
                         <img class="news__item-img" src="/storage/{{$data->image}}" alt="Image">
 
@@ -19,6 +19,10 @@
                             {!! $data->body !!}
                         </div>
                     </div>
+                </div>
+
+                <div class="col-xs-12 col-md-3">
+                    Sidebar
                 </div>
             </div>
         </div>
