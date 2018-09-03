@@ -9350,9 +9350,6 @@ button.close {
   display: block;
   width: 100%;
   max-width: 500px;
-  margin: auto;
-  margin-bottom: 20px;
-  margin-top: 40px;
   background-size: cover;
 }
 
@@ -9364,7 +9361,6 @@ button.close {
   margin: auto;
   margin-bottom: 20px;
   margin-top: 40px;
-  background-size: cover;
 }
 
 .heading {
