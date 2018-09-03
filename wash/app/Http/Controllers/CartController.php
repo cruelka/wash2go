@@ -21,11 +21,12 @@ class CartController extends Controller
             $product->id,
             $name = $product->name,
             $qty = 1,
-            $image = $product->image,
             $price = $product->price,
             $options = [],
             $taxable = true,
-            $lineItem = false
+            $lineItem = false,
+            $image = $product->image
+
         );
         echo 'success';
 
