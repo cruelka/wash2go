@@ -137,7 +137,7 @@
             <p class="animated" data-animation-in="fadeInUp" data-delay-in="0.3">Waterless Car Care</p>
       </div>
     </div>
-
+    </div>
     <div class="slide">
       <div class="slide__img">
         <img src="" alt="" data-lazy="{{asset('images/slider/5.jpg')}}" class="full-image animated" data-animation-in="zoomInImage"/>
