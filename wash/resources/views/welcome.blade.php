@@ -531,7 +531,7 @@
       @foreach($products as $product)
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
           <div class="product-card product-card_square">
-                <a href="/product" class="product-card__img" style="background: url('/storage/{{$product->image}}')">
+                <a href="/product{{$product->id}}" class="product-card__img" style="background: url('/storage/{{$product->image}}')">
                   <div class="product-card__add-to-card-b">
                     <div class="button button_red">
                       <span class="button__icon">
@@ -715,10 +715,10 @@
                 <div class="col-lg-6 col-md-6">
                   <ul class="footer__list">
 
-                    <li class="footer__item" >Interior</li>
-                    <li class="footer__item" >Exterior</li>
-                    <li class="footer__item" >Accessories</li>
-                    <li class="footer__item" >Combo Pack</li>
+                    <li class="footer__item" ><a href="/category/interior">Interior</a></li>
+                    <li class="footer__item" ><a href="/category/exterior">Exterior</a></li>
+                    <li class="footer__item" ><a href="/category/accessories">Accessories</a></li>
+                    <li class="footer__item" ><a href="/category/combo-pack">Combo Pack</a></li>
                   </ul>
                 </div>
 
