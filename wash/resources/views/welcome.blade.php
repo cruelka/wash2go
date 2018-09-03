@@ -660,7 +660,7 @@
 
 
 
-</div>
+
 
 <div class="subscribe subscribe_white ">
   <div class="container">
