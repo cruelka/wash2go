@@ -6,7 +6,7 @@
 <div class="container">
 
 <div class="row">
-  <div class="col-lg-3">
+  <div class="col-xs-12 col-md-3">
     <div class="sector">
         <div class="text">Categories</div>
 
@@ -57,11 +57,11 @@
 
   </div>
 
-  <div class="col-lg-9">
+  <div class="col-xs-12 col-md-9">
     
 <div class="category-heading">
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-xs-12 col-md-6">
           <p class="category-heading__title">
               {{$data->first()->title}}
             </p>
@@ -77,7 +77,7 @@
   <div class="row">
       @if($data->first()->product->first())
     @foreach($data->first()->product as $product)
-  <div class="col-lg-4 col-md-4">
+  <div class="col-xs-12 col-md-4">
       <div class="product-card product-card_square">
             <div class="product-card__img" style="background: url('/storage/{{$product->image}}');">
               <div class="product-card__add-to-card-b">
