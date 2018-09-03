@@ -52,7 +52,7 @@
                                 New shop items
                             </div>
                             <div class="sidebar__item-body">
-                                <a href="/" class="sidebar__news">
+                                <a href="/" class="sidebar__news sidebar__news_squ">
                                     <div class="sidebar__news-img" style="background:url(/storage/pages/August2018/Mw0I0BoZHeUJ0IFNnQlE.png)"></div>
                                     <div class="sidebar__news-title">Some news</div>
                                     <div class="sidebar__news-tags">Some tags</div>
