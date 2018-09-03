@@ -715,8 +715,7 @@
                 <div class="review">
                   <div class="review__heading">What Customers Say</div>
                   <div class="review__inner">
-                    <div class="row">
-                      <div class="col-lg-6 col-md-6">
+
                           <div class="review__item">
                               <img src="{{ asset('images/icons/quotes_green.svg') }}" class="review__item-quotes" alt="Quotes">
                               <div class="review__item-body">
@@ -727,9 +726,7 @@
                                   Al Saeedi
                               </div>
                             </div>
-                      </div>
-
-                      <div class="col-lg-6 col-md-6">
+                  
                           <div class="review__item">
                               <img src="{{ asset('images/icons/quotes_green.svg') }}" class="review__item-quotes" alt="Quotes">
                               <div class="review__item-body">
@@ -1271,6 +1268,7 @@
 
 <script>
     $(document).ready(function(){
+      
       $(".welcome-fullscreen-owl").owlCarousel({
       loop:true,
       margin:0,
@@ -1287,7 +1285,29 @@
         }
         
     }
+
+    
   });
+
+
+
+  $('.review__inner').owlCarousel({
+      loop:true,
+      margin:0,
+      nav:false,
+      autoplay:false,
+      autoplayTimeout:5000,
+      smartSpeed:450,
+      responsive:{
+        0:{
+            items:1
+        },
+        768: {
+          items: 2
+        }
+        
+    });
+    
     });
 
     
