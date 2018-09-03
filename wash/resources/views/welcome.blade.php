@@ -394,40 +394,40 @@
   <div class="row mt-5">
     <div class="col-xs-12">
       <div class="about-wrapper">
-        <img class="wheel" src="{{asset('images/icons/wheel.svg')}}" alt="Wheel">
-        <div class="about-wrapper__inner">
+        <img class="wheel" src="{{asset('images/icons/wheel.svg')}}" alt="Wheel" data-aos="flip-left">
+        <div class="about-wrapper__inner" data-aos="fade-up">
           <div class="heading">About us</div>
           <div class="text">
               Wash2Go products are made from 100% plant-derived,
               biodegradable ingredients.
 
           </div>
-          <div class="text">
+          <div class="text"  data-aos="fade-down">
               Not only do our products help save water, they also reduce the toxic runoff from conventional car washes that find its way into our rivers and oceans.
           </div>
         </div>
         
       </div>
       <div class="row mt-5 adventages__list adventages__list_bg" id="counter">
-          <div class="col-xs-6 col-sm-3 text-special">
+          <div class="col-xs-6 col-sm-3 text-special" data-aos="fade-right">
             <div class="text-special__inner">
               <div class="text-special__heading"><span class="counter-value" data-count="100">0</span>%</div>
               <div class="text-special__body">Satisfaction guarantee</div>
             </div>
           </div>
-          <div class="col-xs-6 col-sm-3 text-special">
+          <div class="col-xs-6 col-sm-3 text-special" data-aos="fade-right">
               <div class="text-special__inner">
                 <div class="text-special__heading"><span class="counter-value" data-count="5000">1000</span>+</div>
                 <div class="text-special__body">Cleaned cars</div>
               </div>
           </div>
-          <div class="col-xs-6 col-sm-3 text-special">
+          <div class="col-xs-6 col-sm-3 text-special" data-aos="fade-left">
                 <div class="text-special__inner">
                   <div class="text-special__heading"><span class="counter-value" data-count="30">1</span>+</div>
                   <div class="text-special__body">high quality products</div>
                 </div>
           </div>
-          <div class="col-xs-6 col-sm-3 text-special">
+          <div class="col-xs-6 col-sm-3 text-special" data-aos="fade-left">
             <div class="text-special__inner">
                 <div class="text-special__heading"><span class="counter-value" data-count="20">1</span>M</div>
                 <div class="text-special__body">Saved litersof water</div>
@@ -442,7 +442,7 @@
   <div class="row mt-5">
 
       <div class="col-xs-12 col-md-6">
-        <div class="card-preview__info">
+        <div class="card-preview__info" data-aos="fade-right">
           <div class="card-preview__info-inner">
               <div class="card-preview__info-heading">
                     {{$eco->title}}
@@ -462,7 +462,7 @@
       </div>
 
       <div class="col-xs-12 col-md-6">
-        <div class="card-preview__info-image-bg-wrapper">
+        <div class="card-preview__info-image-bg-wrapper" data-aos="fade-left">
         <a href="https://wash2go.ae/page/why-eco-wash" class="card-preview__info-image-bg" style="background-image:url(/storage/{{$eco->image}})"></a>
         </div>
       
@@ -473,14 +473,14 @@
 
 
 
-    <div class="heading">
+    <div class="heading" data-aos="zoom-in">
         Our products
     </div>
 
     <div class="row mt-5">
 
       <div class="col-lg-3 col-md-3 col-sm-3  col-xs-3">
-        <a href="/category/interior" class="adventages__item adventages__item_wrapped">
+        <a href="/category/interior" class="adventages__item adventages__item_wrapped"  data-aos="fade-right">
           <div class="adventages__item-icon">
             <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/1.svg')}}">
           </div>
@@ -490,7 +490,7 @@
         </a>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3  col-xs-3">
-          <a href="/category/exterior" class="adventages__item adventages__item_wrapped">
+          <a href="/category/exterior" class="adventages__item adventages__item_wrapped" data-aos="fade-right">
             <div class="adventages__item-icon">
               <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/2.svg')}}">
             </div>
@@ -500,7 +500,7 @@
           </a>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3  col-xs-3">
-          <a href="/category/accessories" class="adventages__item adventages__item_wrapped">
+          <a href="/category/accessories" class="adventages__item adventages__item_wrapped" data-aos="fade-left">
             <div class="adventages__item-icon">
               <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/3.svg')}}">
             </div>
@@ -510,7 +510,7 @@
           </a>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3  col-xs-3">
-          <a href="/category/combo-pack" class="adventages__item adventages__item_wrapped">
+          <a href="/category/combo-pack" class="adventages__item adventages__item_wrapped" data-aos="fade-left">
             <div class="adventages__item-icon">
               <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/4.svg')}}">
             </div>
@@ -523,7 +523,7 @@
 
 
   <div class="adventages sector">
-    <div class="heading">
+    <div class="heading" data-aos="zoom-in">
       Most selling
     </div>
 
@@ -532,7 +532,7 @@
   <div class="row mt-5">
       @foreach($products as $product)
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <div class="product-card product-card_square">
+          <div class="product-card product-card_square" data-aos="zoom-in">
                 <a href="/product{{$product->id}}" class="product-card__img" style="background: url('/storage/{{$product->image}}')">
                   <div class="product-card__add-to-card-b">
                     <div class="button button_red">
@@ -568,7 +568,7 @@
 
 
   <div class="sector">
-      <div class="heading">
+      <div class="heading" data-aos="zoom-in">
         Latest News
       </div>
 
@@ -578,7 +578,7 @@
 
 
 
-                  <div class="news-card">
+                  <div class="news-card" data-aos="fade-down">
                       <div class="news-card__lable">
                             {{$post->meta_keywords}}
                       </div>
@@ -607,7 +607,7 @@
       </div>
 </div>
       <div class="sector">
-        <div class="button">
+        <div class="button" data-aos="zoom-in">
             <a href="/blog" class="button__body">
                 More News
             </a>
@@ -622,7 +622,7 @@
             </div>
             <div class="col-lg-9 col-md-9">
                 <div class="review">
-                  <div class="review__heading">What Customers Say</div>
+                  <div class="review__heading" data-aos="zoom-in">What Customers Say</div>
                   <div class="review__inner">
 
                           <div class="review__item">
