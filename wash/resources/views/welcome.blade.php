@@ -528,10 +528,10 @@
 
 
   <div class="row mt-5">
-
+      @foreach($products as $product)
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
           <div class="product-card product-card_square">
-                <a href="/product" class="product-card__img" style="background: url('{{asset('images/example/1.jpg')}}')">
+                <a href="/product{{$product->id}}" class="product-card__img" style="background: url('/storage/{{$product->image}}')">
                   <div class="product-card__add-to-card-b">
                     <div class="button button_red">
                       <span class="button__icon">
@@ -543,115 +543,22 @@
                     </div>
                   </div>
                   <div class="product-card__marked">
-                    <div class="product-card__new">
-                        New
-                    </div>
+
                   </div>
                 </a>
                 <div class="product-card__body">
-                  <a href="/product" class="product-card__title">
-                    BODY CLEAR
+                  <a href="/product/{{$product->id}}" class="product-card__title">
+                      {{$product->title}}
                   </a>
                   <div class="product-card__price">
-                    18 AED
+                      {{$product->price}}   AED
                   </div>
                 </div>
 
           </div>
       </div>
+    @endforeach
 
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <div class="product-card product-card_square">
-                <a href="/product" class="product-card__img" style="background: url('{{asset('images/example/1.jpg')}}')">
-                  <div class="product-card__add-to-card-b">
-                    <div class="button button_red">
-                      <span class="button__icon">
-                        <img class="button__icon-img" src="{{asset('images/icons/plus_white.svg')}}">
-                      </span>
-                      <span class="button__body">
-                        Add to cart
-                      </span>
-                    </div>
-                  </div>
-                  <div class="product-card__marked">
-                    <div class="product-card__new">
-                        New
-                    </div>
-                  </div>
-                </a>
-                <div class="product-card__body">
-                  <a href="/product" class="product-card__title">
-                    WINDOW CLEAR
-                  </a>
-                  <div class="product-card__price">
-                    18 AED
-                  </div>
-                </div>
-
-          </div>
-      </div>
-
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <div class="product-card product-card_square">
-                <a href="/product" class="product-card__img" style="background: url('{{asset('images/example/1.jpg')}}')">
-                  <div class="product-card__add-to-card-b">
-                    <div class="button button_red">
-                      <span class="button__icon">
-                        <img class="button__icon-img" src="{{asset('images/icons/plus_white.svg')}}">
-                      </span>
-                      <span class="button__body">
-                        Add to cart
-                      </span>
-                    </div>
-                  </div>
-                  <div class="product-card__marked">
-                    <div class="product-card__new">
-                        New
-                    </div>
-                  </div>
-                </a>
-                <div class="product-card__body">
-                  <a href="/product" class="product-card__title">
-                    INTERIOR CLEAR
-                  </a>
-                  <div class="product-card__price">
-                    18 AED
-                  </div>
-                </div>
-
-          </div>
-      </div>
-
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <div class="product-card product-card_square">
-                <a href="/product" class="product-card__img" style="background: url('{{asset('images/example/1.jpg')}}')">
-                  <div class="product-card__add-to-card-b">
-                    <div class="button button_red">
-                      <span class="button__icon">
-                        <img class="button__icon-img" src="{{asset('images/icons/plus_white.svg')}}">
-                      </span>
-                      <span class="button__body">
-                        Add to cart
-                      </span>
-                    </div>
-                  </div>
-                  <div class="product-card__marked">
-                    <div class="product-card__new">
-                        New
-                    </div>
-                  </div>
-                </a>
-                <div class="product-card__body">
-                  <a href="/product" class="product-card__title">
-                    LEATHER CLEAR
-                  </a>
-                  <div class="product-card__price">
-                    18 AED
-                  </div>
-                </div>
-
-          </div>
-      </div>
 
 
   </div>
@@ -808,10 +715,10 @@
                 <div class="col-lg-6 col-md-6">
                   <ul class="footer__list">
 
-                    <li class="footer__item" >Interior</li>
-                    <li class="footer__item" >Exterior</li>
-                    <li class="footer__item" >Accessories</li>
-                    <li class="footer__item" >Combo Pack</li>
+                    <li class="footer__item" ><a href="/category/interior">Interior</a></li>
+                    <li class="footer__item" ><a href="/category/exterior">Exterior</a></li>
+                    <li class="footer__item" ><a href="/category/accessories">Accessories</a></li>
+                    <li class="footer__item" ><a href="/category/combo-pack">Combo Pack</a></li>
                   </ul>
                 </div>
 
