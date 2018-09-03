@@ -13583,6 +13583,13 @@ button.close {
   padding-bottom: 10px;
   border-bottom: 1px solid #f0f0f0;
   cursor: pointer;
+  display: block;
+}
+
+.sidebar__news:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .sidebar__news-img {
@@ -13596,7 +13603,6 @@ button.close {
 
 .sidebar__news-title {
   font-weight: bold;
-  color: #52B947;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

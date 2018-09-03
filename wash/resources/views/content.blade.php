@@ -28,11 +28,22 @@
                                 Last news
                             </div>
                             <div class="sidebar__item-body">
-                                <div class="sidebar__news">
+                                <a href="/" class="sidebar__news">
                                     <div class="sidebar__news-img" style="background:url(/storage/pages/August2018/Mw0I0BoZHeUJ0IFNnQlE.png)"></div>
                                     <div class="sidebar__news-title">Some news</div>
                                     <div class="sidebar__news-tags">Some tags</div>
-                                </div>
+                                </a>
+                                <a href="/" class="sidebar__news">
+                                    <div class="sidebar__news-img" style="background:url(/storage/pages/August2018/Mw0I0BoZHeUJ0IFNnQlE.png)"></div>
+                                    <div class="sidebar__news-title">Some news</div>
+                                    <div class="sidebar__news-tags">Some tags</div>
+                                </a>
+                                <a href="/" class="sidebar__news">
+                                    <div class="sidebar__news-img" style="background:url(/storage/pages/August2018/Mw0I0BoZHeUJ0IFNnQlE.png)"></div>
+                                    <div class="sidebar__news-title">Some news</div>
+                                    <div class="sidebar__news-tags">Some tags</div>
+                                </a>
+                                
                             </div>
                         </div>
 
@@ -41,7 +52,11 @@
                                 New shop items
                             </div>
                             <div class="sidebar__item-body">
-                                2
+                                <a href="/" class="sidebar__news">
+                                    <div class="sidebar__news-img" style="background:url(/storage/pages/August2018/Mw0I0BoZHeUJ0IFNnQlE.png)"></div>
+                                    <div class="sidebar__news-title">Some news</div>
+                                    <div class="sidebar__news-tags">Some tags</div>
+                                </a>
                             </div>
                         </div>
                     </div>
