@@ -444,12 +444,12 @@
       <div class="col-xs-12 col-md-6">
         <div class="card-preview__info" data-aos="fade-right">
           <div class="card-preview__info-inner">
-              <div class="card-preview__info-heading">
+              <a href="https://wash2go.ae/page/why-eco-wash" class="card-preview__info-heading">
                     {{$eco->title}}
-              </div>
-                <a href="https://wash2go.ae/page/why-eco-wash"  class="card-preview__info-body">
+              </a>
+                <div   class="card-preview__info-body">
                 {{ $eco->excerpt }}
-                </a>
+                </div>
                 <a href="https://wash2go.ae/page/why-eco-wash" class="card-preview__info-lable">
                   Benefits
                 </a>
