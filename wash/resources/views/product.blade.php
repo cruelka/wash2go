@@ -17,7 +17,7 @@
             {{$data->first()->name}}
           </div>
           <div class="product__price">
-              {{$data->first()->price}}
+              {{$data->first()->price}} AED
           </div>
 
           <div class="product__actions">
@@ -68,7 +68,7 @@
 <div class="row mt-5">
   <div class="col-lg-4">
     <p class="product__suggestion">
-      Add some Va Va Voom to your order with these exclusive add on’s
+      Check more product in  {{$data->first()->cats->name}}
     </p>
       
   </div>
