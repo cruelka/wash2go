@@ -54603,7 +54603,7 @@ if(!$('body .so-modal')){
 
     $(document).ready(function () {
 
-        if (getCookie('bookingform') != null) {
+        if (JSON.parse(getCookie('bookingform')) != null) {
             $('.booking-steps__restore').append('\n            <div class="booking-steps__restore-inner">\n                Restore previous booking\n            </div>\n            ');
         }
     });
@@ -54758,7 +54758,7 @@ if(!$('body .so-modal')){
         $('.booking-steps__success').show();
         $('.booking-steps__navigation').hide();
         $('.booking-steps__heading').hide();
-        setCookie('bookingform', null, 7);
+        setCookie('bookingform', JSON.stringify(null), 7);
     }
 
     window.soBookingForm = {};

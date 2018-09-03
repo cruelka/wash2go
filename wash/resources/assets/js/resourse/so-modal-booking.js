@@ -386,7 +386,7 @@
       $(document).ready(function(){
         
 
-        if(getCookie('bookingform')!=null){
+        if(JSON.parse(getCookie('bookingform'))!=null){
             $('.booking-steps__restore').append(`
             <div class="booking-steps__restore-inner">
                 Restore previous booking
@@ -555,7 +555,7 @@
         $('.booking-steps__success').show();
         $('.booking-steps__navigation').hide();
         $('.booking-steps__heading').hide();
-        setCookie('bookingform',null,7);
+        setCookie('bookingform',JSON.stringify(null),7);
     }
 
 
