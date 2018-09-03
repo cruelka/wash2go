@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
+
 
 <div class="shopping-card">
     <p class="shopping-card__title">
@@ -8,9 +10,10 @@
     </p>
     <div class="row">
         <div class="col-lg-6">
+        <div class="shopping-card__list">
         @foreach($items as $item)
 
-        <div class="shopping-card__list">
+     
           <div class="shopping-card__item">
             <div class="shopping-card__item-prev">
               <img src="/storage/{{$item->subItems[key($item->subItems)]->options['description']}}" alt="Product" class="shopping-card__item-prev-img">
@@ -31,9 +34,10 @@
                 </span>
             </div>
           </div>
+   
+        @endforeach
         </div>
 
-        @endforeach
         </div>
       <div class="col-lg-6">
           <div class="button button_red">
@@ -57,5 +61,6 @@
       </div>
     </div>
     
+  </div>
   </div>
   @endsection
