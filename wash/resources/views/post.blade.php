@@ -10,7 +10,11 @@
                 </div>
                 <div class="col-lg-10">
                     <div class="news__item-inner">
-                        <img class="news__item-img" src="/storage/{{$post->image}}" alt="Image">
+
+                        <a href="/post/water-supply-threats" class="news-card__img-wrapper">
+                            <div class="news-card__img" style="background: url('/storage/{{$post->image}}')">
+                            </div>
+                        </a>
 
                         <div class="news-card__title">
                             {{$post->title}}
