@@ -61,6 +61,7 @@
   
   <div class="sector">
   <div class="row">
+     {{ dd($data)}}
     @foreach($data->product as $product)
   <div class="col-lg-4 col-md-4">
       <div class="product-card product-card_square">
