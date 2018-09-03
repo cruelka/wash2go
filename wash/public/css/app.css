@@ -9972,6 +9972,10 @@ button.close {
   margin-top: 20px;
 }
 
+.review .owl-dots {
+  display: none !important;
+}
+
 .owl-item {
   float: left;
 }
