@@ -61,7 +61,7 @@
   
   <div class="sector">
   <div class="row">
-      @if($data->first())
+      @if($data->first()->product )
     @foreach($data->first()->product as $product)
   <div class="col-lg-4 col-md-4">
       <div class="product-card product-card_square">
