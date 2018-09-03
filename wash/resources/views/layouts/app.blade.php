@@ -102,11 +102,12 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                   <ul class="footer__list">
-                    
-                    <li class="footer__item" >Interior</li>
-                    <li class="footer__item" >Exterior</li>
-                    <li class="footer__item" >Accessories</li>
-                    <li class="footer__item" >Combo Pack</li>
+
+
+                      <li class="footer__item" ><a href="/category/interior">Interior</a></li>
+                      <li class="footer__item" ><a href="/category/exterior">Exterior</a></li>
+                      <li class="footer__item" ><a href="/category/accessories">Accessories</a></li>
+                      <li class="footer__item" ><a href="/category/combo-pack">Combo Pack</a></li>
                   </ul>
                 </div>
           
@@ -514,21 +515,21 @@
             </div>
   
             <div class="navigation-modal__sub">
-                <div class="navigation-modal__item">
+                <a href="/category/interior" class="navigation-modal__item">
                 <img src="{{asset('images/icons/categories/1.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Interior
-                </div>
+                </a>
 
-                <div class="navigation-modal__item">
+                <a href="/category/exterior"  class="navigation-modal__item">
                 <img src="{{asset('images/icons/categories/2.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Exterior
-                </div>
+                </a>
 
-                <div class="navigation-modal__item">
+                <a href="/category/accessories"  class="navigation-modal__item">
                   <img src="{{asset('images/icons/categories/3.svg')}}" alt="Accessories" class="navigation-modal__item-i">  Accessories
-                </div>
+                </a>
 
-                <div class="navigation-modal__item">
+                <a href="/category/combo-pack"  class="navigation-modal__item">
                 <img src="{{asset('images/icons/categories/4.svg')}}" alt="Accessories" class="navigation-modal__item-i"> Combo Pack
-                </div>
+                </a>
                 
               </div>
             
