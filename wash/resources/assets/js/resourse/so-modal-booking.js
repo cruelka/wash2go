@@ -509,6 +509,8 @@
             data: formData,
             processData: false,
             contentType: false,
+        }).done(function(data){
+            reset();
         });
         
     };
