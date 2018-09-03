@@ -23,7 +23,7 @@ class CartController extends Controller
             $price = $product->price,
             $options = [],
             $taxable = true,
-            $lineItem = true
+            $lineItem = false
 
         );
 
