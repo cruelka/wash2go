@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Cproduct;
 
-class ProductController extends Controller
+class CproductController extends Controller
 {
 
     public function index()
