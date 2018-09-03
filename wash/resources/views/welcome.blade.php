@@ -447,12 +447,12 @@
               <div class="card-preview__info-heading">
                     {{$eco->title}}
               </div>
-                <div class="card-preview__info-body">
+                <a href="https://wash2go.ae/page/why-eco-wash"  class="card-preview__info-body">
                 {{ $eco->excerpt }}
-                </div>
-                <div class="card-preview__info-lable">
+                </a>
+                <a href="https://wash2go.ae/page/why-eco-wash" class="card-preview__info-lable">
                   Benefits
-                </div>
+                </a>
                 <a href="https://wash2go.ae/page/why-eco-wash" class="card-preview__info-link">
                   More Information <img class="card-preview__info-link-i" src="{{asset('images/icons/arrow-right_green.svg')}}" alt="Arrow">
                 </a>
