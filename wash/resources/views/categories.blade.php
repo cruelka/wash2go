@@ -61,6 +61,7 @@
   
   <div class="sector">
   <div class="row">
+      {{dd($data->first()->product)}}
       @if(!empty($data->first()->product))
     @foreach($data->first()->product as $product)
   <div class="col-lg-4 col-md-4">
