@@ -13,7 +13,7 @@
         <div class="shopping-card__list">
           <div class="shopping-card__item">
             <div class="shopping-card__item-prev">
-              <img src="/storage/{{$item->subItems->description}}" alt="Product" class="shopping-card__item-prev-img">
+              <img src="/storage/{{$item->subItems[key($item->subItems)]->options['description']}}" alt="Product" class="shopping-card__item-prev-img">
             </div>
             <div class="shopping-card__item-title">
                 {{$item->name}}
