@@ -10,9 +10,7 @@ class CartController extends Controller
 {
     public function showCart()
     {  dd(LaraCart::getItems());
-        foreach($items =  as $item) {
 
-        }
     }
     public function addCart(Product $product)
     {
