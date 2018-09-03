@@ -307,13 +307,13 @@
   <div class="adventages sector">
 
 
-    <div class="row mt-2">
+    <div class="row mt-2" >
       <div class="col-lg-3 col-md-3">
         <div class="adventages__item" data-aos="fade-right">
           <div class="adventages__item-icon">
             <img class="adventages__item-icon-img" alt="Icon" src="{{ asset('images/icons/adventages/1.svg') }}">
           </div>
-          <div class="adventages__item-heading" data-aos="fade-right">
+          <div class="adventages__item-heading" >
               ECO-FRIENDLY
           </div>
           <div class="adventages__item-body">
@@ -322,7 +322,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-3">
-        <div class="adventages__item">
+        <div class="adventages__item" data-aos="fade-right">
             <div class="adventages__item-icon">
                 <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/adventages/3.svg')}}">
             </div>
@@ -335,7 +335,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-md-3">
-          <div class="adventages__item">
+          <div class="adventages__item" data-aos="fade-left">
               <div class="adventages__item-icon">
                   <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/adventages/2.svg')}}">
               </div>
@@ -349,7 +349,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-3">
-            <div class="adventages__item">
+            <div class="adventages__item" data-aos="fade-left">
                 <div class="adventages__item-icon">
                     <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/adventages/4.svg')}}">
                 </div>
@@ -366,12 +366,12 @@
 
   <div class="row mt-5">
     <div class="col-xs-12 col-md-6">
-      <div class="card-preview__info-image-bg-wrapper">
+      <div class="card-preview__info-image-bg-wrapper" data-aos="fade-right">
         <a href="/page/{{$why->slug}}" class="card-preview__info-image-bg" style="background-image:url(/storage/{{$why->image}})"></a>
       </div>
       </div>
     <div class="col-xs-12 col-md-6">
-      <div class="card-preview__info">
+      <div class="card-preview__info" data-aos="fade-left">
         <div class="card-preview__info-inner">
             <div class="card-preview__info-heading">
                {{$why->title}}
