@@ -77,7 +77,7 @@
   <div class="row">
       @if($data->first()->product->first())
     @foreach($data->first()->product as $product)
-  <div class="col-xs-12 col-md-4">
+  <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="product-card product-card_square">
             <div class="product-card__img" style="background: url('/storage/{{$product->image}}');">
               <div class="product-card__add-to-card-b">
