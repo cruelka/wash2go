@@ -57,5 +57,5 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::get('/category/{slug}', 'CproductController@show');
 Route::get('/product/{id}', 'ProductController@show');
 
-Route::get('/cart','CartController@show');
+Route::get('/cart','CartController@showCart');
 Route::get('/cart/{product}','CartController@addCart');
