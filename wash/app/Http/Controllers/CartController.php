@@ -17,17 +17,22 @@ class CartController extends Controller
     }
     public function addCart(Product $product)
     {
-        LaraCart::add(
+        $item = LaraCart::add(
             $product->id,
             $name = $product->name,
             $qty = 1,
             $price = $product->price,
             $options = [],
             $taxable = true,
-            $lineItem = false,
-            $image =$product->image
+            $lineItem = false
+
 
         );
+        $item->addSubItem([
+            'description' =>  $product->image, // this line is not required!
+            'price' => 0,
+            'qty' => 0
+        ]);
 
         echo 'success';
 
