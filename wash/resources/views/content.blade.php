@@ -29,22 +29,14 @@
                                 Last news
                             </div>
                             <div class="sidebar__item-body">
-                                <a href="/" class="sidebar__news">
-                                    <div class="sidebar__news-img" style="background:url(/storage/pages/August2018/Mw0I0BoZHeUJ0IFNnQlE.png)"></div>
-                                    <div class="sidebar__news-title">Some news</div>
-                                    <div class="sidebar__news-tags">Some tags</div>
+                                @foreach($posts as $post)
+                                <a href="/post/{{$post->slug}}" class="sidebar__news">
+                                    <div class="sidebar__news-img" style="background:url(/storage/{{$post->image}})"></div>
+                                    <div class="sidebar__news-title">{{$post->title}}</div>
+                                    <div class="sidebar__news-tags">{{$post->meta_keywords}}</div>
                                 </a>
-                                <a href="/" class="sidebar__news">
-                                    <div class="sidebar__news-img" style="background:url(/storage/pages/August2018/Mw0I0BoZHeUJ0IFNnQlE.png)"></div>
-                                    <div class="sidebar__news-title">Some news</div>
-                                    <div class="sidebar__news-tags">Some tags</div>
-                                </a>
-                                <a href="/" class="sidebar__news">
-                                    <div class="sidebar__news-img" style="background:url(/storage/pages/August2018/Mw0I0BoZHeUJ0IFNnQlE.png)"></div>
-                                    <div class="sidebar__news-title">Some news</div>
-                                    <div class="sidebar__news-tags">Some tags</div>
-                                </a>
-                                
+
+                                @endforeach
                             </div>
                         </div>
 
