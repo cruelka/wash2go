@@ -11,7 +11,7 @@ class CartController extends Controller
     public function showCart()
     {
         foreach($items = LaraCart::getItems() as $item) {
-             echo $item->id;
+              dd($item);
         }
     }
     public function addCart(Product $product)
