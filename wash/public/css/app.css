@@ -8551,7 +8551,7 @@ button.close {
   width: auto;
   display: inline-block;
   cursor: pointer;
-  color: #0f1319;
+  color: #3E4C5B;
   border: 1px solid #E8E8E8;
 }
 
@@ -8590,7 +8590,7 @@ button.close {
 }
 
 .welcome-desc {
-  background: #0f1319;
+  background: #3E4C5B;
   width: 100%;
   height: 280px;
   display: table;
@@ -8632,7 +8632,7 @@ button.close {
 .welcome-fullscreen {
   max-width: 1680px;
   margin: 0 auto;
-  background: #0f1319;
+  background: #3E4C5B;
   position: relative;
   width: 100%;
   padding-top: 0 !important;
@@ -8673,7 +8673,7 @@ button.close {
   font-size: 1.4em;
   width: 100%;
   padding: 20px;
-  color: black;
+  color: #3E4C5B;
   text-align: center;
   margin: 0;
 }
@@ -8753,7 +8753,7 @@ button.close {
 }
 
 .footer {
-  background: #0f1319;
+  background: #3E4C5B;
   width: 100%;
   padding: 40px 0;
   color: white;
@@ -8821,6 +8821,8 @@ button.close {
   cursor: pointer;
   padding: 0 10px;
   color: white;
+  text-transform: uppercase;
+  font-size: .9em;
 }
 
 .header__nav:hover {
@@ -8829,12 +8831,12 @@ button.close {
 
 .header__nav_wrapped {
   background: #48d77a;
-  border: 1px solid #82e6a5;
+  border: 1px solid #82e6a5 !important;
   border-radius: 10px;
   font-weight: bold;
   -webkit-box-shadow: 0px 1px 1px #1bb952;
           box-shadow: 0px 1px 1px #1bb952;
-  color: white;
+  color: white !important;
 }
 
 .header__nav_wrapped:hover {
@@ -8843,6 +8845,7 @@ button.close {
   -webkit-box-shadow: 0px 1px 1px #0d652c;
           box-shadow: 0px 1px 1px #0d652c;
   color: white;
+  text-decoration: none;
 }
 
 .header__nav_wrapped:hover {
@@ -8855,16 +8858,16 @@ button.close {
 
 .so-header_scrolled {
   background: #ffffff;
-  color: #0f1319;
+  color: #3E4C5B;
   border-bottom: 1px solid #f0f0f0;
 }
 
 .so-header_scrolled .header__nav_wrapped {
-  border-color: #0f1319;
+  border-color: #3E4C5B;
 }
 
 .so-header_scrolled .header__nav {
-  color: black;
+  color: #3E4C5B;
 }
 
 .header__logo {
@@ -14059,7 +14062,7 @@ button.close {
 }
 
 a {
-  color: #0f1319;
+  color: #3E4C5B;
 }
 
 a:hover {
