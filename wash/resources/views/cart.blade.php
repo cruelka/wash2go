@@ -13,9 +13,8 @@
         <div class="shopping-card__list">
           <div class="shopping-card__item">
             <div class="shopping-card__item-prev">
-              <img src="/storage/{{LaraCart::getAttribute('image')}}" alt="Product" class="shopping-card__item-prev-img">
+              <img src="/storage/{{$item->subItems->description}}" alt="Product" class="shopping-card__item-prev-img">
             </div>
-              {{ LaraCart::getAttribute('image')}}
             <div class="shopping-card__item-title">
                 {{$item->name}}
             </div>
