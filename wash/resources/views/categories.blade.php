@@ -15,13 +15,13 @@
             Interior
           </li>
 
-          <li class="vertical-navigation__item vertical-navigation__item_toplevel@if($data->first()->slug == 'exterior') vertical-navigation__item_active @endif ">
+          <li class="vertical-navigation__item vertical-navigation__item_toplevel @if($data->first()->slug == 'exterior') vertical-navigation__item_active @endif ">
             Exterior
           </li>
-          <li class="vertical-navigation__item vertical-navigation__item_toplevel@if($data->first()->slug == 'accessories') vertical-navigation__item_active @endif ">
+          <li class="vertical-navigation__item vertical-navigation__item_toplevel @if($data->first()->slug == 'accessories') vertical-navigation__item_active @endif ">
             Accessories
           </li>
-          <li class="vertical-navigation__item vertical-navigation__item_toplevel@if($data->first()->slug == 'combo-pack') vertical-navigation__item_active @endif ">
+          <li class="vertical-navigation__item vertical-navigation__item_toplevel @if($data->first()->slug == 'combo-pack') vertical-navigation__item_active @endif ">
             Combo Pack
           </li>
         </ul>
