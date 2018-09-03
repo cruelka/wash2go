@@ -13,7 +13,7 @@
               
               <div class="booking-steps__item booking-steps__item_active" id="booking-steps__item-1">
                 <div class="booking-steps__heading">Choose Location</div>
-                <div class="so-modal__booking-form__sub-heading">Its Easy to BOOK Car Wash</div>
+                <div class="so-modal__booking-form__sub-heading" style="font-weight: bold">Car Wash Appointment</div>
                 <div class="booking-steps__body">
                   <div class="row">
                     
