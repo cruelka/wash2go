@@ -363,10 +363,12 @@
   </div>
 
   <div class="row mt-5">
-    <div class="col-lg-6 col-md-6">
-      <img  class="card-preview__info-image" src="/storage/{{$why->image}}" alt="Car">
-    </div>
-    <div class="col-lg-6 col-md-6">
+    <div class="col-xs-12 col-md-6">
+      <div class="card-preview__info-image-bg-wrapper">
+        <a href="/page/{{$why->slug}}" class="card-preview__info-image-bg" style="background-image:url(/storage/{{$why->image}})"></a>
+      </div>
+      </div>
+    <div class="col-xs-12 col-md-6">
       <div class="card-preview__info">
         <div class="card-preview__info-inner">
             <div class="card-preview__info-heading">
@@ -437,7 +439,7 @@
 
   <div class="row mt-5">
 
-      <div class="col-lg-6 col-md-6">
+      <div class="col-xs-12 col-md-6">
         <div class="card-preview__info">
           <div class="card-preview__info-inner">
               <div class="card-preview__info-heading">
@@ -457,8 +459,11 @@
         </div>
       </div>
 
-      <div class="col-lg-6 col-md-6">
-          <img  class="card-preview__info-image" src="/storage/{{$eco->image}}" alt="Car">
+      <div class="col-xs-12 col-md-6">
+        <div class="card-preview__info-image-bg-wrapper">
+        <a href="https://wash2go.ae/page/why-eco-wash" class="card-preview__info-image-bg" style="background-image:url(/storage/{{$eco->image}})"></a>
+        </div>
+      
         </div>
     </div>
 
@@ -674,9 +679,10 @@
                       <div class="news-card__additional">
                           {{ \Carbon\Carbon::parse($post->created_at)->format('d/M/y')}}
                       </div>
-                      <div class="news-card__img" style="background: url('/storage/{{$post->image}}')">
-
-                      </div>
+                      <a href="/post/{{$post->slug}}" class="news-card__img-wrapper">
+                        <div class="news-card__img" style="background: url('/storage/{{$post->image}}')">
+                        </div>
+                      </a>
                       <div class="news-card__description">
                           {{ $post->excerpt }}
                       </div>

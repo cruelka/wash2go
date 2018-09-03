@@ -93,3 +93,27 @@
 .card-preview__info-image-wrapper {
     display: flex;
 }
+
+.card-preview__info-image-bg {
+    height: 234px;
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    background-size: cover;
+    transition: all .2s;
+}
+
+.card-preview__info-image-bg:hover {
+    transform: scale(1.2,1.2);
+}
+
+.card-preview__info-image-bg-wrapper {
+    height: 234px;
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    overflow: hidden;
+}
