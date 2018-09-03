@@ -129,6 +129,9 @@
 
     function changePage(page,required){
 
+        $('.booking-steps__contacts').show();
+        $('.booking-steps__success').hide();
+
         if(required && required=='bodytype'){
             let checkSelection = 0;
 
@@ -543,6 +546,11 @@
             }
             
         });
+    }
+
+    function reset(){
+        $('.booking-steps__contacts').hide();
+        $('.booking-steps__success').show();
     }
 
 

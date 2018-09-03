@@ -342,10 +342,15 @@
 
                 <div class="booking-steps__heading">Confirm</div>
 
+                <div class="booking-steps__validation booking-steps__validation">
+                  Thank you!
+                </div>
+
                 <div id="booking-steps__confirm-data">
 
                 </div>
 
+                <div class="booking-steps__contacts">
                 
                 <div>Contact information</div>
 
@@ -389,6 +394,8 @@
                   <div id="booking-form__errors"></div>
                   <div class="btn btn-success" onclick="soBookingForm.post()">Confirm</div>
                 </form>
+
+                </div>
 
               </div>
 
