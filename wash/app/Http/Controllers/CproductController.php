@@ -16,6 +16,6 @@ class CproductController extends Controller
     public function show($slug)
     {
         $data = Cproduct::with('product')->where('slug', $slug)->get();
-        return view('categories',compact( 'data'));
+        return view('categories' , compact('data'));
     }
 }
