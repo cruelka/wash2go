@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b8b079a7b8523c68fbe413c494c36f6",
+    "content-hash": "a52dd9b1874dc76603fc5f202676575f",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -370,6 +370,46 @@
                 "performance"
             ],
             "time": "2018-08-23T12:00:19+00:00"
+        },
+        {
+            "name": "danielmadu/laravel-jivochat",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/danielmadu/laravel-jivochat.git",
+                "reference": "8a66b53952dbd632103efb2f0bb6ac0c6c15c068"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/danielmadu/laravel-jivochat/zipball/8a66b53952dbd632103efb2f0bb6ac0c6c15c068",
+                "reference": "8a66b53952dbd632103efb2f0bb6ac0c6c15c068",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "DanielMadu\\JivoChat\\JivoChatServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DanielMadu\\JivoChat\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "danielmadu",
+                    "email": "daniel.madureira.batista@gmail.com"
+                }
+            ],
+            "description": "Custom Blade directive for JivoChat",
+            "time": "2017-11-24T00:09:05+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
