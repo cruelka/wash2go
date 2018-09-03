@@ -10,12 +10,12 @@ class Productatr extends Model
 {
     public function attr()
     {
-        return $this->HasOne('App\Attrs');
+        return $this->HasOne('App\Attrs' ,'id');
 
     }
     public function product()
     {
-        return $this->HasOne('App\Product');
+        return $this->HasOne('App\Product' , 'id');
 
     }
 }
