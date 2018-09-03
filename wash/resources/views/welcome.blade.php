@@ -1268,6 +1268,7 @@
 
 <script>
     $(document).ready(function(){
+      
       $(".welcome-fullscreen-owl").owlCarousel({
       loop:true,
       margin:0,
@@ -1285,7 +1286,12 @@
         
     }
 
-    $('.review__inner').owlCarousel({
+    
+  });
+
+
+
+  $('.review__inner').owlCarousel({
       loop:true,
       margin:0,
       nav:false,
@@ -1300,8 +1306,8 @@
           items: 2
         }
         
-    }
-  });
+    });
+    
     });
 
     
