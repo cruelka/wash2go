@@ -364,8 +364,10 @@
 
   <div class="row mt-5">
     <div class="col-xs-12 col-md-6">
-      <a href="/page/{{$why->slug}}" class="card-preview__info-image-bg" style="background-image:url(/storage/{{$why->image}})"></a>
-    </div>
+      <div class="card-preview__info-image-bg-wrapper">
+        <a href="/page/{{$why->slug}}" class="card-preview__info-image-bg" style="background-image:url(/storage/{{$why->image}})"></a>
+      </div>
+      </div>
     <div class="col-xs-12 col-md-6">
       <div class="card-preview__info">
         <div class="card-preview__info-inner">
@@ -677,8 +679,9 @@
                       <div class="news-card__additional">
                           {{ \Carbon\Carbon::parse($post->created_at)->format('d/M/y')}}
                       </div>
-                      <div class="news-card__img" style="background: url('/storage/{{$post->image}}')">
-
+                      <div class="news-card__img-wrapper">
+                        <div class="news-card__img" style="background: url('/storage/{{$post->image}}')">
+                        </div>
                       </div>
                       <div class="news-card__description">
                           {{ $post->excerpt }}
