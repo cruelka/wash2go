@@ -61,10 +61,10 @@
   
   <div class="sector">
   <div class="row">
-    
+    @foreach($data->product as $product)
   <div class="col-lg-4 col-md-4">
       <div class="product-card product-card_square">
-            <div class="product-card__img" style="background: url({{asset('images/example/1.jpg')}});">
+            <div class="product-card__img" style="background: url('/storage/product/'{{$product->image}});">
               <div class="product-card__add-to-card-b">
                 <div class="button button_red">
                   <span class="button__icon">
@@ -83,18 +83,19 @@
             </div>
             <div class="product-card__body">
               <div class="product-card__title">
-                WINDOW CLEAR
+                {{$product->title}}
               </div>
               <div class="product-card__price">
-                66 AED
+                  {{$product->price}}
               </div>
               <div class="product-card__description">
-                300g - Hokkaido, Japan
+                  {{$product->name}}
               </div>
             </div>
             
       </div>
   </div>
+      @endforeach
   
 
 </div>
