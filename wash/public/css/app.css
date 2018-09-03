@@ -13624,6 +13624,8 @@ button.close {
   width: 50%;
   float: left;
   padding: 10px;
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 
 .sidebar__news_squ .sidebar__news-img {
