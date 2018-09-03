@@ -553,6 +553,8 @@
     function reset(){
         $('.booking-steps__contacts').hide();
         $('.booking-steps__success').show();
+        $('.booking-steps__navigation').hide();
+        $('.booking-steps__heading').hide();
     }
 
 

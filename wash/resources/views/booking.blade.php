@@ -344,6 +344,7 @@
 
                 <div class="booking-steps__success">
                   <div>Thank you!</div>
+                  <br>
                   <a href="/" class="btn btn-success">Get it</a>
 
                 </div>
