@@ -8,7 +8,7 @@
   <div class="row mt-5">
     <div class="col-lg-6">
       <div class="product__image">
-        <img src="{{asset('images/example/1.jpg')}}" alt="Product" class="product__image-img">
+        <img src="/storage/{{$data->first()->image}}" alt="Product" class="product__image-img">
       </div>
     </div>
     <div class="col-lg-6">
@@ -48,16 +48,16 @@
           </p>
 
           <ul class="product__list">
-            <li class="product__list-item product__list-item_arrow">Brand: Michelen</li>
-            <li class="product__list-item product__list-item_arrow">Country: Japan</li>
+            <li class="product__list-item product__list-item_arrow">Brand:     {{$data->first()->brand}}</li>
+            <li class="product__list-item product__list-item_arrow">Country:     {{$data->first()->origin}}</li>
           </ul>
-
+           <!--
           <ul class="product__list">
               <li class="product__list-item product__list-item_star">Super 1</li>
               <li class="product__list-item product__list-item_star">Super 2</li>
               <li class="product__list-item product__list-item_star">Super 3</li>
           </ul>
-
+         -->
         </div>
     </div>
 
