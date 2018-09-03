@@ -164,6 +164,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        DanielMadu\JivoChat\JivoChatServiceProvider::class,
+
 
         /*
          * Package Service Providers...
