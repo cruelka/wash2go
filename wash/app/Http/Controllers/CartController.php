@@ -20,7 +20,7 @@ class CartController extends Controller
             $product->id,
             $name = $product->name,
             $qty = 1,
-            $price = '0.00',
+            $price = $product->price,
             $options = [],
             $taxable = true,
             $lineItem = false
