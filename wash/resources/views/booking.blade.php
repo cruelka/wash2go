@@ -343,7 +343,9 @@
                 <div class="booking-steps__heading">Confirm</div>
 
                 <div class="booking-steps__validation booking-steps__validation">
-                  Thank you!
+                  <div>Thank you!</div>
+                  <a href="/" class="btn btn-success">Get it</a>
+
                 </div>
 
                 <div id="booking-steps__confirm-data">

@@ -54417,6 +54417,9 @@ if(!$('body .so-modal')){
 
     function changePage(page, required) {
 
+        $('.booking-steps__contacts').show();
+        $('.booking-steps__success').hide();
+
         if (required && required == 'bodytype') {
             var checkSelection = 0;
 
@@ -54746,6 +54749,11 @@ if(!$('body .so-modal')){
                 $('.booking-steps__time-errors').empty().append('This time busy, please take another one');
             }
         });
+    }
+
+    function reset() {
+        $('.booking-steps__contacts').hide();
+        $('.booking-steps__success').show();
     }
 
     window.soBookingForm = {};

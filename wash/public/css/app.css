@@ -9870,6 +9870,10 @@ button.close {
   margin-bottom: 20px;
 }
 
+.booking-steps__validation {
+  border: 2px solid #2ed267;
+}
+
 .review {
   background: #1BB7CD;
   padding: 30px 30px 10px;
