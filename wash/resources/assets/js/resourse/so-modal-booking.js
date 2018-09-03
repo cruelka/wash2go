@@ -555,6 +555,7 @@
         $('.booking-steps__success').show();
         $('.booking-steps__navigation').hide();
         $('.booking-steps__heading').hide();
+        setCookie('bookingform',null,7);
     }
 
 
