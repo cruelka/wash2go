@@ -19,7 +19,7 @@ class CreateProductatrsTable extends Migration
             $table->integer('atrr')->unsigned();
 
             $table->foreign('product')->references('id')->on('products')->onDelete('cascade');
-            $table->foreign('atrr')->references('id')->on('atrrs')->onDelete('cascade');
+            $table->foreign('atrr')->references('id')->on('attrs')->onDelete('cascade');
 
             $table->timestamps();
         });
