@@ -14048,10 +14048,16 @@ body {
 
 .booking-mobile {
   position: fixed;
-  right: 40px;
+  left: 40px;
   bottom: 40px;
   width: 90px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .booking-mobile {
+    display: none;
+  }
 }
 
 .booking-mobile__img {

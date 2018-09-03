@@ -479,7 +479,7 @@
 
     <div class="row mt-5">
 
-      <div class="col-lg-3 col-md-3 col-sm-3  col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
         <a href="/category/interior" class="adventages__item adventages__item_wrapped"  data-aos="fade-right">
           <div class="adventages__item-icon">
             <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/1.svg')}}">
@@ -489,7 +489,7 @@
           </div>
         </a>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3  col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3  col-xs-6">
           <a href="/category/exterior" class="adventages__item adventages__item_wrapped" data-aos="fade-right">
             <div class="adventages__item-icon">
               <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/2.svg')}}">
@@ -499,7 +499,7 @@
             </div>
           </a>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3  col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
           <a href="/category/accessories" class="adventages__item adventages__item_wrapped" data-aos="fade-left">
             <div class="adventages__item-icon">
               <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/3.svg')}}">
@@ -509,7 +509,7 @@
             </div>
           </a>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3  col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
           <a href="/category/combo-pack" class="adventages__item adventages__item_wrapped" data-aos="fade-left">
             <div class="adventages__item-icon">
               <img class="adventages__item-icon-img" alt="Icon" src="{{asset('images/icons/categories/4.svg')}}">

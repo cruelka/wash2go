@@ -125,10 +125,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b947', end
 
 .booking-mobile {
     position: fixed;
-    right: 40px;
+    left: 40px;
     bottom: 40px;
     width: 90px;
     cursor: pointer;
+
+    @media screen and (max-width:$lg) { 
+      
+    }
+
+    @media screen and (max-width:$md) { 
+        display: none;
+    }
+
+    @media screen and (max-width:$sm) { 
+
+    }
  }
 
 .booking-mobile__img {
