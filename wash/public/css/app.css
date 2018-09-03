@@ -9355,6 +9355,11 @@ button.close {
   transition: all .2s;
 }
 
+.card-preview__info-image-bg:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
 .card-preview__info-image-bg-wrapper {
   height: 234px;
   display: block;
