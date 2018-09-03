@@ -458,7 +458,10 @@
       </div>
 
       <div class="col-xs-12 col-md-6">
-      <a href="https://wash2go.ae/page/why-eco-wash" class="card-preview__info-image-bg" style="background-image:url(/storage/{{$eco->image}})"></a>
+        <div class="card-preview__info-image-bg-wrapper">
+        <a href="https://wash2go.ae/page/why-eco-wash" class="card-preview__info-image-bg" style="background-image:url(/storage/{{$eco->image}})"></a>
+        </div>
+      
         </div>
     </div>
 

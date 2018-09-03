@@ -9356,6 +9356,17 @@ button.close {
   background-size: cover;
 }
 
+.card-preview__info-image-bg-wrapper {
+  height: 234px;
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  background-size: cover;
+}
+
 .heading {
   font-size: 2em;
   color: #3E4C5B;
