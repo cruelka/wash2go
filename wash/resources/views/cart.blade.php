@@ -24,6 +24,7 @@
                 <span class="button__body">
                   -
                 </span>
+                <span lass="button__body"> {{$item->qty}} </span>
                 <span class="button__body">
                   +
                 </span>

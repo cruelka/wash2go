@@ -11,7 +11,6 @@ class CartController extends Controller
     public function showCart()
     {
        $items = LaraCart::getItems();
-
         return view('cart', compact('items'));
 
     }
@@ -24,10 +23,9 @@ class CartController extends Controller
             $price = $product->price,
             $options = [],
             $taxable = true,
-            $lineItem = false
+            $lineItem = true
 
         );
-        LaraCart::setAttribute('image', $product->image);
 
         echo 'success';
 
