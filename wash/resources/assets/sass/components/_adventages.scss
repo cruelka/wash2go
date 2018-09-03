@@ -1,8 +1,6 @@
 .adventages__item {
 
-    padding: 30px 20px 0;
-    border: 1px solid #eaeaea;
-    border-radius: 20px;
+    
 
     @media screen and (max-width:$lg) { 
     
@@ -16,6 +14,13 @@
     @media screen and (max-width:$sm) { 
         
     }
+}
+
+.adventages__item_wrapped {
+    padding: 30px 20px 0;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    display: block;
 }
 
 .adventages__item-heading {
