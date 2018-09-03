@@ -1268,34 +1268,11 @@
 
 <script>
     $(document).ready(function(){
-      
-      $(".welcome-fullscreen-owl").owlCarousel({
+      $('.review__inner').owlCarousel({
       loop:true,
-      margin:0,
+      margin:20,
       nav:false,
-      autoplay:false,
-      autoplayTimeout:5000,
-      smartSpeed:450,
-      responsive:{
-        0:{
-            items:1
-        },
-        768: {
-          items: 1
-        }
-        
-    }
-
-    
-  });
-
-
-
-  $('.review__inner').owlCarousel({
-      loop:true,
-      margin:0,
-      nav:false,
-      autoplay:false,
+      autoplay:true,
       autoplayTimeout:5000,
       smartSpeed:450,
       responsive:{
@@ -1306,8 +1283,9 @@
           items: 2
         }
         
-    });
-    
+    }
+  });
+
     });
 
     
