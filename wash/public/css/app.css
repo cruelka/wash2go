@@ -9255,6 +9255,7 @@ button.close {
 
 .news-card__img-wrapper {
   width: 100%;
+  display: block;
   margin: 20px 0;
   overflow: hidden;
 }

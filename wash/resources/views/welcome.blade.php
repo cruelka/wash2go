@@ -679,10 +679,10 @@
                       <div class="news-card__additional">
                           {{ \Carbon\Carbon::parse($post->created_at)->format('d/M/y')}}
                       </div>
-                      <div class="news-card__img-wrapper">
+                      <a href="/post/{{$post->slug}}" class="news-card__img-wrapper">
                         <div class="news-card__img" style="background: url('/storage/{{$post->image}}')">
                         </div>
-                      </div>
+                      </a>
                       <div class="news-card__description">
                           {{ $post->excerpt }}
                       </div>
