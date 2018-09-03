@@ -15,6 +15,36 @@
 }
 
 .sidebar__item-body {
-    padding: 10px 20px;
+    padding: 10px ;
 }
 
+
+.sidebar__news {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+
+.sidebar__news-img {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    float: left;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.sidebar__news-title {
+    font-weight: bold;
+    color: $fresh;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar__news-tags {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
