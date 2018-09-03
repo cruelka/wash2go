@@ -80,7 +80,7 @@
         @foreach($more as $value)
   <div class="col-lg-3 col-md-3">
       <div class="product-card product-card_square">
-            <div class="product-card__img" style="background: url('/storage/{{$value->image}}');">
+            <a href="/product/{{$value->id}}" class="product-card__img" style="background: url('/storage/{{$value->image}}');">
               <div class="product-card__add-to-card-b">
                 <div class="button button_red">
                   <span class="button__icon">
@@ -96,11 +96,11 @@
                     New
                 </div>
               </div>
-            </div>
+            </a>
             <div class="product-card__body">
-              <div class="product-card__title">
+              <a href="/product/{{$value->id}}" class="product-card__title">
                   {{$value->title}}
-              </div>
+              </a>
               <div class="product-card__price">
                   {{$value->price}} AED
               </div>

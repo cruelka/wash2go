@@ -79,7 +79,7 @@
     @foreach($data->first()->product as $product)
   <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="product-card product-card_square">
-            <div class="product-card__img" style="background: url('/storage/{{$product->image}}');">
+            <a href="/product/{{$product->id}}" class="product-card__img" style="background: url('/storage/{{$product->image}}');">
               <div class="product-card__add-to-card-b">
                 <div class="button button_red">
                   <span class="button__icon">
@@ -95,17 +95,17 @@
                     New
                 </div>
               </div>
-            </div>
+            </a>
             <div class="product-card__body">
-              <div class="product-card__title">
+              <a href="/product/{{$product->id}}" class="product-card__title">
                 {{$product->title}}
-              </div>
+              </a>
               <div class="product-card__price">
                   {{$product->price}}
               </div>
-              <div class="product-card__description">
+              <a href="/product/{{$product->id}}"class="product-card__description">
                   {{$product->name}}
-              </div>
+              </a>
             </div>
             
       </div>
