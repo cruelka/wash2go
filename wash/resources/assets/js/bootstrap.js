@@ -44,6 +44,9 @@ window.getCookie = getCookie;
 
 require('owl.carousel');
 require('slick-carousel');
+
+window.AOS = require('aos');
+
 require('bootstrap/dist/js/bootstrap.bundle.min.js');
 window.moment = require('moment');
 require('eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js');

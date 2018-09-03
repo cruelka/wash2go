@@ -29,6 +29,8 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="{{ asset('images/favicon/ms-icon-144x144.png')}}">
   <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -307,11 +309,11 @@
 
     <div class="row mt-2">
       <div class="col-lg-3 col-md-3">
-        <div class="adventages__item">
+        <div class="adventages__item" data-aos="fade-right">
           <div class="adventages__item-icon">
             <img class="adventages__item-icon-img" alt="Icon" src="{{ asset('images/icons/adventages/1.svg') }}">
           </div>
-          <div class="adventages__item-heading">
+          <div class="adventages__item-heading" data-aos="fade-right">
               ECO-FRIENDLY
           </div>
           <div class="adventages__item-body">
@@ -1193,6 +1195,8 @@
     }
   });
 
+  AOS.init();
+
     });
 
     
@@ -1217,6 +1221,7 @@ $(".slider")
 
 
   var a = 0;
+
 $(window).scroll(function() {
 
   var oTop = $('#counter').offset().top - window.innerHeight;
