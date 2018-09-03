@@ -52,3 +52,5 @@ Route::post('/booking', 'HomeController@store');
 Route::post('/check', 'HomeController@checkTime');
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+Route::get('/category/{slug}', 'CproductController@show');
