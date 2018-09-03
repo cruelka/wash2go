@@ -18,6 +18,12 @@
     padding: 10px ;
 }
 
+.sidebar__item-body:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
 
 .sidebar__news {
     margin-bottom: 10px;
@@ -53,4 +59,21 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.sidebar__news_squ {
+    width: 50%;
+    float: left;
+    padding: 10px;
+
+    .sidebar__news-img {
+        float: none;
+        width: 100%;
+        padding-top: 100%;
+        height: initial;
+    }
+
+    .sidebar__news-title {
+        text-align: center;
+    }
 }
