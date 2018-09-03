@@ -11,13 +11,13 @@ class CartController extends Controller
     public function showCart()
     {
        $items = LaraCart::getItems();
-
+        dd($items);
         return view('cart', compact('items'));
 
     }
     public function addCart(Product $product)
     {
-        LaraCart::add(
+       $check = LaraCart::add(
             $product->id,
             $name = $product->name,
             $qty = 1,
@@ -28,6 +28,7 @@ class CartController extends Controller
             $image = $product->image
 
         );
+        dd($check);
         echo 'success';
 
     }
