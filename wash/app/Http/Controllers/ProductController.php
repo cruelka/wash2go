@@ -17,6 +17,7 @@ class ProductController extends Controller
     public function show($id)
     {
         $data = Product::with('cats')->where('id', $id)->get();
-        return view('product',compact( 'data'));
+        $more = Product::where('category',$data->first()->cats->id)->take(4)->get();
+        return view('product',compact( 'data' , 'more'));
     }
 }

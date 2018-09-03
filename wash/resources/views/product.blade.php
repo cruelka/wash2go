@@ -76,9 +76,11 @@
 
 
 <div class="row mt-5">
+    @if($more->first())
+        @foreach($more as $value)
   <div class="col-lg-3 col-md-3">
       <div class="product-card product-card_square">
-            <div class="product-card__img" style="background: url({{asset('images/example/1.jpg')}});">
+            <div class="product-card__img" style="background: url('storage/{{$value->image}}');">
               <div class="product-card__add-to-card-b">
                 <div class="button button_red">
                   <span class="button__icon">
@@ -97,18 +99,20 @@
             </div>
             <div class="product-card__body">
               <div class="product-card__title">
-                WINDOW CLEAR
+                  {{$value->title}}
               </div>
               <div class="product-card__price">
-                66 AED
+                  {{$value->price}} AED
               </div>
               <div class="product-card__description">
-                300g - Hokkaido, Japan
+                  {{$value->description}}
               </div>
             </div>
             
       </div>
   </div>
+        @endforeach
+        @endif
   
 
 </div>
