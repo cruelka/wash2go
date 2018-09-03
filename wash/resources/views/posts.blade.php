@@ -17,8 +17,10 @@
                         </div>-->
                         <div class="">
                             <div class="news__item-inner">
-                                <a  href="/post/{{ $post->slug }}">
-                                    <img class="news__item-img" src="/storage/{{$post->image}}" alt="Image">
+
+                                <a href="/post/{{ $post->slug }}" class="news-card__img-wrapper">
+                                    <div class="news-card__img" style="background: url('/storage/{{$post->image}}')">
+                                    </div>
                                 </a>
 
                                 <div class="news-card__lable">

@@ -8819,7 +8819,7 @@ button.close {
   margin-right: 20px;
   line-height: 40px;
   cursor: pointer;
-  padding: 0 20px;
+  padding: 0 10px;
   color: white;
 }
 
@@ -8828,7 +8828,21 @@ button.close {
 }
 
 .header__nav_wrapped {
-  border: 1px solid white;
+  background: #48d77a;
+  border: 1px solid #82e6a5;
+  border-radius: 10px;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 1px 1px #1bb952;
+          box-shadow: 0px 1px 1px #1bb952;
+  color: white;
+}
+
+.header__nav_wrapped:hover {
+  background: #37c168;
+  border: 1px solid #7ceaa3;
+  -webkit-box-shadow: 0px 1px 1px #0d652c;
+          box-shadow: 0px 1px 1px #0d652c;
+  color: white;
 }
 
 .header__nav_wrapped:hover {
@@ -14130,7 +14144,6 @@ body {
 
 .content__inner {
   padding-top: 40px;
-  padding-bottom: 20px;
 }
 
 .booking-mobile {

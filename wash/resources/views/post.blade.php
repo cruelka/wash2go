@@ -12,6 +12,7 @@
                     <div class="news__item-inner">
                         <img class="news__item-img" src="/storage/{{$post->image}}" alt="Image">
 
+                        
                         <div class="news-card__title">
                             {{$post->title}}
                         </div>
