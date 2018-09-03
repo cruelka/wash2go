@@ -40,8 +40,9 @@
               Filter 3
             </li>
           </ul>
+          -->
     </div>
-       -->
+
   </div>
 
   <div class="col-lg-9">
