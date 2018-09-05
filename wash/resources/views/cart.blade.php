@@ -11,7 +11,7 @@
     <div class="row">
         <div class="col-lg-6">
         <div class="shopping-card__list">
-         @if($items->first())
+         @if($items)
         @foreach($items as $item)
 
      
