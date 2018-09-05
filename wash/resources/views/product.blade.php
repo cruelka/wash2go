@@ -23,7 +23,7 @@
           <div class="product__actions">
 
           
-            <div class="button button_red">
+            <div class="button button_red" onclick="cart.add({{$data->first()->id}})">
                 <span class="button__icon">
                   <img class="button__icon-img" src="{{asset('images/icons/plus_white.svg')}}">
                 </span>
@@ -31,7 +31,7 @@
                   Add to cart
                 </span>
             </div>
-
+            <!--
             <div class="button">
                 <span class="button__icon">
                   <img class="button__icon-img" src="{{asset('images/icons/bookmarks_black.svg')}}">
@@ -40,7 +40,7 @@
                   Add to bookmarks
                 </span>
             </div>
-
+            -->
           </div>
 
           <p class="product__body">
