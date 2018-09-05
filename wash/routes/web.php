@@ -62,3 +62,5 @@ Route::get('/product/{id}', 'ProductController@show');
 Route::get('/cart','CartController@showCart');
 Route::get('/cart/{product}','CartController@addCart');
 Route::get('/clear','CartController@clearCart');
+Route::post('/cart/update','CartController@updateQty');
+Route::post('/cart/remove','CartController@updateQty');
