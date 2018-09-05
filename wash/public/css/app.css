@@ -9106,7 +9106,7 @@ button.close {
 }
 
 .shopping-card__total-big {
-  font-weight: Bold;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 992px) {
