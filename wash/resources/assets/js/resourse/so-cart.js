@@ -29,6 +29,8 @@ function removeItem(hash){
                 text: 'Some notification text',
             
             }).show();
+
+            console.log(Noty);
             
         } else {
             alert('Wrong');
