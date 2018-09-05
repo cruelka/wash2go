@@ -31,6 +31,10 @@
   <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script>
+    window.token = '{{ csrf_token() }}';
+  </script>
 </head>
 <body>
 
