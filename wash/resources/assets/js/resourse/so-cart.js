@@ -58,7 +58,7 @@ function addItem(i){
             var n = new Noty({
                 theme: 'relax',
                 type: 'success',
-                layout: 'bottomCenter',
+                layout: 'center',
                 text: 'Do you want to continue?',
                 buttons: [
                   Noty.button('YES', 'btn btn-success', function () {
