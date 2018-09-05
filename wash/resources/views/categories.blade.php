@@ -79,8 +79,7 @@
     @foreach($data->first()->product as $product)
   <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="product-card product-card_square">
-            <a href="/product/{{$product->id}}" class="product-card__img" style="background: url('/storage/{{$product->image}}');">
-              <div class="product-card__add-to-card-b">
+            <div class="product-card__add-to-card-b">
                 <div class="button button_red">
                   <span class="button__icon">
                     <img class="button__icon-img" src="{{asset('images/icons/plus_white.svg')}}">
@@ -89,7 +88,11 @@
                     Add to cart
                   </span>
                 </div>
-              </div>
+            </div>
+
+
+            <a href="/product/{{$product->id}}" class="product-card__img" style="background: url('/storage/{{$product->image}}');">
+              
               <div class="product-card__marked">
                 <div class="product-card__new">
                     New
