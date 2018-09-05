@@ -46,6 +46,7 @@ require('owl.carousel');
 require('slick-carousel');
 
 window.AOS = require('aos');
+window.Noty = require('noty');
 
 require('bootstrap/dist/js/bootstrap.bundle.min.js');
 window.moment = require('moment');
