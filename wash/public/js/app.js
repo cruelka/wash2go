@@ -27619,6 +27619,7 @@ __webpack_require__(145);
 
 __webpack_require__(146);
 __webpack_require__(147);
+__webpack_require__(195);
 
 __webpack_require__(148);
 __webpack_require__(149);
@@ -55880,6 +55881,67 @@ module.exports = function spread(callback) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */,
+/* 180 */,
+/* 181 */,
+/* 182 */,
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */,
+/* 191 */,
+/* 192 */,
+/* 193 */,
+/* 194 */,
+/* 195 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(jQuery) {
+(function ($) {
+
+    function addItem(i) {
+
+        $.ajax({
+            type: "GET",
+            url: '/cart/' + i,
+            headers: {
+                'X-CSRF-TOKEN': token
+            },
+            processData: false,
+            contentType: false
+
+        }).done(function (data) {
+            if (data == 'success') {
+                timeApprove = true;
+
+                $('.booking-steps__time-errors').empty().append('It is available time');
+            } else {
+                timeApprove = false;
+
+                $('.booking-steps__time-errors').empty().append('This time busy, please take another one');
+            }
+        });
+    }
+
+    window.cart = {};
+
+    window.cart.add = addItem;
+})(jQuery);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ })
 /******/ ]);

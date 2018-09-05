@@ -54,6 +54,7 @@ require('eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min
 
 require('./resourse/so-header');
 require('./resourse/so-modal');
+require('./resourse/so-cart');
 
 
 

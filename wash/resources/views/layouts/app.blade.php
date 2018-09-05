@@ -28,6 +28,10 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="{{ asset('images/favicon/ms-icon-144x144.png')}}">
   <meta name="theme-color" content="#ffffff">
+
+  <script>
+    window.token = '{{ csrf_token() }}';
+  </script>
 </head>
 <body>
     

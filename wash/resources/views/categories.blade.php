@@ -85,7 +85,7 @@
                   <span class="button__icon">
                     <img class="button__icon-img" src="{{asset('images/icons/plus_white.svg')}}">
                   </span>
-                  <span class="button__body">
+                  <span class="button__body" onclick="cart.add({{$product->id}})">
                     Add to cart
                   </span>
                 </div>
