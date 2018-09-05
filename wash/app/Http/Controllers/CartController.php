@@ -36,6 +36,17 @@ class CartController extends Controller
         echo 'success';
 
     }
+    public function updateQty(Request $request)
+    {
+        LaraCart::updateItem($request->hash, 'qty', $request->qty);
+
+    }
+    public function removeItem(Request $request)
+    {
+        LaraCart::removeItem($request->hash);
+
+
+    }
     
     public function clearCart()
     {

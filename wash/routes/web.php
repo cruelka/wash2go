@@ -43,7 +43,9 @@ Route::get('blog', function () {
 
 Route::get('page/{slug}', function($slug){
     $data = App\Page::where('slug', '=', $slug)->firstOrFail();
-    return view('content', compact('data'));
+    $posts = App\Post::take(3)->get();
+    $products = App\Product::take(4)->get();
+    return view('content', compact('data','posts','products'));
 });
 Route::get('/mail', 'HomeController@basic_email');
 Route::get('/booking', function () {
@@ -60,3 +62,5 @@ Route::get('/product/{id}', 'ProductController@show');
 Route::get('/cart','CartController@showCart');
 Route::get('/cart/{product}','CartController@addCart');
 Route::get('/clear','CartController@clearCart');
+Route::post('/cart/update','CartController@updateQty');
+Route::post('/cart/remove','CartController@updateQty');
