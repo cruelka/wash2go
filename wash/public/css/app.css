@@ -9086,6 +9086,15 @@ button.close {
 
 .shopping-card__item {
   margin-bottom: 20px;
+  border: 1px solid #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.shopping-card__item:after {
+  clear: both;
+  display: block;
+  content: '';
 }
 
 @media screen and (max-width: 992px) {

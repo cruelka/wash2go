@@ -33,6 +33,12 @@
                 <span class="button__body">
                   +
                 </span>
+                <span class="button__body">
+                  Remove
+                </span>
+            </div>
+            <div class="shopping-card__item-price">
+                {{$item->price}} AED
             </div>
           </div>
    
