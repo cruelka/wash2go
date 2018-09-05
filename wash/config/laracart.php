@@ -49,6 +49,7 @@ return [
     */
     'tax' => 0.5,
 
+    
     /*
     |--------------------------------------------------------------------------
     | Calculate tax per item, rather than subtotal
