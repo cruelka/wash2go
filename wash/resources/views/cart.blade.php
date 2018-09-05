@@ -72,10 +72,10 @@
 
       </div>
     </div>
-    {{
-    LaraCart::subTotal();
-LaraCart::taxTotal();
-LaraCart::total();
+
+    {{LaraCart::subTotal()}}
+{{LaraCart::taxTotal()}}
+{{LaraCart::total()}}
     }}
   </div>
   </div>
