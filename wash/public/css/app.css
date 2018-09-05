@@ -9097,6 +9097,18 @@ button.close {
   content: '';
 }
 
+.shopping-card__item-inner {
+  float: left;
+}
+
+.shopping-card__item-price-total {
+  margin-top: 10px;
+}
+
+.shopping-card__total-big {
+  font-weight: Bold;
+}
+
 @media screen and (max-width: 992px) {
   .adventages__item {
     margin-bottom: 20px;
