@@ -19,7 +19,7 @@
             <div class="shopping-card__item-prev">
               <img src="/storage/{{$item->subItems[key($item->subItems)]->options['description']}}" alt="Product" class="shopping-card__item-prev-img">
             </div>
-            <div>
+            <div class="shopping-card__item-inner">
               <div class="shopping-card__item-title">
                   {{$item->name}}
               </div>
@@ -38,8 +38,8 @@
                     Remove
                   </span>
               </div>
-              <div class="shopping-card__item-price">
-                  {{$item->price()}} AED
+              <div class="shopping-card__item-price-total">
+                  Total: {{$item->price}} AED
               </div>
             </div>
           </div>
@@ -48,6 +48,19 @@
              @else
             <div>Your cart is empty</div>
              @endif
+
+        <div class="shopping-card__total-wrapper">
+          <div>
+            Subtotal: 444 AED
+          </div>
+          <div>
+            Tax: 1 AED
+          </div>
+          <div class="shopping-card__total-big">
+            Total: 444 AED
+          </div>
+        </div>
+
         </div>
 
         </div>
