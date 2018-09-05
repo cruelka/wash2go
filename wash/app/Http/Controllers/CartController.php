@@ -11,7 +11,9 @@ class CartController extends Controller
     public function showCart()
     {
        $items = LaraCart::getItems();
+        dd($items);
         return view('cart', compact('items'));
+
 
     }
     public function addCart(Product $product)
