@@ -39,7 +39,7 @@
                   </span>
               </div>
               <div class="shopping-card__item-price">
-                  {{$item->price}} AED
+                  {{$item->price()}} AED
               </div>
             </div>
           </div>
@@ -72,7 +72,11 @@
 
       </div>
     </div>
-    
+    {{
+    LaraCart::subTotal();
+LaraCart::taxTotal();
+LaraCart::total();
+    }}
   </div>
   </div>
   @endsection
