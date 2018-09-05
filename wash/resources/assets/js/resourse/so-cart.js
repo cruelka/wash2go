@@ -24,7 +24,7 @@ function removeItem(hash){
     }).done(function(data) {
         if(data=='success'){
             alert('Done');
-            new Noty({
+            let noty = new Noty({
 
                 text: 'Some notification text',
             
