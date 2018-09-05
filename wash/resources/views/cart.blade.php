@@ -9,7 +9,7 @@
         Shopping cart
     </p>
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-xs-12 col-md-6">
         <div class="shopping-card__list">
          @if($items)
         @foreach($items as $item)
@@ -43,10 +43,10 @@
         </div>
 
         </div>
-      <div class="col-lg-6">
+      <div class="col-xs-12 col-md-6">
           <div class="button button_red">
               <span class="button__icon">
-                <img class="button__icon-img" src="resourse/images/icons/plus_white.svg">
+                <img class="button__icon-img" src="{{asset('images/icons/plus_white.svg')}}">
               </span>
               <span class="button__body">
                 Checkout
@@ -55,7 +55,7 @@
 
           <div class="button">
               <span class="button__icon">
-                <img class="button__icon-img" src="resourse/images/icons/bookmarks_black.svg">
+                <img class="button__icon-img" src="{{asset('images/icons/bookmarks_black.svg')}}">
               </span>
               <span class="button__body">
                 Continue shopping 
