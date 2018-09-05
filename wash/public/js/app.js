@@ -54372,15 +54372,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
         }).done(function (data) {
             if (data == 'success') {
-                var noty = new __WEBPACK_IMPORTED_MODULE_0_noty___default.a({
+
+                var n = new __WEBPACK_IMPORTED_MODULE_0_noty___default.a({
                     theme: 'relax',
                     type: 'success',
                     layout: 'bottomRight',
-                    text: 'Add to Cart'
-
-                }).show();
-
-                console.log(__WEBPACK_IMPORTED_MODULE_0_noty___default.a);
+                    text: 'Product add. Do you want to continue? <input id="example" type="text">',
+                    buttons: [__WEBPACK_IMPORTED_MODULE_0_noty___default.a.button('YES', 'btn btn-success', function () {
+                        console.log('button 1 clicked');
+                    }, { id: 'button1', 'data-status': 'ok' }), __WEBPACK_IMPORTED_MODULE_0_noty___default.a.button('NO', 'btn btn-error', function () {
+                        console.log('button 2 clicked');
+                        n.close();
+                    })]
+                });
+                n.show();
             } else {
                 alert('Wrong');
             }
