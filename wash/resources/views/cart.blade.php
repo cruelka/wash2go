@@ -34,7 +34,7 @@
                   <span class="button__body shopping-card__qty-plus" onclick="cart.update('{{$item->getHash()}}')">
                     +
                   </span>
-                  <span class="button__body">
+                  <span class="button__body" onclick="cart.update('{{$item->getHash()}}','{{$item->id}}','plus')">
                     Remove
                   </span>
               </div>
