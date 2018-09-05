@@ -84,6 +84,51 @@ function addItem(i){
     
 }
 
+function update(hash,id,action){
+
+    let formData = new FormData();
+
+    let qut = $('.shopping-card__qty'+id).text().trim();
+
+    if(action=='minus'){
+        qut = qut - 1;
+    }
+
+    if(action=='plus'){
+        qut = qut + 1;
+    }
+
+    formData.append('hash',hash);
+    formData.append('qty',qut);
+
+    $.ajax({
+        type: "POST",
+        url: '/cart/'+i,
+        headers: {
+            'X-CSRF-TOKEN': token,
+        },
+        data: formData,
+        processData: false,
+        contentType: false,
+        
+    }).done(function(data) {
+        if(data=='success'){
+
+            var n = new Noty({
+                theme: 'relax',
+                type: 'success',
+                layout: 'center',
+                text: 'data',
+              });
+              n.show();
+        } else {
+            alert('Wrong');
+        }
+        
+    });
+    
+}
+
 window.cart = {};
 
 window.cart.add = addItem;

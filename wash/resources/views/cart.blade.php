@@ -27,11 +27,11 @@
                   {{$item->price}} AED
               </div>
               <div class="button">
-                  <span class="button__body">
+                  <span class="button__body shopping-card__qty-minus">
                     -
                   </span>
-                  <span class="button__body"> {{$item->qty}} </span>
-                  <span class="button__body">
+                  <span class="button__body shopping-card__qty shopping-card__qty-{{$item->id}}"> {{$item->qty}} </span>
+                  <span class="button__body shopping-card__qty-plus" onclick="cart.update('{{$item->getHash()}}')">
                     +
                   </span>
                   <span class="button__body">
