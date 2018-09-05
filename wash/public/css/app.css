@@ -8526,6 +8526,7 @@ button.close {
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 1;
 }
 
 .product-card__marked {
@@ -13576,7 +13577,7 @@ button.close {
 }
 
 .sidebar {
-  max-width: 300px;
+  max-width: 400px;
   margin: 0 auto;
 }
 

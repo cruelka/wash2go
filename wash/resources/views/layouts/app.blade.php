@@ -28,6 +28,10 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="{{ asset('images/favicon/ms-icon-144x144.png')}}">
   <meta name="theme-color" content="#ffffff">
+
+  <script>
+    window.token = '{{ csrf_token() }}';
+  </script>
 </head>
 <body>
     
@@ -78,7 +82,10 @@
           <div class="header__mobile-only header__burger so-header__burger so-header__burger_scrolled"  onclick="soModal.open('.navigation-modal')">
             <span></span><span></span><span></span>
           </div>
-          <img class="header__button-icon so-header__bag" src="{{ asset('images/icons/bag.svg')}}">
+          <a href="/cart" class="">
+            <img class="header__button-icon so-header__bag" src="{{ asset('images/icons/bag.svg')}}">
+          </a>
+          
     </div>
 
     

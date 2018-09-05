@@ -80,8 +80,10 @@
           <div class="header__mobile-only header__burger so-header__burger so-header__burger_scrolled"  onclick="soModal.open('.navigation-modal')">
             <span></span><span></span><span></span>
           </div>
-          <img class="header__button-icon so-header__bag" src="{{ asset('images/icons/bag.svg')}}">
-    </div>
+          <a href="/cart" class="">
+            <img class="header__button-icon so-header__bag" src="{{ asset('images/icons/bag.svg')}}">
+          </a>
+</div>
 
 
 </div>
