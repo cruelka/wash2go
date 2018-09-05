@@ -54346,7 +54346,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
         }).done(function (data) {
             if (data == 'success') {
-                alert('Done');
                 var noty = new __WEBPACK_IMPORTED_MODULE_0_noty___default.a({
 
                     text: 'Some notification text'
@@ -54373,7 +54372,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
         }).done(function (data) {
             if (data == 'success') {
-                alert('Done');
+                var noty = new __WEBPACK_IMPORTED_MODULE_0_noty___default.a({
+
+                    text: 'Some notification text'
+
+                }).show();
+
+                console.log(__WEBPACK_IMPORTED_MODULE_0_noty___default.a);
             } else {
                 alert('Wrong');
             }

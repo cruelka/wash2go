@@ -23,7 +23,6 @@ function removeItem(hash){
         
     }).done(function(data) {
         if(data=='success'){
-            alert('Done');
             let noty = new Noty({
 
                 text: 'Some notification text',
@@ -31,6 +30,7 @@ function removeItem(hash){
             }).show();
 
             console.log(Noty);
+
             
         } else {
             alert('Wrong');
@@ -54,9 +54,17 @@ function addItem(i){
         
     }).done(function(data) {
         if(data=='success'){
-            alert('Done');
+            let noty = new Noty({
+
+                text: 'Some notification text',
+            
+            }).show();
+
+            console.log(Noty);
+
+            
         } else {
-            alert('Wrong')
+            alert('Wrong');
         }
         
     });
