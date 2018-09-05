@@ -11,6 +11,7 @@
     <div class="row">
         <div class="col-lg-6">
         <div class="shopping-card__list">
+         @if($items->first())
         @foreach($items as $item)
 
      
@@ -36,6 +37,9 @@
           </div>
    
         @endforeach
+             @else
+            <div>Your cart is empty</div>
+             @endif
         </div>
 
         </div>
