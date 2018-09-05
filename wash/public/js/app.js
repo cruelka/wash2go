@@ -54376,7 +54376,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 var n = new __WEBPACK_IMPORTED_MODULE_0_noty___default.a({
                     theme: 'relax',
                     type: 'success',
-                    layout: 'bottomRight',
+                    layout: 'bottomCenter',
                     text: 'Do you want to continue?',
                     buttons: [__WEBPACK_IMPORTED_MODULE_0_noty___default.a.button('YES', 'btn btn-success', function () {
                         console.log('button 1 clicked');
