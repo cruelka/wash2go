@@ -57568,6 +57568,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     window.cart = {};
 
     window.cart.add = addItem;
+
+    window.cart.update = update;
 })(jQuery);
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 

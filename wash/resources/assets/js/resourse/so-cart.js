@@ -133,5 +133,8 @@ window.cart = {};
 
 window.cart.add = addItem;
 
+window.cart.update = update;
+
+
 })( jQuery );
 
