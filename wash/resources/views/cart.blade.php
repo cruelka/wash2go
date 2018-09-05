@@ -15,7 +15,7 @@
         @foreach($items as $item)
 
      
-          <div class="shopping-card__item" data="{{$item->getHash()}}">
+          <div class="shopping-card__item" >
             <div class="shopping-card__item-prev">
               <img src="/storage/{{$item->subItems[key($item->subItems)]->options['description']}}" alt="Product" class="shopping-card__item-prev-img">
             </div>
