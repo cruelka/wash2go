@@ -13,6 +13,7 @@ class CartController extends Controller
        $items = LaraCart::getItems();
         return view('cart', compact('items'));
 
+
     }
     public function addCart(Product $product)
     {
