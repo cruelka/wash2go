@@ -55,8 +55,10 @@ function addItem(i){
     }).done(function(data) {
         if(data=='success'){
             let noty = new Noty({
-
-                text: 'Some notification text',
+                theme: 'relax',
+                type: 'success',
+                layout: 'bottomRight',
+                text: 'Add to Cart',
             
             }).show();
 
