@@ -19,26 +19,28 @@
             <div class="shopping-card__item-prev">
               <img src="/storage/{{$item->subItems[key($item->subItems)]->options['description']}}" alt="Product" class="shopping-card__item-prev-img">
             </div>
-            <div class="shopping-card__item-title">
-                {{$item->name}}
-            </div>
-            <div class="shopping-card__item-price">
-                {{$item->price}} AED
-            </div>
-            <div class="button">
-                <span class="button__body">
-                  -
-                </span>
-                <span class="button__body"> {{$item->qty}} </span>
-                <span class="button__body">
-                  +
-                </span>
-                <span class="button__body">
-                  Remove
-                </span>
-            </div>
-            <div class="shopping-card__item-price">
-                {{$item->price}} AED
+            <div>
+              <div class="shopping-card__item-title">
+                  {{$item->name}}
+              </div>
+              <div class="shopping-card__item-price">
+                  {{$item->price}} AED
+              </div>
+              <div class="button">
+                  <span class="button__body">
+                    -
+                  </span>
+                  <span class="button__body"> {{$item->qty}} </span>
+                  <span class="button__body">
+                    +
+                  </span>
+                  <span class="button__body">
+                    Remove
+                  </span>
+              </div>
+              <div class="shopping-card__item-price">
+                  {{$item->price}} AED
+              </div>
             </div>
           </div>
    
