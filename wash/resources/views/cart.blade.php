@@ -51,13 +51,13 @@
 
         <div class="shopping-card__total-wrapper">
           <div>
-            Subtotal: 444 AED
+            Subtotal: {{LaraCart::subTotal()}} AED
           </div>
           <div>
-            Tax: 1 AED
+            Tax: {{LaraCart::taxTotal()}} AED
           </div>
           <div class="shopping-card__total-big">
-            Total: 444 AED
+            Total: {{LaraCart::total()}} AED
           </div>
         </div>
 
@@ -86,10 +86,10 @@
       </div>
     </div>
 
-    {{LaraCart::subTotal()}}
-{{LaraCart::taxTotal()}}
-{{LaraCart::total()}}
-    }}
+    
+
+
+    
   </div>
   </div>
   @endsection
