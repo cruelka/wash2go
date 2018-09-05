@@ -535,8 +535,7 @@
       @foreach($products as $product)
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
           <div class="product-card product-card_square" data-aos="zoom-in">
-                <a href="/product/{{$product->id}}" class="product-card__img" style="background: url('/storage/{{$product->image}}')">
-                  <div class="product-card__add-to-card-b">
+          <div class="product-card__add-to-card-b" onclick="cart.add({{$product->id}})">
                     <div class="button button_red">
                       <span class="button__icon">
                         <img class="button__icon-img" src="{{asset('images/icons/plus_white.svg')}}">
@@ -545,7 +544,10 @@
                         Add to cart
                       </span>
                     </div>
-                  </div>
+          </div>
+
+                <a href="/product/{{$product->id}}" class="product-card__img" style="background: url('/storage/{{$product->image}}')">
+                  
                   <div class="product-card__marked">
 
                   </div>
