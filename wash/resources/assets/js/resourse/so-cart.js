@@ -127,12 +127,36 @@ function update(hash,id,action){
     
 }
 
+function remove(hash){
+    var n = new Noty({
+        theme: 'relax',
+        type: 'success',
+        layout: 'center',
+        text: 'Do you want to remove from cart?',
+        buttons: [
+          Noty.button('YES', 'btn btn-success', function () {
+              removeItem(hash);
+              n.close();
+          }, {id: 'button1', 'data-status': 'ok'}),
+      
+          Noty.button('NO', 'btn btn-error', function () {
+              
+              n.close();
+          })
+        ]
+      });
+      n.show();
+}
+
+
+
 window.cart = {};
 
 window.cart.add = addItem;
 
 window.cart.update = update;
 
+window.cart.remove = removeItem;
 
 })( jQuery );
 

@@ -57564,11 +57564,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         });
     }
 
+    function remove(hash) {
+        var n = new __WEBPACK_IMPORTED_MODULE_0_noty___default.a({
+            theme: 'relax',
+            type: 'success',
+            layout: 'center',
+            text: 'Do you want to remove from cart?',
+            buttons: [__WEBPACK_IMPORTED_MODULE_0_noty___default.a.button('YES', 'btn btn-success', function () {
+                removeItem(hash);
+                n.close();
+            }, { id: 'button1', 'data-status': 'ok' }), __WEBPACK_IMPORTED_MODULE_0_noty___default.a.button('NO', 'btn btn-error', function () {
+
+                n.close();
+            })]
+        });
+        n.show();
+    }
+
     window.cart = {};
 
     window.cart.add = addItem;
 
     window.cart.update = update;
+
+    window.cart.remove = removeItem;
 })(jQuery);
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
