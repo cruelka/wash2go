@@ -157,7 +157,7 @@ window.cart.add = addItem;
 
 window.cart.update = update;
 
-window.cart.remove = removeItem;
+window.cart.remove = remove;
 
 })( jQuery );
 

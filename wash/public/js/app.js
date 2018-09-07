@@ -57588,7 +57588,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     window.cart.update = update;
 
-    window.cart.remove = removeItem;
+    window.cart.remove = remove;
 })(jQuery);
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
