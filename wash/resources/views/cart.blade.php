@@ -15,7 +15,7 @@
         @foreach($items as $item)
 
      
-          <div class="shopping-card__item" data="{{$item->getHash()}}">
+          <div class="shopping-card__item shopping-card__item-{{$item->id}}" data="{{$item->getHash()}}">
             <div class="shopping-card__item-prev" style="background-image: url(/storage/{{$item->subItems[key($item->subItems)]->options['description']}})">
             </div>
             <div class="shopping-card__item-inner">
@@ -33,7 +33,7 @@
                   <span class="button__body shopping-card__qty-plus" onclick="cart.update('{{$item->getHash()}}','{{$item->id}}','plus')">
                     +
                   </span>
-                  <span class="button__body" onclick="cart.remove('{{$item->getHash()}}')">
+                  <span class="button__body" onclick="cart.remove('{{$item->getHash()}}','{{$item->id}}')">
                     Remove
                   </span>
               </div>

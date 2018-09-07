@@ -127,7 +127,7 @@ function update(hash,id,action){
     
 }
 
-function remove(hash){
+function remove(hash,id){
     var n = new Noty({
         theme: 'relax',
         type: 'success',
@@ -136,6 +136,7 @@ function remove(hash){
         buttons: [
           Noty.button('YES', 'btn btn-success', function () {
               removeItem(hash);
+              $('.shopping-card__item-'+id)
               n.close();
           }, {id: 'button1', 'data-status': 'ok'}),
       

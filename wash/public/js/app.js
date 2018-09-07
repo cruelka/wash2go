@@ -57564,7 +57564,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         });
     }
 
-    function remove(hash) {
+    function remove(hash, id) {
         var n = new __WEBPACK_IMPORTED_MODULE_0_noty___default.a({
             theme: 'relax',
             type: 'success',
@@ -57572,6 +57572,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             text: 'Do you want to remove from cart?',
             buttons: [__WEBPACK_IMPORTED_MODULE_0_noty___default.a.button('YES', 'btn btn-success', function () {
                 removeItem(hash);
+                $('.shopping-card__item-' + id);
                 n.close();
             }, { id: 'button1', 'data-status': 'ok' }), __WEBPACK_IMPORTED_MODULE_0_noty___default.a.button('NO', 'btn btn-error', function () {
 
