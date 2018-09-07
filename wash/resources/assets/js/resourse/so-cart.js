@@ -25,6 +25,9 @@ function removeItem(hash){
 
             let noty = new Noty({
 
+                theme: 'relax',
+                type: 'success',
+                layout: 'center',
                 text: 'Removed',
             
             }).show();
