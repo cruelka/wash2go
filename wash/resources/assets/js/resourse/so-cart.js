@@ -2,7 +2,7 @@ import Noty from 'noty';
 
 (function( $ ){
 
-let tax = 0.5;
+const tax = 0.5;
 
 function modalProcced(){
 
