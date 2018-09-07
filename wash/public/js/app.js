@@ -57607,7 +57607,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     }
 
     function formatPrice(number) {
-        var newNubmer = Number(String(number) + '.00');
+        var newNumber = Number(String(number) + '.00');
         return newNumber;
     }
 
