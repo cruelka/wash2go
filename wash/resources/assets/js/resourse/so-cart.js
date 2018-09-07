@@ -92,6 +92,16 @@ function update(hash,id,action){
 
     if(action=='minus'){
         qut = Number(qut) - 1;
+        if(qut<2){
+            var n = new Noty({
+                theme: 'relax',
+                type: 'success',
+                layout: 'bottomCenter',
+                text: 'Minimum quantity',
+              });
+              n.show();
+            return false;
+        }
     }
 
     if(action=='plus'){
@@ -112,13 +122,6 @@ function update(hash,id,action){
         contentType: false,
         
     }).done(function(data) {
-            var n = new Noty({
-                theme: 'relax',
-                type: 'success',
-                layout: 'bottomCenter',
-                text: 'Add',
-              });
-              n.show();
               $('.shopping-card__qty-'+id).text(qut);
     });
     
