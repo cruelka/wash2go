@@ -157,7 +157,7 @@ function calc(){
         let qty = $(this).find('shopping-card__qty').text().trim();
         let totalPrice = Number(price) * Number(qty);
 
-        $(this).find('.shopping-card__item-price-total').empty().append(totalPrice);
+        $(this).find('.shopping-card__item-price-total-data').empty().append(totalPrice);
     });
 }
 

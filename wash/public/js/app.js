@@ -57589,7 +57589,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var qty = $(this).find('shopping-card__qty').text().trim();
             var totalPrice = Number(price) * Number(qty);
 
-            $(this).find('.shopping-card__item-price-total').empty().append(totalPrice);
+            $(this).find('.shopping-card__item-price-total-data').empty().append(totalPrice);
         });
     }
 

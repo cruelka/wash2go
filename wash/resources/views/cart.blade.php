@@ -38,7 +38,7 @@
                   </span>
               </div>
               <div class="shopping-card__item-price-total">
-                  Total: <span>{{$item->price}}</span> AED
+                  Total: <span class="shopping-card__item-price-total-data">{{$item->price}}</span> AED
               </div>
             </div>
           </div>
