@@ -112,8 +112,6 @@ function update(hash,id,action){
         contentType: false,
         
     }).done(function(data) {
-        if(data=='success'){
-
             var n = new Noty({
                 theme: 'relax',
                 type: 'success',
@@ -122,10 +120,6 @@ function update(hash,id,action){
               });
               n.show();
               $('.shopping-card__qty-'+id).text(qut);
-        } else {
-           
-        }
-        
     });
     
 }

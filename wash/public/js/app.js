@@ -57550,17 +57550,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             contentType: false
 
         }).done(function (data) {
-            if (data == 'success') {
-
-                var n = new __WEBPACK_IMPORTED_MODULE_0_noty___default.a({
-                    theme: 'relax',
-                    type: 'success',
-                    layout: 'bottomCenter',
-                    text: 'Add'
-                });
-                n.show();
-                $('.shopping-card__qty-' + id).text(qut);
-            } else {}
+            var n = new __WEBPACK_IMPORTED_MODULE_0_noty___default.a({
+                theme: 'relax',
+                type: 'success',
+                layout: 'bottomCenter',
+                text: 'Add'
+            });
+            n.show();
+            $('.shopping-card__qty-' + id).text(qut);
         });
     }
 
