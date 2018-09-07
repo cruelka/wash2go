@@ -31,10 +31,10 @@
                     -
                   </span>
                   <span class="button__body shopping-card__qty shopping-card__qty-{{$item->id}}"> {{$item->qty}} </span>
-                  <span class="button__body shopping-card__qty-plus" onclick="cart.update('{{$item->getHash()}}')">
+                  <span class="button__body shopping-card__qty-plus" onclick="cart.update('{{$item->getHash()}}','{{$item->id}}','plus')">
                     +
                   </span>
-                  <span class="button__body" onclick="cart.update('{{$item->getHash()}}','{{$item->id}}','plus')">
+                  <span class="button__body">
                     Remove
                   </span>
               </div>
