@@ -57458,7 +57458,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     function modalProcced() {}
 
-    function removeItem(hash) {
+    function removeItem(hash, id) {
         var formData = new FormData();
 
         formData.append('hash', hash);
@@ -57474,7 +57474,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             contentType: false
 
         }).done(function (data) {
-
+            $('.shopping-card__item-' + id).remove();
             var noty = new __WEBPACK_IMPORTED_MODULE_0_noty___default.a({
 
                 theme: 'relax',
@@ -57571,8 +57571,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             layout: 'center',
             text: 'Do you want to remove from cart?',
             buttons: [__WEBPACK_IMPORTED_MODULE_0_noty___default.a.button('YES', 'btn btn-success', function () {
-                removeItem(hash);
-                $('.shopping-card__item-' + id);
+                removeItem(hash, id);
+
                 n.close();
             }, { id: 'button1', 'data-status': 'ok' }), __WEBPACK_IMPORTED_MODULE_0_noty___default.a.button('NO', 'btn btn-error', function () {
 

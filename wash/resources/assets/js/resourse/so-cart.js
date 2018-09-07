@@ -6,7 +6,7 @@ function modalProcced(){
 
 }
 
-function removeItem(hash){
+function removeItem(hash,id){
     let formData = new FormData();
 
     formData.append('hash',hash);
@@ -22,7 +22,7 @@ function removeItem(hash){
         contentType: false,
         
     }).done(function(data) {
-
+        $('.shopping-card__item-'+id).remove();
             let noty = new Noty({
 
                 theme: 'relax',
@@ -136,8 +136,8 @@ function remove(hash,id){
         text: 'Do you want to remove from cart?',
         buttons: [
           Noty.button('YES', 'btn btn-success', function () {
-              removeItem(hash);
-              $('.shopping-card__item-'+id)
+              removeItem(hash,id);
+              
               n.close();
           }, {id: 'button1', 'data-status': 'ok'}),
       
