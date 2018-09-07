@@ -112,16 +112,16 @@ function update(hash,id,action){
         contentType: false,
         
     }).done(function(data) {
-        console.log(data);
         if(data=='success'){
 
             var n = new Noty({
                 theme: 'relax',
                 type: 'success',
-                layout: 'center',
-                text: 'data',
+                layout: 'bottomCenter',
+                text: 'Add',
               });
               n.show();
+              $('.shopping-card__qty-'+id).text(qut);
         } else {
            
         }
