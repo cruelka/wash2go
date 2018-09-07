@@ -57561,6 +57561,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
         }).done(function (data) {
             $('.shopping-card__qty-' + id).text(qut);
+            calc();
         });
     }
 

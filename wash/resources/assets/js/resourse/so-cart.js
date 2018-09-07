@@ -124,6 +124,7 @@ function update(hash,id,action){
         
     }).done(function(data) {
               $('.shopping-card__qty-'+id).text(qut);
+              calc();
     });
     
 }
