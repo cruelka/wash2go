@@ -57465,7 +57465,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
         $.ajax({
             type: "POST",
-            url: '/cart/remove/',
+            url: 'https://wash2go.ae/cart/remove',
             headers: {
                 'X-CSRF-TOKEN': token
             },

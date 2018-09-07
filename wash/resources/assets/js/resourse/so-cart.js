@@ -13,7 +13,7 @@ function removeItem(hash){
 
     $.ajax({
         type: "POST",
-        url: '/cart/remove/',
+        url: 'https://wash2go.ae/cart/remove',
         headers: {
             'X-CSRF-TOKEN': token,
         },
