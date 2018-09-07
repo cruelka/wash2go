@@ -91,11 +91,11 @@ function update(hash,id,action){
     let qut = $('.shopping-card__qty-'+id).text().trim();
 
     if(action=='minus'){
-        qut = qut - 1;
+        qut = Number(qut) - 1;
     }
 
     if(action=='plus'){
-        qut = qut + 1;
+        qut = Number(qut) + 1;
     }
 
     formData.append('hash',hash);
@@ -112,6 +112,7 @@ function update(hash,id,action){
         contentType: false,
         
     }).done(function(data) {
+        console.log(data);
         if(data=='success'){
 
             var n = new Noty({
@@ -122,7 +123,7 @@ function update(hash,id,action){
               });
               n.show();
         } else {
-            alert('Wrong');
+           
         }
         
     });

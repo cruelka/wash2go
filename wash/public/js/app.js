@@ -57529,11 +57529,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         var qut = $('.shopping-card__qty-' + id).text().trim();
 
         if (action == 'minus') {
-            qut = qut - 1;
+            qut = Number(qut) - 1;
         }
 
         if (action == 'plus') {
-            qut = qut + 1;
+            qut = Number(qut) + 1;
         }
 
         formData.append('hash', hash);
@@ -57550,6 +57550,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             contentType: false
 
         }).done(function (data) {
+            console.log(data);
             if (data == 'success') {
 
                 var n = new __WEBPACK_IMPORTED_MODULE_0_noty___default.a({
@@ -57559,9 +57560,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     text: 'data'
                 });
                 n.show();
-            } else {
-                alert('Wrong');
-            }
+            } else {}
         });
     }
 
