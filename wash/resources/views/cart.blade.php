@@ -76,17 +76,21 @@
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+                            </div>
+                        </div>
 
-                                    <span class="help-block">
-                                        <strong></strong>
-                                    </span>
+                        <div class="form-group">
+                            <label for="email" class="col-md-4 control-label">Delivery Address</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="text" class="form-control" name="name" value="" required autofocus>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Login
+                                    Check Out
                                 </button>
                             </div>
                         </div>
@@ -100,7 +104,7 @@
 
 
 
-
+          <!--
           <div class="button button_red">
               <span class="button__icon">
                 <img class="button__icon-img" src="{{asset('images/icons/plus_white.svg')}}">
@@ -118,6 +122,7 @@
                 Continue shopping 
               </span>
           </div>
+          -->
 
       </div>
     </div>
