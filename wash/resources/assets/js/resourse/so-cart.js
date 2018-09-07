@@ -170,7 +170,7 @@ function calc(){
     let superTotal = totalTax + totalNoTax;
 
 
-    $('.shopping-card__subtotal-data').empty().append(totalPrice);
+    $('.shopping-card__subtotal-data').empty().append(totalNoTax);
     $('.shopping-card__tax-data').empty().append(totalTax);
     $('.shopping-card__total-big-data').empty().append(superTotal);
 
