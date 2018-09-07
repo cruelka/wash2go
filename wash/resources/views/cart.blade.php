@@ -16,8 +16,7 @@
 
      
           <div class="shopping-card__item" data="{{$item->getHash()}}">
-            <div class="shopping-card__item-prev">
-              <img src="/storage/{{$item->subItems[key($item->subItems)]->options['description']}}" alt="Product" class="shopping-card__item-prev-img">
+            <div class="shopping-card__item-prev" style="background-image: url(/storage/{{$item->subItems[key($item->subItems)]->options['description']}})">
             </div>
             <div class="shopping-card__item-inner">
               <div class="shopping-card__item-title">

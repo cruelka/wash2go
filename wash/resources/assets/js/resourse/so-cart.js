@@ -92,7 +92,7 @@ function update(hash,id,action){
 
     if(action=='minus'){
         qut = Number(qut) - 1;
-        if(qut<2){
+        if(qut<1){
             var n = new Noty({
                 theme: 'relax',
                 type: 'success',

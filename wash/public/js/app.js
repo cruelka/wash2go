@@ -57530,7 +57530,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
         if (action == 'minus') {
             qut = Number(qut) - 1;
-            if (qut < 2) {
+            if (qut < 1) {
                 var n = new __WEBPACK_IMPORTED_MODULE_0_noty___default.a({
                     theme: 'relax',
                     type: 'success',
