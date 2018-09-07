@@ -69,7 +69,7 @@
                 <div class="panel-heading">Login</div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="">
+
 
                         <div class="form-group">
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
@@ -94,7 +94,7 @@
                                 </button>
                             </div>
                         </div>
-                    </form>
+
                 </div>
             </div>
 
