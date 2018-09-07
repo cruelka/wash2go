@@ -178,7 +178,7 @@ function calc(){
 }
 
 function formatPrice (number) {
-    return Number(String(number) + '.00');
+    return String(number) + '.00';
 }
 
 
