@@ -57526,7 +57526,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
         var formData = new FormData();
 
-        var qut = $('.shopping-card__qty' + id).text().trim();
+        var qut = $('.shopping-card__qty-' + id).text().trim();
 
         if (action == 'minus') {
             qut = qut - 1;

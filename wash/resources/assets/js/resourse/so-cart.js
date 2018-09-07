@@ -88,7 +88,7 @@ function update(hash,id,action){
 
     let formData = new FormData();
 
-    let qut = $('.shopping-card__qty'+id).text().trim();
+    let qut = $('.shopping-card__qty-'+id).text().trim();
 
     if(action=='minus'){
         qut = qut - 1;
