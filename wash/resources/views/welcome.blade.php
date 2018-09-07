@@ -87,7 +87,7 @@
           <a href="/cart" class="">
             <img class="header__button-icon so-header__bag" src="{{ asset('images/icons/bag.svg')}}">
           </a>
-          <div class="so-header__bag-number">0</div>
+          <a href="/cart" class="so-header__bag-number" onclick="">0</a>
 </div>
 
 

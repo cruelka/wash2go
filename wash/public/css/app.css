@@ -8796,6 +8796,19 @@ button.close {
   cursor: pointer;
 }
 
+.so-header__bag-number {
+  background: #52b947;
+  height: 17px;
+  font-weight: bold;
+  color: white;
+  padding: 0 6px;
+  position: absolute;
+  right: 30px;
+  top: 38px;
+  border-radius: 10px;
+  font-size: .8em;
+}
+
 .header__button-icon:last-child {
   margin-right: 0;
 }
