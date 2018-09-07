@@ -57599,9 +57599,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
         var totalTax = totalNoTax * tax;
 
-        var superTotal = totalNoTax = totalTax;
+        var superTotal = totalTax + totalNoTax;
 
-        $('.shopping-card__subtotal-data').empty().append(totalNoTax);
+        $('.shopping-card__subtotal-data').empty().append(totalPrice);
         $('.shopping-card__tax-data').empty().append(totalTax);
         $('.shopping-card__total-big-data').empty().append(superTotal);
     }

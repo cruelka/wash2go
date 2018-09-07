@@ -167,10 +167,10 @@ function calc(){
 
     let totalTax = totalNoTax * tax;
 
-    let superTotal = totalNoTax = totalTax;
+    let superTotal = totalTax + totalNoTax;
 
 
-    $('.shopping-card__subtotal-data').empty().append(totalNoTax);
+    $('.shopping-card__subtotal-data').empty().append(totalPrice);
     $('.shopping-card__tax-data').empty().append(totalTax);
     $('.shopping-card__total-big-data').empty().append(superTotal);
 
