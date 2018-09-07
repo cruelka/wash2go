@@ -170,11 +170,16 @@ function calc(){
     let superTotal = totalTax + totalNoTax;
 
 
-    $('.shopping-card__subtotal-data').empty().append(totalNoTax);
-    $('.shopping-card__tax-data').empty().append(totalTax);
-    $('.shopping-card__total-big-data').empty().append(superTotal);
+    $('.shopping-card__subtotal-data').empty().append(formatPrice(totalNoTax));
+    $('.shopping-card__tax-data').empty().append(formatPrice(totalTax));
+    $('.shopping-card__total-big-data').empty().append(formatPrice(superTotal));
 
     
+}
+
+function formatPrice (number) {
+    let newNubmer = Number(String(number) + '.00');
+    return newNumber;
 }
 
 
