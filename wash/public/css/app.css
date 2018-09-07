@@ -8809,6 +8809,11 @@ button.close {
   font-size: .8em;
 }
 
+.so-header__bag-number:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .header__button-icon:last-child {
   margin-right: 0;
 }
