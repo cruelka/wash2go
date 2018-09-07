@@ -165,7 +165,7 @@ function calc(){
         $(this).find('.shopping-card__item-price-total-data').empty().append(totalPrice);
     });
 
-    let totalTax = totalPrice * tax;
+    let totalTax = totalNoTax * tax;
 
     let superTotal = totalNoTax = totalTax;
 

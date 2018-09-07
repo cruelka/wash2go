@@ -57597,7 +57597,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             $(this).find('.shopping-card__item-price-total-data').empty().append(totalPrice);
         });
 
-        var totalTax = totalPrice * tax;
+        var totalTax = totalNoTax * tax;
 
         var superTotal = totalNoTax = totalTax;
 
