@@ -103,7 +103,7 @@ function update(hash,id,action){
 
     $.ajax({
         type: "POST",
-        url: '/cart/'+i,
+        url: '/cart/update',
         headers: {
             'X-CSRF-TOKEN': token,
         },

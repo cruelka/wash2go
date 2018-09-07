@@ -57541,7 +57541,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
         $.ajax({
             type: "POST",
-            url: '/cart/' + i,
+            url: '/cart/update',
             headers: {
                 'X-CSRF-TOKEN': token
             },
