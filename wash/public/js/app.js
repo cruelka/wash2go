@@ -57474,17 +57474,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             contentType: false
 
         }).done(function (data) {
-            if (data == 'success') {
-                var noty = new __WEBPACK_IMPORTED_MODULE_0_noty___default.a({
 
-                    text: 'Some notification text'
+            var noty = new __WEBPACK_IMPORTED_MODULE_0_noty___default.a({
 
-                }).show();
+                text: 'Removed'
 
-                console.log(__WEBPACK_IMPORTED_MODULE_0_noty___default.a);
-            } else {
-                alert('Wrong');
-            }
+            }).show();
+
+            console.log(__WEBPACK_IMPORTED_MODULE_0_noty___default.a);
         });
     }
 

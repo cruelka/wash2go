@@ -22,19 +22,17 @@ function removeItem(hash){
         contentType: false,
         
     }).done(function(data) {
-        if(data=='success'){
+
             let noty = new Noty({
 
-                text: 'Some notification text',
+                text: 'Removed',
             
             }).show();
 
             console.log(Noty);
 
             
-        } else {
-            alert('Wrong');
-        }
+
         
     });
     
