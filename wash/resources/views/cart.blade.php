@@ -23,7 +23,7 @@
                   {{$item->name}}
               </div>
               <div class="shopping-card__item-price">
-                  {{$item->price}} AED
+                  <span class="shopping-card__item-price-data">{{$item->price}}</span>  AED
               </div>
               <div class="button">
                   <span class="button__body shopping-card__qty-minus" onclick="cart.update('{{$item->getHash()}}','{{$item->id}}','minus')">
@@ -38,7 +38,7 @@
                   </span>
               </div>
               <div class="shopping-card__item-price-total">
-                  Total: {{$item->price}} AED
+                  Total: <span>{{$item->price}}</span> AED
               </div>
             </div>
           </div>

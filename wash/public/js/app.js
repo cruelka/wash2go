@@ -57582,6 +57582,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         n.show();
     }
 
+    function calc() {
+        $('.shopping-card__item').each(function () {
+            var price = $(this).find('.shopping-card__item-price-data').text().trim();
+            var qty = $(this).find('shopping-card__qty').text().trim();
+            var totalPrice = Number(price) * Number(qty);
+
+            $(this).find('.shopping-card__item-price-total').empty().append(totalPrice);
+        });
+    }
+
     window.cart = {};
 
     window.cart.add = addItem;

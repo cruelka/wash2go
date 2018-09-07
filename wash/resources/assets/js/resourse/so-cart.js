@@ -150,6 +150,15 @@ function remove(hash,id){
       n.show();
 }
 
+function calc(){
+    $('.shopping-card__item').each(function(){
+        let price = $(this).find('.shopping-card__item-price-data').text().trim();
+        let qty = $(this).find('shopping-card__qty').text().trim();
+        let totalPrice = Number(price) * Number(qty);
+
+        $(this).find('.shopping-card__item-price-total').empty().append(totalPrice);
+    });
+}
 
 
 window.cart = {};
