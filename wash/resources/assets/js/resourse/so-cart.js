@@ -2,6 +2,8 @@ import Noty from 'noty';
 
 (function( $ ){
 
+let tax = 0.5;
+
 function modalProcced(){
 
 }
@@ -152,13 +154,27 @@ function remove(hash,id){
 }
 
 function calc(){
+    let totalNoTax = 0;
     $('.shopping-card__item').each(function(){
         let price = $(this).find('.shopping-card__item-price-data').text().trim();
         let qty = $(this).find('.shopping-card__qty').text().trim();
         let totalPrice = Number(price) * Number(qty);
 
+        totalNoTax = totalNoTax + totalPrice;
+
         $(this).find('.shopping-card__item-price-total-data').empty().append(totalPrice);
     });
+
+    let totalTax = totalPrice * tax;
+
+    let superTotal = totalNoTax = totalTax;
+
+
+    $('.shopping-card__subtotal-data').empty().append(totalNoTax);
+    $('.shopping-card__tax-data').empty().append(totalTax);
+    $('.shopping-card__total-big-data').empty().append(superTotal);
+
+    
 }
 
 

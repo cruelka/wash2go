@@ -57456,6 +57456,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 (function ($) {
 
+    var tax = 0.5;
+
     function modalProcced() {}
 
     function removeItem(hash, id) {
@@ -57584,13 +57586,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     }
 
     function calc() {
+        var totalNoTax = 0;
         $('.shopping-card__item').each(function () {
             var price = $(this).find('.shopping-card__item-price-data').text().trim();
             var qty = $(this).find('.shopping-card__qty').text().trim();
             var totalPrice = Number(price) * Number(qty);
 
+            totalNoTax = totalNoTax + totalPrice;
+
             $(this).find('.shopping-card__item-price-total-data').empty().append(totalPrice);
         });
+
+        var totalTax = totalPrice * tax;
+
+        var superTotal = totalNoTax = totalTax;
+
+        $('.shopping-card__subtotal-data').empty().append(totalNoTax);
+        $('.shopping-card__tax-data').empty().append(totalTax);
+        $('.shopping-card__total-big-data').empty().append(superTotal);
     }
 
     window.cart = {};
