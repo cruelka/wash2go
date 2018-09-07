@@ -57607,8 +57607,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     }
 
     function formatPrice(number) {
-        var newNumber = Number(String(number) + '.00');
-        return newNumber;
+        return Number(String(number) + '.00');
     }
 
     window.cart = {};
