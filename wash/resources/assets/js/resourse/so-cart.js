@@ -194,7 +194,7 @@ window.cart.update = update;
 
 window.cart.remove = remove;
 
-window.cart.swapShipping = remove;
+window.cart.swapShipping = swapShipping;
 
 })( jQuery );
 

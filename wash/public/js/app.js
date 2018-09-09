@@ -57622,7 +57622,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     window.cart.remove = remove;
 
-    window.cart.swapShipping = remove;
+    window.cart.swapShipping = swapShipping;
 })(jQuery);
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
