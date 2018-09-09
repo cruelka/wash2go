@@ -57620,13 +57620,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
         $('.cart-form').submit(function (evt) {
             evt.preventDefault();
-            var n = new __WEBPACK_IMPORTED_MODULE_0_noty___default.a({
-                theme: 'relax',
-                type: 'success',
-                layout: 'bottomCenter',
-                text: 'Send'
+            $.ajax({
+                type: "GET",
+                url: '/clear',
+                headers: {
+                    'X-CSRF-TOKEN': token
+                },
+                processData: false,
+                contentType: false
+
+            }).done(function (data) {
+                var n = new __WEBPACK_IMPORTED_MODULE_0_noty___default.a({
+                    theme: 'relax',
+                    type: 'success',
+                    layout: 'center',
+                    text: 'Thank you for shopping with us'
+                });
+                n.show();
             });
-            n.show();
         });
     });
 

@@ -193,13 +193,25 @@ $(document).ready(function () {
 
     $('.cart-form').submit( function(evt){
         evt.preventDefault();
-        var n = new Noty({
-            theme: 'relax',
-            type: 'success',
-            layout: 'bottomCenter',
-            text: 'Send',
-          });
-          n.show();
+        $.ajax({
+            type: "GET",
+            url: '/clear',
+            headers: {
+                'X-CSRF-TOKEN': token,
+            },
+            processData: false,
+            contentType: false,
+            
+        }).done(function(data) {
+            var n = new Noty({
+                theme: 'relax',
+                type: 'success',
+                layout: 'center',
+                text: 'Thank you for shopping with us',
+              });
+              n.show();
+        });
+        
     });
 });
 
