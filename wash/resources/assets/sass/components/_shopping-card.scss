@@ -7,10 +7,15 @@
 }
 
 .shopping-card__item-prev {
-    width: 100%;
+    width: 200px;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 98px;
+    border-radius: 3px;
     margin-right: 15px;
     float: left;
     max-width: 150px;
+    display: block;
 }
 
 .shopping-card__item-prev-img {
