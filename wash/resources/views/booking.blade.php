@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('content')
 
 <div class="booking-steps__wrapper">
           <div class="so-modal__booking-form__heading">
@@ -664,3 +665,4 @@ infoWindow.setContent(browserHasGeolocation ?
 
      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnQdVeXsvN-31LxFeKaKf255C5vGB73VQ&libraries=places&callback=initMap&language=en"
          async defer></script>
+@endsection
