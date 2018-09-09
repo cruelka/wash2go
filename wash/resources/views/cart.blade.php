@@ -75,7 +75,7 @@
                             <label for="name" class="col-md-4 control-label">Name</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ Auth::user()->name }}" required autofocus>
+                                <input id="name" type="text" class="form-control" name="name" @if (Auth::check()) value="{{ Auth::user()->name }}" @endif required autofocus>
                             </div>
                         </div>
 
@@ -83,7 +83,7 @@
                             <label for="phone" class="col-md-4 control-label">Phone</label>
 
                             <div class="col-md-6">
-                                <input id="phone" type="text" class="form-control" name="phone" value="{{ Auth::user()->phone }}" required autofocus>
+                                <input id="phone" type="text" class="form-control" name="phone"  @if (Auth::check()) value="{{ Auth::user()->phone }}" @endif required autofocus>
                             </div>
                         </div>
 
@@ -92,7 +92,7 @@
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ Auth::user()->email }}" required autofocus>
+                                <input id="email" type="email" class="form-control" name="email" @if (Auth::check()) value="{{ Auth::user()->email }}" @endif required autofocus>
                             </div>
                         </div>
 
