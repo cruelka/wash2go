@@ -178,7 +178,8 @@ function calc(){
 }
 
 function formatPrice (number) {
-    return String(number) + '.00';
+    //return String(number) + '.00';
+    return String(number) ;
 }
 
 function swapShipping () {

@@ -57607,7 +57607,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     }
 
     function formatPrice(number) {
-        return String(number) + '.00';
+        //return String(number) + '.00';
+        return String(number);
     }
 
     function swapShipping() {}
