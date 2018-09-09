@@ -79,6 +79,18 @@
                             </div>
                         </div>
 
+                        
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="remember"> Shipping
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="form-group">
                             <label for="email" class="col-md-4 control-label">Delivery Address</label>
 
