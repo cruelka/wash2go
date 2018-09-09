@@ -57636,6 +57636,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     layout: 'center',
                     text: 'Thank you for shopping with us'
                 });
+                $('.shopping-card__item').remove();
+                $('.shopping-card__subtotal-data').empty().append(formatPrice(0));
+                $('.shopping-card__tax-data').empty().append(formatPrice(0));
+                $('.shopping-card__total-big-data').empty().append(formatPrice(0));
                 n.show();
             });
         });
