@@ -57456,7 +57456,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 (function ($) {
 
-    var tax = 0.5;
+    var tax = 0.05;
 
     function modalProcced() {}
 
