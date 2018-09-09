@@ -83,9 +83,9 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox" onclick="cart.swapShipping()">
+                                <div class="checkbox" >
                                     <label>
-                                        <input type="checkbox" name="remember"> Shipping 10 AED
+                                        <input type="checkbox" class="swapShippingCheckbox" name="remember"> Shipping 10 AED
                                     </label>
                                 </div>
                             </div>

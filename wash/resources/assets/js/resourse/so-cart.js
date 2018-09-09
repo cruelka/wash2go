@@ -182,8 +182,14 @@ function formatPrice (number) {
 }
 
 function swapShipping () {
-    $('.swapShipping').toggle();
+    
 }
+
+$(document).ready(function () {
+    $('.swapShippingCheckbox').change(function () {
+        $('.swapShipping').toggle();
+    });
+});
 
 
 window.cart = {};

@@ -57610,9 +57610,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return String(number) + '.00';
     }
 
-    function swapShipping() {
-        $('.swapShipping').toggle();
-    }
+    function swapShipping() {}
+
+    $(document).ready(function () {
+        $('.swapShippingCheckbox').change(function () {
+            $('.swapShipping').toggle();
+        });
+    });
 
     window.cart = {};
 
