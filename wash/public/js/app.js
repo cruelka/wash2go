@@ -57617,6 +57617,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         $('.swapShippingCheckbox').change(function () {
             $('.swapShipping').toggle();
         });
+
+        $('.cart-form').submit(function (evt) {
+            evt.preventDefault();
+            var n = new __WEBPACK_IMPORTED_MODULE_0_noty___default.a({
+                theme: 'relax',
+                type: 'success',
+                layout: 'bottomCenter',
+                text: 'Send'
+            });
+            n.show();
+        });
     });
 
     window.cart = {};

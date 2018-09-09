@@ -190,7 +190,20 @@ $(document).ready(function () {
     $('.swapShippingCheckbox').change(function () {
         $('.swapShipping').toggle();
     });
+
+    $('.cart-form').submit( function(evt){
+        evt.preventDefault();
+        var n = new Noty({
+            theme: 'relax',
+            type: 'success',
+            layout: 'bottomCenter',
+            text: 'Send',
+          });
+          n.show();
+    });
 });
+
+
 
 
 window.cart = {};

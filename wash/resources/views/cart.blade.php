@@ -69,7 +69,7 @@
                 <div class="panel-heading">Contact details</div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal">
+                    <form class="form-horizontal cart-form">
 
                         <div class="form-group">
                             <label for="name" class="col-md-4 control-label">Name</label>
