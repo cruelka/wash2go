@@ -14602,3 +14602,7 @@ body {
   margin: 0 auto;
 }
 
+.swapShipping {
+  display: none;
+}
+

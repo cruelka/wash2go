@@ -181,6 +181,10 @@ function formatPrice (number) {
     return String(number) + '.00';
 }
 
+function swapShipping () {
+    $('.swapShipping').toggle();
+}
+
 
 window.cart = {};
 

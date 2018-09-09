@@ -83,7 +83,7 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
+                                <div class="checkbox" onclick="swapShipping()">
                                     <label>
                                         <input type="checkbox" name="remember"> Shipping 10 AED
                                     </label>
@@ -91,12 +91,14 @@
                             </div>
                         </div>
 
-                        <p>Click on the map to move marker</p>
-                        <div class="btn btn-success" onclick="window.getLocation()">Get current location</div>
-                        <br><br>
-                        <div id="map"></div>
+                        <div class="swapShipping">
+                            <p>Click on the map to move marker</p>
+                            <div class="btn btn-success" onclick="window.getLocation()">Get current location</div>
+                            <br><br>
+                            <div id="map"></div>
 
-                        <br><br>
+                            <br>
+                        </div>
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
