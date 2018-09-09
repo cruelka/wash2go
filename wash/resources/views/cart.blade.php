@@ -53,7 +53,7 @@
             Subtotal: <span class="shopping-card__subtotal-data">{{LaraCart::subTotal()}}</span> AED
           </div>
           <div class="shopping-card__tax">
-            Tax: <span class="shopping-card__tax-data">{{LaraCart::taxTotal()}}</span> AED
+            VAT: <span class="shopping-card__tax-data">{{LaraCart::taxTotal()}}</span> AED
           </div>
           <div class="shopping-card__total-big">
             Total: <span class="shopping-card__total-big-data">{{LaraCart::total()}}</span> AED
