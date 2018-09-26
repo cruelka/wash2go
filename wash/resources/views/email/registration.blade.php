@@ -6,7 +6,7 @@
 </head>
 <body style="background-color:#1BB7CD">
 <div style="max-width: 500px;margin: 0 auto;padding: 20px;background-color:white;">
-<img src="https://wash2go.ae/images/logo.png" alt="Logo" style="width: 100px;margin-bottom:20px;">
+<img src="https://wash2go.ae/images/logo.png" alt="Logo" style="width: 100px;margin-bottom:5px;">
 <h1 style="color: #3E4C5B">YOU ARE READY TO GO!!!</h1>
 <h2 style="color: #3E4C5B">Welcome to the <a href="https://wash2go.ae/" style="color: #52B947;">Wash2Go</a> Community!</h2>
 <p style="color: #9AA8B6;">
