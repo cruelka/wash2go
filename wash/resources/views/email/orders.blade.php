@@ -49,6 +49,7 @@
         .mail__shoplist {
             margin-top: 15px;
         }
+        
     </style>
 </head>
 
@@ -58,16 +59,14 @@
 <h1 style="color: #3E4C5B">Hi {{$booking->user_name}}. Thank you for your order!</h1>
 <h2 style="color: #3E4C5B">Your order has been placed. You will be notified !</h2>
 
+<br><br>
+
 <div class="mail__shoplist">
-            <table class="mail__shop-item">
-                <tr>
-                    <td>
-                        <div class="mail__shop-item-title">{{$booking->service}}</div>
-                        <div class="mail__shop-item-price">{{$booking->price}} AED</div>
-                    </td>
-                </tr>
-            </table>
+    <div class="mail__shop-item-title" style="color: #3E4C5B">{{$booking->service}}</div>
+    <div class="mail__shop-item-price" style="color: #9AA8B6;">{{$booking->price}} AED</div>
 </div>
+
+<br><br>
 
 <div class="mail__heading">Need help?</div>
 
