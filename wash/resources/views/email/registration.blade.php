@@ -17,10 +17,22 @@ YES! It’s a reality.
 <br><br>
 Wash2Go is a global platform where we save water and environment anywhere by washing cars without water!
 <br><br>
-Verify your email address to show our verified email badge on your profile.
+<span style="color: #52B947;">Verify your email address</span> to show our verified email badge on your profile.
 <br><br>
 You can also edit your account settings, connect with Facebook, and add pictures and information to share with our community. Adding images and completing your profile improves trust and transparency of your profile, and makes your profile more credible to other users.
 </p>
+
+<p style="color: #9AA8B6;">
+It’s easy to get going with your <a href="https://wash2go.ae/booking" style="color: #52B947;">CAR WASH BOOKING</a>
+</p>
+
+<p style="color: #9AA8B6; font-size: .9em;">
+Sincerely,<br>
+Wash2Go Team
+</p>
+
+
+
 </div>
 
 </body>
