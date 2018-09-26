@@ -59,8 +59,11 @@
 <h1 style="color: #3E4C5B">Hi {{$booking->user_name}}.</h1>
 <h2 style="color: #3E4C5B">
 Thanks for contribution to environment safety.<br>
+</h2>
+<h2 style="color: #3E4C5B">
 Your order has been placed.
 </h2>
+
 
 <div class="mail__shoplist">
     <div class="mail__shop-item-title" style="color: #3E4C5B">{{$booking->service}}</div>
