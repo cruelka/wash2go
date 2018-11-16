@@ -370,7 +370,7 @@
       </div>
     </div>
   </div>
-
+@if($why)
   <div class="row mt-5">
     <div class="col-xs-12 col-md-6">
       <div class="card-preview__info-image-bg-wrapper" data-aos="fade-right">
@@ -397,6 +397,7 @@
       </div>
     </div>
   </div>
+    @endif
 
   <div class="row mt-5">
     <div class="col-xs-12">
@@ -447,7 +448,7 @@
   </div>
 
   <div class="row mt-5">
-
+@if($eco)
       <div class="col-xs-12 col-md-6">
         <div class="card-preview__info" data-aos="fade-right">
           <div class="card-preview__info-inner">
@@ -474,6 +475,7 @@
         </div>
       
         </div>
+    @endif
     </div>
 
   <div class="adventages adventages_center sector">
@@ -537,6 +539,7 @@
 
 
   <div class="row mt-5">
+     @if($products)
       @foreach($products as $product)
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
           <div class="product-card product-card_square" data-aos="zoom-in">
@@ -569,6 +572,7 @@
           </div>
       </div>
     @endforeach
+         @endif
 
 
 
@@ -582,6 +586,7 @@
       </div>
 
       <div class="row mt-5">
+          @if($posts)
           @foreach($posts as $post)
           <div class="col-lg-6 col-md-6">
 
@@ -612,6 +617,7 @@
 
           </div>
           @endforeach
+              @endif
 
       </div>
 </div>
