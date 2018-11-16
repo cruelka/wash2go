@@ -12,9 +12,9 @@
 */
 
 Route::get('/', function () {
-     $posts = App\Post::take(2)->get();
-   $why = App\Page::where('id', '=', 1)->firstOrFail();
-    $eco = App\Page::where('id', '=', 2)->firstOrFail();
+     $posts = 0;//App\Post::take(2)->get();
+   $why = 0;//App\Page::where('slug', '=', 'why-its-good-for-your-car')->firstOrFail();
+    $eco = 0;//App\Page::where('slug', '=', 'why-eco-wash')->firstOrFail();
     $products =0; //App\Product::take(4)->get();
 
 
