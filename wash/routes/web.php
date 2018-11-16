@@ -14,7 +14,7 @@
 Route::get('/', function () {
      $posts = App\Post::take(2)->get();
    $why = App\Page::where('id', '=', 1)->firstOrFail();
-    $eco = App\Page::where('slug', '=', 2)->firstOrFail();
+    $eco = App\Page::where('id', '=', 2)->firstOrFail();
     $products =0; //App\Product::take(4)->get();
 
 
