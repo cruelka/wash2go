@@ -149,12 +149,12 @@
        
                 <ul class="footer__list">
                   
-                  <li class="footer__item" >Business village <br>
-                    6th Floor <br>
-                    Office #601
+                  <li class="footer__item" >Business  <br>
+                      <br>
+
                     </li>
-                  <li class="footer__item" >Deira Dubai</li>
-                  <li class="footer__item" >055 464 4954</li>
+                  <li class="footer__item" > Dubai</li>
+                  <li class="footer__item" >055 324 234324</li>
                   <li class="footer__item" >© Copyright Wash 2 Go</li>
                 </ul>
            
