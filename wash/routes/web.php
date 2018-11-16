@@ -12,10 +12,10 @@
 */
 
 Route::get('/', function () {
-     //$posts = App\Post::take(2)->get();
-   // $why = App\Page::where('slug', '=', 'why-its-good-for-your-car')->firstOrFail();
-   // $eco = App\Page::where('slug', '=', 'why-eco-wash')->firstOrFail();
-   // $products = App\Product::take(4)->get();
+     $posts = 0;//App\Post::take(2)->get();
+   $why = 0;//App\Page::where('slug', '=', 'why-its-good-for-your-car')->firstOrFail();
+    $eco = 0;//App\Page::where('slug', '=', 'why-eco-wash')->firstOrFail();
+    $products =0; //App\Product::take(4)->get();
 
 
 
