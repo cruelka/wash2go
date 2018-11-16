@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-     $posts = 0;//App\Post::take(2)->get();
+     $posts = App\Post::take(2)->get();
    $why = 0;//App\Page::where('slug', '=', 'why-its-good-for-your-car')->firstOrFail();
     $eco = 0;//App\Page::where('slug', '=', 'why-eco-wash')->firstOrFail();
     $products =0; //App\Product::take(4)->get();
